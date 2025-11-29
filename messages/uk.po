@@ -36,7 +36,7 @@ msgstr "Сортувати за..."
 
 #: src\app\[category]\_components\Header.tsx
 msgid "fFZTRm"
-msgstr "Найнижчий рейтинг"
+msgstr "З найнижчим рейтингом"
 
 #: src\app\[category]\_components\Header.tsx
 msgid "fwIt1X"
@@ -54,7 +54,7 @@ msgstr "Акаунт"
 
 #: src\app\[category]\_components\Header.tsx
 msgid "xrURkx"
-msgstr "Найвищий рейтинг"
+msgstr "З найвищим рейтингом"
 
 #: src\app\[category]\_components\Header.tsx
 msgid "xSsE6C"
@@ -62,7 +62,7 @@ msgstr "А → Я"
 
 #: src\app\[category]\page.tsx
 msgid "2RRog1"
-msgstr "Жодна публікація не відповідає вашим критеріям пошуку."
+msgstr "Жодна публікація не відповідає критеріям пошуку."
 
 #: src\app\[category]\page.tsx
 msgid "4YJHut"
@@ -80,7 +80,7 @@ msgstr "під час отримання публікацій"
 
 #: src\app\[category]\page.tsx
 msgid "zWr4H0"
-msgstr "Схоже, в цій категорії немає публікацій."
+msgstr "Схоже, у цій категорії немає публікацій."
 
 #: src\app\login\page.tsx
 msgid "rBTItO"
@@ -128,7 +128,7 @@ msgstr "Скажіть щось {dialogUserName}..."
 
 #: src\app\messages\[user]\page.tsx
 msgid "jabB4C"
-msgstr "Не прочитано"
+msgstr "Непрочитано"
 
 #: src\app\messages\[user]\page.tsx
 msgid "sbE0zo"
@@ -136,7 +136,7 @@ msgstr "під час отримання статусу прочитання о�
 
 #: src\app\messages\[user]\page.tsx
 msgid "UvpnGV"
-msgstr "під час надсилання повідомлення"
+msgstr "під час відправлення повідомлення"
 
 #: src\app\messages\page.tsx
 msgid "LBU7+J"
@@ -172,15 +172,15 @@ msgstr "Кількість відгуків"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "+sEPbf"
-msgstr ""
+msgstr "Видалити {publicationName}?"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "0c5Ily"
-msgstr ""
+msgstr "Позначення публікації як завантаженої..."
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "4TgoWL"
-msgstr "Зображення іконки"
+msgstr "Іконка"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "BnqNdr"
@@ -192,11 +192,11 @@ msgstr "Оновити"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "bYoVJ6"
-msgstr ""
+msgstr "Публікацію успішно видалено."
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "fhwTpA"
-msgstr ""
+msgstr "Джерела"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "G/yZLu"
@@ -212,43 +212,43 @@ msgstr "Не вдалося скопіювати JSON в буфер обміну
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "JqtAkq"
-msgstr ""
+msgstr "Видалення публікації..."
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "NCqfZg"
-msgstr "Необроблений JSON"
+msgstr "Сирий JSON"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "oA+idZ"
-msgstr ""
+msgstr "під час позначення публікації як завантаженої"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "OKhRC6"
-msgstr ""
+msgstr "Поділитися"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "RiHzeS"
-msgstr ""
+msgstr "Це назавжди видалить публікацію, її статистику та відгуки з реєстру. Вихідні файли залишаться на сервері."
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "t1SGnV"
-msgstr ""
+msgstr "Вихідний JSON {publicationName}"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "tH4Eov"
-msgstr ""
+msgstr "Публікацію позначено як завантажену."
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "V7MFd4"
-msgstr ""
+msgstr "видаленні публікації"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "xPn5o3"
-msgstr ""
+msgstr "Видалити {publicationName}"
 
 #: src\app\publication\[id]\_components\sections\About.tsx
 msgid "4gL3oc"
-msgstr ""
+msgstr "{version, plural, =1 {Випущено} other {Останній реліз}} {date}"
 
 #: src\app\publication\[id]\_components\sections\About.tsx
 msgid "g5pX+a"
@@ -296,7 +296,7 @@ msgstr "Увійдіть або зареєструйтеся, щоб оціню�
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "og54DB"
-msgstr "Спроба оновити відгук, який не існує."
+msgstr "Спроба оновити неіснуючий відгук."
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "Ov8WL5"
@@ -304,7 +304,7 @@ msgstr "Вже проголосували!"
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "rMIZOU"
-msgstr "Натисніть, щоб оцінити це:"
+msgstr "Натисніть, щоб оцінити:"
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "UnvbUU"
@@ -332,11 +332,11 @@ msgstr "Категорія"
 
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
 msgid "FZkA83"
-msgstr "{length, plural, one {Рейтинг} few {Рейтинги} many {Рейтингів} other {Рейтингів}}"
+msgstr "{length, plural, one {Рейтинг} few {Рейтинги} other {Рейтингів}}"
 
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
 msgid "GsBRWL"
-msgstr ""
+msgstr "Мови"
 
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
 msgid "HBxXD/"
@@ -364,59 +364,59 @@ msgstr "під час отримання відгуків"
 
 #: src\app\publication\[id]\update\page.tsx
 msgid "0wZB3y"
-msgstr ""
+msgstr "Публікацію успішно оновлено."
 
 #: src\app\publication\[id]\update\page.tsx
 msgid "A3bwdq"
-msgstr ""
+msgstr "Що нового?"
 
 #: src\app\publication\[id]\update\page.tsx
 msgid "Gwy3SQ"
-msgstr ""
+msgstr "Тут ви можете оновити свою публікацію."
 
 #: src\app\publication\[id]\update\page.tsx
 msgid "H7ibc9"
-msgstr ""
+msgstr "Оновити публікацію"
 
 #: src\app\publication\[id]\update\page.tsx
 msgid "Jx8h9Q"
-msgstr ""
+msgstr "Оновлення публікації..."
 
 #: src\app\publication\[id]\update\page.tsx
 msgid "nf5qyJ"
-msgstr ""
+msgstr "Оновити до {newVersion}"
 
 #: src\app\publication\[id]\update\page.tsx
 msgid "Pt+j13"
-msgstr ""
+msgstr "під час оновлення публікації"
 
 #: src\app\publication\[id]\update\page.tsx
 msgid "Unpl/e"
-msgstr ""
+msgstr "під час отримання публікації"
 
 #: src\app\publish\page.tsx
 msgid "3cM1BU"
-msgstr ""
+msgstr "Опублікувати ПЗ"
 
 #: src\app\publish\page.tsx
 msgid "h1Fura"
-msgstr ""
+msgstr "Публікацію успішно завантажено."
 
 #: src\app\publish\page.tsx
 msgid "hSpDpR"
-msgstr ""
+msgstr "Завантаження публікації..."
 
 #: src\app\publish\page.tsx
 msgid "Q3kzlv"
-msgstr ""
+msgstr "Створіть щось дивовижне і поділіться цим!"
 
 #: src\app\publish\page.tsx
 msgid "QZ2HQg"
-msgstr ""
+msgstr "під час завантаження публікації"
 
 #: src\app\publish\page.tsx
 msgid "syEQFE"
-msgstr ""
+msgstr "Опублікувати"
 
 #: src\app\register\page.tsx
 msgid "1zEIJP"
@@ -428,7 +428,7 @@ msgstr "Зареєструвати новий акаунт"
 
 #: src\app\register\page.tsx
 msgid "3VyG1T"
-msgstr "Перевірте свою електронну пошту та папку зі спамом, щоб підтвердити обліковий запис MineOS"
+msgstr "Перевірте електронну пошту та папку зі спамом, щоб підтвердити акаунт MineOS"
 
 #: src\app\register\page.tsx
 msgid "5sg7KC"
@@ -446,70 +446,70 @@ msgstr "Увійти"
 
 #: src\app\register\page.tsx
 msgid "fD2A0X"
-msgstr "Введіть свої дані нижче, щоб створити обліковий запис."
+msgstr "Введіть дані нижче, щоб створити акаунт."
 
 #: src\app\register\page.tsx
 #: src\app\settings\_tabs\account.tsx
 msgid "sy+pv5"
-msgstr "Електронна пошта"
+msgstr "Email"
 
 #: src\app\register\page.tsx
 msgid "uCk8r+"
-msgstr "Вже є акаунт?"
+msgstr "Вже маєте акаунт?"
 
 #: src\app\register\page.tsx
 msgid "UEg22u"
-msgstr "Реєстрація вашого облікового запису..."
+msgstr "Реєстрація акаунта..."
 
 #: src\app\settings\_components\ChangePasswordDialog.tsx
 #: src\app\settings\_tabs\account.tsx
 msgid "eAv5kZ"
-msgstr ""
+msgstr "під час зміни пароля"
 
 #: src\app\settings\_tabs\account.tsx
 msgid "2PxMTO"
-msgstr ""
+msgstr "Скидання пароля акаунта."
 
 #: src\app\settings\_tabs\account.tsx
 msgid "55vTH+"
-msgstr ""
+msgstr "ID користувача"
 
 #: src\app\settings\_tabs\account.tsx
 msgid "9qe6kS"
-msgstr ""
+msgstr "Дата реєстрації"
 
 #: src\app\settings\_tabs\account.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "deEeEI"
-msgstr "Зареєструватися"
+msgstr "Реєстрація"
 
 #: src\app\settings\_tabs\account.tsx
 msgid "fTHhSB"
-msgstr ""
+msgstr "Новий пароль"
 
 #: src\app\settings\_tabs\account.tsx
 msgid "L4nXIc"
-msgstr ""
+msgstr "Змінити пароль"
 
 #: src\app\settings\_tabs\account.tsx
 msgid "NIynnB"
-msgstr ""
+msgstr "Поточний пароль"
 
 #: src\app\settings\_tabs\account.tsx
 msgid "R0I1QA"
-msgstr ""
+msgstr "Щоб отримати доступ до налаштувань акаунта, увійдіть або зареєструйтеся."
 
 #: src\app\settings\_tabs\account.tsx
 msgid "X1axT8"
-msgstr ""
+msgstr "Ви не увійшли в систему"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "9PgpSj"
-msgstr ""
+msgstr "Аватари"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "HaqEm4"
-msgstr ""
+msgstr "Інтервал оновлення чату"
 
 #: src\app\settings\_tabs\behaviour.tsx
 #: src\components\layout\app-sidebar.tsx
@@ -518,59 +518,59 @@ msgstr "Повідомлення"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "HNwGRG"
-msgstr ""
+msgstr "Провайдер аватарів"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "nCxC7R"
-msgstr ""
+msgstr "сек"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "XALdUr"
-msgstr ""
+msgstr "Керування відображенням аватарів у додатку."
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "xn70cZ"
-msgstr ""
+msgstr "Інтервал оновлення діалогів"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "yIiQTN"
-msgstr ""
+msgstr "Керування поведінкою повідомлень у додатку."
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "Ynyq+n"
-msgstr ""
+msgstr "Використовувати зображення аватарів"
 
 #: src\app\settings\_tabs\developer.tsx
 msgid "2IgL3i"
-msgstr ""
+msgstr "URL хоста"
 
 #: src\app\settings\_tabs\developer.tsx
 msgid "by7qeM"
-msgstr ""
+msgstr "Керування підключенням додатка до сервера."
 
 #: src\app\settings\_tabs\developer.tsx
 msgid "mzhmvO"
-msgstr ""
+msgstr "Проксі URL"
 
 #: src\app\settings\_tabs\developer.tsx
 msgid "v8LO6P"
-msgstr ""
+msgstr "Конфігурація сервера"
 
 #: src\app\settings\page.tsx
 msgid "V0Ugkx"
-msgstr ""
+msgstr "Поведінка"
 
 #: src\app\settings\page.tsx
 msgid "yZJxVS"
-msgstr ""
+msgstr "Розробник"
 
 #: src\app\user\[name]\page.tsx
 msgid "3kAElH"
-msgstr "У вас ще немає публікацій."
+msgstr "У вас поки немає публікацій."
 
 #: src\app\user\[name]\page.tsx
 msgid "7/kzJw"
-msgstr "Цей користувач ще не має публікацій або не існує."
+msgstr "У цього користувача поки немає публікацій або він не існує."
 
 #: src\app\user\[name]\page.tsx
 #: src\components\layout\UserDropdown.tsx
@@ -583,11 +583,11 @@ msgstr "Огляд"
 
 #: src\components\layout\Header.tsx
 msgid "cyR7Kh"
-msgstr ""
+msgstr "Назад"
 
 #: src\components\layout\Publications.tsx
 msgid "olk5qg"
-msgstr "{username}"
+msgstr "від {username}"
 
 #: src\components\layout\UserDropdown.tsx
 msgid "+CwN9C"
@@ -615,11 +615,11 @@ msgstr "Мова"
 
 #: src\hooks\use-config.ts
 msgid "jAe3qU"
-msgstr ""
+msgstr "Конфігурацію успішно збережено"
 
 #: src\hooks\use-config.ts
 msgid "LniMz6"
-msgstr ""
+msgstr "Не вдалося оновити конфігурацію: {message}"
 
 #: src\hooks\use-handle-request-error.ts
 msgid "Esx22K"
@@ -627,11 +627,11 @@ msgstr "Помилка {while}: {message}"
 
 #: src\hooks\use-handle-request-error.ts
 msgid "TD0pGC"
-msgstr "Неочікувана помилка {while}: {error}"
+msgstr "Непередбачена помилка {while}: {error}"
 
 #: src\hooks\use-locale.ts
 msgid "Eupxjs"
-msgstr "Цей застосунок використовує cookies щоб зберегти ваші мовні вподобання."
+msgstr "Цей додаток використовує файли cookie для збереження мовних налаштувань."
 
 #: src\hooks\use-publication-categories.ts
 msgid "1SIWKV"
@@ -639,15 +639,15 @@ msgstr "Бібліотеки"
 
 #: src\hooks\use-publication-categories.ts
 msgid "D9ZyLu"
-msgstr "Шпалери"
+msgstr "Стіни"
 
 #: src\hooks\use-publication-categories.ts
 msgid "DqD1yK"
-msgstr "Застосунки"
+msgstr "Програми"
 
 #: src\hooks\use-publication-categories.ts
 msgid "gRiKLf"
-msgstr "Додатки"
+msgstr "Програми"
 
 #: src\hooks\use-publication-categories.ts
 msgid "HCfIc7"
@@ -663,4 +663,4 @@ msgstr "Шпалери"
 
 #: src\utils\use-unread-messages.ts
 msgid "QmMwgJ"
-msgstr ""
+msgstr "під час отримання непрочитаних повідомлень"

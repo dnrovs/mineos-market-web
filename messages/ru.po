@@ -8,659 +8,659 @@ msgstr ""
 
 #: src\app\[category]\_components\Footer.tsx
 msgid "K7AkdL"
-msgstr ""
+msgstr "Показать"
 
 #: src\app\[category]\_components\Header.tsx
 msgid "0BUTMv"
-msgstr ""
+msgstr "Поиск..."
 
 #: src\app\[category]\_components\Header.tsx
 msgid "0TZMjQ"
-msgstr ""
+msgstr "Старые"
 
 #: src\app\[category]\_components\Header.tsx
 msgid "3xDJrg"
-msgstr ""
+msgstr "Опубликовать {category}..."
 
 #: src\app\[category]\_components\Header.tsx
 msgid "4Nl5H9"
-msgstr ""
+msgstr "Я → А"
 
 #: src\app\[category]\_components\Header.tsx
 msgid "dC3u7Z"
-msgstr ""
+msgstr "Популярные"
 
 #: src\app\[category]\_components\Header.tsx
 msgid "f3bAYs"
-msgstr ""
+msgstr "Сортировка..."
 
 #: src\app\[category]\_components\Header.tsx
 msgid "fFZTRm"
-msgstr ""
+msgstr "С низким рейтингом"
 
 #: src\app\[category]\_components\Header.tsx
 msgid "fwIt1X"
-msgstr ""
+msgstr "Новые"
 
 #: src\app\[category]\_components\Header.tsx
 msgid "KTnoGx"
-msgstr ""
+msgstr "Менее популярные"
 
 #: src\app\[category]\_components\Header.tsx
 #: src\app\settings\page.tsx
 #: src\components\layout\app-sidebar.tsx
 msgid "TwyMau"
-msgstr ""
+msgstr "Аккаунт"
 
 #: src\app\[category]\_components\Header.tsx
 msgid "xrURkx"
-msgstr ""
+msgstr "С высоким рейтингом"
 
 #: src\app\[category]\_components\Header.tsx
 msgid "xSsE6C"
-msgstr ""
+msgstr "А → Я"
 
 #: src\app\[category]\page.tsx
 msgid "2RRog1"
-msgstr ""
+msgstr "Нет публикаций, удовлетворяющих критериям поиска."
 
 #: src\app\[category]\page.tsx
 msgid "4YJHut"
-msgstr ""
+msgstr "Очистить поиск"
 
 #: src\app\[category]\page.tsx
 msgid "bz4Mm+"
-msgstr ""
+msgstr "Ничего не найдено"
 
 #: src\app\[category]\page.tsx
 #: src\app\publication\[id]\page.tsx
 #: src\app\user\[name]\page.tsx
 msgid "rQFxkO"
-msgstr ""
+msgstr "при получении публикаций"
 
 #: src\app\[category]\page.tsx
 msgid "zWr4H0"
-msgstr ""
+msgstr "Похоже, в этой категории нет публикаций."
 
 #: src\app\login\page.tsx
 msgid "rBTItO"
-msgstr ""
+msgstr "при входе в систему"
 
 #: src\app\messages\_components\dialogs.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "47FYwb"
-msgstr ""
+msgstr "Отмена"
 
 #: src\app\messages\_components\dialogs.tsx
 #: src\app\register\page.tsx
 msgid "JCIgkj"
-msgstr ""
+msgstr "Имя пользователя"
 
 #: src\app\messages\_components\dialogs.tsx
 msgid "LZl1xZ"
-msgstr ""
+msgstr "при получении диалогов"
 
 #: src\app\messages\_components\dialogs.tsx
 #: src\app\user\[name]\page.tsx
 msgid "un14bs"
-msgstr ""
+msgstr "Открыть чат"
 
 #: src\app\messages\[user]\page.tsx
 msgid "+QF2mn"
-msgstr ""
+msgstr "Эмодзи запрещены."
 
 #: src\app\messages\[user]\page.tsx
 msgid "72TiCf"
-msgstr ""
+msgstr "при получении диалога"
 
 #: src\app\messages\[user]\page.tsx
 msgid "8bV0li"
-msgstr ""
+msgstr "Пользователь {dialogUserName} не существует."
 
 #: src\app\messages\[user]\page.tsx
 msgid "filwqD"
-msgstr ""
+msgstr "Прочитано"
 
 #: src\app\messages\[user]\page.tsx
 msgid "HyqYaU"
-msgstr ""
+msgstr "Скажите что-нибудь {dialogUserName}..."
 
 #: src\app\messages\[user]\page.tsx
 msgid "jabB4C"
-msgstr ""
+msgstr "Непрочитано"
 
 #: src\app\messages\[user]\page.tsx
 msgid "sbE0zo"
-msgstr ""
+msgstr "при получении статуса прочтения последнего сообщения"
 
 #: src\app\messages\[user]\page.tsx
 msgid "UvpnGV"
-msgstr ""
+msgstr "при отправке сообщения"
 
 #: src\app\messages\page.tsx
 msgid "LBU7+J"
-msgstr ""
+msgstr "Откройте чат, чтобы начать общение"
 
 #: src\app\overview\page.tsx
 msgid "7MTfrK"
-msgstr ""
+msgstr "Самые активные"
 
 #: src\app\overview\page.tsx
 msgid "B7zY8l"
-msgstr ""
+msgstr "при получении статистики"
 
 #: src\app\overview\page.tsx
 msgid "FotFMb"
-msgstr ""
+msgstr "Количество пользователей"
 
 #: src\app\overview\page.tsx
 msgid "RB4BMg"
-msgstr ""
+msgstr "Количество сообщений"
 
 #: src\app\overview\page.tsx
 msgid "RyQQuV"
-msgstr ""
+msgstr "Новый пользователь"
 
 #: src\app\overview\page.tsx
 msgid "tR6EXz"
-msgstr ""
+msgstr "Количество публикаций"
 
 #: src\app\overview\page.tsx
 msgid "u2miNe"
-msgstr ""
+msgstr "Количество отзывов"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "+sEPbf"
-msgstr ""
+msgstr "Удалить {publicationName}?"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "0c5Ily"
-msgstr ""
+msgstr "Отметка публикации как загруженной..."
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "4TgoWL"
-msgstr ""
+msgstr "Иконка"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "BnqNdr"
-msgstr ""
+msgstr "JSON скопирован в буфер обмена"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "BWpuKl"
-msgstr ""
+msgstr "Обновить"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "bYoVJ6"
-msgstr ""
+msgstr "Публикация успешно удалена."
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "fhwTpA"
-msgstr ""
+msgstr "Источники"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "G/yZLu"
-msgstr ""
+msgstr "Удалить"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "GAUX9p"
-msgstr ""
+msgstr "Исходный код"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "GVcBDG"
-msgstr ""
+msgstr "Не удалось скопировать JSON в буфер обмена"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "JqtAkq"
-msgstr ""
+msgstr "Удаление публикации..."
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "NCqfZg"
-msgstr ""
+msgstr "Исходный JSON"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "oA+idZ"
-msgstr ""
+msgstr "при отметке публикации как загруженной"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "OKhRC6"
-msgstr ""
+msgstr "Поделиться"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "RiHzeS"
-msgstr ""
+msgstr "Это навсегда удалит публикацию, ее статистику и отзывы из реестра. Исходные файлы останутся на сервере."
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "t1SGnV"
-msgstr ""
+msgstr "Исходный JSON {publicationName}"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "tH4Eov"
-msgstr ""
+msgstr "Публикация отмечена как загруженная."
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "V7MFd4"
-msgstr ""
+msgstr "удалении публикации"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "xPn5o3"
-msgstr ""
+msgstr "Удалить {publicationName}"
 
 #: src\app\publication\[id]\_components\sections\About.tsx
 msgid "4gL3oc"
-msgstr ""
+msgstr "{version, plural, =1 {Выпущено} other {Последний релиз}} {date}"
 
 #: src\app\publication\[id]\_components\sections\About.tsx
 msgid "g5pX+a"
-msgstr ""
+msgstr "О публикации"
 
 #: src\app\publication\[id]\_components\sections\Dependencies.tsx
 msgid "37Z5zj"
-msgstr ""
+msgstr "Зависимости"
 
 #: src\app\publication\[id]\_components\sections\PublicationInfo.tsx
 msgid "80g19N"
-msgstr ""
+msgstr "Посмотреть на GitHub"
 
 #: src\app\publication\[id]\_components\sections\PublicationInfo.tsx
 msgid "J62X2m"
-msgstr ""
+msgstr "Посмотреть исходный код"
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "4xQtw2"
-msgstr ""
+msgstr "из 5"
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "Ak4tB0"
-msgstr ""
+msgstr "при обновлении отзыва"
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "APJ1b/"
-msgstr ""
+msgstr "Публикация отзыва..."
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "GJFQ68"
-msgstr ""
+msgstr "при голосовании за отзыв"
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "k/n7Yx"
-msgstr ""
+msgstr "Отзыв успешно опубликован!"
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "LfHk/3"
-msgstr ""
+msgstr "Написать отзыв..."
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "LZZfmv"
-msgstr ""
+msgstr "Войдите или зарегистрируйтесь, чтобы оценивать публикации и отзывы"
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "og54DB"
-msgstr ""
+msgstr "Попытка обновить несуществующий отзыв."
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "Ov8WL5"
-msgstr ""
+msgstr "Уже проголосовали!"
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "rMIZOU"
-msgstr ""
+msgstr "Нажмите, чтобы оценить:"
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "UnvbUU"
-msgstr ""
+msgstr "Отзыв успешно обновлен!"
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "v+mTR7"
-msgstr ""
+msgstr "при публикации отзыва"
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "W6gI4b"
-msgstr ""
+msgstr "Обновление отзыва..."
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "wEQDC6"
-msgstr ""
+msgstr "Редактировать"
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "wXHf3p"
-msgstr ""
+msgstr "Оценить публикацию"
 
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
 msgid "ccXLVi"
-msgstr ""
+msgstr "Категория"
 
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
 msgid "FZkA83"
-msgstr ""
+msgstr "{length, plural, one {Рейтинг} few {Рейтинга} other {Рейтингов}}"
 
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
 msgid "GsBRWL"
-msgstr ""
+msgstr "Языки"
 
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
 msgid "HBxXD/"
-msgstr ""
+msgstr "Лицензия"
 
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
 msgid "I3b4hn"
-msgstr ""
+msgstr "Версия"
 
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
 msgid "OnbqrE"
-msgstr ""
+msgstr "Загрузки"
 
 #: src\app\publication\[id]\_components\sections\WhatsNew.tsx
 msgid "G5/5eb"
-msgstr ""
+msgstr "Что нового"
 
 #: src\app\publication\[id]\_components\sections\WhatsNew.tsx
 msgid "SoGsYr"
-msgstr ""
+msgstr "в {whatsNewVersion}"
 
 #: src\app\publication\[id]\page.tsx
 msgid "hWwv1H"
-msgstr ""
+msgstr "при получении отзывов"
 
 #: src\app\publication\[id]\update\page.tsx
 msgid "0wZB3y"
-msgstr ""
+msgstr "Публикация успешно обновлена."
 
 #: src\app\publication\[id]\update\page.tsx
 msgid "A3bwdq"
-msgstr ""
+msgstr "Что нового?"
 
 #: src\app\publication\[id]\update\page.tsx
 msgid "Gwy3SQ"
-msgstr ""
+msgstr "Здесь вы можете обновить свою публикацию."
 
 #: src\app\publication\[id]\update\page.tsx
 msgid "H7ibc9"
-msgstr ""
+msgstr "Обновить публикацию"
 
 #: src\app\publication\[id]\update\page.tsx
 msgid "Jx8h9Q"
-msgstr ""
+msgstr "Обновление публикации..."
 
 #: src\app\publication\[id]\update\page.tsx
 msgid "nf5qyJ"
-msgstr ""
+msgstr "Обновить до {newVersion}"
 
 #: src\app\publication\[id]\update\page.tsx
 msgid "Pt+j13"
-msgstr ""
+msgstr "при обновлении публикации"
 
 #: src\app\publication\[id]\update\page.tsx
 msgid "Unpl/e"
-msgstr ""
+msgstr "при получении публикации"
 
 #: src\app\publish\page.tsx
 msgid "3cM1BU"
-msgstr ""
+msgstr "Опубликовать ПО"
 
 #: src\app\publish\page.tsx
 msgid "h1Fura"
-msgstr ""
+msgstr "Публикация успешно загружена."
 
 #: src\app\publish\page.tsx
 msgid "hSpDpR"
-msgstr ""
+msgstr "Загрузка публикации..."
 
 #: src\app\publish\page.tsx
 msgid "Q3kzlv"
-msgstr ""
+msgstr "Создайте что-то удивительное и поделитесь этим!"
 
 #: src\app\publish\page.tsx
 msgid "QZ2HQg"
-msgstr ""
+msgstr "при загрузке публикации"
 
 #: src\app\publish\page.tsx
 msgid "syEQFE"
-msgstr ""
+msgstr "Опубликовать"
 
 #: src\app\register\page.tsx
 msgid "1zEIJP"
-msgstr ""
+msgstr "при регистрации"
 
 #: src\app\register\page.tsx
 msgid "3VCFQV"
-msgstr ""
+msgstr "Зарегистрировать новый аккаунт"
 
 #: src\app\register\page.tsx
 msgid "3VyG1T"
-msgstr ""
+msgstr "Проверьте электронную почту и папку со спамом, чтобы подтвердить аккаунт MineOS"
 
 #: src\app\register\page.tsx
 msgid "5sg7KC"
-msgstr ""
+msgstr "Пароль"
 
 #: src\app\register\page.tsx
 msgid "AjpNgX"
-msgstr ""
+msgstr "Ваш аккаунт успешно зарегистрирован."
 
 #: src\app\register\page.tsx
 #: src\app\settings\_tabs\account.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "AyGauy"
-msgstr ""
+msgstr "Войти"
 
 #: src\app\register\page.tsx
 msgid "fD2A0X"
-msgstr ""
+msgstr "Введите данные ниже, чтобы создать аккаунт."
 
 #: src\app\register\page.tsx
 #: src\app\settings\_tabs\account.tsx
 msgid "sy+pv5"
-msgstr ""
+msgstr "Email"
 
 #: src\app\register\page.tsx
 msgid "uCk8r+"
-msgstr ""
+msgstr "Уже есть аккаунт?"
 
 #: src\app\register\page.tsx
 msgid "UEg22u"
-msgstr ""
+msgstr "Регистрация аккаунта..."
 
 #: src\app\settings\_components\ChangePasswordDialog.tsx
 #: src\app\settings\_tabs\account.tsx
 msgid "eAv5kZ"
-msgstr ""
+msgstr "при изменении пароля"
 
 #: src\app\settings\_tabs\account.tsx
 msgid "2PxMTO"
-msgstr ""
+msgstr "Сброс пароля аккаунта."
 
 #: src\app\settings\_tabs\account.tsx
 msgid "55vTH+"
-msgstr ""
+msgstr "ID пользователя"
 
 #: src\app\settings\_tabs\account.tsx
 msgid "9qe6kS"
-msgstr ""
+msgstr "Дата регистрации"
 
 #: src\app\settings\_tabs\account.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "deEeEI"
-msgstr ""
+msgstr "Регистрация"
 
 #: src\app\settings\_tabs\account.tsx
 msgid "fTHhSB"
-msgstr ""
+msgstr "Новый пароль"
 
 #: src\app\settings\_tabs\account.tsx
 msgid "L4nXIc"
-msgstr ""
+msgstr "Изменить пароль"
 
 #: src\app\settings\_tabs\account.tsx
 msgid "NIynnB"
-msgstr ""
+msgstr "Текущий пароль"
 
 #: src\app\settings\_tabs\account.tsx
 msgid "R0I1QA"
-msgstr ""
+msgstr "Чтобы получить доступ к настройкам аккаунта, войдите или зарегистрируйтесь."
 
 #: src\app\settings\_tabs\account.tsx
 msgid "X1axT8"
-msgstr ""
+msgstr "Вы не вошли в систему"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "9PgpSj"
-msgstr ""
+msgstr "Аватары"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "HaqEm4"
-msgstr ""
+msgstr "Интервал обновления чата"
 
 #: src\app\settings\_tabs\behaviour.tsx
 #: src\components\layout\app-sidebar.tsx
 msgid "hMzcSq"
-msgstr ""
+msgstr "Сообщения"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "HNwGRG"
-msgstr ""
+msgstr "Провайдер аватаров"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "nCxC7R"
-msgstr ""
+msgstr "сек"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "XALdUr"
-msgstr ""
+msgstr "Управление отображением аватаров в приложении."
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "xn70cZ"
-msgstr ""
+msgstr "Интервал обновления диалогов"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "yIiQTN"
-msgstr ""
+msgstr "Управление поведением сообщений в приложении."
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "Ynyq+n"
-msgstr ""
+msgstr "Использовать изображения аватаров"
 
 #: src\app\settings\_tabs\developer.tsx
 msgid "2IgL3i"
-msgstr ""
+msgstr "URL хоста"
 
 #: src\app\settings\_tabs\developer.tsx
 msgid "by7qeM"
-msgstr ""
+msgstr "Управление подключением приложения к серверу."
 
 #: src\app\settings\_tabs\developer.tsx
 msgid "mzhmvO"
-msgstr ""
+msgstr "Прокси URL"
 
 #: src\app\settings\_tabs\developer.tsx
 msgid "v8LO6P"
-msgstr ""
+msgstr "Конфигурация сервера"
 
 #: src\app\settings\page.tsx
 msgid "V0Ugkx"
-msgstr ""
+msgstr "Поведение"
 
 #: src\app\settings\page.tsx
 msgid "yZJxVS"
-msgstr ""
+msgstr "Разработчик"
 
 #: src\app\user\[name]\page.tsx
 msgid "3kAElH"
-msgstr ""
+msgstr "У вас пока нет публикаций."
 
 #: src\app\user\[name]\page.tsx
 msgid "7/kzJw"
-msgstr ""
+msgstr "У этого пользователя пока нет публикаций или он не существует."
 
 #: src\app\user\[name]\page.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "D3idYv"
-msgstr ""
+msgstr "Настройки"
 
 #: src\components\layout\app-sidebar.tsx
 msgid "9uOFF3"
-msgstr ""
+msgstr "Обзор"
 
 #: src\components\layout\Header.tsx
 msgid "cyR7Kh"
-msgstr ""
+msgstr "Назад"
 
 #: src\components\layout\Publications.tsx
 msgid "olk5qg"
-msgstr ""
+msgstr "от {username}"
 
 #: src\components\layout\UserDropdown.tsx
 msgid "+CwN9C"
-msgstr ""
+msgstr "Системная"
 
 #: src\components\layout\UserDropdown.tsx
 msgid "3cc4Ct"
-msgstr ""
+msgstr "Светлая"
 
 #: src\components\layout\UserDropdown.tsx
 msgid "Pe0ogR"
-msgstr ""
+msgstr "Тема"
 
 #: src\components\layout\UserDropdown.tsx
 msgid "PlBReU"
-msgstr ""
+msgstr "Выйти"
 
 #: src\components\layout\UserDropdown.tsx
 msgid "tOdNiY"
-msgstr ""
+msgstr "Темная"
 
 #: src\components\layout\UserDropdown.tsx
 msgid "y1Z3or"
-msgstr ""
+msgstr "Язык"
 
 #: src\hooks\use-config.ts
 msgid "jAe3qU"
-msgstr ""
+msgstr "Конфигурация успешно сохранена"
 
 #: src\hooks\use-config.ts
 msgid "LniMz6"
-msgstr ""
+msgstr "Не удалось обновить конфигурацию: {message}"
 
 #: src\hooks\use-handle-request-error.ts
 msgid "Esx22K"
-msgstr ""
+msgstr "Ошибка {while}: {message}"
 
 #: src\hooks\use-handle-request-error.ts
 msgid "TD0pGC"
-msgstr ""
+msgstr "Непредвиденная ошибка {while}: {error}"
 
 #: src\hooks\use-locale.ts
 msgid "Eupxjs"
-msgstr ""
+msgstr "Это приложение использует файлы cookie для сохранения языковых настроек."
 
 #: src\hooks\use-publication-categories.ts
 msgid "1SIWKV"
-msgstr ""
+msgstr "Библиотеки"
 
 #: src\hooks\use-publication-categories.ts
 msgid "D9ZyLu"
-msgstr ""
+msgstr "Стены"
 
 #: src\hooks\use-publication-categories.ts
 msgid "DqD1yK"
-msgstr ""
+msgstr "Приложения"
 
 #: src\hooks\use-publication-categories.ts
 msgid "gRiKLf"
-msgstr ""
+msgstr "Программы"
 
 #: src\hooks\use-publication-categories.ts
 msgid "HCfIc7"
-msgstr ""
+msgstr "Скрипты"
 
 #: src\hooks\use-publication-categories.ts
 msgid "nTBqwa"
-msgstr ""
+msgstr "Библиотеки"
 
 #: src\hooks\use-publication-categories.ts
 msgid "tmaBkU"
-msgstr ""
+msgstr "Обои"
 
 #: src\utils\use-unread-messages.ts
 msgid "QmMwgJ"
-msgstr ""
+msgstr "при получении непрочитанных сообщений"
