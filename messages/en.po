@@ -1,0 +1,666 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: next-intl\n"
+"X-Crowdin-SourceKey: msgstr\n"
+
+#: src\app\[category]\_components\Footer.tsx
+msgid "K7AkdL"
+msgstr "Show"
+
+#: src\app\[category]\_components\Header.tsx
+msgid "0BUTMv"
+msgstr "Search..."
+
+#: src\app\[category]\_components\Header.tsx
+msgid "0TZMjQ"
+msgstr "Oldest"
+
+#: src\app\[category]\_components\Header.tsx
+msgid "3xDJrg"
+msgstr "Publish {category}..."
+
+#: src\app\[category]\_components\Header.tsx
+msgid "4Nl5H9"
+msgstr "Z → A"
+
+#: src\app\[category]\_components\Header.tsx
+msgid "dC3u7Z"
+msgstr "Most popular"
+
+#: src\app\[category]\_components\Header.tsx
+msgid "f3bAYs"
+msgstr "Sort by..."
+
+#: src\app\[category]\_components\Header.tsx
+msgid "fFZTRm"
+msgstr "Lowest rated"
+
+#: src\app\[category]\_components\Header.tsx
+msgid "fwIt1X"
+msgstr "Newest"
+
+#: src\app\[category]\_components\Header.tsx
+msgid "KTnoGx"
+msgstr "Least popular"
+
+#: src\app\[category]\_components\Header.tsx
+#: src\app\settings\page.tsx
+#: src\components\layout\app-sidebar.tsx
+msgid "TwyMau"
+msgstr "Account"
+
+#: src\app\[category]\_components\Header.tsx
+msgid "xrURkx"
+msgstr "Highest rated"
+
+#: src\app\[category]\_components\Header.tsx
+msgid "xSsE6C"
+msgstr "A → Z"
+
+#: src\app\[category]\page.tsx
+msgid "2RRog1"
+msgstr "No publication satisfies your search criteria."
+
+#: src\app\[category]\page.tsx
+msgid "4YJHut"
+msgstr "Clear search"
+
+#: src\app\[category]\page.tsx
+msgid "bz4Mm+"
+msgstr "Nothing found"
+
+#: src\app\[category]\page.tsx
+#: src\app\publication\[id]\page.tsx
+#: src\app\user\[name]\page.tsx
+msgid "rQFxkO"
+msgstr "while fetching publications"
+
+#: src\app\[category]\page.tsx
+msgid "zWr4H0"
+msgstr "Looks like there are no publications in this category."
+
+#: src\app\login\page.tsx
+msgid "rBTItO"
+msgstr "while logging in"
+
+#: src\app\messages\_components\dialogs.tsx
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "47FYwb"
+msgstr "Cancel"
+
+#: src\app\messages\_components\dialogs.tsx
+#: src\app\register\page.tsx
+msgid "JCIgkj"
+msgstr "Username"
+
+#: src\app\messages\_components\dialogs.tsx
+msgid "LZl1xZ"
+msgstr "while fetching dialogs"
+
+#: src\app\messages\_components\dialogs.tsx
+#: src\app\user\[name]\page.tsx
+msgid "un14bs"
+msgstr "Open chat"
+
+#: src\app\messages\[user]\page.tsx
+msgid "+QF2mn"
+msgstr "Emoji are not allowed."
+
+#: src\app\messages\[user]\page.tsx
+msgid "72TiCf"
+msgstr "while fetching dialog"
+
+#: src\app\messages\[user]\page.tsx
+msgid "8bV0li"
+msgstr "User {dialogUserName} does not exist."
+
+#: src\app\messages\[user]\page.tsx
+msgid "filwqD"
+msgstr "Read"
+
+#: src\app\messages\[user]\page.tsx
+msgid "HyqYaU"
+msgstr "Say something to {dialogUserName}..."
+
+#: src\app\messages\[user]\page.tsx
+msgid "jabB4C"
+msgstr "Unread"
+
+#: src\app\messages\[user]\page.tsx
+msgid "sbE0zo"
+msgstr "while fetching last message read status"
+
+#: src\app\messages\[user]\page.tsx
+msgid "UvpnGV"
+msgstr "while sending a message"
+
+#: src\app\messages\page.tsx
+msgid "LBU7+J"
+msgstr "Open chat to start talking"
+
+#: src\app\overview\page.tsx
+msgid "7MTfrK"
+msgstr "Most active"
+
+#: src\app\overview\page.tsx
+msgid "B7zY8l"
+msgstr "while fetching statistics"
+
+#: src\app\overview\page.tsx
+msgid "FotFMb"
+msgstr "Users count"
+
+#: src\app\overview\page.tsx
+msgid "RB4BMg"
+msgstr "Messages count"
+
+#: src\app\overview\page.tsx
+msgid "RyQQuV"
+msgstr "New user"
+
+#: src\app\overview\page.tsx
+msgid "tR6EXz"
+msgstr "Publications count"
+
+#: src\app\overview\page.tsx
+msgid "u2miNe"
+msgstr "Reviews count"
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "+sEPbf"
+msgstr "Delete {publicationName}?"
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "0c5Ily"
+msgstr "Marking publication as downloaded..."
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "4TgoWL"
+msgstr "Icon picture"
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "BnqNdr"
+msgstr "JSON copied to clipboard"
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "BWpuKl"
+msgstr "Update"
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "bYoVJ6"
+msgstr "Publication deleted successfully."
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "fhwTpA"
+msgstr "Sources"
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "G/yZLu"
+msgstr "Remove"
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "GAUX9p"
+msgstr "Source code"
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "GVcBDG"
+msgstr "Failed to copy JSON to clipboard"
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "JqtAkq"
+msgstr "Deleting publication..."
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "NCqfZg"
+msgstr "Raw JSON"
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "oA+idZ"
+msgstr "while marking publication as downloaded"
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "OKhRC6"
+msgstr "Share"
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "RiHzeS"
+msgstr "This will delete publication, it's statistics and reviews from the registry forever. Source files will stay on the server."
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "t1SGnV"
+msgstr "{publicationName}'s raw JSON"
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "tH4Eov"
+msgstr "Publication marked as downloaded."
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "V7MFd4"
+msgstr "deleting publication"
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "xPn5o3"
+msgstr "Delete {publicationName}"
+
+#: src\app\publication\[id]\_components\sections\About.tsx
+msgid "4gL3oc"
+msgstr "{version, plural, =1 {Released on} other {Last released on}} {date}"
+
+#: src\app\publication\[id]\_components\sections\About.tsx
+msgid "g5pX+a"
+msgstr "About"
+
+#: src\app\publication\[id]\_components\sections\Dependencies.tsx
+msgid "37Z5zj"
+msgstr "Dependencies"
+
+#: src\app\publication\[id]\_components\sections\PublicationInfo.tsx
+msgid "80g19N"
+msgstr "View on GitHub"
+
+#: src\app\publication\[id]\_components\sections\PublicationInfo.tsx
+msgid "J62X2m"
+msgstr "View source code"
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "4xQtw2"
+msgstr "out of 5"
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "Ak4tB0"
+msgstr "while updating a review"
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "APJ1b/"
+msgstr "Posting review..."
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "GJFQ68"
+msgstr "while voting a review"
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "k/n7Yx"
+msgstr "Review posted successfully!"
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "LfHk/3"
+msgstr "Write a review..."
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "LZZfmv"
+msgstr "Login or register to rate publications and reviews"
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "og54DB"
+msgstr "Tried to update a review that does not exist."
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "Ov8WL5"
+msgstr "Already voted!"
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "rMIZOU"
+msgstr "Tap to rate this:"
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "UnvbUU"
+msgstr "Review updated successfully!"
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "v+mTR7"
+msgstr "while posting a review"
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "W6gI4b"
+msgstr "Updating review..."
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "wEQDC6"
+msgstr "Edit"
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "wXHf3p"
+msgstr "Rate publication"
+
+#: src\app\publication\[id]\_components\sections\Shelf.tsx
+msgid "ccXLVi"
+msgstr "Category"
+
+#: src\app\publication\[id]\_components\sections\Shelf.tsx
+msgid "FZkA83"
+msgstr "{length, plural, one {Rating} other {Ratings}}"
+
+#: src\app\publication\[id]\_components\sections\Shelf.tsx
+msgid "GsBRWL"
+msgstr "Languages"
+
+#: src\app\publication\[id]\_components\sections\Shelf.tsx
+msgid "HBxXD/"
+msgstr "License"
+
+#: src\app\publication\[id]\_components\sections\Shelf.tsx
+msgid "I3b4hn"
+msgstr "Version"
+
+#: src\app\publication\[id]\_components\sections\Shelf.tsx
+msgid "OnbqrE"
+msgstr "Downloads"
+
+#: src\app\publication\[id]\_components\sections\WhatsNew.tsx
+msgid "G5/5eb"
+msgstr "What's new"
+
+#: src\app\publication\[id]\_components\sections\WhatsNew.tsx
+msgid "SoGsYr"
+msgstr "in {whatsNewVersion}"
+
+#: src\app\publication\[id]\page.tsx
+msgid "hWwv1H"
+msgstr "while fetching reviews"
+
+#: src\app\publication\[id]\update\page.tsx
+msgid "0wZB3y"
+msgstr "Publication updated successfully."
+
+#: src\app\publication\[id]\update\page.tsx
+msgid "A3bwdq"
+msgstr "What's new?"
+
+#: src\app\publication\[id]\update\page.tsx
+msgid "Gwy3SQ"
+msgstr "This is where you can update your publication."
+
+#: src\app\publication\[id]\update\page.tsx
+msgid "H7ibc9"
+msgstr "Update publication"
+
+#: src\app\publication\[id]\update\page.tsx
+msgid "Jx8h9Q"
+msgstr "Updating publication..."
+
+#: src\app\publication\[id]\update\page.tsx
+msgid "nf5qyJ"
+msgstr "Update to {newVersion}"
+
+#: src\app\publication\[id]\update\page.tsx
+msgid "Pt+j13"
+msgstr "while updating publication"
+
+#: src\app\publication\[id]\update\page.tsx
+msgid "Unpl/e"
+msgstr "while fetching publication"
+
+#: src\app\publish\page.tsx
+msgid "3cM1BU"
+msgstr "Publish software"
+
+#: src\app\publish\page.tsx
+msgid "h1Fura"
+msgstr "Publication uploaded successfully."
+
+#: src\app\publish\page.tsx
+msgid "hSpDpR"
+msgstr "Uploading publication..."
+
+#: src\app\publish\page.tsx
+msgid "Q3kzlv"
+msgstr "Create something amazing and share it!"
+
+#: src\app\publish\page.tsx
+msgid "QZ2HQg"
+msgstr "while uploading publication"
+
+#: src\app\publish\page.tsx
+msgid "syEQFE"
+msgstr "Publish"
+
+#: src\app\register\page.tsx
+msgid "1zEIJP"
+msgstr "while registering"
+
+#: src\app\register\page.tsx
+msgid "3VCFQV"
+msgstr "Register a new account"
+
+#: src\app\register\page.tsx
+msgid "3VyG1T"
+msgstr "Check your e-mail and spam folder message to submit your MineOS account"
+
+#: src\app\register\page.tsx
+msgid "5sg7KC"
+msgstr "Password"
+
+#: src\app\register\page.tsx
+msgid "AjpNgX"
+msgstr "Your account has been registered successfully."
+
+#: src\app\register\page.tsx
+#: src\app\settings\_tabs\account.tsx
+#: src\components\layout\UserDropdown.tsx
+msgid "AyGauy"
+msgstr "Login"
+
+#: src\app\register\page.tsx
+msgid "fD2A0X"
+msgstr "Enter your information below to create your account."
+
+#: src\app\register\page.tsx
+#: src\app\settings\_tabs\account.tsx
+msgid "sy+pv5"
+msgstr "Email"
+
+#: src\app\register\page.tsx
+msgid "uCk8r+"
+msgstr "Already have an account?"
+
+#: src\app\register\page.tsx
+msgid "UEg22u"
+msgstr "Registering your account..."
+
+#: src\app\settings\_components\ChangePasswordDialog.tsx
+#: src\app\settings\_tabs\account.tsx
+msgid "eAv5kZ"
+msgstr "while changing password"
+
+#: src\app\settings\_tabs\account.tsx
+msgid "2PxMTO"
+msgstr "Reset your account's password."
+
+#: src\app\settings\_tabs\account.tsx
+msgid "55vTH+"
+msgstr "User ID"
+
+#: src\app\settings\_tabs\account.tsx
+msgid "9qe6kS"
+msgstr "Registered at"
+
+#: src\app\settings\_tabs\account.tsx
+#: src\components\layout\UserDropdown.tsx
+msgid "deEeEI"
+msgstr "Register"
+
+#: src\app\settings\_tabs\account.tsx
+msgid "fTHhSB"
+msgstr "New password"
+
+#: src\app\settings\_tabs\account.tsx
+msgid "L4nXIc"
+msgstr "Change password"
+
+#: src\app\settings\_tabs\account.tsx
+msgid "NIynnB"
+msgstr "Current password"
+
+#: src\app\settings\_tabs\account.tsx
+msgid "R0I1QA"
+msgstr "To access account settings, please log in or register."
+
+#: src\app\settings\_tabs\account.tsx
+msgid "X1axT8"
+msgstr "You're not logged in"
+
+#: src\app\settings\_tabs\behaviour.tsx
+msgid "9PgpSj"
+msgstr "Avatars"
+
+#: src\app\settings\_tabs\behaviour.tsx
+msgid "HaqEm4"
+msgstr "Chat update interval"
+
+#: src\app\settings\_tabs\behaviour.tsx
+#: src\components\layout\app-sidebar.tsx
+msgid "hMzcSq"
+msgstr "Messages"
+
+#: src\app\settings\_tabs\behaviour.tsx
+msgid "HNwGRG"
+msgstr "Avatar provider"
+
+#: src\app\settings\_tabs\behaviour.tsx
+msgid "nCxC7R"
+msgstr "sec"
+
+#: src\app\settings\_tabs\behaviour.tsx
+msgid "XALdUr"
+msgstr "Control how avatars are displayed in the application."
+
+#: src\app\settings\_tabs\behaviour.tsx
+msgid "xn70cZ"
+msgstr "Dialogs update interval"
+
+#: src\app\settings\_tabs\behaviour.tsx
+msgid "yIiQTN"
+msgstr "Control how messages behave in the application."
+
+#: src\app\settings\_tabs\behaviour.tsx
+msgid "Ynyq+n"
+msgstr "Use avatar images"
+
+#: src\app\settings\_tabs\developer.tsx
+msgid "2IgL3i"
+msgstr "Host URL"
+
+#: src\app\settings\_tabs\developer.tsx
+msgid "by7qeM"
+msgstr "Control how the application connects to the server."
+
+#: src\app\settings\_tabs\developer.tsx
+msgid "mzhmvO"
+msgstr "Proxy URL"
+
+#: src\app\settings\_tabs\developer.tsx
+msgid "v8LO6P"
+msgstr "Server configuration"
+
+#: src\app\settings\page.tsx
+msgid "V0Ugkx"
+msgstr "Behaviour"
+
+#: src\app\settings\page.tsx
+msgid "yZJxVS"
+msgstr "Developer"
+
+#: src\app\user\[name]\page.tsx
+msgid "3kAElH"
+msgstr "You don't have any publications yet."
+
+#: src\app\user\[name]\page.tsx
+msgid "7/kzJw"
+msgstr "This user does not have any publications yet, or does not exist."
+
+#: src\app\user\[name]\page.tsx
+#: src\components\layout\UserDropdown.tsx
+msgid "D3idYv"
+msgstr "Settings"
+
+#: src\components\layout\app-sidebar.tsx
+msgid "9uOFF3"
+msgstr "Overview"
+
+#: src\components\layout\Header.tsx
+msgid "cyR7Kh"
+msgstr "Back"
+
+#: src\components\layout\Publications.tsx
+msgid "olk5qg"
+msgstr "by {username}"
+
+#: src\components\layout\UserDropdown.tsx
+msgid "+CwN9C"
+msgstr "System"
+
+#: src\components\layout\UserDropdown.tsx
+msgid "3cc4Ct"
+msgstr "Light"
+
+#: src\components\layout\UserDropdown.tsx
+msgid "Pe0ogR"
+msgstr "Theme"
+
+#: src\components\layout\UserDropdown.tsx
+msgid "PlBReU"
+msgstr "Log out"
+
+#: src\components\layout\UserDropdown.tsx
+msgid "tOdNiY"
+msgstr "Dark"
+
+#: src\components\layout\UserDropdown.tsx
+msgid "y1Z3or"
+msgstr "Language"
+
+#: src\hooks\use-config.ts
+msgid "jAe3qU"
+msgstr "Configuration saved successfully"
+
+#: src\hooks\use-config.ts
+msgid "LniMz6"
+msgstr "Failed to update configuration: {message}"
+
+#: src\hooks\use-handle-request-error.ts
+msgid "Esx22K"
+msgstr "Error {while}: {message}"
+
+#: src\hooks\use-handle-request-error.ts
+msgid "TD0pGC"
+msgstr "Unexpected error {while}: {error}"
+
+#: src\hooks\use-locale.ts
+msgid "Eupxjs"
+msgstr "This application uses cookies to save your language preferences."
+
+#: src\hooks\use-publication-categories.ts
+msgid "1SIWKV"
+msgstr "Libs"
+
+#: src\hooks\use-publication-categories.ts
+msgid "D9ZyLu"
+msgstr "Walls"
+
+#: src\hooks\use-publication-categories.ts
+msgid "DqD1yK"
+msgstr "Applications"
+
+#: src\hooks\use-publication-categories.ts
+msgid "gRiKLf"
+msgstr "Apps"
+
+#: src\hooks\use-publication-categories.ts
+msgid "HCfIc7"
+msgstr "Scripts"
+
+#: src\hooks\use-publication-categories.ts
+msgid "nTBqwa"
+msgstr "Libraries"
+
+#: src\hooks\use-publication-categories.ts
+msgid "tmaBkU"
+msgstr "Wallpapers"
+
+#: src\utils\use-unread-messages.ts
+msgid "Dyfxvp"
+msgstr "fetching unread messages"

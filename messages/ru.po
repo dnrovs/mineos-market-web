@@ -1,0 +1,666 @@
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: next-intl\n"
+"X-Crowdin-SourceKey: msgstr\n"
+
+#: src\app\[category]\_components\Footer.tsx
+msgid "K7AkdL"
+msgstr ""
+
+#: src\app\[category]\_components\Header.tsx
+msgid "0BUTMv"
+msgstr ""
+
+#: src\app\[category]\_components\Header.tsx
+msgid "0TZMjQ"
+msgstr ""
+
+#: src\app\[category]\_components\Header.tsx
+msgid "3xDJrg"
+msgstr ""
+
+#: src\app\[category]\_components\Header.tsx
+msgid "4Nl5H9"
+msgstr ""
+
+#: src\app\[category]\_components\Header.tsx
+msgid "dC3u7Z"
+msgstr ""
+
+#: src\app\[category]\_components\Header.tsx
+msgid "f3bAYs"
+msgstr ""
+
+#: src\app\[category]\_components\Header.tsx
+msgid "fFZTRm"
+msgstr ""
+
+#: src\app\[category]\_components\Header.tsx
+msgid "fwIt1X"
+msgstr ""
+
+#: src\app\[category]\_components\Header.tsx
+msgid "KTnoGx"
+msgstr ""
+
+#: src\app\[category]\_components\Header.tsx
+#: src\app\settings\page.tsx
+#: src\components\layout\app-sidebar.tsx
+msgid "TwyMau"
+msgstr ""
+
+#: src\app\[category]\_components\Header.tsx
+msgid "xrURkx"
+msgstr ""
+
+#: src\app\[category]\_components\Header.tsx
+msgid "xSsE6C"
+msgstr ""
+
+#: src\app\[category]\page.tsx
+msgid "2RRog1"
+msgstr ""
+
+#: src\app\[category]\page.tsx
+msgid "4YJHut"
+msgstr ""
+
+#: src\app\[category]\page.tsx
+msgid "bz4Mm+"
+msgstr ""
+
+#: src\app\[category]\page.tsx
+#: src\app\publication\[id]\page.tsx
+#: src\app\user\[name]\page.tsx
+msgid "rQFxkO"
+msgstr ""
+
+#: src\app\[category]\page.tsx
+msgid "zWr4H0"
+msgstr ""
+
+#: src\app\login\page.tsx
+msgid "rBTItO"
+msgstr ""
+
+#: src\app\messages\_components\dialogs.tsx
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "47FYwb"
+msgstr ""
+
+#: src\app\messages\_components\dialogs.tsx
+#: src\app\register\page.tsx
+msgid "JCIgkj"
+msgstr ""
+
+#: src\app\messages\_components\dialogs.tsx
+msgid "LZl1xZ"
+msgstr ""
+
+#: src\app\messages\_components\dialogs.tsx
+#: src\app\user\[name]\page.tsx
+msgid "un14bs"
+msgstr ""
+
+#: src\app\messages\[user]\page.tsx
+msgid "+QF2mn"
+msgstr ""
+
+#: src\app\messages\[user]\page.tsx
+msgid "72TiCf"
+msgstr ""
+
+#: src\app\messages\[user]\page.tsx
+msgid "8bV0li"
+msgstr ""
+
+#: src\app\messages\[user]\page.tsx
+msgid "filwqD"
+msgstr ""
+
+#: src\app\messages\[user]\page.tsx
+msgid "HyqYaU"
+msgstr ""
+
+#: src\app\messages\[user]\page.tsx
+msgid "jabB4C"
+msgstr ""
+
+#: src\app\messages\[user]\page.tsx
+msgid "sbE0zo"
+msgstr ""
+
+#: src\app\messages\[user]\page.tsx
+msgid "UvpnGV"
+msgstr ""
+
+#: src\app\messages\page.tsx
+msgid "LBU7+J"
+msgstr ""
+
+#: src\app\overview\page.tsx
+msgid "7MTfrK"
+msgstr ""
+
+#: src\app\overview\page.tsx
+msgid "B7zY8l"
+msgstr ""
+
+#: src\app\overview\page.tsx
+msgid "FotFMb"
+msgstr ""
+
+#: src\app\overview\page.tsx
+msgid "RB4BMg"
+msgstr ""
+
+#: src\app\overview\page.tsx
+msgid "RyQQuV"
+msgstr ""
+
+#: src\app\overview\page.tsx
+msgid "tR6EXz"
+msgstr ""
+
+#: src\app\overview\page.tsx
+msgid "u2miNe"
+msgstr ""
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "+sEPbf"
+msgstr ""
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "0c5Ily"
+msgstr ""
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "4TgoWL"
+msgstr ""
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "BnqNdr"
+msgstr ""
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "BWpuKl"
+msgstr ""
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "bYoVJ6"
+msgstr ""
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "fhwTpA"
+msgstr ""
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "G/yZLu"
+msgstr ""
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "GAUX9p"
+msgstr ""
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "GVcBDG"
+msgstr ""
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "JqtAkq"
+msgstr ""
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "NCqfZg"
+msgstr ""
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "oA+idZ"
+msgstr ""
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "OKhRC6"
+msgstr ""
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "RiHzeS"
+msgstr ""
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "t1SGnV"
+msgstr ""
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "tH4Eov"
+msgstr ""
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "V7MFd4"
+msgstr ""
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "xPn5o3"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\About.tsx
+msgid "4gL3oc"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\About.tsx
+msgid "g5pX+a"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\Dependencies.tsx
+msgid "37Z5zj"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\PublicationInfo.tsx
+msgid "80g19N"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\PublicationInfo.tsx
+msgid "J62X2m"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "4xQtw2"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "Ak4tB0"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "APJ1b/"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "GJFQ68"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "k/n7Yx"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "LfHk/3"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "LZZfmv"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "og54DB"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "Ov8WL5"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "rMIZOU"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "UnvbUU"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "v+mTR7"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "W6gI4b"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "wEQDC6"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "wXHf3p"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\Shelf.tsx
+msgid "ccXLVi"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\Shelf.tsx
+msgid "FZkA83"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\Shelf.tsx
+msgid "GsBRWL"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\Shelf.tsx
+msgid "HBxXD/"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\Shelf.tsx
+msgid "I3b4hn"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\Shelf.tsx
+msgid "OnbqrE"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\WhatsNew.tsx
+msgid "G5/5eb"
+msgstr ""
+
+#: src\app\publication\[id]\_components\sections\WhatsNew.tsx
+msgid "SoGsYr"
+msgstr ""
+
+#: src\app\publication\[id]\page.tsx
+msgid "hWwv1H"
+msgstr ""
+
+#: src\app\publication\[id]\update\page.tsx
+msgid "0wZB3y"
+msgstr ""
+
+#: src\app\publication\[id]\update\page.tsx
+msgid "A3bwdq"
+msgstr ""
+
+#: src\app\publication\[id]\update\page.tsx
+msgid "Gwy3SQ"
+msgstr ""
+
+#: src\app\publication\[id]\update\page.tsx
+msgid "H7ibc9"
+msgstr ""
+
+#: src\app\publication\[id]\update\page.tsx
+msgid "Jx8h9Q"
+msgstr ""
+
+#: src\app\publication\[id]\update\page.tsx
+msgid "nf5qyJ"
+msgstr ""
+
+#: src\app\publication\[id]\update\page.tsx
+msgid "Pt+j13"
+msgstr ""
+
+#: src\app\publication\[id]\update\page.tsx
+msgid "Unpl/e"
+msgstr ""
+
+#: src\app\publish\page.tsx
+msgid "3cM1BU"
+msgstr ""
+
+#: src\app\publish\page.tsx
+msgid "h1Fura"
+msgstr ""
+
+#: src\app\publish\page.tsx
+msgid "hSpDpR"
+msgstr ""
+
+#: src\app\publish\page.tsx
+msgid "Q3kzlv"
+msgstr ""
+
+#: src\app\publish\page.tsx
+msgid "QZ2HQg"
+msgstr ""
+
+#: src\app\publish\page.tsx
+msgid "syEQFE"
+msgstr ""
+
+#: src\app\register\page.tsx
+msgid "1zEIJP"
+msgstr ""
+
+#: src\app\register\page.tsx
+msgid "3VCFQV"
+msgstr ""
+
+#: src\app\register\page.tsx
+msgid "3VyG1T"
+msgstr ""
+
+#: src\app\register\page.tsx
+msgid "5sg7KC"
+msgstr ""
+
+#: src\app\register\page.tsx
+msgid "AjpNgX"
+msgstr ""
+
+#: src\app\register\page.tsx
+#: src\app\settings\_tabs\account.tsx
+#: src\components\layout\UserDropdown.tsx
+msgid "AyGauy"
+msgstr ""
+
+#: src\app\register\page.tsx
+msgid "fD2A0X"
+msgstr ""
+
+#: src\app\register\page.tsx
+#: src\app\settings\_tabs\account.tsx
+msgid "sy+pv5"
+msgstr ""
+
+#: src\app\register\page.tsx
+msgid "uCk8r+"
+msgstr ""
+
+#: src\app\register\page.tsx
+msgid "UEg22u"
+msgstr ""
+
+#: src\app\settings\_components\ChangePasswordDialog.tsx
+#: src\app\settings\_tabs\account.tsx
+msgid "eAv5kZ"
+msgstr ""
+
+#: src\app\settings\_tabs\account.tsx
+msgid "2PxMTO"
+msgstr ""
+
+#: src\app\settings\_tabs\account.tsx
+msgid "55vTH+"
+msgstr ""
+
+#: src\app\settings\_tabs\account.tsx
+msgid "9qe6kS"
+msgstr ""
+
+#: src\app\settings\_tabs\account.tsx
+#: src\components\layout\UserDropdown.tsx
+msgid "deEeEI"
+msgstr ""
+
+#: src\app\settings\_tabs\account.tsx
+msgid "fTHhSB"
+msgstr ""
+
+#: src\app\settings\_tabs\account.tsx
+msgid "L4nXIc"
+msgstr ""
+
+#: src\app\settings\_tabs\account.tsx
+msgid "NIynnB"
+msgstr ""
+
+#: src\app\settings\_tabs\account.tsx
+msgid "R0I1QA"
+msgstr ""
+
+#: src\app\settings\_tabs\account.tsx
+msgid "X1axT8"
+msgstr ""
+
+#: src\app\settings\_tabs\behaviour.tsx
+msgid "9PgpSj"
+msgstr ""
+
+#: src\app\settings\_tabs\behaviour.tsx
+msgid "HaqEm4"
+msgstr ""
+
+#: src\app\settings\_tabs\behaviour.tsx
+#: src\components\layout\app-sidebar.tsx
+msgid "hMzcSq"
+msgstr ""
+
+#: src\app\settings\_tabs\behaviour.tsx
+msgid "HNwGRG"
+msgstr ""
+
+#: src\app\settings\_tabs\behaviour.tsx
+msgid "nCxC7R"
+msgstr ""
+
+#: src\app\settings\_tabs\behaviour.tsx
+msgid "XALdUr"
+msgstr ""
+
+#: src\app\settings\_tabs\behaviour.tsx
+msgid "xn70cZ"
+msgstr ""
+
+#: src\app\settings\_tabs\behaviour.tsx
+msgid "yIiQTN"
+msgstr ""
+
+#: src\app\settings\_tabs\behaviour.tsx
+msgid "Ynyq+n"
+msgstr ""
+
+#: src\app\settings\_tabs\developer.tsx
+msgid "2IgL3i"
+msgstr ""
+
+#: src\app\settings\_tabs\developer.tsx
+msgid "by7qeM"
+msgstr ""
+
+#: src\app\settings\_tabs\developer.tsx
+msgid "mzhmvO"
+msgstr ""
+
+#: src\app\settings\_tabs\developer.tsx
+msgid "v8LO6P"
+msgstr ""
+
+#: src\app\settings\page.tsx
+msgid "V0Ugkx"
+msgstr ""
+
+#: src\app\settings\page.tsx
+msgid "yZJxVS"
+msgstr ""
+
+#: src\app\user\[name]\page.tsx
+msgid "3kAElH"
+msgstr ""
+
+#: src\app\user\[name]\page.tsx
+msgid "7/kzJw"
+msgstr ""
+
+#: src\app\user\[name]\page.tsx
+#: src\components\layout\UserDropdown.tsx
+msgid "D3idYv"
+msgstr ""
+
+#: src\components\layout\app-sidebar.tsx
+msgid "9uOFF3"
+msgstr ""
+
+#: src\components\layout\Header.tsx
+msgid "cyR7Kh"
+msgstr ""
+
+#: src\components\layout\Publications.tsx
+msgid "olk5qg"
+msgstr ""
+
+#: src\components\layout\UserDropdown.tsx
+msgid "+CwN9C"
+msgstr ""
+
+#: src\components\layout\UserDropdown.tsx
+msgid "3cc4Ct"
+msgstr ""
+
+#: src\components\layout\UserDropdown.tsx
+msgid "Pe0ogR"
+msgstr ""
+
+#: src\components\layout\UserDropdown.tsx
+msgid "PlBReU"
+msgstr ""
+
+#: src\components\layout\UserDropdown.tsx
+msgid "tOdNiY"
+msgstr ""
+
+#: src\components\layout\UserDropdown.tsx
+msgid "y1Z3or"
+msgstr ""
+
+#: src\hooks\use-config.ts
+msgid "jAe3qU"
+msgstr ""
+
+#: src\hooks\use-config.ts
+msgid "LniMz6"
+msgstr ""
+
+#: src\hooks\use-handle-request-error.ts
+msgid "Esx22K"
+msgstr ""
+
+#: src\hooks\use-handle-request-error.ts
+msgid "TD0pGC"
+msgstr ""
+
+#: src\hooks\use-locale.ts
+msgid "Eupxjs"
+msgstr ""
+
+#: src\hooks\use-publication-categories.ts
+msgid "1SIWKV"
+msgstr ""
+
+#: src\hooks\use-publication-categories.ts
+msgid "D9ZyLu"
+msgstr ""
+
+#: src\hooks\use-publication-categories.ts
+msgid "DqD1yK"
+msgstr ""
+
+#: src\hooks\use-publication-categories.ts
+msgid "gRiKLf"
+msgstr ""
+
+#: src\hooks\use-publication-categories.ts
+msgid "HCfIc7"
+msgstr ""
+
+#: src\hooks\use-publication-categories.ts
+msgid "nTBqwa"
+msgstr ""
+
+#: src\hooks\use-publication-categories.ts
+msgid "tmaBkU"
+msgstr ""
+
+#: src\utils\use-unread-messages.ts
+msgid "Dyfxvp"
+msgstr ""
