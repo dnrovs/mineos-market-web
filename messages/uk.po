@@ -662,5 +662,5 @@ msgid "tmaBkU"
 msgstr "Шпалери"
 
 #: src\utils\use-unread-messages.ts
-msgid "Dyfxvp"
-msgstr "отримання непрочитаних повідомлень"
+msgid "QmMwgJ"
+msgstr ""

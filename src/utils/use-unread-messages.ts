@@ -4,10 +4,12 @@ import { useEffect, useState } from 'react'
 import { useMarket } from '@/context/MarketProvider'
 import handleFetchError from '@/hooks/use-handle-request-error'
 import { useExtracted } from 'next-intl'
+import useHandleRequestError from '@/hooks/use-handle-request-error'
 
 export function useUnreadMessages() {
     const { user, client } = useMarket()
     const t = useExtracted()
+    const handleRequestError = useHandleRequestError()
     const [unreadMessages, setUnreadMessages] = useState(0)
 
     useEffect(() => {
@@ -25,7 +27,7 @@ export function useUnreadMessages() {
                 setUnreadMessages(unread)
             })
             .catch((error) =>
-                handleFetchError(error, t('fetching unread messages'))
+                handleRequestError(error, t('while fetching unread messages'))
             )
     }, [client.messages, t, user])
 

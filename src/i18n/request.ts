@@ -5,7 +5,7 @@ import { parse, pick } from 'accept-language-parser'
 
 import { locales } from '@/lib/constants'
 
-const codes = locales.map((l) => l.code)
+const codes: string[] = locales.map((l) => l.code)
 
 const validate = (locale?: string) =>
     locale && codes.includes(locale) ? locale : undefined
