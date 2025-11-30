@@ -89,6 +89,7 @@ msgstr "під час входу в систему"
 #: src\app\messages\_components\dialogs.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+#: src\components\forms\publish-form.tsx
 msgid "47FYwb"
 msgstr "Скасувати"
 
@@ -180,7 +181,11 @@ msgstr "Позначення публікації як завантаженої.
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "4TgoWL"
-msgstr "Іконка"
+msgstr "Зображення піктограми"
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "5/yFl5"
+msgstr "Позначити завантаженим"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "BnqNdr"
@@ -193,6 +198,10 @@ msgstr "Оновити"
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "bYoVJ6"
 msgstr "Публікацію успішно видалено."
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "D3ATEG"
+msgstr "під час видалення публікації"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "fhwTpA"
@@ -216,7 +225,7 @@ msgstr "Видалення публікації..."
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "NCqfZg"
-msgstr "Сирий JSON"
+msgstr "Вихідний JSON"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "oA+idZ"
@@ -239,10 +248,6 @@ msgid "tH4Eov"
 msgstr "Публікацію позначено як завантажену."
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "V7MFd4"
-msgstr "видаленні публікації"
-
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "xPn5o3"
 msgstr "Видалити {publicationName}"
 
@@ -255,8 +260,13 @@ msgid "g5pX+a"
 msgstr "Про публікацію"
 
 #: src\app\publication\[id]\_components\sections\Dependencies.tsx
+#: src\components\forms\publish-form.tsx
 msgid "37Z5zj"
 msgstr "Залежності"
+
+#: src\app\publication\[id]\_components\sections\PublicationInfo.tsx
+msgid "+zr0gu"
+msgstr "від <link>{username}</link>"
 
 #: src\app\publication\[id]\_components\sections\PublicationInfo.tsx
 msgid "80g19N"
@@ -327,6 +337,7 @@ msgid "wXHf3p"
 msgstr "Оцінити публікацію"
 
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
+#: src\components\forms\publish-form.tsx
 msgid "ccXLVi"
 msgstr "Категорія"
 
@@ -339,6 +350,7 @@ msgid "GsBRWL"
 msgstr "Мови"
 
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
+#: src\components\forms\publish-form.tsx
 msgid "HBxXD/"
 msgstr "Ліцензія"
 
@@ -369,6 +381,10 @@ msgstr "Публікацію успішно оновлено."
 #: src\app\publication\[id]\update\page.tsx
 msgid "A3bwdq"
 msgstr "Що нового?"
+
+#: src\app\publication\[id]\update\page.tsx
+msgid "AyzK+a"
+msgstr "У цьому оновленні я додав(ла) та виправив(ла)..."
 
 #: src\app\publication\[id]\update\page.tsx
 msgid "Gwy3SQ"
@@ -577,6 +593,98 @@ msgstr "У цього користувача поки немає публіка�
 msgid "D3idYv"
 msgstr "Налаштування"
 
+#: src\components\forms\publish-form.tsx
+msgid "3jvNiy"
+msgstr "Додати локалізацію"
+
+#: src\components\forms\publish-form.tsx
+msgid "4Y6BjC"
+msgstr "Попередні перегляди"
+
+#: src\components\forms\publish-form.tsx
+msgid "89I2Gm"
+msgstr "Відносний шлях у теці вашої публікації"
+
+#: src\components\forms\publish-form.tsx
+msgid "aBwYSL"
+msgstr "Додати залежність"
+
+#: src\components\forms\publish-form.tsx
+msgid "cH9Dpx"
+msgstr "Додати попередній перегляд"
+
+#: src\components\forms\publish-form.tsx
+msgid "Df3ZE+"
+msgstr "URL основного файла"
+
+#: src\components\forms\publish-form.tsx
+msgid "DG1LJk"
+msgstr "Локалізації"
+
+#: src\components\forms\publish-form.tsx
+msgid "dL4cf8"
+msgstr "Існуюча публікація"
+
+#: src\components\forms\publish-form.tsx
+msgid "DopoLl"
+msgstr "Шлях до основного файла"
+
+#: src\components\forms\publish-form.tsx
+msgid "F6X2cn"
+msgstr "Цю залежність вже додано."
+
+#: src\components\forms\publish-form.tsx
+msgid "isWXGr"
+msgstr "Редагувати залежність"
+
+#: src\components\forms\publish-form.tsx
+msgid "JLUbbY"
+msgstr "Назва публікації"
+
+#: src\components\forms\publish-form.tsx
+msgid "L1Ia9+"
+msgstr "Моя публікація"
+
+#: src\components\forms\publish-form.tsx
+msgid "P/kAt/"
+msgstr "Використовувати відносний шлях"
+
+#: src\components\forms\publish-form.tsx
+msgid "plkU58"
+msgstr "Публікації, від якої ви хочете залежати, не існує."
+
+#: src\components\forms\publish-form.tsx
+msgid "Q8U7HC"
+msgstr "Файл через URL"
+
+#: src\components\forms\publish-form.tsx
+msgid "uGHBTb"
+msgstr "Початковий URL"
+
+#: src\components\forms\publish-form.tsx
+msgid "vcO6WE"
+msgstr "URL піктограми"
+
+#: src\components\forms\publish-form.tsx
+msgid "WIrFQu"
+msgstr "під час перевірки публікації"
+
+#: src\components\forms\publish-form.tsx
+msgid "wPT4qy"
+msgstr "Абсолютний шлях від кореневої теки файлової системи"
+
+#: src\components\forms\publish-form.tsx
+msgid "X0ha1a"
+msgstr "Зберегти зміни"
+
+#: src\components\forms\publish-form.tsx
+msgid "xRBaOl"
+msgstr "Шлях встановлення"
+
+#: src\components\forms\publish-form.tsx
+msgid "zhSlKP"
+msgstr "Це програмне забезпечення робить..."
+
 #: src\components\layout\app-sidebar.tsx
 msgid "9uOFF3"
 msgstr "Огляд"
@@ -587,7 +695,7 @@ msgstr "Назад"
 
 #: src\components\layout\Publications.tsx
 msgid "olk5qg"
-msgstr "від {username}"
+msgstr "{username}"
 
 #: src\components\layout\UserDropdown.tsx
 msgid "+CwN9C"
@@ -643,11 +751,11 @@ msgstr "Стіни"
 
 #: src\hooks\use-publication-categories.ts
 msgid "DqD1yK"
-msgstr "Програми"
+msgstr "Застосунки"
 
 #: src\hooks\use-publication-categories.ts
 msgid "gRiKLf"
-msgstr "Програми"
+msgstr "Додатки"
 
 #: src\hooks\use-publication-categories.ts
 msgid "HCfIc7"

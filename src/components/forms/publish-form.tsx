@@ -88,6 +88,8 @@ interface addDependencyDialogProps {
 }
 
 function AddDependencyDialog({ children, ...props }: addDependencyDialogProps) {
+    const t = useExtracted()
+
     const [open, setOpen] = React.useState(false)
 
     return (
@@ -97,8 +99,8 @@ function AddDependencyDialog({ children, ...props }: addDependencyDialogProps) {
                 <DialogHeader>
                     <DialogTitle>
                         {props.index !== undefined
-                            ? 'Edit dependency'
-                            : 'Add dependency'}
+                            ? t('Edit dependency')
+                            : t('Add dependency')}
                     </DialogTitle>
                 </DialogHeader>
                 <AddDependencyForm {...props} close={() => setOpen(false)} />
@@ -132,7 +134,7 @@ function AddDependencyForm({
             JSON.stringify(dependenciesFieldArray.fields) ===
             JSON.stringify(fields)
         ) {
-            return toast.error('This dependency is already added.')
+            return toast.error(t('This dependency is already added.'))
         }
 
         if (fields.type === 'publication') {
@@ -142,7 +144,7 @@ function AddDependencyForm({
                     throw new Error(
                         handleRequestError(
                             error,
-                            'while checking publication',
+                            t('while checking publication'),
                             true
                         )
                     )
@@ -156,7 +158,9 @@ function AddDependencyForm({
 
                     if (!publication)
                         throw new Error(
-                            'Publication you want to depend on does not exist.'
+                            t(
+                                'Publication you want to depend on does not exist.'
+                            )
                         )
 
                     const data = {
@@ -218,10 +222,10 @@ function AddDependencyForm({
                             </SelectTrigger>
                             <SelectContent>
                                 <SelectItem value={'file'}>
-                                    File via URL
+                                    {t('File via URL')}
                                 </SelectItem>
                                 <SelectItem value={'publication'}>
-                                    Existing publication
+                                    {t('Existing publication')}
                                 </SelectItem>
                             </SelectContent>
                         </Select>
@@ -238,7 +242,7 @@ function AddDependencyForm({
                         control={addDependencyForm.control}
                         render={({ field }) => (
                             <Field>
-                                <FieldLabel>Source URL</FieldLabel>
+                                <FieldLabel>{t('Source URL')}</FieldLabel>
                                 <Input
                                     {...field}
                                     autoComplete={'off'}
@@ -256,11 +260,17 @@ function AddDependencyForm({
                         render={({ field }) => (
                             <Field>
                                 <FieldContent>
-                                    <FieldLabel>Installation path</FieldLabel>
+                                    <FieldLabel>
+                                        {t('Installation path')}
+                                    </FieldLabel>
                                     <FieldDescription>
                                         {isRelativePath
-                                            ? "Relative path in your publication's folder"
-                                            : 'Absolute path from the filesystem root folder'}
+                                            ? t(
+                                                  "Relative path in your publication's folder"
+                                              )
+                                            : t(
+                                                  'Absolute path from the filesystem root folder'
+                                              )}
                                     </FieldDescription>
                                 </FieldContent>
 
@@ -283,7 +293,9 @@ function AddDependencyForm({
                             control={addDependencyForm.control}
                             render={({ field }) => (
                                 <Field orientation={'horizontal'}>
-                                    <FieldLabel>Use relative path</FieldLabel>
+                                    <FieldLabel>
+                                        {t('Use relative path')}
+                                    </FieldLabel>
                                     <Switch
                                         name={field.name}
                                         checked={field.value}
@@ -302,7 +314,7 @@ function AddDependencyForm({
                     control={addDependencyForm.control}
                     render={({ field }) => (
                         <Field>
-                            <FieldLabel>Publication name</FieldLabel>
+                            <FieldLabel>{t('Publication name')}</FieldLabel>
                             <Input
                                 {...field}
                                 autoComplete={'off'}
@@ -315,10 +327,12 @@ function AddDependencyForm({
 
             <DialogFooter>
                 <Button variant={'secondary'} onClick={close}>
-                    Cancel
+                    {t('Cancel')}
                 </Button>
                 <Button onClick={addDependencyForm.handleSubmit(addDependency)}>
-                    {index !== undefined ? 'Save changes' : 'Add dependency'}
+                    {index !== undefined
+                        ? t('Save changes')
+                        : t('Add dependency')}
                 </Button>
             </DialogFooter>
         </FieldSet>
@@ -353,6 +367,8 @@ function PackagedFields({
 }: {
     form: UseFormReturn<PublishFormValues & FieldValues>
 }) {
+    const t = useExtracted()
+
     const localizationsFieldArray = useFieldArray({
         control: form.control,
         name: 'localizations'
@@ -365,7 +381,9 @@ function PackagedFields({
                 control={form.control}
                 render={({ field, fieldState }) => (
                     <Field>
-                        <FieldLabel htmlFor={'iconUrl'}>Icon URL</FieldLabel>
+                        <FieldLabel htmlFor={'iconUrl'}>
+                            {t('Icon URL')}
+                        </FieldLabel>
                         <Input
                             id={'iconUrl'}
                             type={'url'}
@@ -383,7 +401,9 @@ function PackagedFields({
             />
 
             <Field>
-                <FieldLabel htmlFor="localizations">Localizations</FieldLabel>
+                <FieldLabel htmlFor="localizations">
+                    {t('Localizations')}
+                </FieldLabel>
                 <div className="flex flex-col gap-2">
                     {localizationsFieldArray.fields.map((field, index) => (
                         <div key={field.id} className="flex items-center gap-2">
@@ -421,7 +441,7 @@ function PackagedFields({
                         }
                     >
                         <Plus />
-                        Add localization
+                        {t('Add localization')}
                     </Button>
                 </div>
             </Field>
@@ -434,6 +454,8 @@ function NotPackagedFields({
 }: {
     form: UseFormReturn<PublishFormValues & FieldValues>
 }) {
+    const t = useExtracted()
+
     return (
         <Controller
             name={'mainFilePath'}
@@ -441,7 +463,7 @@ function NotPackagedFields({
             render={({ field, fieldState }) => (
                 <Field>
                     <FieldLabel htmlFor={'mainFilePath'}>
-                        Main file path
+                        {t('Main file path')}
                     </FieldLabel>
                     <Input
                         id={'mainFilePath'}
@@ -510,6 +532,8 @@ export interface PublicationFieldsProps {
 }
 
 export default function PublishFormFields({ form }: PublicationFieldsProps) {
+    const t = useExtracted()
+
     const { control, register, watch } = form
 
     const previewsFieldArray = useFieldArray({
@@ -533,7 +557,9 @@ export default function PublishFormFields({ form }: PublicationFieldsProps) {
                 control={control}
                 render={({ field, fieldState }) => (
                     <Field>
-                        <FieldLabel htmlFor="category">Category</FieldLabel>
+                        <FieldLabel htmlFor="category">
+                            {t('Category')}
+                        </FieldLabel>
                         <Select
                             value={String(field.value)}
                             onValueChange={field.onChange}
@@ -564,11 +590,13 @@ export default function PublishFormFields({ form }: PublicationFieldsProps) {
                 control={control}
                 render={({ field, fieldState }) => (
                     <Field>
-                        <FieldLabel htmlFor="name">Publication name</FieldLabel>
+                        <FieldLabel htmlFor="name">
+                            {t('Publication name')}
+                        </FieldLabel>
                         <Input
                             id="name"
                             type="text"
-                            placeholder="My publication"
+                            placeholder={t('My publication')}
                             required
                             {...field}
                         />
@@ -588,7 +616,7 @@ export default function PublishFormFields({ form }: PublicationFieldsProps) {
                             Description
                         </FieldLabel>
                         <Textarea
-                            placeholder="This software does..."
+                            placeholder={t('This software does...')}
                             {...field}
                         />
                         {fieldState.error && (
@@ -603,7 +631,9 @@ export default function PublishFormFields({ form }: PublicationFieldsProps) {
                 control={control}
                 render={({ field, fieldState }) => (
                     <Field>
-                        <FieldLabel htmlFor="license">License</FieldLabel>
+                        <FieldLabel htmlFor="license">
+                            {t('License')}
+                        </FieldLabel>
                         <Select
                             name={field.name}
                             value={String(field.value)}
@@ -636,7 +666,7 @@ export default function PublishFormFields({ form }: PublicationFieldsProps) {
                 render={({ field, fieldState }) => (
                     <Field>
                         <FieldLabel htmlFor="mainFileUrl">
-                            Main file URL
+                            {t('Main file URL')}
                         </FieldLabel>
                         <Input
                             id="mainFileUrl"
@@ -659,7 +689,7 @@ export default function PublishFormFields({ form }: PublicationFieldsProps) {
             )}
 
             <Field>
-                <FieldLabel>Previews</FieldLabel>
+                <FieldLabel>{t('Previews')}</FieldLabel>
                 <div className="flex flex-col gap-2">
                     {previewsFieldArray.fields.map((field, index) => (
                         <div key={field.id} className="flex items-center gap-2">
@@ -691,12 +721,12 @@ export default function PublishFormFields({ form }: PublicationFieldsProps) {
                         onClick={() => previewsFieldArray.append({ value: '' })}
                     >
                         <Plus />
-                        Add preview
+                        {t('Add preview')}
                     </Button>
                 </div>
             </Field>
             <Field>
-                <FieldLabel>Dependencies</FieldLabel>
+                <FieldLabel>{t('Dependencies')}</FieldLabel>
 
                 <div className="flex flex-col gap-2">
                     {dependenciesFieldArray.fields.map((field, index) => (
@@ -751,7 +781,7 @@ export default function PublishFormFields({ form }: PublicationFieldsProps) {
                     >
                         <Button type="button" variant="outline">
                             <Plus />
-                            Add dependency
+                            {t('Add dependency')}
                         </Button>
                     </AddDependencyDialog>
                 </div>

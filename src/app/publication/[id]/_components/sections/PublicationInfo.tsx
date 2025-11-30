@@ -52,15 +52,19 @@ export default function PublicationInfo({ publication }: PublicationInfoProps) {
                         {publication?.publicationName}
                     </span>
                     <span className={'text-muted-foreground w-full truncate'}>
-                        by{' '}
-                        <Link
-                            className={
-                                'text-foreground underline-offset-2 hover:underline'
-                            }
-                            href={`/user/${publication?.userName}`}
-                        >
-                            {publication?.userName}
-                        </Link>
+                        {t.rich('by <link>{username}</link>', {
+                            username: publication.userName,
+                            link: (chunks) => (
+                                <Link
+                                    className={
+                                        'text-foreground underline-offset-2 hover:underline'
+                                    }
+                                    href={`/user/${publication?.userName}`}
+                                >
+                                    {chunks}
+                                </Link>
+                            )
+                        })}
                     </span>
                 </div>
                 <div className={'flex gap-2'}>

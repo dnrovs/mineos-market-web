@@ -173,9 +173,9 @@ export default function UpdatePublication() {
                                             </FieldLabel>
                                             <Textarea
                                                 {...field}
-                                                placeholder={
+                                                placeholder={t(
                                                     'In this update, i added and fixed...'
-                                                }
+                                                )}
                                             />
                                             {fieldState.error && (
                                                 <FieldError>

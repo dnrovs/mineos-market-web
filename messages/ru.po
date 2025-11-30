@@ -89,6 +89,7 @@ msgstr "при входе в систему"
 #: src\app\messages\_components\dialogs.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+#: src\components\forms\publish-form.tsx
 msgid "47FYwb"
 msgstr "Отмена"
 
@@ -183,6 +184,10 @@ msgid "4TgoWL"
 msgstr "Иконка"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "5/yFl5"
+msgstr "Отметить загруженным"
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "BnqNdr"
 msgstr "JSON скопирован в буфер обмена"
 
@@ -193,6 +198,10 @@ msgstr "Обновить"
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "bYoVJ6"
 msgstr "Публикация успешно удалена."
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "D3ATEG"
+msgstr "при удалении публикации"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "fhwTpA"
@@ -239,10 +248,6 @@ msgid "tH4Eov"
 msgstr "Публикация отмечена как загруженная."
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "V7MFd4"
-msgstr "удалении публикации"
-
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "xPn5o3"
 msgstr "Удалить {publicationName}"
 
@@ -255,8 +260,13 @@ msgid "g5pX+a"
 msgstr "О публикации"
 
 #: src\app\publication\[id]\_components\sections\Dependencies.tsx
+#: src\components\forms\publish-form.tsx
 msgid "37Z5zj"
 msgstr "Зависимости"
+
+#: src\app\publication\[id]\_components\sections\PublicationInfo.tsx
+msgid "+zr0gu"
+msgstr "от <link>{username}</link>"
 
 #: src\app\publication\[id]\_components\sections\PublicationInfo.tsx
 msgid "80g19N"
@@ -327,6 +337,7 @@ msgid "wXHf3p"
 msgstr "Оценить публикацию"
 
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
+#: src\components\forms\publish-form.tsx
 msgid "ccXLVi"
 msgstr "Категория"
 
@@ -339,6 +350,7 @@ msgid "GsBRWL"
 msgstr "Языки"
 
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
+#: src\components\forms\publish-form.tsx
 msgid "HBxXD/"
 msgstr "Лицензия"
 
@@ -369,6 +381,10 @@ msgstr "Публикация успешно обновлена."
 #: src\app\publication\[id]\update\page.tsx
 msgid "A3bwdq"
 msgstr "Что нового?"
+
+#: src\app\publication\[id]\update\page.tsx
+msgid "AyzK+a"
+msgstr "В этом обновлении я добавил(а) и исправил(а)..."
 
 #: src\app\publication\[id]\update\page.tsx
 msgid "Gwy3SQ"
@@ -577,6 +593,98 @@ msgstr "У этого пользователя пока нет публикац�
 msgid "D3idYv"
 msgstr "Настройки"
 
+#: src\components\forms\publish-form.tsx
+msgid "3jvNiy"
+msgstr "Добавить локализацию"
+
+#: src\components\forms\publish-form.tsx
+msgid "4Y6BjC"
+msgstr "Предпросмотры"
+
+#: src\components\forms\publish-form.tsx
+msgid "89I2Gm"
+msgstr "Относительный путь в папке вашей публикации"
+
+#: src\components\forms\publish-form.tsx
+msgid "aBwYSL"
+msgstr "Добавить зависимость"
+
+#: src\components\forms\publish-form.tsx
+msgid "cH9Dpx"
+msgstr "Добавить предпросмотр"
+
+#: src\components\forms\publish-form.tsx
+msgid "Df3ZE+"
+msgstr "URL основного файла"
+
+#: src\components\forms\publish-form.tsx
+msgid "DG1LJk"
+msgstr "Локализации"
+
+#: src\components\forms\publish-form.tsx
+msgid "dL4cf8"
+msgstr "Существующая публикация"
+
+#: src\components\forms\publish-form.tsx
+msgid "DopoLl"
+msgstr "Путь к основному файлу"
+
+#: src\components\forms\publish-form.tsx
+msgid "F6X2cn"
+msgstr "Эта зависимость уже добавлена."
+
+#: src\components\forms\publish-form.tsx
+msgid "isWXGr"
+msgstr "Редактировать зависимость"
+
+#: src\components\forms\publish-form.tsx
+msgid "JLUbbY"
+msgstr "Название публикации"
+
+#: src\components\forms\publish-form.tsx
+msgid "L1Ia9+"
+msgstr "Моя публикация"
+
+#: src\components\forms\publish-form.tsx
+msgid "P/kAt/"
+msgstr "Использовать относительный путь"
+
+#: src\components\forms\publish-form.tsx
+msgid "plkU58"
+msgstr "Публикация, от которой вы хотите зависеть, не существует."
+
+#: src\components\forms\publish-form.tsx
+msgid "Q8U7HC"
+msgstr "Файл по URL"
+
+#: src\components\forms\publish-form.tsx
+msgid "uGHBTb"
+msgstr "Исходный URL"
+
+#: src\components\forms\publish-form.tsx
+msgid "vcO6WE"
+msgstr "URL иконки"
+
+#: src\components\forms\publish-form.tsx
+msgid "WIrFQu"
+msgstr "при проверке публикации"
+
+#: src\components\forms\publish-form.tsx
+msgid "wPT4qy"
+msgstr "Абсолютный путь от корневой папки файловой системы"
+
+#: src\components\forms\publish-form.tsx
+msgid "X0ha1a"
+msgstr "Сохранить изменения"
+
+#: src\components\forms\publish-form.tsx
+msgid "xRBaOl"
+msgstr "Путь установки"
+
+#: src\components\forms\publish-form.tsx
+msgid "zhSlKP"
+msgstr "Это программное обеспечение делает..."
+
 #: src\components\layout\app-sidebar.tsx
 msgid "9uOFF3"
 msgstr "Обзор"
@@ -639,7 +747,7 @@ msgstr "Библиотеки"
 
 #: src\hooks\use-publication-categories.ts
 msgid "D9ZyLu"
-msgstr "Стены"
+msgstr "Обои"
 
 #: src\hooks\use-publication-categories.ts
 msgid "DqD1yK"

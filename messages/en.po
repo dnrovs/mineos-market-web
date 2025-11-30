@@ -89,6 +89,7 @@ msgstr "while logging in"
 #: src\app\messages\_components\dialogs.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+#: src\components\forms\publish-form.tsx
 msgid "47FYwb"
 msgstr "Cancel"
 
@@ -183,6 +184,10 @@ msgid "4TgoWL"
 msgstr "Icon picture"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "5/yFl5"
+msgstr "Mark downloaded"
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "BnqNdr"
 msgstr "JSON copied to clipboard"
 
@@ -193,6 +198,10 @@ msgstr "Update"
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "bYoVJ6"
 msgstr "Publication deleted successfully."
+
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "D3ATEG"
+msgstr "while deleting publication"
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "fhwTpA"
@@ -239,10 +248,6 @@ msgid "tH4Eov"
 msgstr "Publication marked as downloaded."
 
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "V7MFd4"
-msgstr "deleting publication"
-
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "xPn5o3"
 msgstr "Delete {publicationName}"
 
@@ -255,8 +260,13 @@ msgid "g5pX+a"
 msgstr "About"
 
 #: src\app\publication\[id]\_components\sections\Dependencies.tsx
+#: src\components\forms\publish-form.tsx
 msgid "37Z5zj"
 msgstr "Dependencies"
+
+#: src\app\publication\[id]\_components\sections\PublicationInfo.tsx
+msgid "+zr0gu"
+msgstr "by <link>{username}</link>"
 
 #: src\app\publication\[id]\_components\sections\PublicationInfo.tsx
 msgid "80g19N"
@@ -327,6 +337,7 @@ msgid "wXHf3p"
 msgstr "Rate publication"
 
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
+#: src\components\forms\publish-form.tsx
 msgid "ccXLVi"
 msgstr "Category"
 
@@ -339,6 +350,7 @@ msgid "GsBRWL"
 msgstr "Languages"
 
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
+#: src\components\forms\publish-form.tsx
 msgid "HBxXD/"
 msgstr "License"
 
@@ -369,6 +381,10 @@ msgstr "Publication updated successfully."
 #: src\app\publication\[id]\update\page.tsx
 msgid "A3bwdq"
 msgstr "What's new?"
+
+#: src\app\publication\[id]\update\page.tsx
+msgid "AyzK+a"
+msgstr "In this update, i added and fixed..."
 
 #: src\app\publication\[id]\update\page.tsx
 msgid "Gwy3SQ"
@@ -576,6 +592,98 @@ msgstr "This user does not have any publications yet, or does not exist."
 #: src\components\layout\UserDropdown.tsx
 msgid "D3idYv"
 msgstr "Settings"
+
+#: src\components\forms\publish-form.tsx
+msgid "3jvNiy"
+msgstr "Add localization"
+
+#: src\components\forms\publish-form.tsx
+msgid "4Y6BjC"
+msgstr "Previews"
+
+#: src\components\forms\publish-form.tsx
+msgid "89I2Gm"
+msgstr "Relative path in your publication's folder"
+
+#: src\components\forms\publish-form.tsx
+msgid "aBwYSL"
+msgstr "Add dependency"
+
+#: src\components\forms\publish-form.tsx
+msgid "cH9Dpx"
+msgstr "Add preview"
+
+#: src\components\forms\publish-form.tsx
+msgid "Df3ZE+"
+msgstr "Main file URL"
+
+#: src\components\forms\publish-form.tsx
+msgid "DG1LJk"
+msgstr "Localizations"
+
+#: src\components\forms\publish-form.tsx
+msgid "dL4cf8"
+msgstr "Existing publication"
+
+#: src\components\forms\publish-form.tsx
+msgid "DopoLl"
+msgstr "Main file path"
+
+#: src\components\forms\publish-form.tsx
+msgid "F6X2cn"
+msgstr "This dependency is already added."
+
+#: src\components\forms\publish-form.tsx
+msgid "isWXGr"
+msgstr "Edit dependency"
+
+#: src\components\forms\publish-form.tsx
+msgid "JLUbbY"
+msgstr "Publication name"
+
+#: src\components\forms\publish-form.tsx
+msgid "L1Ia9+"
+msgstr "My publication"
+
+#: src\components\forms\publish-form.tsx
+msgid "P/kAt/"
+msgstr "Use relative path"
+
+#: src\components\forms\publish-form.tsx
+msgid "plkU58"
+msgstr "Publication you want to depend on does not exist."
+
+#: src\components\forms\publish-form.tsx
+msgid "Q8U7HC"
+msgstr "File via URL"
+
+#: src\components\forms\publish-form.tsx
+msgid "uGHBTb"
+msgstr "Source URL"
+
+#: src\components\forms\publish-form.tsx
+msgid "vcO6WE"
+msgstr "Icon URL"
+
+#: src\components\forms\publish-form.tsx
+msgid "WIrFQu"
+msgstr "while checking publication"
+
+#: src\components\forms\publish-form.tsx
+msgid "wPT4qy"
+msgstr "Absolute path from the filesystem root folder"
+
+#: src\components\forms\publish-form.tsx
+msgid "X0ha1a"
+msgstr "Save changes"
+
+#: src\components\forms\publish-form.tsx
+msgid "xRBaOl"
+msgstr "Installation path"
+
+#: src\components\forms\publish-form.tsx
+msgid "zhSlKP"
+msgstr "This software does..."
 
 #: src\components\layout\app-sidebar.tsx
 msgid "9uOFF3"

@@ -255,7 +255,7 @@ export default function OptionsDropdownTrigger({
                 {user && (
                     <DropdownMenuItem onClick={markDownloaded}>
                         <Download />
-                        Mark downloaded
+                        {t('Mark downloaded')}
                     </DropdownMenuItem>
                 )}
 
