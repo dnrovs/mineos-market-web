@@ -59,9 +59,9 @@ export default function Page() {
         setCurrentPage(1)
     }, [showPerPage])
 
-    useEffect(() => {
-        if (!category) notFound()
+    if (!category) notFound()
 
+    useEffect(() => {
         setLoading(true)
 
         client.publications
