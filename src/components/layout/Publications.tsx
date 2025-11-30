@@ -21,7 +21,7 @@ function Publication({ publication }: PublicationProps) {
         <Link
             key={publication.fileId}
             className={clsx(
-                'bg-muted/50 focus-visible:border-ring focus-visible:ring-ring/50 flex cursor-pointer overflow-hidden rounded-xl focus-visible:ring-[3px] lg:rounded-lg',
+                'bg-muted/50 focus-visible:border-ring focus-visible:ring-ring/50 flex cursor-pointer overflow-hidden rounded-xl focus-visible:ring-[3px]',
                 isMobile ? 'max-h-fit w-full flex-col' : 'min-w-80'
             )}
             href={`/publication/${publication.fileId}`}
