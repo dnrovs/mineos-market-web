@@ -27,7 +27,7 @@ function BottomNavigationButton({
     return (
         <Toggle
             className={
-                'text-sidebar-foreground data-[state=on]:text-background data-[state=on]:bg-foreground data-[state=on]:hover:bg-foreground/90 hover:bg-background/25 h-17 flex-1 flex-col rounded-none p-3 transition hover:text-inherit sm:flex-row'
+                'text-sidebar-foreground data-[state=on]:text-background data-[state=on]:bg-foreground data-[state=on]:hover:bg-foreground/90 hover:bg-background/25 h-17 flex-1 flex-col rounded-none p-2 transition hover:text-inherit sm:flex-row'
             }
             pressed={currentCategory === href}
             asChild
@@ -58,7 +58,9 @@ export default function BottomNavigation() {
                         href={category.url}
                     >
                         <category.icon className={'size-5'} />
-                        <span className={'text-xs'}>{category.shortName}</span>
+                        <span className={'w-full truncate text-center text-xs'}>
+                            {category.shortName}
+                        </span>
                     </BottomNavigationButton>
                 ))}
             </nav>
