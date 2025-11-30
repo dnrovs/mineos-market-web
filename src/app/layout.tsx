@@ -10,6 +10,8 @@ import { SidebarProvider } from '@/components/ui/shadcn/sidebar'
 import { NextIntlClientProvider } from 'next-intl'
 import { NuqsAdapter } from 'nuqs/adapters/next'
 import BetaLabel from '@/components/layout/beta-label'
+import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const inter = Inter({
     subsets: ['latin', 'cyrillic-ext'],
@@ -59,6 +61,8 @@ export default function RootLayout({
                                         } as React.CSSProperties
                                     }
                                 >
+                                    <Analytics />
+                                    <SpeedInsights />
                                     <BetaLabel />
                                     <AppSidebar />
                                     {children}
