@@ -29,6 +29,9 @@ export const metadata: Metadata = {
         url: 'https://mineos-market.vercel.app/',
         siteName: 'MineOS Market',
         type: 'website'
+    },
+    other: {
+        'google-site-verification': process.env.GOOGLE_SITE_VERIFICATION ?? ''
     }
 }
 
