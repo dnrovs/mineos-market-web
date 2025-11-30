@@ -154,7 +154,11 @@ function DeletePublicationAlertDialogTrigger({
             .then(() => router.back())
             .catch((error) => {
                 throw new Error(
-                    handleRequestError(error, t('deleting publication'), true)
+                    handleRequestError(
+                        error,
+                        t('while deleting publication'),
+                        true
+                    )
                 )
             })
 
