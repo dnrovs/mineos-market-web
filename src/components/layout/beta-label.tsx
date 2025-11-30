@@ -1,7 +1,10 @@
 import * as fs from 'node:fs'
 import Link from 'next/link'
+import path from 'node:path'
 
-const build = fs.readFileSync('.next/BUILD_ID', 'utf8').slice(0, 8)
+const build = fs
+    .readFileSync(path.join(process.cwd(), '.next', 'BUILD_ID'), 'utf8')
+    .slice(0, 8)
 
 export default function BetaLabel() {
     return (
