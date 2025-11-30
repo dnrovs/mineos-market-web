@@ -4,16 +4,15 @@ import WigglyWobbly from '@/app/overview/components/WigglyWobbly'
 import { Card } from '@/components/ui/shadcn/card'
 import FlatIcon from '../../../public/market.svg'
 import { useEffect, useState } from 'react'
-import { ApiError, Statistic } from 'mineos-market-client'
+import { PublicationCategory, Statistic } from 'mineos-market-client'
 import { useMarket } from '@/context/MarketProvider'
-import { toast } from 'sonner'
 import { Spinner } from '@/components/ui/shadcn/spinner'
 import Link from 'next/link'
 import Header from '@/components/layout/Header'
 import { User } from 'lucide-react'
-import handleFetchError from '@/hooks/use-handle-request-error'
-import { useExtracted } from 'next-intl'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
+import { useExtracted } from 'next-intl'
+import getPublicationIcon from '@/utils/get-publication-icon'
 
 export default function Overview() {
     const { client } = useMarket()
@@ -56,7 +55,14 @@ export default function Overview() {
     return (
         <main className={'flex h-full w-full flex-col'}>
             <Header />
-            <WigglyWobbly iconUrls={Array(10).fill('/Gay.jpg')}>
+            <WigglyWobbly
+                iconUrls={Array(10).fill(
+                    getPublicationIcon(
+                        undefined,
+                        PublicationCategory.Applications
+                    )
+                )}
+            >
                 <Card
                     className={
                         'h-5/8 max-h-150 min-h-100 w-full cursor-default flex-col items-center justify-between border-none bg-white/50 backdrop-blur-3xl select-none max-sm:rounded-none max-sm:border-x-0 sm:h-9/12 sm:w-md dark:bg-[#24242480]'
