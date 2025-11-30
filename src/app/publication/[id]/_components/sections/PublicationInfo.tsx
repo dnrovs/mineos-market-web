@@ -42,16 +42,16 @@ export default function PublicationInfo({ publication }: PublicationInfoProps) {
                     publication.categoryId
                 )}
                 alt={'Placeholder'}
-                className={'size-32 rounded-xl'}
+                className={'size-32 rounded-xl max-[32rem]:size-24'}
                 width={512}
                 height={512}
             />
-            <div className={'flex flex-col justify-between'}>
+            <div className={'flex flex-col justify-between truncate'}>
                 <div className={'flex flex-col'}>
-                    <span className={'text-xl font-medium'}>
+                    <span className={'truncate text-xl font-medium'}>
                         {publication?.publicationName}
                     </span>
-                    <span className={'text-muted-foreground'}>
+                    <span className={'text-muted-foreground w-full truncate'}>
                         by{' '}
                         <Link
                             className={
