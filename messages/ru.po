@@ -94,6 +94,13 @@ msgid "47FYwb"
 msgstr "Отмена"
 
 #: src\app\messages\_components\dialogs.tsx
+#: src\app\messages\[user]\_components\header.tsx
+#: src\app\settings\_tabs\behaviour.tsx
+#: src\components\layout\app-sidebar.tsx
+msgid "hMzcSq"
+msgstr "Сообщения"
+
+#: src\app\messages\_components\dialogs.tsx
 #: src\app\register\page.tsx
 msgid "JCIgkj"
 msgstr "Имя пользователя"
@@ -134,6 +141,10 @@ msgstr "Непрочитано"
 #: src\app\messages\[user]\page.tsx
 msgid "sbE0zo"
 msgstr "при получении статуса прочтения последнего сообщения"
+
+#: src\app\messages\[user]\page.tsx
+msgid "TNr4jR"
+msgstr "Сообщение не может начинатся или заканчиватся фигурной скобкой"
 
 #: src\app\messages\[user]\page.tsx
 msgid "UvpnGV"
@@ -311,6 +322,10 @@ msgstr "Попытка обновить несуществующий отзыв.
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "Ov8WL5"
 msgstr "Уже проголосовали!"
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "REm9Re"
+msgstr "Рейтинги и обзоры"
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "rMIZOU"
@@ -526,11 +541,6 @@ msgstr "Аватары"
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "HaqEm4"
 msgstr "Интервал обновления чата"
-
-#: src\app\settings\_tabs\behaviour.tsx
-#: src\components\layout\app-sidebar.tsx
-msgid "hMzcSq"
-msgstr "Сообщения"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "HNwGRG"

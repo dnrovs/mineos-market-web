@@ -434,7 +434,7 @@ export default function RatingsAndReviews({
 
     return (
         <section className="flex flex-col gap-3">
-            <h2 className="text-xl font-bold">Ratings & Reviews</h2>
+            <h2 className="text-xl font-bold">{t('Ratings & Reviews')}</h2>
 
             <div className={'flex flex-col gap-5'}>
                 <RatingSummary

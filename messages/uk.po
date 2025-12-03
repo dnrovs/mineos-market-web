@@ -94,6 +94,13 @@ msgid "47FYwb"
 msgstr "Скасувати"
 
 #: src\app\messages\_components\dialogs.tsx
+#: src\app\messages\[user]\_components\header.tsx
+#: src\app\settings\_tabs\behaviour.tsx
+#: src\components\layout\app-sidebar.tsx
+msgid "hMzcSq"
+msgstr "Повідомлення"
+
+#: src\app\messages\_components\dialogs.tsx
 #: src\app\register\page.tsx
 msgid "JCIgkj"
 msgstr "Ім'я користувача"
@@ -134,6 +141,10 @@ msgstr "Непрочитано"
 #: src\app\messages\[user]\page.tsx
 msgid "sbE0zo"
 msgstr "під час отримання статусу прочитання останнього повідомлення"
+
+#: src\app\messages\[user]\page.tsx
+msgid "TNr4jR"
+msgstr "Повідомлення не може починатися або закынчуватися фігурною дужкою"
 
 #: src\app\messages\[user]\page.tsx
 msgid "UvpnGV"
@@ -311,6 +322,10 @@ msgstr "Спроба оновити неіснуючий відгук."
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "Ov8WL5"
 msgstr "Вже проголосували!"
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "REm9Re"
+msgstr "Рейтинги та огляди"
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "rMIZOU"
@@ -526,11 +541,6 @@ msgstr "Аватари"
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "HaqEm4"
 msgstr "Інтервал оновлення чату"
-
-#: src\app\settings\_tabs\behaviour.tsx
-#: src\components\layout\app-sidebar.tsx
-msgid "hMzcSq"
-msgstr "Повідомлення"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "HNwGRG"

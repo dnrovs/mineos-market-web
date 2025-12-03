@@ -148,14 +148,18 @@ export default function Dialogs() {
     }, [client.messages, config.behaviour.dialogsUpdateInterval, user])
 
     return (
-        <div className={'relative h-full lg:w-75 xl:w-87.5 2xl:w-100'}>
+        <div
+            className={
+                'relative flex h-full flex-col items-center justify-center lg:w-75 xl:w-87.5 2xl:w-100'
+            }
+        >
             {loading ? (
-                <Spinner className={'mx-auto my-auto size-10'} />
+                <Spinner className={'size-10'} />
             ) : (
                 <>
                     <ItemGroup
                         className={
-                            'scrollbar-thin scrollbar-track-transparent scrollbar-thumb-ring h-full gap-1 overflow-auto'
+                            'scrollbar-thin scrollbar-track-transparent scrollbar-thumb-ring h-full w-full gap-1 overflow-auto'
                         }
                     >
                         {dialogs.map((dialog) => (

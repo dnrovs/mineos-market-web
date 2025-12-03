@@ -7,6 +7,9 @@ import { usePathname, useRouter } from 'next/navigation'
 import { clsx } from 'clsx'
 import { useMarket } from '@/context/MarketProvider'
 import { useExtracted } from 'next-intl'
+import { useIsMobile } from '@/hooks/shadcn/use-mobile'
+import { StickToBottom } from 'use-stick-to-bottom'
+import { cn } from '@/utils/shadcn'
 
 interface MessagesLayoutProps {
     children: React.ReactNode
@@ -23,8 +26,9 @@ export default function MessagesLayout({ children }: MessagesLayoutProps) {
     }, [router, user])
 
     return (
-        <main className="flex h-dvh w-full flex-col overflow-auto lg:overflow-hidden">
-            <Header />
+        <main className="flex h-dvh w-full flex-col">
+            <Header className={cn('hidden lg:flex', !isDialog && 'flex')} />
+
             <div className="flex min-h-0 w-full grow gap-3 lg:px-3 lg:pb-3">
                 <div
                     className={clsx(
@@ -37,7 +41,7 @@ export default function MessagesLayout({ children }: MessagesLayoutProps) {
 
                 <div
                     className={clsx(
-                        'lg:bg-sidebar flex min-h-0 w-full grow flex-col rounded-xl bg-transparent lg:overflow-auto',
+                        'lg:bg-sidebar flex min-h-0 w-full grow rounded-md bg-transparent lg:overflow-auto',
                         !isDialog && 'hidden lg:block'
                     )}
                 >

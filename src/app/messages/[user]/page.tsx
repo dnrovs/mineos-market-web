@@ -21,12 +21,11 @@ import Message from '@/app/messages/[user]/_components/message'
 import { Header } from '@/app/messages/[user]/_components/header'
 import { useExtracted } from 'next-intl'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
-
-interface Group {
-    timestamp: number
-    label: string
-    messages: MessageT[]
-}
+import {
+    StickToBottom,
+    useStickToBottom,
+    useStickToBottomContext
+} from 'use-stick-to-bottom'
 
 export default function Chat() {
     const { user, client } = useMarket()
@@ -47,6 +46,7 @@ export default function Chat() {
         setIntervalLoading(false)
     }
 
+    const [sending, setSending] = useState(false)
     const [message, setMessage] = useState('')
 
     const fetchLastMessageIsRead = () => {
@@ -64,7 +64,7 @@ export default function Chat() {
                     t('while fetching last message read status')
                 )
             )
-        return lastMessageIsRead ? t('Read') : t('Unread')
+        return lastMessageIsRead
     }
 
     const fetchMessages = () => {
@@ -90,12 +90,18 @@ export default function Chat() {
     }
 
     const sendMessage = () => {
-        if (!message) return
+        if (!message || sending) return
 
         if (emojiRegex().test(message))
             return toast.error(t('Emoji are not allowed.'))
 
+        if (message.startsWith('{') || message.endsWith('}'))
+            return toast.error(
+                t('Message cannot start or end with curly braces.')
+            )
+
         setIntervalLoading(true)
+        setSending(true)
 
         client.messages
             .sendMessage({
@@ -109,12 +115,7 @@ export default function Chat() {
             .catch((error) =>
                 handleRequestError(error, t('while sending a message'))
             )
-    }
-
-    const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
-        if (event.key === 'Enter') {
-            sendMessage()
-        }
+            .finally(() => setSending(false))
     }
 
     useEffect(() => {
@@ -140,44 +141,57 @@ export default function Chat() {
     return loading ? (
         <Spinner className={'mx-auto my-auto size-10'} />
     ) : (
-        <div className="scrollbar-thin relative flex grow flex-col-reverse items-center lg:overflow-auto">
-            <div className="bg-background/75 lg:bg-sidebar/75 sticky bottom-0 mb-[env(safe-area-inset-bottom)] flex w-full justify-center gap-2 p-3 backdrop-blur-md">
-                <InputGroup className={'w-full max-w-283 rounded-full'}>
-                    <InputGroupInput
-                        placeholder={t('Say something to {dialogUserName}...', {
-                            dialogUserName
-                        })}
-                        enterKeyHint={'send'}
-                        onKeyDown={handleKeyDown}
-                        value={message}
-                        onInput={(onchange) =>
-                            setMessage(onchange.currentTarget.value)
-                        }
-                    />
-                    <InputGroupAddon align={'inline-end'}>
-                        <Spinner
-                            className={clsx('transition-discrete', {
-                                hidden: !intervalLoading
-                            })}
+        <StickToBottom className="scrollbar-thin flex h-full grow flex-col items-center overflow-auto">
+            <StickToBottom.Content>
+                <Header userName={dialogUserName} />
+
+                <div className="flex w-full max-w-300 grow flex-col-reverse gap-1 px-3">
+                    <span className={'text-muted-foreground text-right'}>
+                        {fetchLastMessageIsRead() ? t('Read') : t('Unread')}
+                    </span>
+
+                    {messages.map((message, index) => (
+                        <Message key={index} message={message} />
+                    ))}
+                </div>
+
+                <div className="bg-background/75 lg:bg-sidebar/75 sticky bottom-0 mb-[env(safe-area-inset-bottom)] flex w-full justify-center gap-2 p-3 backdrop-blur-md">
+                    <InputGroup className={'w-full max-w-283 rounded-full'}>
+                        <InputGroupInput
+                            placeholder={t(
+                                'Say something to {dialogUserName}...',
+                                {
+                                    dialogUserName
+                                }
+                            )}
+                            enterKeyHint={'send'}
+                            onKeyDown={(event) => {
+                                if (event.key === 'Enter') sendMessage()
+                            }}
+                            value={message}
+                            disabled={sending}
+                            onInput={(onchange) =>
+                                setMessage(onchange.currentTarget.value)
+                            }
                         />
-                    </InputGroupAddon>
-                </InputGroup>
-                <Button
-                    className="rounded-full"
-                    size="icon"
-                    onClick={sendMessage}
-                >
-                    <ArrowUp />
-                </Button>
-            </div>
-
-            <div className="flex w-full max-w-300 grow flex-col-reverse gap-1 px-3">
-                {messages.map((message, index) => (
-                    <Message key={index} message={message} />
-                ))}
-            </div>
-
-            <Header userName={String(dialogUserName)} />
-        </div>
+                        <InputGroupAddon align={'inline-end'}>
+                            <Spinner
+                                className={clsx('transition-discrete', {
+                                    hidden: !intervalLoading
+                                })}
+                            />
+                        </InputGroupAddon>
+                    </InputGroup>
+                    <Button
+                        className="rounded-full"
+                        size="icon"
+                        onClick={sendMessage}
+                        disabled={sending}
+                    >
+                        <ArrowUp />
+                    </Button>
+                </div>
+            </StickToBottom.Content>
+        </StickToBottom>
     )
 }

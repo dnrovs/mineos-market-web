@@ -94,6 +94,13 @@ msgid "47FYwb"
 msgstr "Cancel"
 
 #: src\app\messages\_components\dialogs.tsx
+#: src\app\messages\[user]\_components\header.tsx
+#: src\app\settings\_tabs\behaviour.tsx
+#: src\components\layout\app-sidebar.tsx
+msgid "hMzcSq"
+msgstr "Messages"
+
+#: src\app\messages\_components\dialogs.tsx
 #: src\app\register\page.tsx
 msgid "JCIgkj"
 msgstr "Username"
@@ -134,6 +141,10 @@ msgstr "Unread"
 #: src\app\messages\[user]\page.tsx
 msgid "sbE0zo"
 msgstr "while fetching last message read status"
+
+#: src\app\messages\[user]\page.tsx
+msgid "TNr4jR"
+msgstr "Message cannot start or end with curly braces."
 
 #: src\app\messages\[user]\page.tsx
 msgid "UvpnGV"
@@ -311,6 +322,10 @@ msgstr "Tried to update a review that does not exist."
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "Ov8WL5"
 msgstr "Already voted!"
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "REm9Re"
+msgstr "Ratings & Reviews"
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "rMIZOU"
@@ -526,11 +541,6 @@ msgstr "Avatars"
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "HaqEm4"
 msgstr "Chat update interval"
-
-#: src\app\settings\_tabs\behaviour.tsx
-#: src\components\layout\app-sidebar.tsx
-msgid "hMzcSq"
-msgstr "Messages"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "HNwGRG"
