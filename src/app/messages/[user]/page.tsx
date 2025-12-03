@@ -38,6 +38,9 @@ export default function Chat() {
     const dialogUserName = useParams<{ user: string }>().user
 
     const [messages, setMessages] = useState<MessageT[]>([])
+    const [lastMessageIsRead, setLastMessageIsRead] = useState<
+        undefined | boolean
+    >(undefined)
 
     const [loading, setLoading] = useState(true)
     const [intervalLoading, setIntervalLoading] = useState(false)
@@ -50,13 +53,16 @@ export default function Chat() {
     const [message, setMessage] = useState('')
 
     const fetchLastMessageIsRead = () => {
-        let lastMessageIsRead = false
         client.messages
             .getDialogs()
             .then((dialogs) => {
-                lastMessageIsRead = !!dialogs.find(
-                    (dialog) => dialog.dialogUserName === dialogUserName
+                const dialog = dialogs.find(
+                    (dialog) =>
+                        dialog.dialogUserName === dialogUserName &&
+                        dialog.lastMessageUserName === user?.name
                 )?.lastMessageIsRead
+
+                setLastMessageIsRead(dialog ? !!dialog : undefined)
             })
             .catch((error) =>
                 handleRequestError(
@@ -64,7 +70,6 @@ export default function Chat() {
                     t('while fetching last message read status')
                 )
             )
-        return lastMessageIsRead
     }
 
     const fetchMessages = () => {
@@ -87,6 +92,8 @@ export default function Chat() {
                 }
             })
             .finally(() => stopLoading())
+
+        fetchLastMessageIsRead()
     }
 
     const sendMessage = () => {
@@ -147,7 +154,11 @@ export default function Chat() {
 
                 <div className="flex w-full max-w-300 grow flex-col-reverse gap-1 px-3">
                     <span className={'text-muted-foreground text-right'}>
-                        {fetchLastMessageIsRead() ? t('Read') : t('Unread')}
+                        {lastMessageIsRead === undefined
+                            ? null
+                            : lastMessageIsRead
+                              ? t('Read')
+                              : t('Unread')}
                     </span>
 
                     {messages.map((message, index) => (
