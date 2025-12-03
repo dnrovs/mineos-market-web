@@ -16,7 +16,7 @@ import {
 import Link from 'next/link'
 import { useMarket } from '@/context/MarketProvider'
 import { Avatar, AvatarFallback } from '@/components/ui/shadcn/avatar'
-import UserDropdown from '@/components/layout/UserDropdown'
+import UserDropdown from '@/components/layout/user-dropdown'
 import React from 'react'
 import { Badge } from '@/components/ui/shadcn/badge'
 import { useUnreadMessages } from '@/utils/use-unread-messages'

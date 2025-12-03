@@ -24,7 +24,7 @@ import {
 import { HeartCrack, TestTubeDiagonal } from 'lucide-react'
 import { Button } from '@/components/ui/shadcn/button'
 import BottomNavigation from '@/app/[category]/_components/BottomNavigation'
-import Publications from '@/components/layout/Publications'
+import Publications from '@/components/layout/publications'
 import { useExtracted } from 'next-intl'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
 import { usePublicationCategories } from '@/hooks/use-publication-categories'

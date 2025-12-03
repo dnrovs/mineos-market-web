@@ -15,7 +15,7 @@ import {
     EmptyTitle
 } from '@/components/ui/shadcn/empty'
 import { Spinner } from '@/components/ui/shadcn/spinner'
-import Publications from '@/components/layout/Publications'
+import Publications from '@/components/layout/publications'
 import Link from 'next/link'
 import { useExtracted } from 'next-intl'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
