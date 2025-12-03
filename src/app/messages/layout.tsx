@@ -1,6 +1,6 @@
 'use client'
 
-import Header from '@/components/layout/Header'
+import Header from '@/components/layout/header'
 import Dialogs from '@/app/messages/_components/dialogs'
 import React, { useEffect } from 'react'
 import { usePathname, useRouter } from 'next/navigation'

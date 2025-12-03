@@ -176,6 +176,11 @@ msgstr "під час отримання діалогів"
 msgid "un14bs"
 msgstr "Відкрити чат"
 
+#: src\app\messages\[user]\_components\header.tsx
+#: src\components\layout\Header.tsx
+msgid "cyR7Kh"
+msgstr "Назад"
+
 #: src\app\messages\[user]\page.tsx
 msgid "+QF2mn"
 msgstr "Емодзі заборонені."
@@ -747,10 +752,6 @@ msgstr "Шлях встановлення"
 #: src\components\forms\publish-form.tsx
 msgid "zhSlKP"
 msgstr "Це програмне забезпечення робить..."
-
-#: src\components\layout\Header.tsx
-msgid "cyR7Kh"
-msgstr "Назад"
 
 #: src\components\layout\Publications.tsx
 msgid "olk5qg"

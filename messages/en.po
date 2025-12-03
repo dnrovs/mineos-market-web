@@ -176,6 +176,11 @@ msgstr "while fetching dialogs"
 msgid "un14bs"
 msgstr "Open chat"
 
+#: src\app\messages\[user]\_components\header.tsx
+#: src\components\layout\Header.tsx
+msgid "cyR7Kh"
+msgstr "Back"
+
 #: src\app\messages\[user]\page.tsx
 msgid "+QF2mn"
 msgstr "Emoji are not allowed."
@@ -747,10 +752,6 @@ msgstr "Installation path"
 #: src\components\forms\publish-form.tsx
 msgid "zhSlKP"
 msgstr "This software does..."
-
-#: src\components\layout\Header.tsx
-msgid "cyR7Kh"
-msgstr "Back"
 
 #: src\components\layout\Publications.tsx
 msgid "olk5qg"

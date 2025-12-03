@@ -5,7 +5,7 @@ import { useMarket } from '@/context/MarketProvider'
 
 import { redirect, useRouter, useSearchParams } from 'next/navigation'
 
-import Header from '@/components/layout/Header'
+import Header from '@/components/layout/header'
 import {
     Card,
     CardContent,

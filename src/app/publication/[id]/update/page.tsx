@@ -6,7 +6,7 @@ import { useExtracted } from 'next-intl'
 import React, { useEffect, useState } from 'react'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
 import { Spinner } from '@/components/ui/shadcn/spinner'
-import Header from '@/components/layout/Header'
+import Header from '@/components/layout/header'
 import {
     Card,
     CardContent,

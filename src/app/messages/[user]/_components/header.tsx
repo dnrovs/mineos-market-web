@@ -4,17 +4,21 @@ import ProvidedAvatar from '@/components/ui/provided-avatar'
 import { Button } from '@/components/ui/shadcn/button'
 import { ChevronLeft } from 'lucide-react'
 import { useExtracted } from 'next-intl'
+import { useRouter } from 'next/navigation'
 
 export function Header({ userName }: { userName: string }) {
     const t = useExtracted()
+    const router = useRouter()
 
     return (
         <div className="lg:bg-sidebar/75 bg-background/75 sticky top-0 z-20 flex w-full justify-between p-3 backdrop-blur-md lg:justify-center">
-            <Button variant={'ghost'} className={'lg:hidden'} asChild>
-                <Link href={'/messages'}>
-                    <ChevronLeft />
-                    {t('Messages')}
-                </Link>
+            <Button
+                variant={'ghost'}
+                className={'lg:hidden'}
+                onClick={() => router.back()}
+            >
+                <ChevronLeft />
+                {t('Back')}
             </Button>
             <Link
                 href={`/user/${userName}`}

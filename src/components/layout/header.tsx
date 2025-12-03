@@ -3,12 +3,14 @@ import { Button } from '@/components/ui/shadcn/button'
 import { ChevronLeft } from 'lucide-react'
 import { useExtracted } from 'next-intl'
 import { cn } from '@/utils/shadcn'
+import { useRouter } from 'next/navigation'
 
 export default function Header({
     className,
     ...props
 }: React.ComponentProps<'div'>) {
     const t = useExtracted()
+    const router = useRouter()
 
     return (
         <header
@@ -18,7 +20,7 @@ export default function Header({
             )}
             {...props}
         >
-            <Button variant={'ghost'} onClick={() => history.back()}>
+            <Button variant={'ghost'} onClick={() => router.back()}>
                 <ChevronLeft />
                 {t('Back')}
             </Button>

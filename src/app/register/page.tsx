@@ -1,6 +1,6 @@
 'use client'
 
-import Header from '@/components/layout/Header'
+import Header from '@/components/layout/header'
 import React, { useEffect } from 'react'
 
 import { Button } from '@/components/ui/shadcn/button'
@@ -150,8 +150,7 @@ export default function LoginPage() {
                                 <Field>
                                     <Button type="submit">Register</Button>
                                     <FieldDescription className="text-center">
-                                        {t('Already have an account?')}
-                                        {' '}
+                                        {t('Already have an account?')}{' '}
                                         <Link href="/login">{t('Login')}</Link>
                                     </FieldDescription>
                                 </Field>
