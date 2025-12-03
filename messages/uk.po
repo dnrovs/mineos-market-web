@@ -82,13 +82,14 @@ msgstr "під час отримання публікацій"
 msgid "zWr4H0"
 msgstr "Схоже, у цій категорії немає публікацій."
 
-#: src\app\login\page.tsx
-msgid "rBTItO"
-msgstr "під час входу в систему"
-
+#: src\app\layout.tsx
 #: src\app\manifest.ts
 msgid "6NyYTi"
 msgstr "Досліджуйте, завантажуйте та діліться програмним забезпеченням для MineOS. Переглядайте вихідний код. Спілкуйтеся з розробниками."
+
+#: src\app\login\page.tsx
+msgid "rBTItO"
+msgstr "під час входу в систему"
 
 #: src\app\manifest.ts
 #: src\components\layout\app-sidebar.tsx

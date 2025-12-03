@@ -82,13 +82,14 @@ msgstr "while fetching publications"
 msgid "zWr4H0"
 msgstr "Looks like there are no publications in this category."
 
-#: src\app\login\page.tsx
-msgid "rBTItO"
-msgstr "while logging in"
-
+#: src\app\layout.tsx
 #: src\app\manifest.ts
 msgid "6NyYTi"
 msgstr "Explore, upload and share MineOS software. View the source code. Communicate with developers."
+
+#: src\app\login\page.tsx
+msgid "rBTItO"
+msgstr "while logging in"
 
 #: src\app\manifest.ts
 #: src\components\layout\app-sidebar.tsx
