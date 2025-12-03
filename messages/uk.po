@@ -807,7 +807,7 @@ msgstr "Бібліотеки"
 
 #: src\hooks\use-publication-categories.ts
 msgid "D9ZyLu"
-msgstr "Стіни"
+msgstr "Фони"
 
 #: src\hooks\use-publication-categories.ts
 msgid "DqD1yK"
