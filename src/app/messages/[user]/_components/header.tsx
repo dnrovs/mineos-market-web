@@ -19,11 +19,12 @@ export function Header({ userName }: { userName: string }) {
             <Link
                 href={`/user/${userName}`}
                 className={
-                    'flex w-min flex-row-reverse items-center gap-3 px-1 lg:flex-row'
+                    'flex w-min flex-row-reverse items-center gap-3 px-1 text-lg lg:flex-row'
                 }
             >
                 <ProvidedAvatar username={userName} className={'size-9'} />
-                <span className={'text-lg'}>{userName}</span>
+
+                {userName}
             </Link>
         </div>
     )
