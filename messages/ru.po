@@ -826,7 +826,7 @@ msgstr "Приложения"
 
 #: src\hooks\use-publication-categories.ts
 msgid "gRiKLf"
-msgstr "Проги"
+msgstr "Программы"
 
 #: src\hooks\use-publication-categories.ts
 msgid "HCfIc7"
