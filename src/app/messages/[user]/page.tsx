@@ -142,7 +142,7 @@ export default function Chat() {
         <Spinner className={'mx-auto my-auto size-10'} />
     ) : (
         <StickToBottom className="scrollbar-thin flex h-full grow flex-col items-center overflow-auto">
-            <StickToBottom.Content>
+            <StickToBottom.Content className={'flex h-full flex-col'}>
                 <Header userName={dialogUserName} />
 
                 <div className="flex w-full max-w-300 grow flex-col-reverse gap-1 px-3">
