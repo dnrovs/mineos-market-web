@@ -1,11 +1,15 @@
 import { MetadataRoute } from 'next'
+import { getExtracted } from 'next-intl/server'
 
-export default function manifest(): MetadataRoute.Manifest {
+export default async function manifest(): Promise<MetadataRoute.Manifest> {
+    const t = await getExtracted()
+
     return {
         name: 'MineOS Market',
         short_name: 'MineOS',
-        description:
-            'Explore, upload and share MineOS software. View the source code. Communicate with developers. Everything in your browser.',
+        description: t(
+            'Explore, upload and share MineOS software. View the source code. Communicate with developers.'
+        ),
         start_url: '/applications',
         id: '/applications',
         display: 'standalone',
@@ -52,22 +56,22 @@ export default function manifest(): MetadataRoute.Manifest {
         ],
         shortcuts: [
             {
-                name: 'Overview',
+                name: t('Overview'),
                 icons: [{ src: '/icons/house.svg', sizes: '24x24' }],
                 url: '/overview',
-                description: 'View the market statistics'
+                description: t('View the market statistics')
             },
             {
-                name: 'Messages',
+                name: t('Messages'),
                 icons: [{ src: '/icons/message-circle.svg', sizes: '24x24' }],
                 url: '/messages',
-                description: 'Communicate with another developers'
+                description: t('Communicate with another developers')
             },
             {
-                name: 'Publish',
+                name: t('Publish'),
                 icons: [{ src: '/icons/plus.svg', sizes: '24x24' }],
                 url: '/publish',
-                description: 'Upload your own software'
+                description: t('Upload your own software')
             }
         ]
     }

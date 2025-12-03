@@ -86,19 +86,46 @@ msgstr "Похоже, в этой категории нет публикаций
 msgid "rBTItO"
 msgstr "при входе в систему"
 
-#: src\app\messages\_components\dialogs.tsx
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
-#: src\components\forms\publish-form.tsx
-msgid "47FYwb"
-msgstr "Отмена"
+#: src\app\manifest.ts
+msgid "6NyYTi"
+msgstr "Исследуйте, загружайте и делитесь программным обеспечением для MineOS. Просматривайте исходный код. Общайтесь с разработчиками."
 
+#: src\app\manifest.ts
+#: src\components\layout\app-sidebar.tsx
+msgid "9uOFF3"
+msgstr "Обзор"
+
+#: src\app\manifest.ts
+msgid "cMgpXU"
+msgstr "Просмотреть статистику маркета"
+
+#: src\app\manifest.ts
 #: src\app\messages\_components\dialogs.tsx
 #: src\app\messages\[user]\_components\header.tsx
 #: src\app\settings\_tabs\behaviour.tsx
 #: src\components\layout\app-sidebar.tsx
 msgid "hMzcSq"
 msgstr "Сообщения"
+
+#: src\app\manifest.ts
+msgid "iOI1ga"
+msgstr "Загрузить своё программное обеспечение"
+
+#: src\app\manifest.ts
+#: src\app\publish\page.tsx
+msgid "syEQFE"
+msgstr "Опубликовать"
+
+#: src\app\manifest.ts
+msgid "va0Mzr"
+msgstr "Общаться с разработчиками"
+
+#: src\app\messages\_components\dialogs.tsx
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+#: src\components\forms\publish-form.tsx
+msgid "47FYwb"
+msgstr "Отмена"
 
 #: src\app\messages\_components\dialogs.tsx
 #: src\app\register\page.tsx
@@ -445,10 +472,6 @@ msgstr "Создайте что-то удивительное и поделит�
 msgid "QZ2HQg"
 msgstr "при загрузке публикации"
 
-#: src\app\publish\page.tsx
-msgid "syEQFE"
-msgstr "Опубликовать"
-
 #: src\app\register\page.tsx
 msgid "1zEIJP"
 msgstr "при регистрации"
@@ -694,10 +717,6 @@ msgstr "Путь установки"
 #: src\components\forms\publish-form.tsx
 msgid "zhSlKP"
 msgstr "Это программное обеспечение делает..."
-
-#: src\components\layout\app-sidebar.tsx
-msgid "9uOFF3"
-msgstr "Обзор"
 
 #: src\components\layout\Header.tsx
 msgid "cyR7Kh"

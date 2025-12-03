@@ -86,19 +86,46 @@ msgstr "Схоже, у цій категорії немає публікацій
 msgid "rBTItO"
 msgstr "під час входу в систему"
 
-#: src\app\messages\_components\dialogs.tsx
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
-#: src\components\forms\publish-form.tsx
-msgid "47FYwb"
-msgstr "Скасувати"
+#: src\app\manifest.ts
+msgid "6NyYTi"
+msgstr "Досліджуйте, завантажуйте та діліться програмним забезпеченням для MineOS. Переглядайте вихідний код. Спілкуйтеся з розробниками."
 
+#: src\app\manifest.ts
+#: src\components\layout\app-sidebar.tsx
+msgid "9uOFF3"
+msgstr "Огляд"
+
+#: src\app\manifest.ts
+msgid "cMgpXU"
+msgstr "Переглянути статистику маркета"
+
+#: src\app\manifest.ts
 #: src\app\messages\_components\dialogs.tsx
 #: src\app\messages\[user]\_components\header.tsx
 #: src\app\settings\_tabs\behaviour.tsx
 #: src\components\layout\app-sidebar.tsx
 msgid "hMzcSq"
 msgstr "Повідомлення"
+
+#: src\app\manifest.ts
+msgid "iOI1ga"
+msgstr "Завантажити своє програмне забезпечення"
+
+#: src\app\manifest.ts
+#: src\app\publish\page.tsx
+msgid "syEQFE"
+msgstr "Опублікувати"
+
+#: src\app\manifest.ts
+msgid "va0Mzr"
+msgstr "Спілкуватися з розробниками"
+
+#: src\app\messages\_components\dialogs.tsx
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+#: src\components\forms\publish-form.tsx
+msgid "47FYwb"
+msgstr "Скасувати"
 
 #: src\app\messages\_components\dialogs.tsx
 #: src\app\register\page.tsx
@@ -445,10 +472,6 @@ msgstr "Створіть щось дивовижне і поділіться ц�
 msgid "QZ2HQg"
 msgstr "під час завантаження публікації"
 
-#: src\app\publish\page.tsx
-msgid "syEQFE"
-msgstr "Опублікувати"
-
 #: src\app\register\page.tsx
 msgid "1zEIJP"
 msgstr "під час реєстрації"
@@ -694,10 +717,6 @@ msgstr "Шлях встановлення"
 #: src\components\forms\publish-form.tsx
 msgid "zhSlKP"
 msgstr "Це програмне забезпечення робить..."
-
-#: src\components\layout\app-sidebar.tsx
-msgid "9uOFF3"
-msgstr "Огляд"
 
 #: src\components\layout\Header.tsx
 msgid "cyR7Kh"

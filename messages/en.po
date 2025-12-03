@@ -86,19 +86,46 @@ msgstr "Looks like there are no publications in this category."
 msgid "rBTItO"
 msgstr "while logging in"
 
-#: src\app\messages\_components\dialogs.tsx
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
-#: src\components\forms\publish-form.tsx
-msgid "47FYwb"
-msgstr "Cancel"
+#: src\app\manifest.ts
+msgid "6NyYTi"
+msgstr "Explore, upload and share MineOS software. View the source code. Communicate with developers."
 
+#: src\app\manifest.ts
+#: src\components\layout\app-sidebar.tsx
+msgid "9uOFF3"
+msgstr "Overview"
+
+#: src\app\manifest.ts
+msgid "cMgpXU"
+msgstr "View the market statistics"
+
+#: src\app\manifest.ts
 #: src\app\messages\_components\dialogs.tsx
 #: src\app\messages\[user]\_components\header.tsx
 #: src\app\settings\_tabs\behaviour.tsx
 #: src\components\layout\app-sidebar.tsx
 msgid "hMzcSq"
 msgstr "Messages"
+
+#: src\app\manifest.ts
+msgid "iOI1ga"
+msgstr "Upload your own software"
+
+#: src\app\manifest.ts
+#: src\app\publish\page.tsx
+msgid "syEQFE"
+msgstr "Publish"
+
+#: src\app\manifest.ts
+msgid "va0Mzr"
+msgstr "Communicate with another developers"
+
+#: src\app\messages\_components\dialogs.tsx
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+#: src\components\forms\publish-form.tsx
+msgid "47FYwb"
+msgstr "Cancel"
 
 #: src\app\messages\_components\dialogs.tsx
 #: src\app\register\page.tsx
@@ -445,10 +472,6 @@ msgstr "Create something amazing and share it!"
 msgid "QZ2HQg"
 msgstr "while uploading publication"
 
-#: src\app\publish\page.tsx
-msgid "syEQFE"
-msgstr "Publish"
-
 #: src\app\register\page.tsx
 msgid "1zEIJP"
 msgstr "while registering"
@@ -694,10 +717,6 @@ msgstr "Installation path"
 #: src\components\forms\publish-form.tsx
 msgid "zhSlKP"
 msgstr "This software does..."
-
-#: src\components\layout\app-sidebar.tsx
-msgid "9uOFF3"
-msgstr "Overview"
 
 #: src\components\layout\Header.tsx
 msgid "cyR7Kh"
