@@ -24,11 +24,10 @@ import {
 import { HeartCrack, TestTubeDiagonal } from 'lucide-react'
 import { Button } from '@/components/ui/shadcn/button'
 import BottomNavigation from '@/app/[category]/_components/BottomNavigation'
-import Publications from '@/components/layout/publications'
 import { useExtracted } from 'next-intl'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
 import { usePublicationCategories } from '@/hooks/use-publication-categories'
-import { toast } from 'sonner'
+import Publications from '@/components/layout/publications'
 
 export default function Page() {
     const categoryName = useParams<{ category: string }>().category
@@ -92,7 +91,7 @@ export default function Page() {
     ])
 
     return (
-        <main className="flex h-dvh w-full flex-col overflow-auto">
+        <main className="g flex h-dvh w-full flex-col overflow-y-scroll">
             <Header
                 category={category!}
                 searchQuery={searchQuery}

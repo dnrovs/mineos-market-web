@@ -20,7 +20,6 @@ import Link from 'next/link'
 import { useExtracted } from 'next-intl'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
 import ProvidedAvatar from '@/components/ui/provided-avatar'
-import { Switch } from '@/components/ui/shadcn/switch'
 
 export default function User() {
     const name = useParams<{ name: string }>().name

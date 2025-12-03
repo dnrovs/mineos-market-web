@@ -107,12 +107,14 @@ msgstr "Пароль"
 #: src\app\login\page.tsx
 #: src\app\register\page.tsx
 #: src\app\settings\_tabs\account.tsx
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "AyGauy"
 msgstr "Увійти"
 
 #: src\app\login\page.tsx
 #: src\app\settings\_tabs\account.tsx
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "deEeEI"
 msgstr "Реєстрація"
@@ -177,6 +179,7 @@ msgid "un14bs"
 msgstr "Відкрити чат"
 
 #: src\app\messages\[user]\_components\header.tsx
+#: src\components\layout\header.tsx
 #: src\components\layout\Header.tsx
 msgid "cyR7Kh"
 msgstr "Назад"
@@ -657,6 +660,7 @@ msgid "7/kzJw"
 msgstr "У цього користувача поки немає публікацій або він не існує."
 
 #: src\app\user\[name]\page.tsx
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "D3idYv"
 msgstr "Налаштування"
@@ -753,30 +757,37 @@ msgstr "Шлях встановлення"
 msgid "zhSlKP"
 msgstr "Це програмне забезпечення робить..."
 
+#: src\components\layout\publications.tsx
 #: src\components\layout\Publications.tsx
 msgid "olk5qg"
 msgstr "{username}"
 
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "+CwN9C"
 msgstr "Системна"
 
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "3cc4Ct"
 msgstr "Світла"
 
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "Pe0ogR"
 msgstr "Тема"
 
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "PlBReU"
 msgstr "Вийти"
 
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "tOdNiY"
 msgstr "Темна"
 
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "y1Z3or"
 msgstr "Мова"

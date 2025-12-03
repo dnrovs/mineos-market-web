@@ -107,12 +107,14 @@ msgstr "Password"
 #: src\app\login\page.tsx
 #: src\app\register\page.tsx
 #: src\app\settings\_tabs\account.tsx
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "AyGauy"
 msgstr "Login"
 
 #: src\app\login\page.tsx
 #: src\app\settings\_tabs\account.tsx
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "deEeEI"
 msgstr "Register"
@@ -177,6 +179,7 @@ msgid "un14bs"
 msgstr "Open chat"
 
 #: src\app\messages\[user]\_components\header.tsx
+#: src\components\layout\header.tsx
 #: src\components\layout\Header.tsx
 msgid "cyR7Kh"
 msgstr "Back"
@@ -657,6 +660,7 @@ msgid "7/kzJw"
 msgstr "This user does not have any publications yet, or does not exist."
 
 #: src\app\user\[name]\page.tsx
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "D3idYv"
 msgstr "Settings"
@@ -753,30 +757,37 @@ msgstr "Installation path"
 msgid "zhSlKP"
 msgstr "This software does..."
 
+#: src\components\layout\publications.tsx
 #: src\components\layout\Publications.tsx
 msgid "olk5qg"
 msgstr "by {username}"
 
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "+CwN9C"
 msgstr "System"
 
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "3cc4Ct"
 msgstr "Light"
 
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "Pe0ogR"
 msgstr "Theme"
 
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "PlBReU"
 msgstr "Log out"
 
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "tOdNiY"
 msgstr "Dark"
 
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "y1Z3or"
 msgstr "Language"
