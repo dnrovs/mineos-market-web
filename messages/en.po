@@ -88,6 +88,40 @@ msgid "6NyYTi"
 msgstr "Explore, upload and share MineOS software. View the source code. Communicate with developers."
 
 #: src\app\login\page.tsx
+msgid "00GQ0X"
+msgstr "Email or username"
+
+#: src\app\login\page.tsx
+msgid "25WwxF"
+msgstr "Don't have an account?"
+
+#: src\app\login\page.tsx
+msgid "3t2ZWR"
+msgstr "Login to your account"
+
+#: src\app\login\page.tsx
+#: src\app\register\page.tsx
+msgid "5sg7KC"
+msgstr "Password"
+
+#: src\app\login\page.tsx
+#: src\app\register\page.tsx
+#: src\app\settings\_tabs\account.tsx
+#: src\components\layout\UserDropdown.tsx
+msgid "AyGauy"
+msgstr "Login"
+
+#: src\app\login\page.tsx
+#: src\app\settings\_tabs\account.tsx
+#: src\components\layout\UserDropdown.tsx
+msgid "deEeEI"
+msgstr "Register"
+
+#: src\app\login\page.tsx
+msgid "fPriMP"
+msgstr "Enter your credentials below to sign in to your account"
+
+#: src\app\login\page.tsx
 msgid "rBTItO"
 msgstr "while logging in"
 
@@ -486,18 +520,8 @@ msgid "3VyG1T"
 msgstr "Check your e-mail and spam folder message to submit your MineOS account"
 
 #: src\app\register\page.tsx
-msgid "5sg7KC"
-msgstr "Password"
-
-#: src\app\register\page.tsx
 msgid "AjpNgX"
 msgstr "Your account has been registered successfully."
-
-#: src\app\register\page.tsx
-#: src\app\settings\_tabs\account.tsx
-#: src\components\layout\UserDropdown.tsx
-msgid "AyGauy"
-msgstr "Login"
 
 #: src\app\register\page.tsx
 msgid "fD2A0X"
@@ -534,11 +558,6 @@ msgid "9qe6kS"
 msgstr "Registered at"
 
 #: src\app\settings\_tabs\account.tsx
-#: src\components\layout\UserDropdown.tsx
-msgid "deEeEI"
-msgstr "Register"
-
-#: src\app\settings\_tabs\account.tsx
 msgid "fTHhSB"
 msgstr "New password"
 
@@ -571,8 +590,18 @@ msgid "HNwGRG"
 msgstr "Avatar provider"
 
 #: src\app\settings\_tabs\behaviour.tsx
+#: src\app\settings\_tabs\developer.tsx
+msgid "jvo0vs"
+msgstr "Save"
+
+#: src\app\settings\_tabs\behaviour.tsx
 msgid "nCxC7R"
 msgstr "sec"
+
+#: src\app\settings\_tabs\behaviour.tsx
+#: src\app\settings\_tabs\developer.tsx
+msgid "qSnPFR"
+msgstr "Restore default"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "XALdUr"

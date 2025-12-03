@@ -88,6 +88,40 @@ msgid "6NyYTi"
 msgstr "Исследуйте, загружайте и делитесь программным обеспечением для MineOS. Просматривайте исходный код. Общайтесь с разработчиками."
 
 #: src\app\login\page.tsx
+msgid "00GQ0X"
+msgstr "Email или имя пользователя"
+
+#: src\app\login\page.tsx
+msgid "25WwxF"
+msgstr "Нет учётной записи?"
+
+#: src\app\login\page.tsx
+msgid "3t2ZWR"
+msgstr "Войдите в вашу учётную запись"
+
+#: src\app\login\page.tsx
+#: src\app\register\page.tsx
+msgid "5sg7KC"
+msgstr "Пароль"
+
+#: src\app\login\page.tsx
+#: src\app\register\page.tsx
+#: src\app\settings\_tabs\account.tsx
+#: src\components\layout\UserDropdown.tsx
+msgid "AyGauy"
+msgstr "Войти"
+
+#: src\app\login\page.tsx
+#: src\app\settings\_tabs\account.tsx
+#: src\components\layout\UserDropdown.tsx
+msgid "deEeEI"
+msgstr "Регистрация"
+
+#: src\app\login\page.tsx
+msgid "fPriMP"
+msgstr "Введите свои учётные данные чтобы войти в учётную запись"
+
+#: src\app\login\page.tsx
 msgid "rBTItO"
 msgstr "при входе в систему"
 
@@ -486,18 +520,8 @@ msgid "3VyG1T"
 msgstr "Проверьте электронную почту и папку со спамом, чтобы подтвердить аккаунт MineOS"
 
 #: src\app\register\page.tsx
-msgid "5sg7KC"
-msgstr "Пароль"
-
-#: src\app\register\page.tsx
 msgid "AjpNgX"
 msgstr "Ваш аккаунт успешно зарегистрирован."
-
-#: src\app\register\page.tsx
-#: src\app\settings\_tabs\account.tsx
-#: src\components\layout\UserDropdown.tsx
-msgid "AyGauy"
-msgstr "Войти"
 
 #: src\app\register\page.tsx
 msgid "fD2A0X"
@@ -534,11 +558,6 @@ msgid "9qe6kS"
 msgstr "Дата регистрации"
 
 #: src\app\settings\_tabs\account.tsx
-#: src\components\layout\UserDropdown.tsx
-msgid "deEeEI"
-msgstr "Регистрация"
-
-#: src\app\settings\_tabs\account.tsx
 msgid "fTHhSB"
 msgstr "Новый пароль"
 
@@ -571,8 +590,18 @@ msgid "HNwGRG"
 msgstr "Провайдер аватаров"
 
 #: src\app\settings\_tabs\behaviour.tsx
+#: src\app\settings\_tabs\developer.tsx
+msgid "jvo0vs"
+msgstr "Сохранить"
+
+#: src\app\settings\_tabs\behaviour.tsx
 msgid "nCxC7R"
 msgstr "сек"
+
+#: src\app\settings\_tabs\behaviour.tsx
+#: src\app\settings\_tabs\developer.tsx
+msgid "qSnPFR"
+msgstr "Восстановить по умолчанию"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "XALdUr"

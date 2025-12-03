@@ -5,7 +5,6 @@ import React, { useEffect } from 'react'
 
 import { Button } from '@/components/ui/shadcn/button'
 import {
-    Card,
     CardContent,
     CardDescription,
     CardHeader,
@@ -25,6 +24,7 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
 import { useExtracted } from 'next-intl'
+import ResponsiveCard from '@/components/ui/responsive-card'
 
 type LoginFormValues = {
     username: string
@@ -57,68 +57,67 @@ export default function LoginPage() {
     return (
         <main className="flex h-screen w-full flex-col overflow-auto">
             <Header />
-            <div className="flex h-full w-full">
-                <Card
-                    className={
-                        'm-auto w-full max-sm:rounded-none max-sm:border-x-0 sm:w-sm'
-                    }
-                >
+            <div className="flex h-full w-full items-center">
+                <ResponsiveCard>
                     <CardHeader>
-                        <CardTitle>Login to your account</CardTitle>
+                        <CardTitle>{t('Login to your account')}</CardTitle>
                         <CardDescription>
-                            Enter your credentials below to sign in to your
-                            account
+                            {t(
+                                'Enter your credentials below to sign in to your account'
+                            )}
                         </CardDescription>
                     </CardHeader>
                     <CardContent>
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <FieldGroup>
-                                <Field>
-                                    <FieldLabel htmlFor="username">
-                                        Email or username
-                                    </FieldLabel>
-                                    <Controller
-                                        name="username"
-                                        control={control}
-                                        render={({ field }) => (
+                                <Controller
+                                    name={'username'}
+                                    control={control}
+                                    render={({ field }) => (
+                                        <Field>
+                                            <FieldLabel>
+                                                {t('Email or username')}
+                                            </FieldLabel>
+
                                             <Input
-                                                id="username"
-                                                type="text"
                                                 placeholder="m@example.com"
                                                 required
                                                 {...field}
                                             />
-                                        )}
-                                    />
-                                </Field>
-                                <Field>
-                                    <FieldLabel htmlFor="password">
-                                        Password
-                                    </FieldLabel>
-                                    <Controller
-                                        name="password"
-                                        control={control}
-                                        render={({ field }) => (
+                                        </Field>
+                                    )}
+                                />
+                                <Controller
+                                    name="password"
+                                    control={control}
+                                    render={({ field }) => (
+                                        <Field>
+                                            <FieldLabel>
+                                                {t('Password')}
+                                            </FieldLabel>
+
                                             <Input
-                                                id="password"
                                                 type="password"
                                                 required
                                                 {...field}
                                             />
-                                        )}
-                                    />
-                                </Field>
+                                        </Field>
+                                    )}
+                                />
                                 <Field>
-                                    <Button type="submit">Login</Button>
+                                    <Button type="submit">{t('Login')}</Button>
                                     <FieldDescription className="text-center">
-                                        Don&apos;t have an account?{' '}
-                                        <Link href="/register">Register</Link>
+                                        {t("Don't have an account?")}
+                                        {' '}
+                                        <Link href="/register">
+                                            {t('Register')}
+                                        </Link>
                                     </FieldDescription>
                                 </Field>
                             </FieldGroup>
                         </form>
                     </CardContent>
-                </Card>
+                </ResponsiveCard>
             </div>
         </main>
     )

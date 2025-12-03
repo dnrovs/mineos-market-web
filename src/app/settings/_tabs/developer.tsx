@@ -73,13 +73,10 @@ export default function DeveloperTab() {
                         )}
                     />
                     <Field orientation={'horizontal'}>
-                        <Button type={'submit'}>Save</Button>
+                        <Button type={'submit'}>{t('Save')}</Button>
                         <Button
                             variant={'secondary'}
-                            onClick={() => resetConfig('server')}
-                        >
-                            Restore default
-                        </Button>
+                            onClick={() => resetConfig('server')}>{t('Restore default')}</Button>
                     </Field>
                 </FieldGroup>
             </form>

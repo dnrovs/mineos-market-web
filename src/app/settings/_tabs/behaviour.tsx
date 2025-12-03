@@ -210,12 +210,12 @@ export default function BehaviourTab() {
                     </FieldGroup>
                 </FieldSet>
                 <Field orientation={'horizontal'}>
-                    <Button type={'submit'}>Save</Button>
+                    <Button type={'submit'}>{t('Save')}</Button>
                     <Button
                         variant={'secondary'}
                         onClick={() => resetConfig('behaviour')}
                     >
-                        Restore default
+                        {t('Restore default')}
                     </Button>
                 </Field>
             </FieldGroup>

@@ -88,6 +88,40 @@ msgid "6NyYTi"
 msgstr "Досліджуйте, завантажуйте та діліться програмним забезпеченням для MineOS. Переглядайте вихідний код. Спілкуйтеся з розробниками."
 
 #: src\app\login\page.tsx
+msgid "00GQ0X"
+msgstr "Email або ім'я користувача"
+
+#: src\app\login\page.tsx
+msgid "25WwxF"
+msgstr "Не маєте облікового запису?"
+
+#: src\app\login\page.tsx
+msgid "3t2ZWR"
+msgstr "Увійдіть в ваш обліковий запис"
+
+#: src\app\login\page.tsx
+#: src\app\register\page.tsx
+msgid "5sg7KC"
+msgstr "Пароль"
+
+#: src\app\login\page.tsx
+#: src\app\register\page.tsx
+#: src\app\settings\_tabs\account.tsx
+#: src\components\layout\UserDropdown.tsx
+msgid "AyGauy"
+msgstr "Увійти"
+
+#: src\app\login\page.tsx
+#: src\app\settings\_tabs\account.tsx
+#: src\components\layout\UserDropdown.tsx
+msgid "deEeEI"
+msgstr "Реєстрація"
+
+#: src\app\login\page.tsx
+msgid "fPriMP"
+msgstr "Введіть свої дані щоб увійти в обліковий запис"
+
+#: src\app\login\page.tsx
 msgid "rBTItO"
 msgstr "під час входу в систему"
 
@@ -479,29 +513,19 @@ msgstr "під час реєстрації"
 
 #: src\app\register\page.tsx
 msgid "3VCFQV"
-msgstr "Зареєструвати новий акаунт"
+msgstr "Зареєструвати новий обліковий запис"
 
 #: src\app\register\page.tsx
 msgid "3VyG1T"
-msgstr "Перевірте електронну пошту та папку зі спамом, щоб підтвердити акаунт MineOS"
-
-#: src\app\register\page.tsx
-msgid "5sg7KC"
-msgstr "Пароль"
+msgstr "Перевірте електронну пошту та папку зі спамом, щоб підтвердити обліковий запис MineOS"
 
 #: src\app\register\page.tsx
 msgid "AjpNgX"
-msgstr "Ваш акаунт успішно зареєстровано."
-
-#: src\app\register\page.tsx
-#: src\app\settings\_tabs\account.tsx
-#: src\components\layout\UserDropdown.tsx
-msgid "AyGauy"
-msgstr "Увійти"
+msgstr "Ваш обліковий запис успішно зареєстровано."
 
 #: src\app\register\page.tsx
 msgid "fD2A0X"
-msgstr "Введіть дані нижче, щоб створити акаунт."
+msgstr "Введіть дані нижче, щоб створити обліковий запис."
 
 #: src\app\register\page.tsx
 #: src\app\settings\_tabs\account.tsx
@@ -510,11 +534,11 @@ msgstr "Email"
 
 #: src\app\register\page.tsx
 msgid "uCk8r+"
-msgstr "Вже маєте акаунт?"
+msgstr "Вже маєте обліковий запис?"
 
 #: src\app\register\page.tsx
 msgid "UEg22u"
-msgstr "Реєстрація акаунта..."
+msgstr "Реєстрація облікового запису..."
 
 #: src\app\settings\_components\ChangePasswordDialog.tsx
 #: src\app\settings\_tabs\account.tsx
@@ -523,7 +547,7 @@ msgstr "під час зміни пароля"
 
 #: src\app\settings\_tabs\account.tsx
 msgid "2PxMTO"
-msgstr "Скидання пароля акаунта."
+msgstr "Скидання пароля облікового запису."
 
 #: src\app\settings\_tabs\account.tsx
 msgid "55vTH+"
@@ -532,11 +556,6 @@ msgstr "ID користувача"
 #: src\app\settings\_tabs\account.tsx
 msgid "9qe6kS"
 msgstr "Дата реєстрації"
-
-#: src\app\settings\_tabs\account.tsx
-#: src\components\layout\UserDropdown.tsx
-msgid "deEeEI"
-msgstr "Реєстрація"
 
 #: src\app\settings\_tabs\account.tsx
 msgid "fTHhSB"
@@ -552,7 +571,7 @@ msgstr "Поточний пароль"
 
 #: src\app\settings\_tabs\account.tsx
 msgid "R0I1QA"
-msgstr "Щоб отримати доступ до налаштувань акаунта, увійдіть або зареєструйтеся."
+msgstr "Щоб отримати доступ до налаштувань облікового запису, увійдіть або зареєструйтеся."
 
 #: src\app\settings\_tabs\account.tsx
 msgid "X1axT8"
@@ -571,8 +590,18 @@ msgid "HNwGRG"
 msgstr "Провайдер аватарів"
 
 #: src\app\settings\_tabs\behaviour.tsx
+#: src\app\settings\_tabs\developer.tsx
+msgid "jvo0vs"
+msgstr "Зберегти"
+
+#: src\app\settings\_tabs\behaviour.tsx
 msgid "nCxC7R"
 msgstr "сек"
+
+#: src\app\settings\_tabs\behaviour.tsx
+#: src\app\settings\_tabs\developer.tsx
+msgid "qSnPFR"
+msgstr "Відновити за замовчуванням"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "XALdUr"
