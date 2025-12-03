@@ -58,7 +58,11 @@ export default function BottomNavigation() {
                         href={category.url}
                     >
                         <category.icon className={'size-5'} />
-                        <span className={'w-full truncate text-center text-xs'}>
+                        <span
+                            className={
+                                'max-w-full truncate text-center text-xs'
+                            }
+                        >
                             {category.shortName}
                         </span>
                     </BottomNavigationButton>
