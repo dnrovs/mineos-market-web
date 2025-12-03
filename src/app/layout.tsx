@@ -7,9 +7,8 @@ import AppSidebar from '@/components/layout/app-sidebar'
 import { MarketProvider } from '@/context/MarketProvider'
 import { Toaster } from '@/components/ui/shadcn/sonner'
 import { SidebarProvider } from '@/components/ui/shadcn/sidebar'
-import { NextIntlClientProvider, useLocale } from 'next-intl'
+import { NextIntlClientProvider } from 'next-intl'
 import { NuqsAdapter } from 'nuqs/adapters/next'
-import BetaLabel from '@/components/layout/beta-label'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { getExtracted, getLocale } from 'next-intl/server'
@@ -80,7 +79,6 @@ export default async function RootLayout({
                                 >
                                     <Analytics />
                                     <SpeedInsights />
-                                    <BetaLabel />
                                     <AppSidebar />
                                     {children}
                                     <Toaster />
