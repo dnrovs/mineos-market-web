@@ -1,23 +1,13 @@
-import { useMarket } from '@/context/MarketProvider'
-import {
-    Item,
-    ItemActions,
-    ItemContent,
-    ItemDescription,
-    ItemGroup,
-    ItemMedia,
-    ItemTitle
-} from '@/components/ui/shadcn/item'
-import React, { useEffect, useState } from 'react'
-import { Dialog as DialogT } from 'mineos-market-client'
-import { Avatar, AvatarFallback } from '@/components/ui/shadcn/avatar'
-import { Check, CheckCheck, Circle, Plus } from 'lucide-react'
-import Link from 'next/link'
-import { Spinner } from '@/components/ui/shadcn/spinner'
 import { clsx } from 'clsx'
+import { Check, CheckCheck, Circle, Plus } from 'lucide-react'
+import { Dialog as DialogT } from 'mineos-market-client'
+import { useExtracted } from 'next-intl'
+import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import handleFetchError from '@/hooks/use-handle-request-error'
-import { useConfig } from '@/hooks/use-config'
+import React, { useEffect, useState } from 'react'
+
+import ProvidedAvatar from '@/components/ui/provided-avatar'
+import { Avatar, AvatarFallback } from '@/components/ui/shadcn/avatar'
 import { Button } from '@/components/ui/shadcn/button'
 import {
     Dialog,
@@ -28,9 +18,20 @@ import {
     DialogTrigger
 } from '@/components/ui/shadcn/dialog'
 import { Input } from '@/components/ui/shadcn/input'
-import { useExtracted } from 'next-intl'
+import {
+    Item,
+    ItemActions,
+    ItemContent,
+    ItemDescription,
+    ItemGroup,
+    ItemMedia,
+    ItemTitle
+} from '@/components/ui/shadcn/item'
+import { Spinner } from '@/components/ui/shadcn/spinner'
+import { useMarket } from '@/context/MarketProvider'
+import { useConfig } from '@/hooks/use-config'
+import handleFetchError from '@/hooks/use-handle-request-error'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
-import ProvidedAvatar from '@/components/ui/provided-avatar'
 
 function NewChatDialogContent() {
     const t = useExtracted()
@@ -148,14 +149,18 @@ export default function Dialogs() {
     }, [client.messages, config.behaviour.dialogsUpdateInterval, user])
 
     return (
-        <div className={'relative h-full lg:w-75 xl:w-87.5 2xl:w-100'}>
+        <div
+            className={
+                'relative flex h-full flex-col items-center justify-center lg:w-75 xl:w-87.5 2xl:w-100'
+            }
+        >
             {loading ? (
-                <Spinner className={'mx-auto my-auto size-10'} />
+                <Spinner className={'size-10'} />
             ) : (
                 <>
                     <ItemGroup
                         className={
-                            'scrollbar-thin scrollbar-track-transparent scrollbar-thumb-ring h-full gap-1 overflow-auto'
+                            'scrollbar-thin scrollbar-track-transparent scrollbar-thumb-ring h-full w-full gap-1 overflow-auto'
                         }
                     >
                         {dialogs.map((dialog) => (

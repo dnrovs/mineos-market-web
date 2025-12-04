@@ -1,38 +1,4 @@
-import { TabsContent } from '@/components/ui/shadcn/tabs'
-import {
-    Card,
-    CardContent,
-    CardHeader,
-    CardTitle
-} from '@/components/ui/shadcn/card'
-import { useMarket } from '@/context/MarketProvider'
-import { useExtracted, useFormatter } from 'next-intl'
-import {
-    Field,
-    FieldDescription,
-    FieldGroup,
-    FieldLabel,
-    FieldLegend,
-    FieldSeparator,
-    FieldSet
-} from '@/components/ui/shadcn/field'
-import { Controller, useForm } from 'react-hook-form'
-import { Input } from '@/components/ui/shadcn/input'
-import { Button } from '@/components/ui/shadcn/button'
-import useHandleRequestError from '@/hooks/use-handle-request-error'
-import { toast } from 'sonner'
-import { ChangePasswordParams, UserCredentials } from 'mineos-market-client'
-import {
-    Item,
-    ItemActions,
-    ItemContent,
-    ItemDescription,
-    ItemMedia,
-    ItemTitle
-} from '@/components/ui/shadcn/item'
 import { clsx } from 'clsx'
-import Link from 'next/link'
-import ProvidedAvatar from '@/components/ui/provided-avatar'
 import {
     AtSign,
     Calendar,
@@ -46,14 +12,23 @@ import {
     UserRound,
     UserRoundPlus
 } from 'lucide-react'
+import { ChangePasswordParams, UserCredentials } from 'mineos-market-client'
+import { useExtracted, useFormatter } from 'next-intl'
+import Link from 'next/link'
 import React from 'react'
+import { Controller, useForm } from 'react-hook-form'
+import { toast } from 'sonner'
+
+import ButtonLink from '@/components/ui/button-link'
+import ProvidedAvatar from '@/components/ui/provided-avatar'
 import { Badge } from '@/components/ui/shadcn/badge'
+import { Button } from '@/components/ui/shadcn/button'
 import {
-    Tooltip,
-    TooltipContent,
-    TooltipTrigger
-} from '@/components/ui/shadcn/tooltip'
-import { Separator } from '@/components/ui/shadcn/separator'
+    Card,
+    CardContent,
+    CardHeader,
+    CardTitle
+} from '@/components/ui/shadcn/card'
 import {
     Empty,
     EmptyContent,
@@ -62,7 +37,33 @@ import {
     EmptyMedia,
     EmptyTitle
 } from '@/components/ui/shadcn/empty'
-import ButtonLink from '@/components/ui/button-link'
+import {
+    Field,
+    FieldDescription,
+    FieldGroup,
+    FieldLabel,
+    FieldLegend,
+    FieldSeparator,
+    FieldSet
+} from '@/components/ui/shadcn/field'
+import { Input } from '@/components/ui/shadcn/input'
+import {
+    Item,
+    ItemActions,
+    ItemContent,
+    ItemDescription,
+    ItemMedia,
+    ItemTitle
+} from '@/components/ui/shadcn/item'
+import { Separator } from '@/components/ui/shadcn/separator'
+import { TabsContent } from '@/components/ui/shadcn/tabs'
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipTrigger
+} from '@/components/ui/shadcn/tooltip'
+import { useMarket } from '@/context/MarketProvider'
+import useHandleRequestError from '@/hooks/use-handle-request-error'
 
 function UserItem() {
     const { user, logout } = useMarket()

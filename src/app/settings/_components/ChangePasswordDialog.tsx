@@ -1,3 +1,9 @@
+import { ChangePasswordParams } from 'mineos-market-client'
+import { useExtracted } from 'next-intl'
+import { useForm, Controller } from 'react-hook-form'
+import { toast } from 'sonner'
+
+import { Button } from '@/components/ui/shadcn/button'
 import {
     DialogClose,
     DialogContent,
@@ -6,16 +12,11 @@ import {
     DialogHeader,
     DialogTitle
 } from '@/components/ui/shadcn/dialog'
-import { Input } from '@/components/ui/shadcn/input'
-import { Button } from '@/components/ui/shadcn/button'
-import { ChangePasswordParams } from 'mineos-market-client'
-import { useForm, Controller } from 'react-hook-form'
-import { toast } from 'sonner'
-import { useMarket } from '@/context/MarketProvider'
 import { Field, FieldGroup, FieldLabel } from '@/components/ui/shadcn/field'
+import { Input } from '@/components/ui/shadcn/input'
+import { useMarket } from '@/context/MarketProvider'
 import handleFetchError from '@/hooks/use-handle-request-error'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
-import { useExtracted } from 'next-intl'
 
 type ChangePasswordFormValues = Omit<ChangePasswordParams, 'email'>
 

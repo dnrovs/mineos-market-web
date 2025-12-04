@@ -1,20 +1,6 @@
 'use client'
 
 import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectSeparator,
-    SelectTrigger,
-    SelectValue
-} from '@/components/ui/shadcn/select'
-import React from 'react'
-import {
-    InputGroup,
-    InputGroupAddon,
-    InputGroupInput
-} from '@/components/ui/shadcn/input-group'
-import {
     ArrowDown10,
     ArrowDownAZ,
     ArrowDownWideNarrow,
@@ -30,42 +16,97 @@ import {
     UserRound
 } from 'lucide-react'
 import { OrderBy, OrderDirection } from 'mineos-market-client'
-import { Button } from '@/components/ui/shadcn/button'
-import { Avatar, AvatarFallback } from '@/components/ui/shadcn/avatar'
-import { useMarket } from '@/context/MarketProvider'
-import UserDropdown from '@/components/layout/UserDropdown'
-import Link from 'next/link'
-import { Badge } from '@/components/ui/shadcn/badge'
-import { Separator } from '@/components/ui/shadcn/separator'
-import { useUnreadMessages } from '@/utils/use-unread-messages'
 import { useExtracted } from 'next-intl'
-import { Category } from '@/hooks/use-publication-categories'
+import Link from 'next/link'
+import React from 'react'
+
+import { Sorting } from '@/app/[category]/page'
+import UserDropdown from '@/components/layout/user-dropdown'
 import ProvidedAvatar from '@/components/ui/provided-avatar'
+import { Avatar, AvatarFallback } from '@/components/ui/shadcn/avatar'
+import { Badge } from '@/components/ui/shadcn/badge'
+import { Button } from '@/components/ui/shadcn/button'
+import {
+    InputGroup,
+    InputGroupAddon,
+    InputGroupInput
+} from '@/components/ui/shadcn/input-group'
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectSeparator,
+    SelectTrigger,
+    SelectValue
+} from '@/components/ui/shadcn/select'
+import { Separator } from '@/components/ui/shadcn/separator'
+import { useMarket } from '@/context/MarketProvider'
+import { Category } from '@/hooks/use-publication-categories'
+import { useUnreadMessages } from '@/utils/use-unread-messages'
 
 interface HeaderProps {
     category: Category
 
     searchQuery: string
-    orderBy: string
-    orderDirection: string
-
     setSearchQuery: (query: string) => void
-    setOrderBy: (orderBy: OrderBy) => void
-    setOrderDirection: (orderDirection: OrderDirection) => void
+
+    sorting: Sorting
+    setSorting: (sorting: Sorting) => void
 }
 
 export default function Header({
     category,
     searchQuery,
-    orderBy,
-    orderDirection,
     setSearchQuery,
-    setOrderBy,
-    setOrderDirection
+    sorting,
+    setSorting
 }: HeaderProps) {
     const { user } = useMarket()
     const t = useExtracted()
     const unreadMessages = useUnreadMessages()
+
+    const sortingVariants = [
+        {
+            name: t('Most popular'),
+            value: 'most-popular',
+            icon: ArrowDownWideNarrow
+        },
+        {
+            name: t('Least popular'),
+            value: 'least-popular',
+            icon: ArrowUpWideNarrow
+        },
+        {
+            name: t('Highest rated'),
+            value: 'highest-rated',
+            icon: ArrowDown10
+        },
+        {
+            name: t('Lowest rated'),
+            value: 'lowest-rated',
+            icon: ArrowUp10
+        },
+        {
+            name: t('Newest'),
+            value: 'newest',
+            icon: CalendarArrowDown
+        },
+        {
+            name: t('Oldest'),
+            value: 'oldest',
+            icon: CalendarArrowUp
+        },
+        {
+            name: t('A → Z'),
+            value: 'a-z',
+            icon: ArrowDownAZ
+        },
+        {
+            name: t('Z → A'),
+            value: 'z-a',
+            icon: ArrowUpAZ
+        }
+    ]
 
     return (
         <header className="bg-background/75 sticky top-0 flex w-full items-center justify-between px-3 py-3 backdrop-blur-md max-lg:flex-col max-lg:items-start max-lg:gap-2.5">
@@ -138,72 +179,26 @@ export default function Header({
                     </InputGroupAddon>
                 </InputGroup>
 
-                <Select
-                    value={`${orderBy}-${orderDirection}`}
-                    onValueChange={(value) => {
-                        const [by, dir] = value.split('-') as [
-                            OrderBy,
-                            OrderDirection
-                        ]
-                        setOrderBy(by)
-                        setOrderDirection(dir)
-                    }}
-                >
+                <Select value={sorting} onValueChange={setSorting}>
                     <SelectTrigger className={'w-41'}>
                         <SelectValue placeholder={t('Sort by...')} />
                     </SelectTrigger>
                     <SelectContent>
-                        <SelectItem
-                            value={`${OrderBy.Popularity}-${OrderDirection.Descending}`}
-                        >
-                            <ArrowDownWideNarrow />
-                            {t('Most popular')}
-                        </SelectItem>
-                        <SelectItem
-                            value={`${OrderBy.Popularity}-${OrderDirection.Ascending}`}
-                        >
-                            <ArrowUpWideNarrow />
-                            {t('Least popular')}
-                        </SelectItem>
-                        <SelectSeparator />
-                        <SelectItem
-                            value={`${OrderBy.Rating}-${OrderDirection.Descending}`}
-                        >
-                            <ArrowDown10 />
-                            {t('Highest rated')}
-                        </SelectItem>
-                        <SelectItem
-                            value={`${OrderBy.Rating}-${OrderDirection.Ascending}`}
-                        >
-                            <ArrowUp10 />
-                            {t('Lowest rated')}
-                        </SelectItem>
-                        <SelectSeparator />
-                        <SelectItem
-                            value={`${OrderBy.Date}-${OrderDirection.Descending}`}
-                        >
-                            <CalendarArrowDown />
-                            {t('Newest')}
-                        </SelectItem>
-                        <SelectItem
-                            value={`${OrderBy.Date}-${OrderDirection.Ascending}`}
-                        >
-                            <CalendarArrowUp />
-                            {t('Oldest')}
-                        </SelectItem>
-                        <SelectSeparator />
-                        <SelectItem
-                            value={`${OrderBy.Name}-${OrderDirection.Ascending}`}
-                        >
-                            <ArrowDownAZ />
-                            {t('A → Z')}
-                        </SelectItem>
-                        <SelectItem
-                            value={`${OrderBy.Name}-${OrderDirection.Descending}`}
-                        >
-                            <ArrowUpAZ />
-                            {t('Z → A')}
-                        </SelectItem>
+                        {sortingVariants.map((variant, index) => (
+                            <React.Fragment key={variant.value}>
+                                <SelectItem value={variant.value}>
+                                    <variant.icon />
+                                    <span className={'truncate'}>
+                                        {variant.name}
+                                    </span>
+                                </SelectItem>
+
+                                {(index + 1) % 2 === 0 &&
+                                    index !== sortingVariants.length - 1 && (
+                                        <SelectSeparator />
+                                    )}
+                            </React.Fragment>
+                        ))}
                     </SelectContent>
                 </Select>
 

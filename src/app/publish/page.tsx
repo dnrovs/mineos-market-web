@@ -1,11 +1,24 @@
 'use client'
 
-import React, { useEffect } from 'react'
-import { useMarket } from '@/context/MarketProvider'
-
+import {
+    License,
+    PublicationCategory,
+    UploadPublicationParams
+} from 'mineos-market-client'
+import { useExtracted } from 'next-intl'
 import { redirect, useRouter, useSearchParams } from 'next/navigation'
+import React, { useEffect } from 'react'
+import { useForm } from 'react-hook-form'
+import { toast } from 'sonner'
 
-import Header from '@/components/layout/Header'
+import PublishForm, {
+    formatPublishFormValues,
+    PublishFormValues
+} from '@/components/forms/publish-form'
+import PublishFormFields from '@/components/forms/publish-form'
+import Header from '@/components/layout/header'
+import ResponsiveCard from '@/components/ui/responsive-card'
+import { Button } from '@/components/ui/shadcn/button'
 import {
     Card,
     CardContent,
@@ -14,25 +27,11 @@ import {
     CardHeader,
     CardTitle
 } from '@/components/ui/shadcn/card'
-import { useExtracted } from 'next-intl'
-import PublishForm, {
-    formatPublishFormValues,
-    PublishFormValues
-} from '@/components/forms/publish-form'
-import useHandleRequestError from '@/hooks/use-handle-request-error'
-import { toast } from 'sonner'
-import {
-    License,
-    PublicationCategory,
-    UploadPublicationParams
-} from 'mineos-market-client'
-import { useForm } from 'react-hook-form'
-import { usePublicationCategories } from '@/hooks/use-publication-categories'
-import PublishFormFields from '@/components/forms/publish-form'
 import { Field, FieldSet } from '@/components/ui/shadcn/field'
-import { Button } from '@/components/ui/shadcn/button'
+import { useMarket } from '@/context/MarketProvider'
+import useHandleRequestError from '@/hooks/use-handle-request-error'
+import { usePublicationCategories } from '@/hooks/use-publication-categories'
 import { licenses } from '@/lib/constants'
-import ResponsiveCard from '@/components/ui/responsive-card'
 
 export default function PublishPage() {
     const searchParams = useSearchParams()

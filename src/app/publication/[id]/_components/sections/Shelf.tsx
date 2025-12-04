@@ -1,8 +1,5 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
-import { Separator } from '@/components/ui/shadcn/separator'
-import { FileType, License, Publication, Review } from 'mineos-market-client'
 import {
     ArrowRight,
     Download,
@@ -11,11 +8,14 @@ import {
     Scale,
     Star
 } from 'lucide-react'
-import { usePublicationCategories } from '@/hooks/use-publication-categories'
-import ScrollContainer from 'react-indiana-drag-scroll'
-
-import 'react-indiana-drag-scroll/dist/style.css'
+import { FileType, License, Publication, Review } from 'mineos-market-client'
 import { useExtracted } from 'next-intl'
+import { useEffect, useRef, useState } from 'react'
+import ScrollContainer from 'react-indiana-drag-scroll'
+import 'react-indiana-drag-scroll/dist/style.css'
+
+import { Separator } from '@/components/ui/shadcn/separator'
+import { usePublicationCategories } from '@/hooks/use-publication-categories'
 import isPackaged from '@/utils/is-packaged'
 
 const licenses: Record<License, string> = {

@@ -1,18 +1,20 @@
 'use client'
 
-import WigglyWobbly from '@/app/overview/components/WigglyWobbly'
-import { Card } from '@/components/ui/shadcn/card'
-import FlatIcon from '../../../public/market.svg'
-import { useEffect, useState } from 'react'
-import { PublicationCategory, Statistic } from 'mineos-market-client'
-import { useMarket } from '@/context/MarketProvider'
-import { Spinner } from '@/components/ui/shadcn/spinner'
-import Link from 'next/link'
-import Header from '@/components/layout/Header'
 import { User } from 'lucide-react'
-import useHandleRequestError from '@/hooks/use-handle-request-error'
+import { PublicationCategory, Statistic } from 'mineos-market-client'
 import { useExtracted } from 'next-intl'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
+
+import WigglyWobbly from '@/app/overview/components/WigglyWobbly'
+import Header from '@/components/layout/header'
+import { Card } from '@/components/ui/shadcn/card'
+import { Spinner } from '@/components/ui/shadcn/spinner'
+import { useMarket } from '@/context/MarketProvider'
+import useHandleRequestError from '@/hooks/use-handle-request-error'
 import getPublicationIcon from '@/utils/get-publication-icon'
+
+import FlatIcon from '../../../public/market.svg'
 
 export default function Overview() {
     const { client } = useMarket()

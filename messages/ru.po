@@ -82,9 +82,80 @@ msgstr "при получении публикаций"
 msgid "zWr4H0"
 msgstr "Похоже, в этой категории нет публикаций."
 
+#: src\app\layout.tsx
+#: src\app\manifest.ts
+msgid "6NyYTi"
+msgstr "Исследуйте, загружайте и делитесь программным обеспечением для MineOS. Просматривайте исходный код. Общайтесь с разработчиками."
+
+#: src\app\login\page.tsx
+msgid "00GQ0X"
+msgstr "Email или имя пользователя"
+
+#: src\app\login\page.tsx
+msgid "25WwxF"
+msgstr "Нет учётной записи?"
+
+#: src\app\login\page.tsx
+msgid "3t2ZWR"
+msgstr "Войдите в вашу учётную запись"
+
+#: src\app\login\page.tsx
+#: src\app\register\page.tsx
+msgid "5sg7KC"
+msgstr "Пароль"
+
+#: src\app\login\page.tsx
+#: src\app\register\page.tsx
+#: src\app\settings\_tabs\account.tsx
+#: src\components\layout\user-dropdown.tsx
+#: src\components\layout\UserDropdown.tsx
+msgid "AyGauy"
+msgstr "Войти"
+
+#: src\app\login\page.tsx
+#: src\app\settings\_tabs\account.tsx
+#: src\components\layout\user-dropdown.tsx
+#: src\components\layout\UserDropdown.tsx
+msgid "deEeEI"
+msgstr "Регистрация"
+
+#: src\app\login\page.tsx
+msgid "fPriMP"
+msgstr "Введите свои учётные данные чтобы войти в учётную запись"
+
 #: src\app\login\page.tsx
 msgid "rBTItO"
 msgstr "при входе в систему"
+
+#: src\app\manifest.ts
+#: src\components\layout\app-sidebar.tsx
+msgid "9uOFF3"
+msgstr "Обзор"
+
+#: src\app\manifest.ts
+msgid "cMgpXU"
+msgstr "Просмотреть статистику маркета"
+
+#: src\app\manifest.ts
+#: src\app\messages\_components\dialogs.tsx
+#: src\app\messages\[user]\_components\header.tsx
+#: src\app\settings\_tabs\behaviour.tsx
+#: src\components\layout\app-sidebar.tsx
+msgid "hMzcSq"
+msgstr "Сообщения"
+
+#: src\app\manifest.ts
+msgid "iOI1ga"
+msgstr "Загрузить своё программное обеспечение"
+
+#: src\app\manifest.ts
+#: src\app\publish\page.tsx
+msgid "syEQFE"
+msgstr "Опубликовать"
+
+#: src\app\manifest.ts
+msgid "va0Mzr"
+msgstr "Общаться с разработчиками"
 
 #: src\app\messages\_components\dialogs.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
@@ -106,6 +177,12 @@ msgstr "при получении диалогов"
 #: src\app\user\[name]\page.tsx
 msgid "un14bs"
 msgstr "Открыть чат"
+
+#: src\app\messages\[user]\_components\header.tsx
+#: src\components\layout\header.tsx
+#: src\components\layout\Header.tsx
+msgid "cyR7Kh"
+msgstr "Назад"
 
 #: src\app\messages\[user]\page.tsx
 msgid "+QF2mn"
@@ -134,6 +211,10 @@ msgstr "Непрочитано"
 #: src\app\messages\[user]\page.tsx
 msgid "sbE0zo"
 msgstr "при получении статуса прочтения последнего сообщения"
+
+#: src\app\messages\[user]\page.tsx
+msgid "TNr4jR"
+msgstr "Сообщение не может начинатся или заканчиватся фигурной скобкой"
 
 #: src\app\messages\[user]\page.tsx
 msgid "UvpnGV"
@@ -313,6 +394,10 @@ msgid "Ov8WL5"
 msgstr "Уже проголосовали!"
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "REm9Re"
+msgstr "Рейтинги и обзоры"
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "rMIZOU"
 msgstr "Нажмите, чтобы оценить:"
 
@@ -430,10 +515,6 @@ msgstr "Создайте что-то удивительное и поделит�
 msgid "QZ2HQg"
 msgstr "при загрузке публикации"
 
-#: src\app\publish\page.tsx
-msgid "syEQFE"
-msgstr "Опубликовать"
-
 #: src\app\register\page.tsx
 msgid "1zEIJP"
 msgstr "при регистрации"
@@ -447,18 +528,8 @@ msgid "3VyG1T"
 msgstr "Проверьте электронную почту и папку со спамом, чтобы подтвердить аккаунт MineOS"
 
 #: src\app\register\page.tsx
-msgid "5sg7KC"
-msgstr "Пароль"
-
-#: src\app\register\page.tsx
 msgid "AjpNgX"
 msgstr "Ваш аккаунт успешно зарегистрирован."
-
-#: src\app\register\page.tsx
-#: src\app\settings\_tabs\account.tsx
-#: src\components\layout\UserDropdown.tsx
-msgid "AyGauy"
-msgstr "Войти"
 
 #: src\app\register\page.tsx
 msgid "fD2A0X"
@@ -495,11 +566,6 @@ msgid "9qe6kS"
 msgstr "Дата регистрации"
 
 #: src\app\settings\_tabs\account.tsx
-#: src\components\layout\UserDropdown.tsx
-msgid "deEeEI"
-msgstr "Регистрация"
-
-#: src\app\settings\_tabs\account.tsx
 msgid "fTHhSB"
 msgstr "Новый пароль"
 
@@ -528,17 +594,22 @@ msgid "HaqEm4"
 msgstr "Интервал обновления чата"
 
 #: src\app\settings\_tabs\behaviour.tsx
-#: src\components\layout\app-sidebar.tsx
-msgid "hMzcSq"
-msgstr "Сообщения"
-
-#: src\app\settings\_tabs\behaviour.tsx
 msgid "HNwGRG"
 msgstr "Провайдер аватаров"
 
 #: src\app\settings\_tabs\behaviour.tsx
+#: src\app\settings\_tabs\developer.tsx
+msgid "jvo0vs"
+msgstr "Сохранить"
+
+#: src\app\settings\_tabs\behaviour.tsx
 msgid "nCxC7R"
 msgstr "сек"
+
+#: src\app\settings\_tabs\behaviour.tsx
+#: src\app\settings\_tabs\developer.tsx
+msgid "qSnPFR"
+msgstr "Восстановить по умолчанию"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "XALdUr"
@@ -589,6 +660,7 @@ msgid "7/kzJw"
 msgstr "У этого пользователя пока нет публикаций или он не существует."
 
 #: src\app\user\[name]\page.tsx
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "D3idYv"
 msgstr "Настройки"
@@ -685,38 +757,37 @@ msgstr "Путь установки"
 msgid "zhSlKP"
 msgstr "Это программное обеспечение делает..."
 
-#: src\components\layout\app-sidebar.tsx
-msgid "9uOFF3"
-msgstr "Обзор"
-
-#: src\components\layout\Header.tsx
-msgid "cyR7Kh"
-msgstr "Назад"
-
+#: src\components\layout\publications.tsx
 #: src\components\layout\Publications.tsx
 msgid "olk5qg"
 msgstr "от {username}"
 
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "+CwN9C"
 msgstr "Системная"
 
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "3cc4Ct"
 msgstr "Светлая"
 
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "Pe0ogR"
 msgstr "Тема"
 
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "PlBReU"
 msgstr "Выйти"
 
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "tOdNiY"
 msgstr "Темная"
 
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "y1Z3or"
 msgstr "Язык"

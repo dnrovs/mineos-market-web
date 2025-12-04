@@ -1,23 +1,24 @@
 'use client'
 
-import { useEffect, useState } from 'react'
-import { Publication, Review as ReviewT } from 'mineos-market-client'
-import { useMarket } from '@/context/MarketProvider'
-import { Textarea } from '@/components/ui/shadcn/textarea'
-import { Button } from '@/components/ui/shadcn/button'
-import { Avatar, AvatarFallback } from '@/components/ui/shadcn/avatar'
-import Link from 'next/link'
-import { Pencil, Star, ThumbsDown, ThumbsUp } from 'lucide-react'
-import { Spinner } from '@/components/ui/shadcn/spinner'
-import { Progress } from '@/components/ui/shadcn/progress'
-import handleFetchError from '@/hooks/use-handle-request-error'
-import { notFound, useRouter } from 'next/navigation'
 import { clsx } from 'clsx'
-import { toast } from 'sonner'
-import { Separator } from '@/components/ui/shadcn/separator'
+import { Pencil, Star, ThumbsDown, ThumbsUp } from 'lucide-react'
+import { Publication, Review as ReviewT } from 'mineos-market-client'
 import { useExtracted, useFormatter } from 'next-intl'
-import useHandleRequestError from '@/hooks/use-handle-request-error'
+import Link from 'next/link'
+import { notFound, useRouter } from 'next/navigation'
+import { useEffect, useState } from 'react'
+import { toast } from 'sonner'
+
 import ProvidedAvatar from '@/components/ui/provided-avatar'
+import { Avatar, AvatarFallback } from '@/components/ui/shadcn/avatar'
+import { Button } from '@/components/ui/shadcn/button'
+import { Progress } from '@/components/ui/shadcn/progress'
+import { Separator } from '@/components/ui/shadcn/separator'
+import { Spinner } from '@/components/ui/shadcn/spinner'
+import { Textarea } from '@/components/ui/shadcn/textarea'
+import { useMarket } from '@/context/MarketProvider'
+import handleFetchError from '@/hooks/use-handle-request-error'
+import useHandleRequestError from '@/hooks/use-handle-request-error'
 
 interface RatingSummaryProps {
     averageRating?: number
@@ -434,7 +435,7 @@ export default function RatingsAndReviews({
 
     return (
         <section className="flex flex-col gap-3">
-            <h2 className="text-xl font-bold">Ratings & Reviews</h2>
+            <h2 className="text-xl font-bold">{t('Ratings & Reviews')}</h2>
 
             <div className={'flex flex-col gap-5'}>
                 <RatingSummary

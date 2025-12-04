@@ -1,12 +1,19 @@
 'use client'
 
-import { useMarket } from '@/context/MarketProvider'
-import { notFound, useParams, useRouter } from 'next/navigation'
+import { FileType, Publication } from 'mineos-market-client'
 import { useExtracted } from 'next-intl'
+import { notFound, useParams, useRouter } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
-import useHandleRequestError from '@/hooks/use-handle-request-error'
-import { Spinner } from '@/components/ui/shadcn/spinner'
-import Header from '@/components/layout/Header'
+import { Controller, useForm } from 'react-hook-form'
+import { toast } from 'sonner'
+
+import PublishFormFields, {
+    AddDependencyFormValues,
+    formatPublishFormValues,
+    PublishFormValues
+} from '@/components/forms/publish-form'
+import Header from '@/components/layout/header'
+import { Button } from '@/components/ui/shadcn/button'
 import {
     Card,
     CardContent,
@@ -21,17 +28,11 @@ import {
     FieldSeparator,
     FieldSet
 } from '@/components/ui/shadcn/field'
-import PublishFormFields, {
-    AddDependencyFormValues,
-    formatPublishFormValues,
-    PublishFormValues
-} from '@/components/forms/publish-form'
-import { Button } from '@/components/ui/shadcn/button'
-import { Controller, useForm } from 'react-hook-form'
-import { FileType, Publication } from 'mineos-market-client'
+import { Spinner } from '@/components/ui/shadcn/spinner'
 import { Textarea } from '@/components/ui/shadcn/textarea'
+import { useMarket } from '@/context/MarketProvider'
+import useHandleRequestError from '@/hooks/use-handle-request-error'
 import isPackaged from '@/utils/is-packaged'
-import { toast } from 'sonner'
 
 const formatPublicationToFormValues = (
     publication: Publication

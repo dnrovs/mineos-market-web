@@ -1,24 +1,24 @@
 'use client'
 
-import Header from '@/components/layout/Header'
-
-import {
-    Tabs,
-    TabsContent,
-    TabsList,
-    TabsTrigger
-} from '@/components/ui/shadcn/tabs'
 import { useExtracted } from 'next-intl'
+import { parseAsStringLiteral, useQueryState } from 'nuqs'
+
 import AccountTab from '@/app/settings/_tabs/account'
+import BehaviourTab from '@/app/settings/_tabs/behaviour'
 import DeveloperTab from '@/app/settings/_tabs/developer'
+import Header from '@/components/layout/header'
 import {
     Card,
     CardContent,
     CardHeader,
     CardTitle
 } from '@/components/ui/shadcn/card'
-import BehaviourTab from '@/app/settings/_tabs/behaviour'
-import { parseAsStringLiteral, useQueryState } from 'nuqs'
+import {
+    Tabs,
+    TabsContent,
+    TabsList,
+    TabsTrigger
+} from '@/components/ui/shadcn/tabs'
 
 export default function Settings() {
     const t = useExtracted()

@@ -82,9 +82,80 @@ msgstr "під час отримання публікацій"
 msgid "zWr4H0"
 msgstr "Схоже, у цій категорії немає публікацій."
 
+#: src\app\layout.tsx
+#: src\app\manifest.ts
+msgid "6NyYTi"
+msgstr "Досліджуйте, завантажуйте та діліться програмним забезпеченням для MineOS. Переглядайте вихідний код. Спілкуйтеся з розробниками."
+
+#: src\app\login\page.tsx
+msgid "00GQ0X"
+msgstr "Email або ім'я користувача"
+
+#: src\app\login\page.tsx
+msgid "25WwxF"
+msgstr "Не маєте облікового запису?"
+
+#: src\app\login\page.tsx
+msgid "3t2ZWR"
+msgstr "Увійдіть в ваш обліковий запис"
+
+#: src\app\login\page.tsx
+#: src\app\register\page.tsx
+msgid "5sg7KC"
+msgstr "Пароль"
+
+#: src\app\login\page.tsx
+#: src\app\register\page.tsx
+#: src\app\settings\_tabs\account.tsx
+#: src\components\layout\user-dropdown.tsx
+#: src\components\layout\UserDropdown.tsx
+msgid "AyGauy"
+msgstr "Увійти"
+
+#: src\app\login\page.tsx
+#: src\app\settings\_tabs\account.tsx
+#: src\components\layout\user-dropdown.tsx
+#: src\components\layout\UserDropdown.tsx
+msgid "deEeEI"
+msgstr "Реєстрація"
+
+#: src\app\login\page.tsx
+msgid "fPriMP"
+msgstr "Введіть свої дані щоб увійти в обліковий запис"
+
 #: src\app\login\page.tsx
 msgid "rBTItO"
 msgstr "під час входу в систему"
+
+#: src\app\manifest.ts
+#: src\components\layout\app-sidebar.tsx
+msgid "9uOFF3"
+msgstr "Огляд"
+
+#: src\app\manifest.ts
+msgid "cMgpXU"
+msgstr "Переглянути статистику маркета"
+
+#: src\app\manifest.ts
+#: src\app\messages\_components\dialogs.tsx
+#: src\app\messages\[user]\_components\header.tsx
+#: src\app\settings\_tabs\behaviour.tsx
+#: src\components\layout\app-sidebar.tsx
+msgid "hMzcSq"
+msgstr "Повідомлення"
+
+#: src\app\manifest.ts
+msgid "iOI1ga"
+msgstr "Завантажити своє програмне забезпечення"
+
+#: src\app\manifest.ts
+#: src\app\publish\page.tsx
+msgid "syEQFE"
+msgstr "Опублікувати"
+
+#: src\app\manifest.ts
+msgid "va0Mzr"
+msgstr "Спілкуватися з розробниками"
 
 #: src\app\messages\_components\dialogs.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
@@ -106,6 +177,12 @@ msgstr "під час отримання діалогів"
 #: src\app\user\[name]\page.tsx
 msgid "un14bs"
 msgstr "Відкрити чат"
+
+#: src\app\messages\[user]\_components\header.tsx
+#: src\components\layout\header.tsx
+#: src\components\layout\Header.tsx
+msgid "cyR7Kh"
+msgstr "Назад"
 
 #: src\app\messages\[user]\page.tsx
 msgid "+QF2mn"
@@ -134,6 +211,10 @@ msgstr "Непрочитано"
 #: src\app\messages\[user]\page.tsx
 msgid "sbE0zo"
 msgstr "під час отримання статусу прочитання останнього повідомлення"
+
+#: src\app\messages\[user]\page.tsx
+msgid "TNr4jR"
+msgstr "Повідомлення не може починатися або закынчуватися фігурною дужкою"
 
 #: src\app\messages\[user]\page.tsx
 msgid "UvpnGV"
@@ -313,6 +394,10 @@ msgid "Ov8WL5"
 msgstr "Вже проголосували!"
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "REm9Re"
+msgstr "Рейтинги та огляди"
+
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "rMIZOU"
 msgstr "Натисніть, щоб оцінити:"
 
@@ -430,39 +515,25 @@ msgstr "Створіть щось дивовижне і поділіться ц�
 msgid "QZ2HQg"
 msgstr "під час завантаження публікації"
 
-#: src\app\publish\page.tsx
-msgid "syEQFE"
-msgstr "Опублікувати"
-
 #: src\app\register\page.tsx
 msgid "1zEIJP"
 msgstr "під час реєстрації"
 
 #: src\app\register\page.tsx
 msgid "3VCFQV"
-msgstr "Зареєструвати новий акаунт"
+msgstr "Зареєструвати новий обліковий запис"
 
 #: src\app\register\page.tsx
 msgid "3VyG1T"
-msgstr "Перевірте електронну пошту та папку зі спамом, щоб підтвердити акаунт MineOS"
-
-#: src\app\register\page.tsx
-msgid "5sg7KC"
-msgstr "Пароль"
+msgstr "Перевірте електронну пошту та папку зі спамом, щоб підтвердити обліковий запис MineOS"
 
 #: src\app\register\page.tsx
 msgid "AjpNgX"
-msgstr "Ваш акаунт успішно зареєстровано."
-
-#: src\app\register\page.tsx
-#: src\app\settings\_tabs\account.tsx
-#: src\components\layout\UserDropdown.tsx
-msgid "AyGauy"
-msgstr "Увійти"
+msgstr "Ваш обліковий запис успішно зареєстровано."
 
 #: src\app\register\page.tsx
 msgid "fD2A0X"
-msgstr "Введіть дані нижче, щоб створити акаунт."
+msgstr "Введіть дані нижче, щоб створити обліковий запис."
 
 #: src\app\register\page.tsx
 #: src\app\settings\_tabs\account.tsx
@@ -471,11 +542,11 @@ msgstr "Email"
 
 #: src\app\register\page.tsx
 msgid "uCk8r+"
-msgstr "Вже маєте акаунт?"
+msgstr "Вже маєте обліковий запис?"
 
 #: src\app\register\page.tsx
 msgid "UEg22u"
-msgstr "Реєстрація акаунта..."
+msgstr "Реєстрація облікового запису..."
 
 #: src\app\settings\_components\ChangePasswordDialog.tsx
 #: src\app\settings\_tabs\account.tsx
@@ -484,7 +555,7 @@ msgstr "під час зміни пароля"
 
 #: src\app\settings\_tabs\account.tsx
 msgid "2PxMTO"
-msgstr "Скидання пароля акаунта."
+msgstr "Скидання пароля облікового запису."
 
 #: src\app\settings\_tabs\account.tsx
 msgid "55vTH+"
@@ -493,11 +564,6 @@ msgstr "ID користувача"
 #: src\app\settings\_tabs\account.tsx
 msgid "9qe6kS"
 msgstr "Дата реєстрації"
-
-#: src\app\settings\_tabs\account.tsx
-#: src\components\layout\UserDropdown.tsx
-msgid "deEeEI"
-msgstr "Реєстрація"
 
 #: src\app\settings\_tabs\account.tsx
 msgid "fTHhSB"
@@ -513,7 +579,7 @@ msgstr "Поточний пароль"
 
 #: src\app\settings\_tabs\account.tsx
 msgid "R0I1QA"
-msgstr "Щоб отримати доступ до налаштувань акаунта, увійдіть або зареєструйтеся."
+msgstr "Щоб отримати доступ до налаштувань облікового запису, увійдіть або зареєструйтеся."
 
 #: src\app\settings\_tabs\account.tsx
 msgid "X1axT8"
@@ -528,17 +594,22 @@ msgid "HaqEm4"
 msgstr "Інтервал оновлення чату"
 
 #: src\app\settings\_tabs\behaviour.tsx
-#: src\components\layout\app-sidebar.tsx
-msgid "hMzcSq"
-msgstr "Повідомлення"
-
-#: src\app\settings\_tabs\behaviour.tsx
 msgid "HNwGRG"
 msgstr "Провайдер аватарів"
 
 #: src\app\settings\_tabs\behaviour.tsx
+#: src\app\settings\_tabs\developer.tsx
+msgid "jvo0vs"
+msgstr "Зберегти"
+
+#: src\app\settings\_tabs\behaviour.tsx
 msgid "nCxC7R"
 msgstr "сек"
+
+#: src\app\settings\_tabs\behaviour.tsx
+#: src\app\settings\_tabs\developer.tsx
+msgid "qSnPFR"
+msgstr "Відновити за замовчуванням"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "XALdUr"
@@ -589,6 +660,7 @@ msgid "7/kzJw"
 msgstr "У цього користувача поки немає публікацій або він не існує."
 
 #: src\app\user\[name]\page.tsx
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "D3idYv"
 msgstr "Налаштування"
@@ -685,38 +757,37 @@ msgstr "Шлях встановлення"
 msgid "zhSlKP"
 msgstr "Це програмне забезпечення робить..."
 
-#: src\components\layout\app-sidebar.tsx
-msgid "9uOFF3"
-msgstr "Огляд"
-
-#: src\components\layout\Header.tsx
-msgid "cyR7Kh"
-msgstr "Назад"
-
+#: src\components\layout\publications.tsx
 #: src\components\layout\Publications.tsx
 msgid "olk5qg"
 msgstr "{username}"
 
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "+CwN9C"
 msgstr "Системна"
 
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "3cc4Ct"
 msgstr "Світла"
 
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "Pe0ogR"
 msgstr "Тема"
 
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "PlBReU"
 msgstr "Вийти"
 
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "tOdNiY"
 msgstr "Темна"
 
+#: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
 msgid "y1Z3or"
 msgstr "Мова"
@@ -747,7 +818,7 @@ msgstr "Бібліотеки"
 
 #: src\hooks\use-publication-categories.ts
 msgid "D9ZyLu"
-msgstr "Стіни"
+msgstr "Фони"
 
 #: src\hooks\use-publication-categories.ts
 msgid "DqD1yK"

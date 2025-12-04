@@ -1,5 +1,10 @@
 'use client'
 
+import { Github, OctagonAlert } from 'lucide-react'
+import Link from 'next/link'
+import { useEffect } from 'react'
+
+import { Button } from '@/components/ui/shadcn/button'
 import {
     Empty,
     EmptyContent,
@@ -8,10 +13,6 @@ import {
     EmptyMedia,
     EmptyTitle
 } from '@/components/ui/shadcn/empty'
-import { Button } from '@/components/ui/shadcn/button'
-import { Github, OctagonAlert } from 'lucide-react'
-import { useEffect } from 'react'
-import Link from 'next/link'
 
 export default function Error({
     error,

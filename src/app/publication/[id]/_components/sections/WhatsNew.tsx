@@ -1,6 +1,6 @@
-import React from 'react'
 import { Publication } from 'mineos-market-client'
 import { useExtracted } from 'next-intl'
+import React from 'react'
 
 interface WhatsNewProps {
     publication: Publication

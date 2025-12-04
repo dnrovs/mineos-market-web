@@ -1,8 +1,15 @@
 'use client'
 
-import Header from '@/components/layout/Header'
+import { ApiError } from 'mineos-market-client'
+import { useExtracted } from 'next-intl'
+import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import React, { useEffect } from 'react'
+import { useForm, Controller } from 'react-hook-form'
+import { toast } from 'sonner'
 
+import Header from '@/components/layout/header'
+import ResponsiveCard from '@/components/ui/responsive-card'
 import { Button } from '@/components/ui/shadcn/button'
 import {
     Card,
@@ -18,16 +25,9 @@ import {
     FieldLabel
 } from '@/components/ui/shadcn/field'
 import { Input } from '@/components/ui/shadcn/input'
-
-import { useForm, Controller } from 'react-hook-form'
 import { useMarket } from '@/context/MarketProvider'
-import { useRouter } from 'next/navigation'
-import { ApiError } from 'mineos-market-client'
-import { toast } from 'sonner'
-import Link from 'next/link'
 import handleFetchError from '@/hooks/use-handle-request-error'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
-import { useExtracted } from 'next-intl'
 
 type RegisterFormValues = {
     username: string
@@ -80,12 +80,8 @@ export default function LoginPage() {
     return (
         <main className="flex h-screen w-full flex-col overflow-auto">
             <Header />
-            <div className="flex h-full w-full">
-                <Card
-                    className={
-                        'm-auto w-full max-sm:rounded-none max-sm:border-x-0 sm:w-sm'
-                    }
-                >
+            <div className="flex h-full w-full items-center">
+                <ResponsiveCard>
                     <CardHeader>
                         <CardTitle>{t('Register a new account')}</CardTitle>
                         <CardDescription>
@@ -97,59 +93,59 @@ export default function LoginPage() {
                     <CardContent>
                         <form onSubmit={handleSubmit(register)}>
                             <FieldGroup>
-                                <Field>
-                                    <FieldLabel htmlFor="username">
-                                        {t('Username')}
-                                    </FieldLabel>
-                                    <Controller
-                                        name="username"
-                                        control={control}
-                                        render={({ field }) => (
+                                <Controller
+                                    name="username"
+                                    control={control}
+                                    render={({ field }) => (
+                                        <Field>
+                                            <FieldLabel>
+                                                {t('Username')}
+                                            </FieldLabel>
+
                                             <Input
-                                                id="username"
                                                 type="text"
                                                 placeholder="johnpork"
                                                 required
                                                 {...field}
                                             />
-                                        )}
-                                    />
-                                </Field>
-                                <Field>
-                                    <FieldLabel htmlFor="email">
-                                        {t('Email')}
-                                    </FieldLabel>
-                                    <Controller
-                                        name="email"
-                                        control={control}
-                                        render={({ field }) => (
+                                        </Field>
+                                    )}
+                                />
+                                <Controller
+                                    name="email"
+                                    control={control}
+                                    render={({ field }) => (
+                                        <Field>
+                                            <FieldLabel>
+                                                {t('Email')}
+                                            </FieldLabel>
+
                                             <Input
-                                                id="email"
                                                 type="email"
                                                 placeholder="jonny@example.com"
                                                 required
                                                 {...field}
                                             />
-                                        )}
-                                    />
-                                </Field>
-                                <Field>
-                                    <FieldLabel htmlFor="password">
-                                        {t('Password')}
-                                    </FieldLabel>
-                                    <Controller
-                                        name="password"
-                                        control={control}
-                                        render={({ field }) => (
+                                        </Field>
+                                    )}
+                                />
+                                <Controller
+                                    name="password"
+                                    control={control}
+                                    render={({ field }) => (
+                                        <Field>
+                                            <FieldLabel>
+                                                {t('Password')}
+                                            </FieldLabel>
+
                                             <Input
-                                                id="password"
                                                 type="password"
                                                 required
                                                 {...field}
                                             />
-                                        )}
-                                    />
-                                </Field>
+                                        </Field>
+                                    )}
+                                />
                                 <Field>
                                     <Button type="submit">Register</Button>
                                     <FieldDescription className="text-center">
@@ -160,7 +156,7 @@ export default function LoginPage() {
                             </FieldGroup>
                         </form>
                     </CardContent>
-                </Card>
+                </ResponsiveCard>
             </div>
         </main>
     )

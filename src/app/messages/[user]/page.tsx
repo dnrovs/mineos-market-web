@@ -1,32 +1,32 @@
 'use client'
 
+import { clsx } from 'clsx'
+import emojiRegex from 'emoji-regex'
+import { ArrowUp } from 'lucide-react'
+import { Message as MessageT } from 'mineos-market-client'
+import { useExtracted } from 'next-intl'
 import { useParams, useRouter } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
-import { useMarket } from '@/context/MarketProvider'
-import { Message as MessageT } from 'mineos-market-client'
-import { Spinner } from '@/components/ui/shadcn/spinner'
-import { clsx } from 'clsx'
+import { toast } from 'sonner'
+import {
+    StickToBottom,
+    useStickToBottom,
+    useStickToBottomContext
+} from 'use-stick-to-bottom'
+
+import { Header } from '@/app/messages/[user]/_components/header'
+import Message from '@/app/messages/[user]/_components/message'
 import { Button } from '@/components/ui/shadcn/button'
-import { ArrowUp } from 'lucide-react'
-import handleFetchError from '@/hooks/use-handle-request-error'
 import {
     InputGroup,
     InputGroupAddon,
     InputGroupInput
 } from '@/components/ui/shadcn/input-group'
+import { Spinner } from '@/components/ui/shadcn/spinner'
+import { useMarket } from '@/context/MarketProvider'
 import { useConfig } from '@/hooks/use-config'
-import { toast } from 'sonner'
-import emojiRegex from 'emoji-regex'
-import Message from '@/app/messages/[user]/_components/message'
-import { Header } from '@/app/messages/[user]/_components/header'
-import { useExtracted } from 'next-intl'
+import handleFetchError from '@/hooks/use-handle-request-error'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
-
-interface Group {
-    timestamp: number
-    label: string
-    messages: MessageT[]
-}
 
 export default function Chat() {
     const { user, client } = useMarket()
@@ -39,6 +39,9 @@ export default function Chat() {
     const dialogUserName = useParams<{ user: string }>().user
 
     const [messages, setMessages] = useState<MessageT[]>([])
+    const [lastMessageIsRead, setLastMessageIsRead] = useState<
+        undefined | boolean
+    >(undefined)
 
     const [loading, setLoading] = useState(true)
     const [intervalLoading, setIntervalLoading] = useState(false)
@@ -47,16 +50,20 @@ export default function Chat() {
         setIntervalLoading(false)
     }
 
+    const [sending, setSending] = useState(false)
     const [message, setMessage] = useState('')
 
     const fetchLastMessageIsRead = () => {
-        let lastMessageIsRead = false
         client.messages
             .getDialogs()
             .then((dialogs) => {
-                lastMessageIsRead = !!dialogs.find(
-                    (dialog) => dialog.dialogUserName === dialogUserName
+                const dialog = dialogs.find(
+                    (dialog) =>
+                        dialog.dialogUserName === dialogUserName &&
+                        dialog.lastMessageUserName === user?.name
                 )?.lastMessageIsRead
+
+                setLastMessageIsRead(dialog ? !!dialog : undefined)
             })
             .catch((error) =>
                 handleRequestError(
@@ -64,7 +71,6 @@ export default function Chat() {
                     t('while fetching last message read status')
                 )
             )
-        return lastMessageIsRead ? t('Read') : t('Unread')
     }
 
     const fetchMessages = () => {
@@ -87,15 +93,23 @@ export default function Chat() {
                 }
             })
             .finally(() => stopLoading())
+
+        fetchLastMessageIsRead()
     }
 
     const sendMessage = () => {
-        if (!message) return
+        if (!message || sending) return
 
         if (emojiRegex().test(message))
             return toast.error(t('Emoji are not allowed.'))
 
+        if (message.startsWith('{') || message.endsWith('}'))
+            return toast.error(
+                t('Message cannot start or end with curly braces.')
+            )
+
         setIntervalLoading(true)
+        setSending(true)
 
         client.messages
             .sendMessage({
@@ -109,12 +123,7 @@ export default function Chat() {
             .catch((error) =>
                 handleRequestError(error, t('while sending a message'))
             )
-    }
-
-    const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
-        if (event.key === 'Enter') {
-            sendMessage()
-        }
+            .finally(() => setSending(false))
     }
 
     useEffect(() => {
@@ -140,44 +149,61 @@ export default function Chat() {
     return loading ? (
         <Spinner className={'mx-auto my-auto size-10'} />
     ) : (
-        <div className="scrollbar-thin relative flex grow flex-col-reverse items-center lg:overflow-auto">
-            <div className="bg-background/75 lg:bg-sidebar/75 sticky bottom-0 mb-[env(safe-area-inset-bottom)] flex w-full justify-center gap-2 p-3 backdrop-blur-md">
-                <InputGroup className={'w-full max-w-283 rounded-full'}>
-                    <InputGroupInput
-                        placeholder={t('Say something to {dialogUserName}...', {
-                            dialogUserName
-                        })}
-                        enterKeyHint={'send'}
-                        onKeyDown={handleKeyDown}
-                        value={message}
-                        onInput={(onchange) =>
-                            setMessage(onchange.currentTarget.value)
-                        }
-                    />
-                    <InputGroupAddon align={'inline-end'}>
-                        <Spinner
-                            className={clsx('transition-discrete', {
-                                hidden: !intervalLoading
-                            })}
+        <StickToBottom className="scrollbar-thin flex h-full grow flex-col items-center overflow-auto">
+            <StickToBottom.Content className={'flex min-h-full flex-col'}>
+                <Header userName={dialogUserName} />
+
+                <div className="flex w-full max-w-300 grow flex-col-reverse gap-1 px-3">
+                    <span className={'text-muted-foreground text-right'}>
+                        {lastMessageIsRead === undefined
+                            ? null
+                            : lastMessageIsRead
+                              ? t('Read')
+                              : t('Unread')}
+                    </span>
+
+                    {messages.map((message, index) => (
+                        <Message key={index} message={message} />
+                    ))}
+                </div>
+
+                <div className="bg-background/75 lg:bg-sidebar/75 sticky bottom-0 mb-[env(safe-area-inset-bottom)] flex w-full justify-center gap-2 p-3 backdrop-blur-md">
+                    <InputGroup className={'w-full max-w-283 rounded-full'}>
+                        <InputGroupInput
+                            placeholder={t(
+                                'Say something to {dialogUserName}...',
+                                {
+                                    dialogUserName
+                                }
+                            )}
+                            enterKeyHint={'send'}
+                            onKeyDown={(event) => {
+                                if (event.key === 'Enter') sendMessage()
+                            }}
+                            value={message}
+                            disabled={sending}
+                            onInput={(onchange) =>
+                                setMessage(onchange.currentTarget.value)
+                            }
                         />
-                    </InputGroupAddon>
-                </InputGroup>
-                <Button
-                    className="rounded-full"
-                    size="icon"
-                    onClick={sendMessage}
-                >
-                    <ArrowUp />
-                </Button>
-            </div>
-
-            <div className="flex w-full max-w-300 grow flex-col-reverse gap-1 px-3">
-                {messages.map((message, index) => (
-                    <Message key={index} message={message} />
-                ))}
-            </div>
-
-            <Header userName={String(dialogUserName)} />
-        </div>
+                        <InputGroupAddon align={'inline-end'}>
+                            <Spinner
+                                className={clsx('transition-discrete', {
+                                    hidden: !intervalLoading
+                                })}
+                            />
+                        </InputGroupAddon>
+                    </InputGroup>
+                    <Button
+                        className="rounded-full"
+                        size="icon"
+                        onClick={sendMessage}
+                        disabled={sending}
+                    >
+                        <ArrowUp />
+                    </Button>
+                </div>
+            </StickToBottom.Content>
+        </StickToBottom>
     )
 }

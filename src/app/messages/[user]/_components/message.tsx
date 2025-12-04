@@ -1,6 +1,7 @@
-import { useMarket } from '@/context/MarketProvider'
-import type { Message as MessageT } from 'mineos-market-client'
 import { clsx } from 'clsx'
+import type { Message as MessageT } from 'mineos-market-client'
+
+import { useMarket } from '@/context/MarketProvider'
 import { formatTime } from '@/utils/format-date-label'
 
 export default function Message({ message }: { message: MessageT }) {
