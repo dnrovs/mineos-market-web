@@ -21,13 +21,57 @@ import {
     EmptyMedia,
     EmptyTitle
 } from '@/components/ui/shadcn/empty'
-import { HeartCrack, TestTubeDiagonal } from 'lucide-react'
+import { HeartCrack } from 'lucide-react'
 import { Button } from '@/components/ui/shadcn/button'
 import BottomNavigation from '@/app/[category]/_components/BottomNavigation'
 import { useExtracted } from 'next-intl'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
 import { usePublicationCategories } from '@/hooks/use-publication-categories'
 import Publications from '@/components/layout/publications'
+import {
+    parseAsInteger,
+    parseAsString,
+    parseAsStringEnum,
+    parseAsStringLiteral,
+    useQueryState
+} from 'nuqs'
+
+const sortingValues = {
+    'most-popular': {
+        orderBy: OrderBy.Popularity,
+        orderDirection: OrderDirection.Descending
+    },
+    'least-popular': {
+        orderBy: OrderBy.Popularity,
+        orderDirection: OrderDirection.Ascending
+    },
+    'highest-rated': {
+        orderBy: OrderBy.Rating,
+        orderDirection: OrderDirection.Descending
+    },
+    'lowest-rated': {
+        orderBy: OrderBy.Rating,
+        orderDirection: OrderDirection.Ascending
+    },
+    newest: {
+        orderBy: OrderBy.Date,
+        orderDirection: OrderDirection.Descending
+    },
+    oldest: {
+        orderBy: OrderBy.Date,
+        orderDirection: OrderDirection.Ascending
+    },
+    'a-z': {
+        orderBy: OrderBy.Name,
+        orderDirection: OrderDirection.Ascending
+    },
+    'z-a': {
+        orderBy: OrderBy.Name,
+        orderDirection: OrderDirection.Descending
+    }
+} as const
+
+export type Sorting = keyof typeof sortingValues
 
 export default function Page() {
     const categoryName = useParams<{ category: string }>().category
@@ -42,14 +86,25 @@ export default function Page() {
 
     const [publications, setPublications] = useState<PreviewPublication[]>([])
 
-    const [currentPage, setCurrentPage] = useState(1)
-    const [showPerPage, setShowPerPage] = useState('25')
+    const [currentPage, setCurrentPage] = useQueryState(
+        'page',
+        parseAsInteger.withDefault(1)
+    )
+    const [showPerPage, setShowPerPage] = useQueryState(
+        'per-page',
+        parseAsInteger.withDefault(25)
+    )
     const [isNextPage, setIsNextPage] = useState(false)
 
-    const [searchQuery, setSearchQuery] = useState('')
-    const [orderBy, setOrderBy] = useState<string>(OrderBy.Popularity)
-    const [orderDirection, setOrderDirection] = useState<string>(
-        OrderDirection.Descending
+    const [searchQuery, setSearchQuery] = useQueryState(
+        'search',
+        parseAsString.withDefault('')
+    )
+    const [sorting, setSorting] = useQueryState(
+        'sort',
+        parseAsStringLiteral(
+            Object.keys(sortingValues) as Sorting[]
+        ).withDefault('most-popular')
     )
 
     const [loading, setLoading] = useState(true)
@@ -66,40 +121,30 @@ export default function Page() {
         client.publications
             .getPublications({
                 category: category.enum,
-                count: Number(showPerPage) + 1,
-                offset: Number(showPerPage) * (currentPage - 1),
+                count: showPerPage + 1,
+                offset: showPerPage * (currentPage - 1),
                 search: searchQuery,
-                orderBy: orderBy as OrderBy,
-                orderDirection: orderDirection as OrderDirection
+                orderBy: sortingValues[sorting].orderBy,
+                orderDirection: sortingValues[sorting].orderDirection
             })
             .then((data) => {
-                setIsNextPage(data.length === Number(showPerPage) + 1)
-                setPublications(data.slice(0, Number(showPerPage)))
+                setIsNextPage(data.length === showPerPage + 1)
+                setPublications(data.slice(0, showPerPage))
             })
             .catch((error) => {
                 handleRequestError(error, t('while fetching publications'))
             })
             .finally(() => setLoading(false))
-    }, [
-        category?.enum,
-        client,
-        currentPage,
-        orderBy,
-        orderDirection,
-        searchQuery,
-        showPerPage
-    ])
+    }, [category.enum, client, currentPage, searchQuery, showPerPage, sorting])
 
     return (
         <main className="g flex h-dvh w-full flex-col overflow-y-scroll">
             <Header
                 category={category!}
                 searchQuery={searchQuery}
-                orderBy={orderBy}
-                orderDirection={orderDirection}
                 setSearchQuery={setSearchQuery}
-                setOrderBy={setOrderBy}
-                setOrderDirection={setOrderDirection}
+                sorting={sorting}
+                setSorting={setSorting}
             />
 
             {loading ? (

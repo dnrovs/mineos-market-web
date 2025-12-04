@@ -15,14 +15,16 @@ import {
 } from '@/components/ui/shadcn/select'
 import { useExtracted } from 'next-intl'
 
+const perPageVariants = [25, 50, 75, 100]
+
 interface FooterProps {
     isNextPage: boolean
 
     currentPage: number
-    showPerPage: string
+    showPerPage: number
 
     setCurrentPage: (currentPage: number) => void
-    setShowPerPage: (showPerPage: string) => void
+    setShowPerPage: (showPerPage: number) => void
 }
 
 export default function Footer({
@@ -43,21 +45,23 @@ export default function Footer({
             <div className={'flex items-center gap-2.5'}>
                 <span>{t('Show')}</span>
                 <Select
-                    defaultValue={'25'}
-                    onValueChange={setShowPerPage}
-                    value={showPerPage}
+                    defaultValue={String(perPageVariants[0])}
+                    onValueChange={(value) => setShowPerPage(Number(value))}
+                    value={String(showPerPage)}
                 >
                     <SelectTrigger className={'w-20'}>
                         <SelectValue />
                     </SelectTrigger>
                     <SelectContent>
-                        <SelectItem value="25">25</SelectItem>
-                        <SelectItem value="50">50</SelectItem>
-                        <SelectItem value="75">75</SelectItem>
-                        <SelectItem value="100">100</SelectItem>
+                        {perPageVariants.map((variant) => (
+                            <SelectItem key={variant} value={String(variant)}>
+                                {variant}
+                            </SelectItem>
+                        ))}
                     </SelectContent>
                 </Select>
             </div>
+
             <Pagination>
                 <PaginationContent>
                     {currentPage > 1 && (
