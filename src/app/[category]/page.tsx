@@ -1,18 +1,27 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
-import { notFound, useParams } from 'next/navigation'
-
+import { HeartCrack } from 'lucide-react'
 import {
     OrderBy,
     OrderDirection,
     PreviewPublication
 } from 'mineos-market-client'
-import { useMarket } from '@/context/MarketProvider'
+import { useExtracted } from 'next-intl'
+import { notFound, useParams } from 'next/navigation'
+import {
+    parseAsInteger,
+    parseAsString,
+    parseAsStringEnum,
+    parseAsStringLiteral,
+    useQueryState
+} from 'nuqs'
+import React, { useEffect, useState } from 'react'
 
-import Header from '@/app/[category]/_components/Header'
+import BottomNavigation from '@/app/[category]/_components/BottomNavigation'
 import Footer from '@/app/[category]/_components/Footer'
-import { Spinner } from '@/components/ui/shadcn/spinner'
+import Header from '@/app/[category]/_components/Header'
+import Publications from '@/components/layout/publications'
+import { Button } from '@/components/ui/shadcn/button'
 import {
     Empty,
     EmptyContent,
@@ -21,20 +30,10 @@ import {
     EmptyMedia,
     EmptyTitle
 } from '@/components/ui/shadcn/empty'
-import { HeartCrack } from 'lucide-react'
-import { Button } from '@/components/ui/shadcn/button'
-import BottomNavigation from '@/app/[category]/_components/BottomNavigation'
-import { useExtracted } from 'next-intl'
+import { Spinner } from '@/components/ui/shadcn/spinner'
+import { useMarket } from '@/context/MarketProvider'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
 import { usePublicationCategories } from '@/hooks/use-publication-categories'
-import Publications from '@/components/layout/publications'
-import {
-    parseAsInteger,
-    parseAsString,
-    parseAsStringEnum,
-    parseAsStringLiteral,
-    useQueryState
-} from 'nuqs'
 
 const sortingValues = {
     'most-popular': {

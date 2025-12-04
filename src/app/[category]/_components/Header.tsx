@@ -1,20 +1,6 @@
 'use client'
 
 import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectSeparator,
-    SelectTrigger,
-    SelectValue
-} from '@/components/ui/shadcn/select'
-import React from 'react'
-import {
-    InputGroup,
-    InputGroupAddon,
-    InputGroupInput
-} from '@/components/ui/shadcn/input-group'
-import {
     ArrowDown10,
     ArrowDownAZ,
     ArrowDownWideNarrow,
@@ -30,18 +16,33 @@ import {
     UserRound
 } from 'lucide-react'
 import { OrderBy, OrderDirection } from 'mineos-market-client'
-import { Button } from '@/components/ui/shadcn/button'
-import { Avatar, AvatarFallback } from '@/components/ui/shadcn/avatar'
-import { useMarket } from '@/context/MarketProvider'
-import UserDropdown from '@/components/layout/user-dropdown'
-import Link from 'next/link'
-import { Badge } from '@/components/ui/shadcn/badge'
-import { Separator } from '@/components/ui/shadcn/separator'
-import { useUnreadMessages } from '@/utils/use-unread-messages'
 import { useExtracted } from 'next-intl'
-import { Category } from '@/hooks/use-publication-categories'
-import ProvidedAvatar from '@/components/ui/provided-avatar'
+import Link from 'next/link'
+import React from 'react'
+
 import { Sorting } from '@/app/[category]/page'
+import UserDropdown from '@/components/layout/user-dropdown'
+import ProvidedAvatar from '@/components/ui/provided-avatar'
+import { Avatar, AvatarFallback } from '@/components/ui/shadcn/avatar'
+import { Badge } from '@/components/ui/shadcn/badge'
+import { Button } from '@/components/ui/shadcn/button'
+import {
+    InputGroup,
+    InputGroupAddon,
+    InputGroupInput
+} from '@/components/ui/shadcn/input-group'
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectSeparator,
+    SelectTrigger,
+    SelectValue
+} from '@/components/ui/shadcn/select'
+import { Separator } from '@/components/ui/shadcn/separator'
+import { useMarket } from '@/context/MarketProvider'
+import { Category } from '@/hooks/use-publication-categories'
+import { useUnreadMessages } from '@/utils/use-unread-messages'
 
 interface HeaderProps {
     category: Category

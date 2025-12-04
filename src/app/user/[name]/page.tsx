@@ -1,12 +1,16 @@
 'use client'
 
-import Header from '@/components/layout/header'
-import { useParams } from 'next/navigation'
-import { useMarket } from '@/context/MarketProvider'
-import { Button } from '@/components/ui/shadcn/button'
-import React, { useEffect, useState } from 'react'
-import { OrderBy, PreviewPublication } from 'mineos-market-client'
 import { HeartCrack, MessageCirclePlus, Settings, Share2 } from 'lucide-react'
+import { OrderBy, PreviewPublication } from 'mineos-market-client'
+import { useExtracted } from 'next-intl'
+import Link from 'next/link'
+import { useParams } from 'next/navigation'
+import React, { useEffect, useState } from 'react'
+
+import Header from '@/components/layout/header'
+import Publications from '@/components/layout/publications'
+import ProvidedAvatar from '@/components/ui/provided-avatar'
+import { Button } from '@/components/ui/shadcn/button'
 import {
     Empty,
     EmptyDescription,
@@ -15,11 +19,8 @@ import {
     EmptyTitle
 } from '@/components/ui/shadcn/empty'
 import { Spinner } from '@/components/ui/shadcn/spinner'
-import Publications from '@/components/layout/publications'
-import Link from 'next/link'
-import { useExtracted } from 'next-intl'
+import { useMarket } from '@/context/MarketProvider'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
-import ProvidedAvatar from '@/components/ui/provided-avatar'
 
 export default function User() {
     const name = useParams<{ name: string }>().name

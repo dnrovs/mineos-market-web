@@ -1,10 +1,11 @@
-import Link from 'next/link'
-import React from 'react'
-import ProvidedAvatar from '@/components/ui/provided-avatar'
-import { Button } from '@/components/ui/shadcn/button'
 import { ChevronLeft } from 'lucide-react'
 import { useExtracted } from 'next-intl'
+import Link from 'next/link'
 import { useRouter } from 'next/navigation'
+import React from 'react'
+
+import ProvidedAvatar from '@/components/ui/provided-avatar'
+import { Button } from '@/components/ui/shadcn/button'
 
 export function Header({ userName }: { userName: string }) {
     const t = useExtracted()

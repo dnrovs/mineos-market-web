@@ -1,23 +1,13 @@
-import { useMarket } from '@/context/MarketProvider'
-import {
-    Item,
-    ItemActions,
-    ItemContent,
-    ItemDescription,
-    ItemGroup,
-    ItemMedia,
-    ItemTitle
-} from '@/components/ui/shadcn/item'
-import React, { useEffect, useState } from 'react'
-import { Dialog as DialogT } from 'mineos-market-client'
-import { Avatar, AvatarFallback } from '@/components/ui/shadcn/avatar'
-import { Check, CheckCheck, Circle, Plus } from 'lucide-react'
-import Link from 'next/link'
-import { Spinner } from '@/components/ui/shadcn/spinner'
 import { clsx } from 'clsx'
+import { Check, CheckCheck, Circle, Plus } from 'lucide-react'
+import { Dialog as DialogT } from 'mineos-market-client'
+import { useExtracted } from 'next-intl'
+import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import handleFetchError from '@/hooks/use-handle-request-error'
-import { useConfig } from '@/hooks/use-config'
+import React, { useEffect, useState } from 'react'
+
+import ProvidedAvatar from '@/components/ui/provided-avatar'
+import { Avatar, AvatarFallback } from '@/components/ui/shadcn/avatar'
 import { Button } from '@/components/ui/shadcn/button'
 import {
     Dialog,
@@ -28,9 +18,20 @@ import {
     DialogTrigger
 } from '@/components/ui/shadcn/dialog'
 import { Input } from '@/components/ui/shadcn/input'
-import { useExtracted } from 'next-intl'
+import {
+    Item,
+    ItemActions,
+    ItemContent,
+    ItemDescription,
+    ItemGroup,
+    ItemMedia,
+    ItemTitle
+} from '@/components/ui/shadcn/item'
+import { Spinner } from '@/components/ui/shadcn/spinner'
+import { useMarket } from '@/context/MarketProvider'
+import { useConfig } from '@/hooks/use-config'
+import handleFetchError from '@/hooks/use-handle-request-error'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
-import ProvidedAvatar from '@/components/ui/provided-avatar'
 
 function NewChatDialogContent() {
     const t = useExtracted()

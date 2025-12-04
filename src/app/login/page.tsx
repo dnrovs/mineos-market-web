@@ -1,8 +1,13 @@
 'use client'
 
-import Header from '@/components/layout/header'
+import { useExtracted } from 'next-intl'
+import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import React, { useEffect } from 'react'
+import { useForm, Controller } from 'react-hook-form'
 
+import Header from '@/components/layout/header'
+import ResponsiveCard from '@/components/ui/responsive-card'
 import { Button } from '@/components/ui/shadcn/button'
 import {
     CardContent,
@@ -17,14 +22,8 @@ import {
     FieldLabel
 } from '@/components/ui/shadcn/field'
 import { Input } from '@/components/ui/shadcn/input'
-
-import { useForm, Controller } from 'react-hook-form'
 import { useMarket } from '@/context/MarketProvider'
-import { useRouter } from 'next/navigation'
-import Link from 'next/link'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
-import { useExtracted } from 'next-intl'
-import ResponsiveCard from '@/components/ui/responsive-card'
 
 type LoginFormValues = {
     username: string

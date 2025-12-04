@@ -1,9 +1,9 @@
 'use client'
 
-import type React from 'react'
-
-import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
+import type React from 'react'
+import { useEffect, useRef, useState } from 'react'
+
 import { Spinner } from '@/components/ui/shadcn/spinner'
 
 interface Icon {

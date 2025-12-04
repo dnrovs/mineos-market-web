@@ -1,31 +1,32 @@
 'use client'
 
+import { clsx } from 'clsx'
+import emojiRegex from 'emoji-regex'
+import { ArrowUp } from 'lucide-react'
+import { Message as MessageT } from 'mineos-market-client'
+import { useExtracted } from 'next-intl'
 import { useParams, useRouter } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
-import { useMarket } from '@/context/MarketProvider'
-import { Message as MessageT } from 'mineos-market-client'
-import { Spinner } from '@/components/ui/shadcn/spinner'
-import { clsx } from 'clsx'
-import { Button } from '@/components/ui/shadcn/button'
-import { ArrowUp } from 'lucide-react'
-import handleFetchError from '@/hooks/use-handle-request-error'
-import {
-    InputGroup,
-    InputGroupAddon,
-    InputGroupInput
-} from '@/components/ui/shadcn/input-group'
-import { useConfig } from '@/hooks/use-config'
 import { toast } from 'sonner'
-import emojiRegex from 'emoji-regex'
-import Message from '@/app/messages/[user]/_components/message'
-import { Header } from '@/app/messages/[user]/_components/header'
-import { useExtracted } from 'next-intl'
-import useHandleRequestError from '@/hooks/use-handle-request-error'
 import {
     StickToBottom,
     useStickToBottom,
     useStickToBottomContext
 } from 'use-stick-to-bottom'
+
+import { Header } from '@/app/messages/[user]/_components/header'
+import Message from '@/app/messages/[user]/_components/message'
+import { Button } from '@/components/ui/shadcn/button'
+import {
+    InputGroup,
+    InputGroupAddon,
+    InputGroupInput
+} from '@/components/ui/shadcn/input-group'
+import { Spinner } from '@/components/ui/shadcn/spinner'
+import { useMarket } from '@/context/MarketProvider'
+import { useConfig } from '@/hooks/use-config'
+import handleFetchError from '@/hooks/use-handle-request-error'
+import useHandleRequestError from '@/hooks/use-handle-request-error'
 
 export default function Chat() {
     const { user, client } = useMarket()

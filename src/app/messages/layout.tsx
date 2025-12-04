@@ -1,14 +1,15 @@
 'use client'
 
-import Header from '@/components/layout/header'
-import Dialogs from '@/app/messages/_components/dialogs'
-import React, { useEffect } from 'react'
-import { usePathname, useRouter } from 'next/navigation'
 import { clsx } from 'clsx'
-import { useMarket } from '@/context/MarketProvider'
 import { useExtracted } from 'next-intl'
-import { useIsMobile } from '@/hooks/shadcn/use-mobile'
+import { usePathname, useRouter } from 'next/navigation'
+import React, { useEffect } from 'react'
 import { StickToBottom } from 'use-stick-to-bottom'
+
+import Dialogs from '@/app/messages/_components/dialogs'
+import Header from '@/components/layout/header'
+import { useMarket } from '@/context/MarketProvider'
+import { useIsMobile } from '@/hooks/shadcn/use-mobile'
 import { cn } from '@/utils/shadcn'
 
 interface MessagesLayoutProps {

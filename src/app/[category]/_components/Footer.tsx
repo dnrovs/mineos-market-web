@@ -1,3 +1,5 @@
+import { useExtracted } from 'next-intl'
+
 import {
     Pagination,
     PaginationContent,
@@ -13,7 +15,6 @@ import {
     SelectTrigger,
     SelectValue
 } from '@/components/ui/shadcn/select'
-import { useExtracted } from 'next-intl'
 
 const perPageVariants = [25, 50, 75, 100]
 

@@ -5,5 +5,10 @@ export default {
     singleQuote: true,
     trailingComma: 'none',
     bracketSpacing: true,
-    plugins: ['prettier-plugin-tailwindcss']
+    importOrder: ['^@/(.*)$', '^[./]'],
+    importOrderSeparation: true,
+    plugins: [
+        '@trivago/prettier-plugin-sort-imports',
+        'prettier-plugin-tailwindcss'
+    ]
 }

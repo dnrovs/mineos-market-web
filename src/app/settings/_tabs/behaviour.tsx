@@ -1,3 +1,9 @@
+import { Minus, Plus } from 'lucide-react'
+import { useExtracted } from 'next-intl'
+import { Controller, useForm } from 'react-hook-form'
+
+import { Button } from '@/components/ui/shadcn/button'
+import { ButtonGroup } from '@/components/ui/shadcn/button-group'
 import {
     Field,
     FieldDescription,
@@ -7,20 +13,15 @@ import {
     FieldLegend,
     FieldSet
 } from '@/components/ui/shadcn/field'
-import { useExtracted } from 'next-intl'
-import { Controller, useForm } from 'react-hook-form'
-import { useConfig, Config } from '@/hooks/use-config'
 import { Input } from '@/components/ui/shadcn/input'
-import { Switch } from '@/components/ui/shadcn/switch'
-import { Button } from '@/components/ui/shadcn/button'
 import {
     InputGroup,
     InputGroupAddon,
     InputGroupInput,
     InputGroupText
 } from '@/components/ui/shadcn/input-group'
-import { ButtonGroup } from '@/components/ui/shadcn/button-group'
-import { Minus, Plus } from 'lucide-react'
+import { Switch } from '@/components/ui/shadcn/switch'
+import { useConfig, Config } from '@/hooks/use-config'
 
 export default function BehaviourTab() {
     const { config, setConfig, resetConfig } = useConfig()

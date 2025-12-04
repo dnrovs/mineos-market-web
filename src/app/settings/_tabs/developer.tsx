@@ -1,3 +1,8 @@
+import { useExtracted } from 'next-intl'
+import { useRouter } from 'next/navigation'
+import { Controller, useForm } from 'react-hook-form'
+
+import { Button } from '@/components/ui/shadcn/button'
 import {
     Field,
     FieldDescription,
@@ -8,11 +13,7 @@ import {
     FieldSet
 } from '@/components/ui/shadcn/field'
 import { Input } from '@/components/ui/shadcn/input'
-import { Controller, useForm } from 'react-hook-form'
-import { Button } from '@/components/ui/shadcn/button'
-import { useExtracted } from 'next-intl'
 import { Config, useConfig } from '@/hooks/use-config'
-import { useRouter } from 'next/navigation'
 
 export default function DeveloperTab() {
     const { config, setConfig, resetConfig } = useConfig()
@@ -76,7 +77,10 @@ export default function DeveloperTab() {
                         <Button type={'submit'}>{t('Save')}</Button>
                         <Button
                             variant={'secondary'}
-                            onClick={() => resetConfig('server')}>{t('Restore default')}</Button>
+                            onClick={() => resetConfig('server')}
+                        >
+                            {t('Restore default')}
+                        </Button>
                     </Field>
                 </FieldGroup>
             </form>

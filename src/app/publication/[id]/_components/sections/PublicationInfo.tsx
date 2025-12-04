@@ -1,16 +1,17 @@
-import React from 'react'
-import { Publication, PublicationCategory } from 'mineos-market-client'
-import Link from 'next/link'
-import Image from 'next/image'
-import { Button } from '@/components/ui/shadcn/button'
 import { EllipsisVertical, ExternalLink, Github } from 'lucide-react'
+import { Publication, PublicationCategory } from 'mineos-market-client'
+import { useExtracted } from 'next-intl'
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
+
+import OptionsDropdownTrigger from '@/app/publication/[id]/_components/OptionsDropdownTrigger'
+import { Button } from '@/components/ui/shadcn/button'
 import {
     DropdownMenu,
     DropdownMenuTrigger
 } from '@/components/ui/shadcn/dropdown-menu'
-import OptionsDropdownTrigger from '@/app/publication/[id]/_components/OptionsDropdownTrigger'
 import getPublicationIcon from '@/utils/get-publication-icon'
-import { useExtracted } from 'next-intl'
 import isPackaged from '@/utils/is-packaged'
 
 interface PublicationInfoProps {

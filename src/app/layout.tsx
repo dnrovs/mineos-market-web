@@ -1,17 +1,19 @@
-import type { Metadata, Viewport } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-import React from 'react'
-import { ThemeProvider } from 'next-themes'
-import AppSidebar from '@/components/layout/app-sidebar'
-import { MarketProvider } from '@/context/MarketProvider'
-import { Toaster } from '@/components/ui/shadcn/sonner'
-import { SidebarProvider } from '@/components/ui/shadcn/sidebar'
-import { NextIntlClientProvider } from 'next-intl'
-import { NuqsAdapter } from 'nuqs/adapters/next'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import type { Metadata, Viewport } from 'next'
+import { NextIntlClientProvider } from 'next-intl'
 import { getExtracted, getLocale } from 'next-intl/server'
+import { ThemeProvider } from 'next-themes'
+import { Inter } from 'next/font/google'
+import { NuqsAdapter } from 'nuqs/adapters/next'
+import React from 'react'
+
+import AppSidebar from '@/components/layout/app-sidebar'
+import { SidebarProvider } from '@/components/ui/shadcn/sidebar'
+import { Toaster } from '@/components/ui/shadcn/sonner'
+import { MarketProvider } from '@/context/MarketProvider'
+
+import './globals.css'
 
 const inter = Inter({
     subsets: ['latin', 'cyrillic-ext'],

@@ -1,7 +1,8 @@
 import { Publication } from 'mineos-market-client'
-import { Badge } from '@/components/ui/shadcn/badge'
-import Link from 'next/link'
 import { useExtracted } from 'next-intl'
+import Link from 'next/link'
+
+import { Badge } from '@/components/ui/shadcn/badge'
 
 interface DependenciesProps {
     publication: Publication

@@ -1,5 +1,9 @@
 'use client'
 
+import { UserX } from 'lucide-react'
+import Link from 'next/link'
+
+import { Button } from '@/components/ui/shadcn/button'
 import {
     Empty,
     EmptyContent,
@@ -8,9 +12,6 @@ import {
     EmptyMedia,
     EmptyTitle
 } from '@/components/ui/shadcn/empty'
-import { Button } from '@/components/ui/shadcn/button'
-import { UserX } from 'lucide-react'
-import Link from 'next/link'
 
 export default function NotFound() {
     return (
