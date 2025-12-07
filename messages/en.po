@@ -159,6 +159,7 @@ msgid "va0Mzr"
 msgstr "Communicate with another developers"
 
 #: src\app\messages\_components\dialogs.tsx
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 #: src\components\forms\publish-form.tsx
@@ -254,85 +255,104 @@ msgstr "Publications count"
 msgid "u2miNe"
 msgstr "Reviews count"
 
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
 msgid "+sEPbf"
 msgstr "Delete {publicationName}?"
 
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "0c5Ily"
-msgstr "Marking publication as downloaded..."
-
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "4TgoWL"
-msgstr "Icon picture"
-
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "5/yFl5"
-msgstr "Mark downloaded"
-
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "BnqNdr"
-msgstr "JSON copied to clipboard"
-
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "BWpuKl"
 msgstr "Update"
 
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
 msgid "bYoVJ6"
 msgstr "Publication deleted successfully."
 
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
 msgid "D3ATEG"
 msgstr "while deleting publication"
 
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "fhwTpA"
-msgstr "Sources"
-
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "G/yZLu"
 msgstr "Remove"
 
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
+msgid "JqtAkq"
+msgstr "Deleting publication..."
+
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
+msgid "RiHzeS"
+msgstr "This will delete publication, it's statistics and reviews from the registry forever. Source files will stay on the server."
+
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "wEQDC6"
+msgstr "Edit"
+
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
+msgid "xPn5o3"
+msgstr "Delete {publicationName}"
+
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "0c5Ily"
+msgstr "Marking publication as downloaded..."
+
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "4TgoWL"
+msgstr "Icon picture"
+
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "5/yFl5"
+msgstr "Mark downloaded"
+
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "BnqNdr"
+msgstr "JSON copied to clipboard"
+
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "fhwTpA"
+msgstr "Sources"
+
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "GAUX9p"
 msgstr "Source code"
 
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "GVcBDG"
 msgstr "Failed to copy JSON to clipboard"
 
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "JqtAkq"
-msgstr "Deleting publication..."
-
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "NCqfZg"
 msgstr "Raw JSON"
 
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "oA+idZ"
 msgstr "while marking publication as downloaded"
 
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "OKhRC6"
 msgstr "Share"
 
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "RiHzeS"
-msgstr "This will delete publication, it's statistics and reviews from the registry forever. Source files will stay on the server."
-
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "t1SGnV"
 msgstr "{publicationName}'s raw JSON"
 
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "tH4Eov"
 msgstr "Publication marked as downloaded."
-
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "xPn5o3"
-msgstr "Delete {publicationName}"
 
 #: src\app\publication\[id]\_components\sections\About.tsx
 msgid "4gL3oc"
@@ -414,10 +434,6 @@ msgstr "while posting a review"
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "W6gI4b"
 msgstr "Updating review..."
-
-#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
-msgid "wEQDC6"
-msgstr "Edit"
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "wXHf3p"

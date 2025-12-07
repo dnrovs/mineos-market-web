@@ -1,16 +1,19 @@
-import { EllipsisVertical, ExternalLink, Github } from 'lucide-react'
+import { EllipsisVertical, ExternalLink, Github, Pencil } from 'lucide-react'
 import { Publication, PublicationCategory } from 'mineos-market-client'
 import { useExtracted } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-import OptionsDropdownTrigger from '@/app/publication/[id]/_components/OptionsDropdownTrigger'
+import EditDropdownTrigger from '@/app/publication/[id]/_components/edit-dropdown-trigger'
+import OptionsDropdownTrigger from '@/app/publication/[id]/_components/options-dropdown-trigger'
 import { Button } from '@/components/ui/shadcn/button'
+import { ButtonGroup } from '@/components/ui/shadcn/button-group'
 import {
     DropdownMenu,
     DropdownMenuTrigger
 } from '@/components/ui/shadcn/dropdown-menu'
+import { useMarket } from '@/context/MarketProvider'
 import getPublicationIcon from '@/utils/get-publication-icon'
 import isPackaged from '@/utils/is-packaged'
 
@@ -20,6 +23,8 @@ interface PublicationInfoProps {
 
 export default function PublicationInfo({ publication }: PublicationInfoProps) {
     const t = useExtracted()
+
+    const { user } = useMarket()
 
     const sourceUrl = new URL(publication.sourceUrl)
     const isGithub = sourceUrl.hostname === 'raw.githubusercontent.com'
@@ -82,11 +87,26 @@ export default function PublicationInfo({ publication }: PublicationInfoProps) {
                             )}
                         </Link>
                     </Button>
-                    <OptionsDropdownTrigger publication={publication}>
-                        <Button size={'icon-sm'} variant={'secondary'}>
-                            <EllipsisVertical />
-                        </Button>
-                    </OptionsDropdownTrigger>
+                    <ButtonGroup className={'gap-px'}>
+                        <OptionsDropdownTrigger
+                            publication={publication}
+                            asChild
+                        >
+                            <Button size={'icon-sm'} variant={'secondary'}>
+                                <EllipsisVertical />
+                            </Button>
+                        </OptionsDropdownTrigger>
+                        {user?.name === publication.userName && (
+                            <EditDropdownTrigger
+                                publication={publication}
+                                asChild
+                            >
+                                <Button size={'icon-sm'} variant={'secondary'}>
+                                    <Pencil />
+                                </Button>
+                            </EditDropdownTrigger>
+                        )}
+                    </ButtonGroup>
                 </div>
             </div>
         </div>

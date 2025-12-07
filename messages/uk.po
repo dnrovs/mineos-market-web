@@ -159,6 +159,7 @@ msgid "va0Mzr"
 msgstr "Спілкуватися з розробниками"
 
 #: src\app\messages\_components\dialogs.tsx
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 #: src\components\forms\publish-form.tsx
@@ -254,85 +255,104 @@ msgstr "Кількість публікацій"
 msgid "u2miNe"
 msgstr "Кількість відгуків"
 
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
 msgid "+sEPbf"
 msgstr "Видалити {publicationName}?"
 
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "0c5Ily"
-msgstr "Позначення публікації як завантаженої..."
-
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "4TgoWL"
-msgstr "Зображення піктограми"
-
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "5/yFl5"
-msgstr "Позначити завантаженим"
-
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "BnqNdr"
-msgstr "JSON скопійовано в буфер обміну"
-
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "BWpuKl"
 msgstr "Оновити"
 
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
 msgid "bYoVJ6"
 msgstr "Публікацію успішно видалено."
 
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
 msgid "D3ATEG"
 msgstr "під час видалення публікації"
 
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "fhwTpA"
-msgstr "Джерела"
-
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "G/yZLu"
 msgstr "Видалити"
 
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
+msgid "JqtAkq"
+msgstr "Видалення публікації..."
+
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
+msgid "RiHzeS"
+msgstr "Це назавжди видалить публікацію, її статистику та відгуки з реєстру. Вихідні файли залишаться на сервері."
+
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "wEQDC6"
+msgstr "Редагувати"
+
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
+msgid "xPn5o3"
+msgstr "Видалити {publicationName}"
+
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "0c5Ily"
+msgstr "Позначення публікації як завантаженої..."
+
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "4TgoWL"
+msgstr "Зображення піктограми"
+
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "5/yFl5"
+msgstr "Позначити завантаженим"
+
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "BnqNdr"
+msgstr "JSON скопійовано в буфер обміну"
+
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "fhwTpA"
+msgstr "Джерела"
+
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "GAUX9p"
 msgstr "Вихідний код"
 
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "GVcBDG"
 msgstr "Не вдалося скопіювати JSON в буфер обміну"
 
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "JqtAkq"
-msgstr "Видалення публікації..."
-
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "NCqfZg"
 msgstr "Вихідний JSON"
 
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "oA+idZ"
 msgstr "під час позначення публікації як завантаженої"
 
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "OKhRC6"
 msgstr "Поділитися"
 
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "RiHzeS"
-msgstr "Це назавжди видалить публікацію, її статистику та відгуки з реєстру. Вихідні файли залишаться на сервері."
-
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "t1SGnV"
 msgstr "Вихідний JSON {publicationName}"
 
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "tH4Eov"
 msgstr "Публікацію позначено як завантажену."
-
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "xPn5o3"
-msgstr "Видалити {publicationName}"
 
 #: src\app\publication\[id]\_components\sections\About.tsx
 msgid "4gL3oc"
@@ -414,10 +434,6 @@ msgstr "під час публікації відгуку"
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "W6gI4b"
 msgstr "Оновлення відгуку..."
-
-#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
-msgid "wEQDC6"
-msgstr "Редагувати"
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "wXHf3p"

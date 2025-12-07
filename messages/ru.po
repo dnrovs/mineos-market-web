@@ -159,6 +159,7 @@ msgid "va0Mzr"
 msgstr "Общаться с разработчиками"
 
 #: src\app\messages\_components\dialogs.tsx
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 #: src\components\forms\publish-form.tsx
@@ -254,85 +255,104 @@ msgstr "Количество публикаций"
 msgid "u2miNe"
 msgstr "Количество отзывов"
 
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
 msgid "+sEPbf"
 msgstr "Удалить {publicationName}?"
 
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "0c5Ily"
-msgstr "Отметка публикации как загруженной..."
-
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "4TgoWL"
-msgstr "Иконка"
-
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "5/yFl5"
-msgstr "Отметить загруженным"
-
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "BnqNdr"
-msgstr "JSON скопирован в буфер обмена"
-
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "BWpuKl"
 msgstr "Обновить"
 
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
 msgid "bYoVJ6"
 msgstr "Публикация успешно удалена."
 
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
 msgid "D3ATEG"
 msgstr "при удалении публикации"
 
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "fhwTpA"
-msgstr "Источники"
-
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "G/yZLu"
 msgstr "Удалить"
 
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
+msgid "JqtAkq"
+msgstr "Удаление публикации..."
+
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
+msgid "RiHzeS"
+msgstr "Это навсегда удалит публикацию, ее статистику и отзывы из реестра. Исходные файлы останутся на сервере."
+
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
+#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+msgid "wEQDC6"
+msgstr "Редактировать"
+
+#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
+msgid "xPn5o3"
+msgstr "Удалить {publicationName}"
+
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "0c5Ily"
+msgstr "Отметка публикации как загруженной..."
+
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "4TgoWL"
+msgstr "Иконка"
+
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "5/yFl5"
+msgstr "Отметить загруженным"
+
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "BnqNdr"
+msgstr "JSON скопирован в буфер обмена"
+
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
+#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+msgid "fhwTpA"
+msgstr "Источники"
+
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "GAUX9p"
 msgstr "Исходный код"
 
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "GVcBDG"
 msgstr "Не удалось скопировать JSON в буфер обмена"
 
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "JqtAkq"
-msgstr "Удаление публикации..."
-
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "NCqfZg"
 msgstr "Исходный JSON"
 
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "oA+idZ"
 msgstr "при отметке публикации как загруженной"
 
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "OKhRC6"
 msgstr "Поделиться"
 
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "RiHzeS"
-msgstr "Это навсегда удалит публикацию, ее статистику и отзывы из реестра. Исходные файлы останутся на сервере."
-
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "t1SGnV"
 msgstr "Исходный JSON {publicationName}"
 
+#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 msgid "tH4Eov"
 msgstr "Публикация отмечена как загруженная."
-
-#: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
-msgid "xPn5o3"
-msgstr "Удалить {publicationName}"
 
 #: src\app\publication\[id]\_components\sections\About.tsx
 msgid "4gL3oc"
@@ -414,10 +434,6 @@ msgstr "при публикации отзыва"
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "W6gI4b"
 msgstr "Обновление отзыва..."
-
-#: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
-msgid "wEQDC6"
-msgstr "Редактировать"
 
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "wXHf3p"
@@ -778,7 +794,7 @@ msgstr "Это программное обеспечение делает..."
 #: src\components\layout\publications.tsx
 #: src\components\layout\Publications.tsx
 msgid "olk5qg"
-msgstr "от {username}"
+msgstr "{username}"
 
 #: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
