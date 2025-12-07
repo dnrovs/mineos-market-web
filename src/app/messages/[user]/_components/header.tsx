@@ -12,7 +12,7 @@ export function Header({ userName }: { userName: string }) {
     const router = useRouter()
 
     return (
-        <div className="lg:bg-sidebar/75 bg-background/75 sticky top-0 z-20 flex w-full justify-between p-3 backdrop-blur-md lg:justify-center">
+        <header className="lg:bg-sidebar/75 bg-background/75 sticky top-0 z-20 flex w-full justify-between p-3 backdrop-blur-md lg:justify-center">
             <Button
                 variant={'ghost'}
                 className={'lg:hidden'}
@@ -31,6 +31,6 @@ export function Header({ userName }: { userName: string }) {
 
                 {userName}
             </Link>
-        </div>
+        </header>
     )
 }

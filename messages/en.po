@@ -182,6 +182,11 @@ msgstr "while fetching dialogs"
 msgid "un14bs"
 msgstr "Open chat"
 
+#: src\app\messages\[user]\_components\footer.tsx
+#: src\app\messages\[user]\page.tsx
+msgid "HyqYaU"
+msgstr "Say something to {dialogUserName}..."
+
 #: src\app\messages\[user]\_components\header.tsx
 #: src\components\layout\header.tsx
 #: src\components\layout\Header.tsx
@@ -207,10 +212,6 @@ msgstr "Read"
 #: src\app\messages\[user]\page.tsx
 msgid "gcuDcH"
 msgstr "Sent"
-
-#: src\app\messages\[user]\page.tsx
-msgid "HyqYaU"
-msgstr "Say something to {dialogUserName}..."
 
 #: src\app\messages\[user]\page.tsx
 msgid "sbE0zo"

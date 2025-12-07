@@ -182,6 +182,11 @@ msgstr "при получении диалогов"
 msgid "un14bs"
 msgstr "Открыть чат"
 
+#: src\app\messages\[user]\_components\footer.tsx
+#: src\app\messages\[user]\page.tsx
+msgid "HyqYaU"
+msgstr "Скажите что-нибудь {dialogUserName}..."
+
 #: src\app\messages\[user]\_components\header.tsx
 #: src\components\layout\header.tsx
 #: src\components\layout\Header.tsx
@@ -207,10 +212,6 @@ msgstr "Прочитано"
 #: src\app\messages\[user]\page.tsx
 msgid "gcuDcH"
 msgstr "Отправлено"
-
-#: src\app\messages\[user]\page.tsx
-msgid "HyqYaU"
-msgstr "Скажите что-нибудь {dialogUserName}..."
 
 #: src\app\messages\[user]\page.tsx
 msgid "sbE0zo"

@@ -10,15 +10,10 @@ import React, { useEffect, useState } from 'react'
 import { toast } from 'sonner'
 import { StickToBottom } from 'use-stick-to-bottom'
 
+import Footer from '@/app/messages/[user]/_components/footer'
 import { Header } from '@/app/messages/[user]/_components/header'
 import Message from '@/app/messages/[user]/_components/message'
 import { Badge } from '@/components/ui/shadcn/badge'
-import { Button } from '@/components/ui/shadcn/button'
-import {
-    InputGroup,
-    InputGroupAddon,
-    InputGroupInput
-} from '@/components/ui/shadcn/input-group'
 import { Spinner } from '@/components/ui/shadcn/spinner'
 import { useMarket } from '@/context/MarketProvider'
 import { useConfig } from '@/hooks/use-config'
@@ -191,44 +186,16 @@ export default function Chat() {
                         </React.Fragment>
                     ))}
                 </div>
-
-                <div className="bg-background/75 lg:bg-sidebar/75 sticky bottom-0 mb-[env(safe-area-inset-bottom)] flex w-full justify-center gap-2 p-3 backdrop-blur-md">
-                    <InputGroup className={'w-full max-w-283 rounded-full'}>
-                        <InputGroupInput
-                            placeholder={t(
-                                'Say something to {dialogUserName}...',
-                                {
-                                    dialogUserName
-                                }
-                            )}
-                            enterKeyHint={'send'}
-                            onKeyDown={(event) => {
-                                if (event.key === 'Enter') sendMessage()
-                            }}
-                            value={message}
-                            disabled={sending}
-                            onInput={(onchange) =>
-                                setMessage(onchange.currentTarget.value)
-                            }
-                        />
-                        <InputGroupAddon align={'inline-end'}>
-                            <Spinner
-                                className={clsx('transition-discrete', {
-                                    hidden: !intervalLoading
-                                })}
-                            />
-                        </InputGroupAddon>
-                    </InputGroup>
-                    <Button
-                        className="rounded-full"
-                        size="icon"
-                        onClick={sendMessage}
-                        disabled={sending}
-                    >
-                        <ArrowUp />
-                    </Button>
-                </div>
             </StickToBottom.Content>
+
+            <Footer
+                dialogUserName={dialogUserName}
+                sendMessage={sendMessage}
+                message={message}
+                setMessage={setMessage}
+                sending={sending}
+                intervalLoading={intervalLoading}
+            />
         </StickToBottom>
     )
 }
