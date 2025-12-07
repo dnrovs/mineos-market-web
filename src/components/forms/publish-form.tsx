@@ -1,4 +1,13 @@
 'use client'
+import { Pencil, Plus, SquareLibrary, X } from 'lucide-react'
+import { Link } from 'lucide-react'
+import {
+    License,
+    PublicationCategory,
+    UploadPublicationParams
+} from 'mineos-market-client'
+import { useExtracted } from 'next-intl'
+import React from 'react'
 import {
     useFieldArray,
     Controller,
@@ -7,13 +16,18 @@ import {
     UseFieldArrayReturn,
     useForm
 } from 'react-hook-form'
-import {
-    License,
-    PublicationCategory,
-    UploadPublicationParams
-} from 'mineos-market-client'
+import { toast } from 'sonner'
 
 import { Button } from '@/components/ui/shadcn/button'
+import {
+    Dialog,
+    DialogClose,
+    DialogContent,
+    DialogFooter,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger
+} from '@/components/ui/shadcn/dialog'
 import {
     Field,
     FieldContent,
@@ -25,7 +39,12 @@ import {
     FieldSet
 } from '@/components/ui/shadcn/field'
 import { Input } from '@/components/ui/shadcn/input'
-import { Textarea } from '@/components/ui/shadcn/textarea'
+import {
+    InputGroup,
+    InputGroupAddon,
+    InputGroupButton,
+    InputGroupInput
+} from '@/components/ui/shadcn/input-group'
 import {
     Select,
     SelectContent,
@@ -33,32 +52,13 @@ import {
     SelectTrigger,
     SelectValue
 } from '@/components/ui/shadcn/select'
-import { Pencil, Plus, SquareLibrary, X } from 'lucide-react'
-import isPackaged from '@/utils/is-packaged'
+import { Switch } from '@/components/ui/shadcn/switch'
+import { Textarea } from '@/components/ui/shadcn/textarea'
+import { useMarket } from '@/context/MarketProvider'
+import useHandleRequestError from '@/hooks/use-handle-request-error'
 import { usePublicationCategories } from '@/hooks/use-publication-categories'
 import { licenses } from '@/lib/constants'
-import React from 'react'
-import {
-    Dialog,
-    DialogClose,
-    DialogContent,
-    DialogFooter,
-    DialogHeader,
-    DialogTitle,
-    DialogTrigger
-} from '@/components/ui/shadcn/dialog'
-import { Switch } from '@/components/ui/shadcn/switch'
-import { useMarket } from '@/context/MarketProvider'
-import { useExtracted } from 'next-intl'
-import useHandleRequestError from '@/hooks/use-handle-request-error'
-import { toast } from 'sonner'
-import {
-    InputGroup,
-    InputGroupAddon,
-    InputGroupButton,
-    InputGroupInput
-} from '@/components/ui/shadcn/input-group'
-import { Link } from 'lucide-react'
+import isPackaged from '@/utils/is-packaged'
 
 export type AddDependencyFormValues =
     | {
@@ -204,7 +204,7 @@ function AddDependencyForm({
                 control={addDependencyForm.control}
                 render={({ field }) => (
                     <Field>
-                        <FieldLabel>Dependency type</FieldLabel>
+                        <FieldLabel>{t('Dependency type')}</FieldLabel>
                         <Select
                             name={field.name}
                             value={String(field.value)}
@@ -613,7 +613,7 @@ export default function PublishFormFields({ form }: PublicationFieldsProps) {
                 render={({ field, fieldState }) => (
                     <Field>
                         <FieldLabel htmlFor="description">
-                            Description
+                            {t('Description')}
                         </FieldLabel>
                         <Textarea
                             placeholder={t('This software does...')}

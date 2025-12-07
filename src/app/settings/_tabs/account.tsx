@@ -168,8 +168,8 @@ export default function AccountTab() {
             })
 
         toast.promise(changePasswordPromise, {
-            loading: 'Changing your password...',
-            success: 'Your password has been changed successfully.',
+            loading: t('Changing your password...'),
+            success: t('Your password has been changed successfully.'),
             error: (error: Error) => error.message
         })
     }
@@ -210,7 +210,9 @@ export default function AccountTab() {
                             />
                         </Field>
                         <Field>
-                            <Button type="submit">Change password</Button>
+                            <Button type="submit">
+                                {t('Change password')}
+                            </Button>
                         </Field>
                     </FieldGroup>
                 </form>

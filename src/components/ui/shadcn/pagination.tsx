@@ -1,12 +1,13 @@
-import * as React from 'react'
 import {
     ChevronLeftIcon,
     ChevronRightIcon,
     MoreHorizontalIcon
 } from 'lucide-react'
+import { useExtracted } from 'next-intl'
+import * as React from 'react'
 
-import { cn } from '@/utils/shadcn'
 import { Button, buttonVariants } from '@/components/ui/shadcn/button'
+import { cn } from '@/utils/shadcn'
 
 function Pagination({ className, ...props }: React.ComponentProps<'nav'>) {
     return (
@@ -70,6 +71,8 @@ function PaginationPrevious({
     className,
     ...props
 }: React.ComponentProps<typeof PaginationLink>) {
+    const t = useExtracted()
+
     return (
         <PaginationLink
             aria-label="Go to previous page"
@@ -78,7 +81,7 @@ function PaginationPrevious({
             {...props}
         >
             <ChevronLeftIcon />
-            <span className="hidden sm:block">Previous</span>
+            <span className="hidden sm:block">{t('Previous')}</span>
         </PaginationLink>
     )
 }
@@ -87,6 +90,8 @@ function PaginationNext({
     className,
     ...props
 }: React.ComponentProps<typeof PaginationLink>) {
+    const t = useExtracted()
+
     return (
         <PaginationLink
             aria-label="Go to next page"
@@ -94,7 +99,7 @@ function PaginationNext({
             className={cn('gap-1 px-2.5 sm:pr-2.5', className)}
             {...props}
         >
-            <span className="hidden sm:block">Next</span>
+            <span className="hidden sm:block">{t('Next')}</span>
             <ChevronRightIcon />
         </PaginationLink>
     )

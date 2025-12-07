@@ -69,8 +69,9 @@ msgid "4YJHut"
 msgstr "Очистить поиск"
 
 #: src\app\[category]\page.tsx
-msgid "bz4Mm+"
-msgstr "Ничего не найдено"
+#: src\app\user\[name]\page.tsx
+msgid "FUU5eA"
+msgstr "Публикаций не найдено"
 
 #: src\app\[category]\page.tsx
 #: src\app\publication\[id]\page.tsx
@@ -555,6 +556,14 @@ msgid "eAv5kZ"
 msgstr "при изменении пароля"
 
 #: src\app\settings\_tabs\account.tsx
+msgid "/TRon/"
+msgstr "Ваш пароль был успешно изменён."
+
+#: src\app\settings\_tabs\account.tsx
+msgid "/wWuSX"
+msgstr "Изменение пароля..."
+
+#: src\app\settings\_tabs\account.tsx
 msgid "2PxMTO"
 msgstr "Сброс пароля аккаунта."
 
@@ -610,7 +619,7 @@ msgstr "сек"
 #: src\app\settings\_tabs\behaviour.tsx
 #: src\app\settings\_tabs\developer.tsx
 msgid "qSnPFR"
-msgstr "Восстановить по умолчанию"
+msgstr "По умолчанию"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "XALdUr"
@@ -665,6 +674,10 @@ msgstr "У этого пользователя пока нет публикац�
 #: src\components\layout\UserDropdown.tsx
 msgid "D3idYv"
 msgstr "Настройки"
+
+#: src\components\forms\publish-form.tsx
+msgid "/MPekr"
+msgstr "Тип зависимости"
 
 #: src\components\forms\publish-form.tsx
 msgid "3jvNiy"
@@ -725,6 +738,10 @@ msgstr "Использовать относительный путь"
 #: src\components\forms\publish-form.tsx
 msgid "plkU58"
 msgstr "Публикация, от которой вы хотите зависеть, не существует."
+
+#: src\components\forms\publish-form.tsx
+msgid "Q8Qw5B"
+msgstr "Описание"
 
 #: src\components\forms\publish-form.tsx
 msgid "Q8U7HC"
@@ -792,6 +809,14 @@ msgstr "Темная"
 #: src\components\layout\UserDropdown.tsx
 msgid "y1Z3or"
 msgstr "Язык"
+
+#: src\components\ui\shadcn\pagination.tsx
+msgid "9+Ddtu"
+msgstr "Следующая"
+
+#: src\components\ui\shadcn\pagination.tsx
+msgid "JJNc3c"
+msgstr "Предыдущая"
 
 #: src\hooks\use-config.ts
 msgid "jAe3qU"

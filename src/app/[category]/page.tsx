@@ -169,7 +169,7 @@ export default function Page() {
                         <EmptyMedia variant="icon">
                             <HeartCrack />
                         </EmptyMedia>
-                        <EmptyTitle>{t('Nothing found')}</EmptyTitle>
+                        <EmptyTitle>{t('No publications found')}</EmptyTitle>
                         <EmptyDescription>
                             {searchQuery
                                 ? t(

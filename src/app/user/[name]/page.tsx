@@ -102,7 +102,9 @@ export default function User() {
                             <EmptyMedia variant="icon">
                                 <HeartCrack />
                             </EmptyMedia>
-                            <EmptyTitle>No publications found</EmptyTitle>
+                            <EmptyTitle>
+                                {t('No publications found')}
+                            </EmptyTitle>
                             <EmptyDescription>
                                 {isCurrentUser
                                     ? t("You don't have any publications yet.")

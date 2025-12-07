@@ -69,8 +69,9 @@ msgid "4YJHut"
 msgstr "Clear search"
 
 #: src\app\[category]\page.tsx
-msgid "bz4Mm+"
-msgstr "Nothing found"
+#: src\app\user\[name]\page.tsx
+msgid "FUU5eA"
+msgstr "No publications found"
 
 #: src\app\[category]\page.tsx
 #: src\app\publication\[id]\page.tsx
@@ -555,6 +556,14 @@ msgid "eAv5kZ"
 msgstr "while changing password"
 
 #: src\app\settings\_tabs\account.tsx
+msgid "/TRon/"
+msgstr "Your password has been changed successfully."
+
+#: src\app\settings\_tabs\account.tsx
+msgid "/wWuSX"
+msgstr "Changing your password..."
+
+#: src\app\settings\_tabs\account.tsx
 msgid "2PxMTO"
 msgstr "Reset your account's password."
 
@@ -667,6 +676,10 @@ msgid "D3idYv"
 msgstr "Settings"
 
 #: src\components\forms\publish-form.tsx
+msgid "/MPekr"
+msgstr "Dependency type"
+
+#: src\components\forms\publish-form.tsx
 msgid "3jvNiy"
 msgstr "Add localization"
 
@@ -725,6 +738,10 @@ msgstr "Use relative path"
 #: src\components\forms\publish-form.tsx
 msgid "plkU58"
 msgstr "Publication you want to depend on does not exist."
+
+#: src\components\forms\publish-form.tsx
+msgid "Q8Qw5B"
+msgstr "Description"
 
 #: src\components\forms\publish-form.tsx
 msgid "Q8U7HC"
@@ -792,6 +809,14 @@ msgstr "Dark"
 #: src\components\layout\UserDropdown.tsx
 msgid "y1Z3or"
 msgstr "Language"
+
+#: src\components\ui\shadcn\pagination.tsx
+msgid "9+Ddtu"
+msgstr "Next"
+
+#: src\components\ui\shadcn\pagination.tsx
+msgid "JJNc3c"
+msgstr "Previous"
 
 #: src\hooks\use-config.ts
 msgid "jAe3qU"
