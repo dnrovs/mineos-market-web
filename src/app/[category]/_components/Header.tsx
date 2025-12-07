@@ -168,7 +168,7 @@ export default function Header({
                 </div>
             </div>
             <div className={'flex w-full items-center justify-end gap-1'}>
-                <InputGroup className={'w-75 max-lg:flex-1'}>
+                <InputGroup className={'w-75 min-w-40 max-lg:flex-1'}>
                     <InputGroupInput
                         placeholder={t('Search...')}
                         onInput={(e) => setSearchQuery(e.currentTarget.value)}
@@ -180,7 +180,7 @@ export default function Header({
                 </InputGroup>
 
                 <Select value={sorting} onValueChange={setSorting}>
-                    <SelectTrigger className={'w-45'}>
+                    <SelectTrigger className={'w-1/2 min-w-45 sm:w-45'}>
                         <SelectValue placeholder={t('Sort by...')} />
                     </SelectTrigger>
                     <SelectContent>
