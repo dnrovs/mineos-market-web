@@ -165,6 +165,10 @@ msgid "47FYwb"
 msgstr "Скасувати"
 
 #: src\app\messages\_components\dialogs.tsx
+msgid "ATDyLP"
+msgstr "Новий чат"
+
+#: src\app\messages\_components\dialogs.tsx
 #: src\app\register\page.tsx
 msgid "JCIgkj"
 msgstr "Ім'я користувача"

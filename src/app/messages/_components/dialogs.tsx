@@ -7,7 +7,6 @@ import { usePathname } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 
 import ProvidedAvatar from '@/components/ui/provided-avatar'
-import { Avatar, AvatarFallback } from '@/components/ui/shadcn/avatar'
 import { Button } from '@/components/ui/shadcn/button'
 import {
     Dialog,
@@ -17,6 +16,7 @@ import {
     DialogTitle,
     DialogTrigger
 } from '@/components/ui/shadcn/dialog'
+import { Field, FieldLabel } from '@/components/ui/shadcn/field'
 import { Input } from '@/components/ui/shadcn/input'
 import {
     Item,
@@ -30,31 +30,50 @@ import {
 import { Spinner } from '@/components/ui/shadcn/spinner'
 import { useMarket } from '@/context/MarketProvider'
 import { useConfig } from '@/hooks/use-config'
-import handleFetchError from '@/hooks/use-handle-request-error'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
 
-function NewChatDialogContent() {
+function NewChatDialogTrigger({
+    ...props
+}: React.ComponentProps<typeof DialogTrigger>) {
     const t = useExtracted()
+
+    const [open, setOpen] = useState(false)
     const [username, setUsername] = useState('')
 
     return (
-        <DialogContent className={'max-w-87.5!'}>
-            <DialogTitle>New chat</DialogTitle>
-            <Input
-                placeholder={t('Username')}
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-            />
-            <DialogFooter>
-                <DialogClose asChild>
-                    <Button variant="secondary">{t('Cancel')}</Button>
-                </DialogClose>
+        <Dialog open={open} onOpenChange={setOpen}>
+            <DialogTrigger {...props} />
 
-                <Button type="submit" asChild={!!username} disabled={!username}>
-                    <Link href={`/messages/${username}`}>{t('Open chat')}</Link>
-                </Button>
-            </DialogFooter>
-        </DialogContent>
+            <DialogContent className={'sm:max-w-90'}>
+                <DialogTitle>{t('New chat')}</DialogTitle>
+
+                <Field>
+                    <FieldLabel>{t('Username')}</FieldLabel>
+
+                    <Input
+                        placeholder={'dnrovs'}
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                    />
+                </Field>
+
+                <DialogFooter>
+                    <Button variant="secondary" onClick={() => setOpen(false)}>
+                        {t('Cancel')}
+                    </Button>
+
+                    <Button
+                        asChild={!!username}
+                        disabled={!username}
+                        onClick={() => setOpen(false)}
+                    >
+                        <Link href={`/messages/${username}`}>
+                            {t('Open chat')}
+                        </Link>
+                    </Button>
+                </DialogFooter>
+            </DialogContent>
+        </Dialog>
     )
 }
 
@@ -170,18 +189,15 @@ export default function Dialogs() {
                             />
                         ))}
 
-                        <Dialog>
-                            <DialogTrigger asChild>
-                                <Button
-                                    className={
-                                        'sticky bottom-3 left-full mx-3 mt-auto size-17 rounded-full lg:bottom-0 lg:mx-0'
-                                    }
-                                >
-                                    <Plus className={'size-5'} />
-                                </Button>
-                            </DialogTrigger>
-                            <NewChatDialogContent />
-                        </Dialog>
+                        <NewChatDialogTrigger asChild>
+                            <Button
+                                className={
+                                    'sticky bottom-3 left-full mx-3 mt-auto size-17 rounded-full lg:bottom-0 lg:mx-0'
+                                }
+                            >
+                                <Plus className={'size-5'} />
+                            </Button>
+                        </NewChatDialogTrigger>
                     </ItemGroup>
 
                     <Spinner
