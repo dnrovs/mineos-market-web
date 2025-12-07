@@ -4,18 +4,15 @@ import { clsx } from 'clsx'
 import emojiRegex from 'emoji-regex'
 import { ArrowUp } from 'lucide-react'
 import { Message as MessageT } from 'mineos-market-client'
-import { useExtracted } from 'next-intl'
+import { useExtracted, useFormatter } from 'next-intl'
 import { useParams, useRouter } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 import { toast } from 'sonner'
-import {
-    StickToBottom,
-    useStickToBottom,
-    useStickToBottomContext
-} from 'use-stick-to-bottom'
+import { StickToBottom } from 'use-stick-to-bottom'
 
 import { Header } from '@/app/messages/[user]/_components/header'
 import Message from '@/app/messages/[user]/_components/message'
+import { Badge } from '@/components/ui/shadcn/badge'
 import { Button } from '@/components/ui/shadcn/button'
 import {
     InputGroup,
@@ -25,14 +22,16 @@ import {
 import { Spinner } from '@/components/ui/shadcn/spinner'
 import { useMarket } from '@/context/MarketProvider'
 import { useConfig } from '@/hooks/use-config'
-import handleFetchError from '@/hooks/use-handle-request-error'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
+
+type MessageGroups = Record<string, MessageT[]>
 
 export default function Chat() {
     const { user, client } = useMarket()
     const handleRequestError = useHandleRequestError()
 
     const t = useExtracted()
+    const format = useFormatter()
 
     const { config } = useConfig()
     const router = useRouter()
@@ -42,6 +41,19 @@ export default function Chat() {
     const [lastMessageIsRead, setLastMessageIsRead] = useState<
         undefined | boolean
     >(undefined)
+
+    const messageGroups: MessageGroups = messages.reduce((groups, message) => {
+        const date = new Date(message.timestamp * 1000)
+        const label = format.dateTime(date, {
+            dateStyle: 'short'
+        })
+
+        if (!groups[label]) groups[label] = []
+
+        groups[label].push(message)
+
+        return groups
+    }, {} as MessageGroups)
 
     const [loading, setLoading] = useState(true)
     const [intervalLoading, setIntervalLoading] = useState(false)
@@ -146,7 +158,10 @@ export default function Chat() {
     return loading ? (
         <Spinner className={'mx-auto my-auto size-10'} />
     ) : (
-        <StickToBottom className="scrollbar-thin flex h-full grow flex-col items-center overflow-auto">
+        <StickToBottom
+            initial={'instant'}
+            className="scrollbar-thin flex h-full grow flex-col items-center overflow-auto"
+        >
             <StickToBottom.Content className={'flex min-h-full flex-col'}>
                 <Header userName={dialogUserName} />
 
@@ -159,8 +174,21 @@ export default function Chat() {
                               : t('Sent')}
                     </span>
 
-                    {messages.map((message, index) => (
-                        <Message key={index} message={message} />
+                    {Object.entries(messageGroups).map(([label, messages]) => (
+                        <React.Fragment key={label}>
+                            {messages.map((message, index) => (
+                                <Message key={index} message={message} />
+                            ))}
+
+                            <Badge
+                                variant={'secondary'}
+                                className={
+                                    'm-1 self-center rounded-full text-sm'
+                                }
+                            >
+                                {label}
+                            </Badge>
+                        </React.Fragment>
                     ))}
                 </div>
 
