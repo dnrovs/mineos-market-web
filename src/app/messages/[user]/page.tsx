@@ -103,11 +103,6 @@ export default function Chat() {
         if (emojiRegex().test(message))
             return toast.error(t('Emoji are not allowed.'))
 
-        if (message.startsWith('{') || message.endsWith('}'))
-            return toast.error(
-                t('Message cannot start or end with curly braces.')
-            )
-
         setIntervalLoading(true)
         setSending(true)
 
