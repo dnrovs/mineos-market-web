@@ -201,20 +201,16 @@ msgid "filwqD"
 msgstr "Прочитано"
 
 #: src\app\messages\[user]\page.tsx
+msgid "gcuDcH"
+msgstr "Надіслано"
+
+#: src\app\messages\[user]\page.tsx
 msgid "HyqYaU"
 msgstr "Скажіть щось {dialogUserName}..."
 
 #: src\app\messages\[user]\page.tsx
-msgid "jabB4C"
-msgstr "Непрочитано"
-
-#: src\app\messages\[user]\page.tsx
 msgid "sbE0zo"
 msgstr "під час отримання статусу прочитання останнього повідомлення"
-
-#: src\app\messages\[user]\page.tsx
-msgid "TNr4jR"
-msgstr "Повідомлення не може починатися або закынчуватися фігурною дужкою"
 
 #: src\app\messages\[user]\page.tsx
 msgid "UvpnGV"

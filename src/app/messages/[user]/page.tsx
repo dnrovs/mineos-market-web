@@ -61,9 +61,11 @@ export default function Chat() {
                     (dialog) =>
                         dialog.dialogUserName === dialogUserName &&
                         dialog.lastMessageUserName === user?.name
-                )?.lastMessageIsRead
+                )
 
-                setLastMessageIsRead(dialog ? !!dialog : undefined)
+                setLastMessageIsRead(
+                    dialog ? !!dialog.lastMessageIsRead : undefined
+                )
             })
             .catch((error) =>
                 handleRequestError(
@@ -154,7 +156,7 @@ export default function Chat() {
                             ? null
                             : lastMessageIsRead
                               ? t('Read')
-                              : t('Unread')}
+                              : t('Sent')}
                     </span>
 
                     {messages.map((message, index) => (

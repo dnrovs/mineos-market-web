@@ -201,20 +201,16 @@ msgid "filwqD"
 msgstr "Read"
 
 #: src\app\messages\[user]\page.tsx
+msgid "gcuDcH"
+msgstr "Sent"
+
+#: src\app\messages\[user]\page.tsx
 msgid "HyqYaU"
 msgstr "Say something to {dialogUserName}..."
 
 #: src\app\messages\[user]\page.tsx
-msgid "jabB4C"
-msgstr "Unread"
-
-#: src\app\messages\[user]\page.tsx
 msgid "sbE0zo"
 msgstr "while fetching last message read status"
-
-#: src\app\messages\[user]\page.tsx
-msgid "TNr4jR"
-msgstr "Message cannot start or end with curly braces."
 
 #: src\app\messages\[user]\page.tsx
 msgid "UvpnGV"
