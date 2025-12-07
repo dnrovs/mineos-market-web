@@ -456,20 +456,15 @@ export default function RatingsAndReviews({
                 {!reviewed && user && (
                     <>
                         <div className="flex flex-col gap-2">
-                            <Item
-                                variant={'muted'}
-                                className="flex flex-row flex-nowrap items-center justify-between p-3"
-                            >
-                                <ItemTitle className="text-muted-foreground">
+                            <div className="flex items-center justify-between border-l-3 pl-3">
+                                <span className="text-muted-foreground pr-3">
                                     {t('Tap to rate this:')}
-                                </ItemTitle>
-                                <ItemActions>
-                                    <RatingStars
-                                        onChange={(stars) => setStars(stars)}
-                                        value={stars}
-                                    />
-                                </ItemActions>
-                            </Item>
+                                </span>
+                                <RatingStars
+                                    onChange={(stars) => setStars(stars)}
+                                    value={stars}
+                                />
+                            </div>
                             {stars > 0 && (
                                 <>
                                     <Textarea
