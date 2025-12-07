@@ -28,7 +28,7 @@ function BottomNavigationButton({
     return (
         <Toggle
             className={
-                'text-sidebar-foreground data-[state=on]:text-background data-[state=on]:bg-foreground data-[state=on]:hover:bg-foreground/90 hover:bg-background/25 h-17 flex-1 flex-col rounded-none p-2 transition hover:text-inherit sm:flex-row'
+                'text-sidebar-foreground data-[state=on]:text-primary-foreground data-[state=on]:bg-primary data-[state=on]:hover:bg-foreground/90 hover:bg-background/25 h-17 flex-1 flex-col rounded-none p-2 transition hover:text-inherit sm:flex-row'
             }
             pressed={currentCategory === href}
             asChild
