@@ -12,7 +12,7 @@ export default function WhatsNew({ publication }: WhatsNewProps) {
     return (
         <section className={'flex flex-col gap-3'}>
             <h2 className="text-xl font-bold">
-                {t("What's new")}
+                {t("What's new")}{' '}
                 {publication.whatsNewVersion &&
                     publication.whatsNewVersion !== publication.version &&
                     t('in {whatsNewVersion}', {
