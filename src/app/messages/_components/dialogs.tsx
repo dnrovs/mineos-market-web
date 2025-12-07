@@ -169,6 +169,19 @@ export default function Dialogs() {
                                 dialog={dialog}
                             />
                         ))}
+
+                        <Dialog>
+                            <DialogTrigger asChild>
+                                <Button
+                                    className={
+                                        'sticky bottom-3 left-full mx-3 mt-auto size-17 rounded-full lg:bottom-0 lg:mx-0'
+                                    }
+                                >
+                                    <Plus className={'size-5'} />
+                                </Button>
+                            </DialogTrigger>
+                            <NewChatDialogContent />
+                        </Dialog>
                     </ItemGroup>
 
                     <Spinner
@@ -177,19 +190,6 @@ export default function Dialogs() {
                             !intervalLoading && 'hidden'
                         )}
                     />
-
-                    <Dialog>
-                        <DialogTrigger asChild>
-                            <Button
-                                className={
-                                    'absolute right-3 bottom-3 size-17 rounded-full lg:right-0 lg:bottom-0'
-                                }
-                            >
-                                <Plus className={'size-5'} />
-                            </Button>
-                        </DialogTrigger>
-                        <NewChatDialogContent />
-                    </Dialog>
                 </>
             )}
         </div>
