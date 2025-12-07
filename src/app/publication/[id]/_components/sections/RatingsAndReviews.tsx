@@ -12,6 +12,8 @@ import { toast } from 'sonner'
 import ProvidedAvatar from '@/components/ui/provided-avatar'
 import { Avatar, AvatarFallback } from '@/components/ui/shadcn/avatar'
 import { Button } from '@/components/ui/shadcn/button'
+import { Card } from '@/components/ui/shadcn/card'
+import { Item, ItemActions, ItemTitle } from '@/components/ui/shadcn/item'
 import { Progress } from '@/components/ui/shadcn/progress'
 import { Separator } from '@/components/ui/shadcn/separator'
 import { Spinner } from '@/components/ui/shadcn/spinner'
@@ -454,15 +456,20 @@ export default function RatingsAndReviews({
                 {!reviewed && user && (
                     <>
                         <div className="flex flex-col gap-2">
-                            <div className="flex items-center justify-between">
-                                <span className="text-muted-foreground">
+                            <Item
+                                variant={'muted'}
+                                className="flex flex-row flex-nowrap items-center justify-between p-3"
+                            >
+                                <ItemTitle className="text-muted-foreground">
                                     {t('Tap to rate this:')}
-                                </span>
-                                <RatingStars
-                                    onChange={(stars) => setStars(stars)}
-                                    value={stars}
-                                />
-                            </div>
+                                </ItemTitle>
+                                <ItemActions>
+                                    <RatingStars
+                                        onChange={(stars) => setStars(stars)}
+                                        value={stars}
+                                    />
+                                </ItemActions>
+                            </Item>
                             {stars > 0 && (
                                 <>
                                     <Textarea
