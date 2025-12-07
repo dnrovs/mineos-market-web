@@ -1,12 +1,13 @@
-import React from 'react'
 import clsx from 'clsx'
-import { PreviewPublication } from 'mineos-market-client'
-import Link from 'next/link'
-import Image from 'next/image'
 import { Download, Star } from 'lucide-react'
+import { PreviewPublication } from 'mineos-market-client'
+import { useExtracted } from 'next-intl'
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
+
 import { useIsMobile } from '@/hooks/shadcn/use-mobile'
 import getPublicationIcon from '@/utils/get-publication-icon'
-import { useExtracted } from 'next-intl'
 
 interface PublicationProps {
     publication: PreviewPublication
@@ -20,10 +21,9 @@ function Publication({ publication }: PublicationProps) {
     return (
         <Link
             key={publication.fileId}
-            className={clsx(
-                'bg-muted/50 focus-visible:border-ring focus-visible:ring-ring/50 flex cursor-pointer overflow-hidden rounded-xl focus-visible:ring-[3px]',
-                isMobile ? 'max-h-fit w-full flex-col' : 'min-w-80'
-            )}
+            className={
+                'bg-muted/50 focus-visible:border-ring focus-visible:ring-ring/50 flex cursor-pointer overflow-hidden rounded-xl focus-visible:ring-[3px] max-md:max-h-fit max-md:w-full max-md:flex-col md:min-w-80'
+            }
             href={`/publication/${publication.fileId}`}
         >
             <Image
