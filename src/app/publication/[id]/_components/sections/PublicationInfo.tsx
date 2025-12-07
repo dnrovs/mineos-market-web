@@ -43,7 +43,7 @@ export default function PublicationInfo({ publication }: PublicationInfoProps) {
                     publication.categoryId
                 )}
                 alt={'Placeholder'}
-                className={'size-32 rounded-xl max-[32rem]:size-24'}
+                className={'size-32 rounded-xl max-[32rem]:size-28'}
                 width={512}
                 height={512}
             />
