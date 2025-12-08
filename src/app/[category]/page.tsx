@@ -18,8 +18,8 @@ import {
 import React, { useEffect, useState } from 'react'
 
 import BottomNavigation from '@/app/[category]/_components/BottomNavigation'
-import Footer from '@/app/[category]/_components/Footer'
 import Header from '@/app/[category]/_components/Header'
+import Footer from '@/app/[category]/_components/footer'
 import Publications from '@/components/layout/publications'
 import { Button } from '@/components/ui/shadcn/button'
 import {
@@ -108,10 +108,6 @@ export default function Page() {
 
     const [loading, setLoading] = useState(true)
 
-    useEffect(() => {
-        setCurrentPage(1)
-    }, [showPerPage])
-
     if (!category) notFound()
 
     useEffect(() => {
@@ -139,7 +135,7 @@ export default function Page() {
     return (
         <main className="g flex h-dvh w-full flex-col overflow-y-scroll">
             <Header
-                category={category!}
+                category={category}
                 searchQuery={searchQuery}
                 setSearchQuery={setSearchQuery}
                 sorting={sorting}
@@ -160,7 +156,10 @@ export default function Page() {
                         currentPage={currentPage}
                         showPerPage={showPerPage}
                         setCurrentPage={setCurrentPage}
-                        setShowPerPage={setShowPerPage}
+                        setShowPerPage={(value: number) => {
+                            setShowPerPage(value)
+                            setCurrentPage(1)
+                        }}
                     />
                 </>
             ) : (

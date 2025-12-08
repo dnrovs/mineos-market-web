@@ -16,7 +16,7 @@ import {
     SelectValue
 } from '@/components/ui/shadcn/select'
 
-const perPageVariants = [25, 50, 75, 100]
+const perPageVariants = [25, 50, 75, 90]
 
 interface FooterProps {
     isNextPage: boolean
