@@ -6,7 +6,7 @@ import { useExtracted } from 'next-intl'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
-import WigglyWobbly from '@/app/overview/components/WigglyWobbly'
+import WigglyWobbly from '@/app/overview/components/wiggly-wobbly'
 import Header from '@/components/layout/header'
 import { Card } from '@/components/ui/shadcn/card'
 import { Spinner } from '@/components/ui/shadcn/spinner'

@@ -11,15 +11,14 @@ import { notFound, useParams } from 'next/navigation'
 import {
     parseAsInteger,
     parseAsString,
-    parseAsStringEnum,
     parseAsStringLiteral,
     useQueryState
 } from 'nuqs'
 import React, { useEffect, useState } from 'react'
 
-import BottomNavigation from '@/app/[category]/_components/BottomNavigation'
-import Header from '@/app/[category]/_components/Header'
+import BottomNavigation from '@/app/[category]/_components/bottom-navigation'
 import Footer from '@/app/[category]/_components/footer'
+import Header from '@/app/[category]/_components/header'
 import Publications from '@/components/layout/publications'
 import { Button } from '@/components/ui/shadcn/button'
 import {
@@ -74,8 +73,8 @@ export type Sorting = keyof typeof sortingValues
 
 export default function Page() {
     const categoryName = useParams<{ category: string }>().category
-    const categories = usePublicationCategories()
 
+    const categories = usePublicationCategories()
     const category = categories.find((c) => c.url.endsWith(categoryName))
 
     const t = useExtracted()
@@ -133,7 +132,7 @@ export default function Page() {
     }, [category.enum, client, currentPage, searchQuery, showPerPage, sorting])
 
     return (
-        <main className="g flex h-dvh w-full flex-col overflow-y-scroll">
+        <main className="flex h-dvh w-full flex-col overflow-y-scroll">
             <Header
                 category={category}
                 searchQuery={searchQuery}

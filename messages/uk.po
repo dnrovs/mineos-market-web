@@ -6,56 +6,69 @@ msgstr ""
 "X-Generator: next-intl\n"
 "X-Crowdin-SourceKey: msgstr\n"
 
+#: src\app\[category]\_components\footer.tsx
 #: src\app\[category]\_components\Footer.tsx
 msgid "K7AkdL"
 msgstr "Показати"
 
+#: src\app\[category]\_components\header.tsx
 #: src\app\[category]\_components\Header.tsx
 msgid "0BUTMv"
 msgstr "Пошук..."
 
+#: src\app\[category]\_components\header.tsx
 #: src\app\[category]\_components\Header.tsx
 msgid "0TZMjQ"
 msgstr "Найстаріші"
 
+#: src\app\[category]\_components\header.tsx
 #: src\app\[category]\_components\Header.tsx
 msgid "3xDJrg"
 msgstr "Опублікувати {category}..."
 
+#: src\app\[category]\_components\header.tsx
 #: src\app\[category]\_components\Header.tsx
 msgid "4Nl5H9"
 msgstr "Я → А"
 
+#: src\app\[category]\_components\header.tsx
 #: src\app\[category]\_components\Header.tsx
 msgid "dC3u7Z"
 msgstr "Найпопулярніші"
 
+#: src\app\[category]\_components\header.tsx
 #: src\app\[category]\_components\Header.tsx
 msgid "f3bAYs"
 msgstr "Сортувати за..."
 
+#: src\app\[category]\_components\header.tsx
 #: src\app\[category]\_components\Header.tsx
 msgid "fFZTRm"
 msgstr "З найнижчим рейтингом"
 
+#: src\app\[category]\_components\header.tsx
 #: src\app\[category]\_components\Header.tsx
 msgid "fwIt1X"
 msgstr "Найновіші"
 
+#: src\app\[category]\_components\header.tsx
 #: src\app\[category]\_components\Header.tsx
 msgid "KTnoGx"
 msgstr "Найменш популярні"
 
+#: src\app\[category]\_components\header.tsx
 #: src\app\[category]\_components\Header.tsx
 #: src\app\settings\page.tsx
 #: src\components\layout\app-sidebar.tsx
 msgid "TwyMau"
 msgstr "Акаунт"
 
+#: src\app\[category]\_components\header.tsx
 #: src\app\[category]\_components\Header.tsx
 msgid "xrURkx"
 msgstr "З найвищим рейтингом"
 
+#: src\app\[category]\_components\header.tsx
 #: src\app\[category]\_components\Header.tsx
 msgid "xSsE6C"
 msgstr "А → Я"
@@ -161,6 +174,7 @@ msgstr "Спілкуватися з розробниками"
 #: src\app\messages\_components\dialogs.tsx
 #: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 #: src\components\forms\publish-form.tsx
 msgid "47FYwb"
@@ -286,6 +300,7 @@ msgid "RiHzeS"
 msgstr "Це назавжди видалить публікацію, її статистику та відгуки з реєстру. Вихідні файли залишаться на сервері."
 
 #: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "wEQDC6"
 msgstr "Редагувати"
@@ -354,121 +369,150 @@ msgstr "Вихідний JSON {publicationName}"
 msgid "tH4Eov"
 msgstr "Публікацію позначено як завантажену."
 
+#: src\app\publication\[id]\_components\sections\about.tsx
 #: src\app\publication\[id]\_components\sections\About.tsx
 msgid "4gL3oc"
 msgstr "{version, plural, =1 {Випущено} other {Останній реліз}} {date}"
 
+#: src\app\publication\[id]\_components\sections\about.tsx
 #: src\app\publication\[id]\_components\sections\About.tsx
 msgid "g5pX+a"
 msgstr "Про публікацію"
 
+#: src\app\publication\[id]\_components\sections\dependencies.tsx
 #: src\app\publication\[id]\_components\sections\Dependencies.tsx
 #: src\components\forms\publish-form.tsx
 msgid "37Z5zj"
 msgstr "Залежності"
 
+#: src\app\publication\[id]\_components\sections\publication-info.tsx
 #: src\app\publication\[id]\_components\sections\PublicationInfo.tsx
 msgid "+zr0gu"
 msgstr "від <link>{username}</link>"
 
+#: src\app\publication\[id]\_components\sections\publication-info.tsx
 #: src\app\publication\[id]\_components\sections\PublicationInfo.tsx
 msgid "80g19N"
 msgstr "Переглянути на GitHub"
 
+#: src\app\publication\[id]\_components\sections\publication-info.tsx
 #: src\app\publication\[id]\_components\sections\PublicationInfo.tsx
 msgid "J62X2m"
 msgstr "Переглянути вихідний код"
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "4xQtw2"
 msgstr "із 5"
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "Ak4tB0"
 msgstr "під час оновлення відгуку"
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "APJ1b/"
 msgstr "Публікація відгуку..."
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "GJFQ68"
 msgstr "під час голосування за відгук"
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "k/n7Yx"
 msgstr "Відгук успішно опубліковано!"
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "LfHk/3"
 msgstr "Написати відгук..."
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "LZZfmv"
 msgstr "Увійдіть або зареєструйтеся, щоб оцінювати публікації та відгуки"
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "og54DB"
 msgstr "Спроба оновити неіснуючий відгук."
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "Ov8WL5"
 msgstr "Вже проголосували!"
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "REm9Re"
 msgstr "Рейтинги та огляди"
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "rMIZOU"
 msgstr "Натисніть, щоб оцінити:"
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "UnvbUU"
 msgstr "Відгук успішно оновлено!"
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "v+mTR7"
 msgstr "під час публікації відгуку"
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "W6gI4b"
 msgstr "Оновлення відгуку..."
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "wXHf3p"
 msgstr "Оцінити публікацію"
 
+#: src\app\publication\[id]\_components\sections\shelf.tsx
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
 #: src\components\forms\publish-form.tsx
 msgid "ccXLVi"
 msgstr "Категорія"
 
+#: src\app\publication\[id]\_components\sections\shelf.tsx
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
 msgid "FZkA83"
 msgstr "{length, plural, one {Рейтинг} few {Рейтинги} other {Рейтингів}}"
 
+#: src\app\publication\[id]\_components\sections\shelf.tsx
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
 msgid "GsBRWL"
 msgstr "Мови"
 
+#: src\app\publication\[id]\_components\sections\shelf.tsx
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
 #: src\components\forms\publish-form.tsx
 msgid "HBxXD/"
 msgstr "Ліцензія"
 
+#: src\app\publication\[id]\_components\sections\shelf.tsx
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
 msgid "I3b4hn"
 msgstr "Версія"
 
+#: src\app\publication\[id]\_components\sections\shelf.tsx
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
 msgid "OnbqrE"
 msgstr "Завантаження"
 
+#: src\app\publication\[id]\_components\sections\whats-new.tsx
 #: src\app\publication\[id]\_components\sections\WhatsNew.tsx
 msgid "G5/5eb"
 msgstr "Що нового"
 
+#: src\app\publication\[id]\_components\sections\whats-new.tsx
 #: src\app\publication\[id]\_components\sections\WhatsNew.tsx
 msgid "SoGsYr"
 msgstr "у {whatsNewVersion}"

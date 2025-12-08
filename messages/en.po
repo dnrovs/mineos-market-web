@@ -6,56 +6,69 @@ msgstr ""
 "X-Generator: next-intl\n"
 "X-Crowdin-SourceKey: msgstr\n"
 
+#: src\app\[category]\_components\footer.tsx
 #: src\app\[category]\_components\Footer.tsx
 msgid "K7AkdL"
 msgstr "Show"
 
+#: src\app\[category]\_components\header.tsx
 #: src\app\[category]\_components\Header.tsx
 msgid "0BUTMv"
 msgstr "Search..."
 
+#: src\app\[category]\_components\header.tsx
 #: src\app\[category]\_components\Header.tsx
 msgid "0TZMjQ"
 msgstr "Oldest"
 
+#: src\app\[category]\_components\header.tsx
 #: src\app\[category]\_components\Header.tsx
 msgid "3xDJrg"
 msgstr "Publish {category}..."
 
+#: src\app\[category]\_components\header.tsx
 #: src\app\[category]\_components\Header.tsx
 msgid "4Nl5H9"
 msgstr "Z → A"
 
+#: src\app\[category]\_components\header.tsx
 #: src\app\[category]\_components\Header.tsx
 msgid "dC3u7Z"
 msgstr "Most popular"
 
+#: src\app\[category]\_components\header.tsx
 #: src\app\[category]\_components\Header.tsx
 msgid "f3bAYs"
 msgstr "Sort by..."
 
+#: src\app\[category]\_components\header.tsx
 #: src\app\[category]\_components\Header.tsx
 msgid "fFZTRm"
 msgstr "Lowest rated"
 
+#: src\app\[category]\_components\header.tsx
 #: src\app\[category]\_components\Header.tsx
 msgid "fwIt1X"
 msgstr "Newest"
 
+#: src\app\[category]\_components\header.tsx
 #: src\app\[category]\_components\Header.tsx
 msgid "KTnoGx"
 msgstr "Least popular"
 
+#: src\app\[category]\_components\header.tsx
 #: src\app\[category]\_components\Header.tsx
 #: src\app\settings\page.tsx
 #: src\components\layout\app-sidebar.tsx
 msgid "TwyMau"
 msgstr "Account"
 
+#: src\app\[category]\_components\header.tsx
 #: src\app\[category]\_components\Header.tsx
 msgid "xrURkx"
 msgstr "Highest rated"
 
+#: src\app\[category]\_components\header.tsx
 #: src\app\[category]\_components\Header.tsx
 msgid "xSsE6C"
 msgstr "A → Z"
@@ -161,6 +174,7 @@ msgstr "Communicate with another developers"
 #: src\app\messages\_components\dialogs.tsx
 #: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 #: src\components\forms\publish-form.tsx
 msgid "47FYwb"
@@ -286,6 +300,7 @@ msgid "RiHzeS"
 msgstr "This will delete publication, it's statistics and reviews from the registry forever. Source files will stay on the server."
 
 #: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "wEQDC6"
 msgstr "Edit"
@@ -354,121 +369,150 @@ msgstr "{publicationName}'s raw JSON"
 msgid "tH4Eov"
 msgstr "Publication marked as downloaded."
 
+#: src\app\publication\[id]\_components\sections\about.tsx
 #: src\app\publication\[id]\_components\sections\About.tsx
 msgid "4gL3oc"
 msgstr "{version, plural, =1 {Released on} other {Last released on}} {date}"
 
+#: src\app\publication\[id]\_components\sections\about.tsx
 #: src\app\publication\[id]\_components\sections\About.tsx
 msgid "g5pX+a"
 msgstr "About"
 
+#: src\app\publication\[id]\_components\sections\dependencies.tsx
 #: src\app\publication\[id]\_components\sections\Dependencies.tsx
 #: src\components\forms\publish-form.tsx
 msgid "37Z5zj"
 msgstr "Dependencies"
 
+#: src\app\publication\[id]\_components\sections\publication-info.tsx
 #: src\app\publication\[id]\_components\sections\PublicationInfo.tsx
 msgid "+zr0gu"
 msgstr "by <link>{username}</link>"
 
+#: src\app\publication\[id]\_components\sections\publication-info.tsx
 #: src\app\publication\[id]\_components\sections\PublicationInfo.tsx
 msgid "80g19N"
 msgstr "View on GitHub"
 
+#: src\app\publication\[id]\_components\sections\publication-info.tsx
 #: src\app\publication\[id]\_components\sections\PublicationInfo.tsx
 msgid "J62X2m"
 msgstr "View source code"
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "4xQtw2"
 msgstr "out of 5"
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "Ak4tB0"
 msgstr "while updating a review"
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "APJ1b/"
 msgstr "Posting review..."
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "GJFQ68"
 msgstr "while voting a review"
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "k/n7Yx"
 msgstr "Review posted successfully!"
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "LfHk/3"
 msgstr "Write a review..."
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "LZZfmv"
 msgstr "Login or register to rate publications and reviews"
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "og54DB"
 msgstr "Tried to update a review that does not exist."
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "Ov8WL5"
 msgstr "Already voted!"
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "REm9Re"
 msgstr "Ratings & Reviews"
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "rMIZOU"
 msgstr "Tap to rate this:"
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "UnvbUU"
 msgstr "Review updated successfully!"
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "v+mTR7"
 msgstr "while posting a review"
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "W6gI4b"
 msgstr "Updating review..."
 
+#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
 msgid "wXHf3p"
 msgstr "Rate publication"
 
+#: src\app\publication\[id]\_components\sections\shelf.tsx
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
 #: src\components\forms\publish-form.tsx
 msgid "ccXLVi"
 msgstr "Category"
 
+#: src\app\publication\[id]\_components\sections\shelf.tsx
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
 msgid "FZkA83"
 msgstr "{length, plural, one {Rating} other {Ratings}}"
 
+#: src\app\publication\[id]\_components\sections\shelf.tsx
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
 msgid "GsBRWL"
 msgstr "Languages"
 
+#: src\app\publication\[id]\_components\sections\shelf.tsx
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
 #: src\components\forms\publish-form.tsx
 msgid "HBxXD/"
 msgstr "License"
 
+#: src\app\publication\[id]\_components\sections\shelf.tsx
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
 msgid "I3b4hn"
 msgstr "Version"
 
+#: src\app\publication\[id]\_components\sections\shelf.tsx
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
 msgid "OnbqrE"
 msgstr "Downloads"
 
+#: src\app\publication\[id]\_components\sections\whats-new.tsx
 #: src\app\publication\[id]\_components\sections\WhatsNew.tsx
 msgid "G5/5eb"
 msgstr "What's new"
 
+#: src\app\publication\[id]\_components\sections\whats-new.tsx
 #: src\app\publication\[id]\_components\sections\WhatsNew.tsx
 msgid "SoGsYr"
 msgstr "in {whatsNewVersion}"
