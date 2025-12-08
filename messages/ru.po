@@ -828,11 +828,11 @@ msgstr "Язык"
 
 #: src\components\ui\shadcn\pagination.tsx
 msgid "9+Ddtu"
-msgstr "Следующая"
+msgstr "Далее"
 
 #: src\components\ui\shadcn\pagination.tsx
 msgid "JJNc3c"
-msgstr "Предыдущая"
+msgstr "Назад"
 
 #: src\hooks\use-config.ts
 msgid "jAe3qU"
