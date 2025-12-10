@@ -60,8 +60,6 @@ export default function Shelf({ publication, reviews }: StatsBarProps) {
     const shelfRef = useRef<HTMLDivElement>(null)
     const [maxWidth, setMaxWidth] = useState(0)
 
-    const scrollableRef = useRef<HTMLDivElement>(null)
-
     const category = categories.find((p) => p.enum === publication.categoryId)!
 
     const translations = isPackaged(publication.categoryId)
@@ -117,36 +115,42 @@ export default function Shelf({ publication, reviews }: StatsBarProps) {
     ]
 
     return (
-        <ScrollContainer
-            component={'div'}
-            className="overflow-auto"
-            onMouseDown={(e) => e.preventDefault()}
-        >
-            <div ref={shelfRef} className={'flex gap-4'}>
-                {elements.map((element, index) => (
-                    <div key={index} className="flex grow items-center gap-4">
+        <div className="relative">
+            <span className="via-background pointer-events-none absolute h-full w-full bg-gradient-to-r from-transparent from-75% via-100%" />
+            <ScrollContainer
+                component={'div'}
+                className={'-z-10 overflow-auto'}
+                onMouseDown={(e) => e.preventDefault()}
+            >
+                <div ref={shelfRef} className={'flex gap-4'}>
+                    {elements.map((element, index) => (
                         <div
-                            data-shelf-item
-                            style={{
-                                minWidth: maxWidth > 0 ? maxWidth : 'auto'
-                            }}
-                            className="flex-shrink-0 grow"
+                            key={index}
+                            className="flex grow items-center gap-4"
                         >
-                            <ShelfElement
-                                title={element.title.toUpperCase()}
-                                Icon={element.icon}
-                                value={element.value.toString()}
-                            />
+                            <div
+                                data-shelf-item
+                                style={{
+                                    minWidth: maxWidth > 0 ? maxWidth : 'auto'
+                                }}
+                                className="flex-shrink-0 grow"
+                            >
+                                <ShelfElement
+                                    title={element.title.toUpperCase()}
+                                    Icon={element.icon}
+                                    value={element.value.toString()}
+                                />
+                            </div>
+                            {index < elements.length - 1 && (
+                                <Separator
+                                    orientation="vertical"
+                                    className="h-12"
+                                />
+                            )}
                         </div>
-                        {index < elements.length - 1 && (
-                            <Separator
-                                orientation="vertical"
-                                className="h-12"
-                            />
-                        )}
-                    </div>
-                ))}
-            </div>
-        </ScrollContainer>
+                    ))}
+                </div>
+            </ScrollContainer>
+        </div>
     )
 }
