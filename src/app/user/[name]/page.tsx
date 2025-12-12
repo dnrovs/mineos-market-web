@@ -20,12 +20,16 @@ import {
 } from '@/components/ui/shadcn/empty'
 import { Spinner } from '@/components/ui/shadcn/spinner'
 import { useMarket } from '@/context/MarketProvider'
+import { useMediaQuery } from '@/hooks/shadcn/use-media-query'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
 
 export default function User() {
     const name = useParams<{ name: string }>().name
+
     const { user, client } = useMarket()
+
     const handleRequestError = useHandleRequestError()
+    const isMobile = useMediaQuery('(max-width: 64rem)')
 
     const t = useExtracted()
 
@@ -59,9 +63,15 @@ export default function User() {
             >
                 <div className={'flex h-min w-full justify-between gap-3'}>
                     <div className={'flex w-full flex-col justify-between'}>
-                        <span className={'text-2xl'}>{name}</span>
+                        <h1 className={'truncate text-2xl font-medium'}>
+                            {name}
+                        </h1>
                         <div className={'flex gap-2'}>
-                            <Button size={'sm'} className={'w-fit'} asChild>
+                            <Button
+                                size={isMobile ? 'sm' : 'default'}
+                                className={'w-fit'}
+                                asChild
+                            >
                                 {isCurrentUser ? (
                                     <Link href={'/settings'}>
                                         <Settings />
@@ -77,7 +87,7 @@ export default function User() {
                             {navigator.share && (
                                 <Button
                                     variant={'secondary'}
-                                    size={'icon-sm'}
+                                    size={isMobile ? 'icon-sm' : 'icon'}
                                     onClick={() =>
                                         navigator.share({
                                             title: name,
@@ -90,7 +100,10 @@ export default function User() {
                             )}
                         </div>
                     </div>
-                    <ProvidedAvatar username={name} className={'size-18'} />
+                    <ProvidedAvatar
+                        username={name}
+                        className={'size-20 lg:size-22'}
+                    />
                 </div>
                 {loading ? (
                     <Spinner className={'mx-auto my-auto size-10'} />
