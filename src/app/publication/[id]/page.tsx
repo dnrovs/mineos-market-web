@@ -7,9 +7,9 @@ import React, { useEffect, useState } from 'react'
 
 import About from '@/app/publication/[id]/_components/sections/about'
 import Dependencies from '@/app/publication/[id]/_components/sections/dependencies'
-import PublicationInfo from '@/app/publication/[id]/_components/sections/publication-info'
+import PublicationInfo from '@/app/publication/[id]/_components/publication-info'
 import RatingsAndReviews from '@/app/publication/[id]/_components/sections/ratings-and-reviews'
-import Shelf from '@/app/publication/[id]/_components/sections/shelf'
+import Shelf from '@/app/publication/[id]/_components/shelf'
 import WhatsNew from '@/app/publication/[id]/_components/sections/whats-new'
 import Header from '@/components/layout/header'
 import { Separator } from '@/components/ui/shadcn/separator'
@@ -60,42 +60,45 @@ export default function PublicationPage() {
     }, [client.publications, client.reviews, id])
 
     return (
-        <main className="flex h-screen w-full flex-col overflow-auto pb-[env(safe-area-inset-bottom)]">
+        <main className="relative flex h-screen w-full flex-col overflow-auto pb-[env(safe-area-inset-bottom)]">
             <Header />
 
             {loading ? (
                 <Spinner className="mx-auto my-auto size-10" />
             ) : publication ? (
-                <div className="mx-auto flex w-full max-w-192 flex-col gap-3 p-3 pt-0 lg:p-4.5 lg:pt-0">
+                <div className="mx-auto flex w-full flex-col items-center">
                     <PublicationInfo publication={publication} />
-                    <Shelf publication={publication} reviews={reviews} />
 
-                    <Separator />
-                    <About publication={publication} />
+                    <div className={'flex w-full max-w-192 flex-col gap-3 p-3'}>
+                        <Shelf publication={publication} reviews={reviews} />
 
-                    {publication?.whatsNew && (
-                        <>
-                            <Separator />
-                            <WhatsNew publication={publication} />
-                        </>
-                    )}
+                        <Separator />
+                        <About publication={publication} />
 
-                    {publication?.dependenciesData &&
-                        Object.values(publication.dependenciesData ?? {}).some(
-                            (dep) => dep.publicationName
-                        ) && (
+                        {publication?.whatsNew && (
                             <>
                                 <Separator />
-                                <Dependencies publication={publication} />
+                                <WhatsNew publication={publication} />
                             </>
                         )}
 
-                    <Separator />
-                    <RatingsAndReviews
-                        publication={publication}
-                        reviews={reviews}
-                        updateData={updateData}
-                    />
+                        {publication?.dependenciesData &&
+                            Object.values(
+                                publication.dependenciesData ?? {}
+                            ).some((dep) => dep.publicationName) && (
+                                <>
+                                    <Separator />
+                                    <Dependencies publication={publication} />
+                                </>
+                            )}
+
+                        <Separator />
+                        <RatingsAndReviews
+                            publication={publication}
+                            reviews={reviews}
+                            updateData={updateData}
+                        />
+                    </div>
                 </div>
             ) : (
                 notFound()

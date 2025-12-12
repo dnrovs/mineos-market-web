@@ -1,5 +1,5 @@
 import { Publication } from 'mineos-market-client'
-import { useExtracted } from 'next-intl'
+import { useExtracted, useFormatter, useNow } from 'next-intl'
 import React from 'react'
 
 interface WhatsNewProps {
@@ -8,6 +8,8 @@ interface WhatsNewProps {
 
 export default function WhatsNew({ publication }: WhatsNewProps) {
     const t = useExtracted()
+    const now = useNow()
+    const format = useFormatter()
 
     return (
         <section className={'flex flex-col gap-3'}>
@@ -18,6 +20,11 @@ export default function WhatsNew({ publication }: WhatsNewProps) {
                     t('in {whatsNewVersion}', {
                         whatsNewVersion: publication.whatsNewVersion.toString()
                     })}
+                {publication.version === publication.whatsNewVersion &&
+                    format.relativeTime(
+                        new Date(publication.timestamp * 1000),
+                        { now, style: 'short' }
+                    )}
             </h2>
 
             <span>{publication.whatsNew}</span>

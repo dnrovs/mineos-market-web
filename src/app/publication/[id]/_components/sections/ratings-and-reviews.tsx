@@ -13,14 +13,21 @@ import ProvidedAvatar from '@/components/ui/provided-avatar'
 import { Avatar, AvatarFallback } from '@/components/ui/shadcn/avatar'
 import { Button } from '@/components/ui/shadcn/button'
 import { Card } from '@/components/ui/shadcn/card'
-import { Item, ItemActions, ItemTitle } from '@/components/ui/shadcn/item'
+import {
+    Item,
+    ItemActions,
+    ItemContent,
+    ItemTitle
+} from '@/components/ui/shadcn/item'
 import { Progress } from '@/components/ui/shadcn/progress'
 import { Separator } from '@/components/ui/shadcn/separator'
 import { Spinner } from '@/components/ui/shadcn/spinner'
 import { Textarea } from '@/components/ui/shadcn/textarea'
 import { useMarket } from '@/context/MarketProvider'
+import { useIsMobile } from '@/hooks/shadcn/use-mobile'
 import handleFetchError from '@/hooks/use-handle-request-error'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
+import { cn } from '@/utils/shadcn'
 
 interface RatingSummaryProps {
     averageRating?: number
@@ -138,8 +145,6 @@ function Review({ review, publication }: ReviewProps) {
     const t = useExtracted()
     const format = useFormatter()
 
-    const router = useRouter()
-
     const [reviewState, setReviewState] = useState(review)
 
     const [voted, setVoted] = useState<'positive' | 'negative' | null>(null)
@@ -152,7 +157,8 @@ function Review({ review, publication }: ReviewProps) {
     const [editRating, setEditRating] = useState<number>(reviewState.rating)
     const [saving, setSaving] = useState(false)
 
-    const ownReview = user?.name === reviewState.userName
+    const isOwnReview = user?.name === reviewState.userName
+    const isRatingButtonsDisabled = loadingVote !== null || isOwnReview || !user
 
     const updateReview = async () => {
         try {
@@ -178,8 +184,6 @@ function Review({ review, publication }: ReviewProps) {
     }
 
     const voteReview = (helpful: boolean) => {
-        if (!user) return router.push('/login')
-
         if (loadingVote) return
 
         const type = helpful ? 'positive' : 'negative'
@@ -210,7 +214,7 @@ function Review({ review, publication }: ReviewProps) {
     }
 
     const saveEdit = async () => {
-        if (!client.getToken() || !ownReview || !publication) return
+        if (!client.getToken() || !isOwnReview || !publication) return
         setSaving(true)
 
         const saveEditPromise = client.reviews
@@ -285,11 +289,9 @@ function Review({ review, publication }: ReviewProps) {
                                 <Star
                                     key={i}
                                     size={19}
-                                    fill={
-                                        i < reviewState.rating
-                                            ? 'currentcolor'
-                                            : 'none'
-                                    }
+                                    className={cn(
+                                        i < reviewState.rating && 'fill-current'
+                                    )}
                                 />
                             ))}
                         </div>
@@ -306,12 +308,40 @@ function Review({ review, publication }: ReviewProps) {
                 )}
 
                 <div className="flex gap-2">
-                    {!ownReview ? (
+                    {isOwnReview &&
+                        (!editing ? (
+                            <Button
+                                variant="secondary"
+                                onClick={() => setEditing(true)}
+                            >
+                                <Pencil />
+                                {t('Edit')}
+                            </Button>
+                        ) : (
+                            <>
+                                <Button onClick={saveEdit} disabled={saving}>
+                                    {saving && <Spinner className="h-4 w-4" />}{' '}
+                                    Save
+                                </Button>
+                                <Button
+                                    variant="secondary"
+                                    onClick={() => {
+                                        setEditing(false)
+                                        setEditText(reviewState.comment)
+                                    }}
+                                    disabled={saving}
+                                >
+                                    {t('Cancel')}
+                                </Button>
+                            </>
+                        ))}
+
+                    {!editing && (
                         <>
                             <Button
                                 variant="secondary"
                                 onClick={() => voteReview(true)}
-                                disabled={loadingVote !== null}
+                                disabled={isRatingButtonsDisabled}
                             >
                                 {loadingVote === 'positive' ? (
                                     <Spinner className="h-4 w-4" />
@@ -331,7 +361,7 @@ function Review({ review, publication }: ReviewProps) {
                             <Button
                                 variant="secondary"
                                 onClick={() => voteReview(false)}
-                                disabled={loadingVote !== null}
+                                disabled={isRatingButtonsDisabled}
                             >
                                 {loadingVote === 'negative' ? (
                                     <Spinner className="h-4 w-4" />
@@ -351,34 +381,10 @@ function Review({ review, publication }: ReviewProps) {
                                         (reviewState.votes.positive ?? 0)}
                             </Button>
                         </>
-                    ) : !editing ? (
-                        <Button
-                            variant="secondary"
-                            onClick={() => setEditing(true)}
-                        >
-                            <Pencil />
-                            {t('Edit')}
-                        </Button>
-                    ) : (
-                        <>
-                            <Button onClick={saveEdit} disabled={saving}>
-                                {saving && <Spinner className="h-4 w-4" />} Save
-                            </Button>
-                            <Button
-                                variant="secondary"
-                                onClick={() => {
-                                    setEditing(false)
-                                    setEditText(reviewState.comment)
-                                }}
-                                disabled={saving}
-                            >
-                                {t('Cancel')}
-                            </Button>
-                        </>
                     )}
                 </div>
             </div>
-            {ownReview && <Separator />}
+            {isOwnReview && <Separator />}
         </>
     )
 }
@@ -444,55 +450,66 @@ export default function RatingsAndReviews({
                     averageRating={publication?.averageRating}
                     reviews={reviews}
                 />
-
-                {!user && (
-                    <div className="text-muted-foreground text-center">
-                        {t(
-                            'Login or register to rate publications and reviews'
+                {!reviewed && (
+                    <Item
+                        variant={'muted'}
+                        className={
+                            'flex flex-row flex-nowrap items-center justify-between rounded-xl'
+                        }
+                    >
+                        {user ? (
+                            <>
+                                <ItemTitle className="text-muted-foreground text-base">
+                                    {t('Tap to rate this:')}
+                                </ItemTitle>
+                                <ItemActions>
+                                    <RatingStars
+                                        onChange={(stars) => setStars(stars)}
+                                        value={stars}
+                                    />
+                                </ItemActions>
+                            </>
+                        ) : (
+                            <div className={'flex w-full justify-center'}>
+                                <ItemTitle
+                                    className={
+                                        'text-muted-foreground text-base'
+                                    }
+                                >
+                                    {t(
+                                        'Login or register to rate publications and reviews'
+                                    )}
+                                </ItemTitle>
+                            </div>
                         )}
-                    </div>
+                    </Item>
                 )}
 
-                {!reviewed && user && (
+                {stars > 0 && (
                     <>
-                        <div className="flex flex-col gap-2">
-                            <div className="flex items-center justify-between border-l-3 pl-3">
-                                <span className="text-muted-foreground pr-3">
-                                    {t('Tap to rate this:')}
-                                </span>
-                                <RatingStars
-                                    onChange={(stars) => setStars(stars)}
-                                    value={stars}
-                                />
-                            </div>
-                            {stars > 0 && (
-                                <>
-                                    <Textarea
-                                        placeholder={t('Write a review...')}
-                                        onInput={(e) =>
-                                            setReviewText(e.currentTarget.value)
-                                        }
-                                        value={reviewText}
-                                    />
-                                    <div className="flex gap-2">
-                                        <Button
-                                            onClick={postReview}
-                                            disabled={reviewText.length === 0}
-                                        >
-                                            {t('Rate publication')}
-                                        </Button>
-                                        <Button
-                                            variant="secondary"
-                                            onClick={() => {
-                                                setStars(0)
-                                                setReviewText('')
-                                            }}
-                                        >
-                                            {t('Cancel')}
-                                        </Button>
-                                    </div>
-                                </>
-                            )}
+                        <Textarea
+                            placeholder={t('Write a review...')}
+                            onInput={(e) =>
+                                setReviewText(e.currentTarget.value)
+                            }
+                            value={reviewText}
+                        />
+                        <div className="flex gap-2">
+                            <Button
+                                onClick={postReview}
+                                disabled={reviewText.length === 0}
+                            >
+                                {t('Rate publication')}
+                            </Button>
+                            <Button
+                                variant="secondary"
+                                onClick={() => {
+                                    setStars(0)
+                                    setReviewText('')
+                                }}
+                            >
+                                {t('Cancel')}
+                            </Button>
                         </div>
                     </>
                 )}
