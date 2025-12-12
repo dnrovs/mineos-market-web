@@ -15,7 +15,6 @@ import {
     SearchIcon,
     UserRound
 } from 'lucide-react'
-import { OrderBy, OrderDirection } from 'mineos-market-client'
 import { useExtracted } from 'next-intl'
 import Link from 'next/link'
 import React from 'react'
@@ -23,7 +22,6 @@ import React from 'react'
 import { Sorting } from '@/app/[category]/page'
 import UserDropdown from '@/components/layout/user-dropdown'
 import ProvidedAvatar from '@/components/ui/provided-avatar'
-import { Avatar, AvatarFallback } from '@/components/ui/shadcn/avatar'
 import { Badge } from '@/components/ui/shadcn/badge'
 import { Button } from '@/components/ui/shadcn/button'
 import {

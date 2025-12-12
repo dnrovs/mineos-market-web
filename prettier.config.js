@@ -7,8 +7,5 @@ export default {
     bracketSpacing: true,
     importOrder: ['^@/(.*)$', '^[./]'],
     importOrderSeparation: true,
-    plugins: [
-        '@trivago/prettier-plugin-sort-imports',
-        'prettier-plugin-tailwindcss'
-    ]
+    plugins: ['prettier-plugin-organize-imports', 'prettier-plugin-tailwindcss']
 }

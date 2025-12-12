@@ -5,7 +5,7 @@ import { OrderBy, PreviewPublication } from 'mineos-market-client'
 import { useExtracted } from 'next-intl'
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import Header from '@/components/layout/header'
 import Publications from '@/components/layout/publications'

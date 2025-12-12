@@ -1,8 +1,6 @@
 'use client'
 
-import { clsx } from 'clsx'
 import emojiRegex from 'emoji-regex'
-import { ArrowUp } from 'lucide-react'
 import { Message as MessageT } from 'mineos-market-client'
 import { useExtracted, useFormatter } from 'next-intl'
 import { useParams, useRouter } from 'next/navigation'

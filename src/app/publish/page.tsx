@@ -1,26 +1,19 @@
 'use client'
 
-import {
-    License,
-    PublicationCategory,
-    UploadPublicationParams
-} from 'mineos-market-client'
 import { useExtracted } from 'next-intl'
-import { redirect, useRouter, useSearchParams } from 'next/navigation'
-import React, { useEffect } from 'react'
+import { useRouter, useSearchParams } from 'next/navigation'
+import { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 
-import PublishForm, {
+import PublishFormFields, {
     formatPublishFormValues,
     PublishFormValues
 } from '@/components/forms/publish-form'
-import PublishFormFields from '@/components/forms/publish-form'
 import Header from '@/components/layout/header'
 import ResponsiveCard from '@/components/ui/responsive-card'
 import { Button } from '@/components/ui/shadcn/button'
 import {
-    Card,
     CardContent,
     CardDescription,
     CardFooter,

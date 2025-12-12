@@ -10,7 +10,6 @@ import ProvidedAvatar from '@/components/ui/provided-avatar'
 import { Button } from '@/components/ui/shadcn/button'
 import {
     Dialog,
-    DialogClose,
     DialogContent,
     DialogFooter,
     DialogTitle,

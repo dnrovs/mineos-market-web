@@ -21,7 +21,7 @@ import {
     InputGroupText
 } from '@/components/ui/shadcn/input-group'
 import { Switch } from '@/components/ui/shadcn/switch'
-import { useConfig, Config } from '@/hooks/use-config'
+import { Config, useConfig } from '@/hooks/use-config'
 
 export default function BehaviourTab() {
     const { config, setConfig, resetConfig } = useConfig()

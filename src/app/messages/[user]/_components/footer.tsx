@@ -1,7 +1,6 @@
 import { clsx } from 'clsx'
 import { ArrowUp } from 'lucide-react'
 import { useExtracted } from 'next-intl'
-import React from 'react'
 import { useStickToBottomContext } from 'use-stick-to-bottom'
 
 import { Button } from '@/components/ui/shadcn/button'

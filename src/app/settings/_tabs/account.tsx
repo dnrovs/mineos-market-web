@@ -1,21 +1,15 @@
-import { clsx } from 'clsx'
 import {
     AtSign,
     Calendar,
-    Check,
-    CheckCheck,
-    Circle,
     Fingerprint,
     LogIn,
     LogOut,
-    User,
     UserRound,
     UserRoundPlus
 } from 'lucide-react'
-import { ChangePasswordParams, UserCredentials } from 'mineos-market-client'
+import { ChangePasswordParams } from 'mineos-market-client'
 import { useExtracted, useFormatter } from 'next-intl'
 import Link from 'next/link'
-import React from 'react'
 import { Controller, useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 
@@ -23,12 +17,6 @@ import ButtonLink from '@/components/ui/button-link'
 import ProvidedAvatar from '@/components/ui/provided-avatar'
 import { Badge } from '@/components/ui/shadcn/badge'
 import { Button } from '@/components/ui/shadcn/button'
-import {
-    Card,
-    CardContent,
-    CardHeader,
-    CardTitle
-} from '@/components/ui/shadcn/card'
 import {
     Empty,
     EmptyContent,
@@ -55,8 +43,6 @@ import {
     ItemMedia,
     ItemTitle
 } from '@/components/ui/shadcn/item'
-import { Separator } from '@/components/ui/shadcn/separator'
-import { TabsContent } from '@/components/ui/shadcn/tabs'
 import {
     Tooltip,
     TooltipContent,

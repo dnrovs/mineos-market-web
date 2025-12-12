@@ -3,8 +3,8 @@
 import { useExtracted } from 'next-intl'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import React, { useEffect } from 'react'
-import { useForm, Controller } from 'react-hook-form'
+import { useEffect } from 'react'
+import { Controller, useForm } from 'react-hook-form'
 
 import Header from '@/components/layout/header'
 import ResponsiveCard from '@/components/ui/responsive-card'

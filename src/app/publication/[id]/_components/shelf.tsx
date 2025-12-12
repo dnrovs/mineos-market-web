@@ -1,13 +1,6 @@
 'use client'
 
-import {
-    ArrowRight,
-    Download,
-    GitBranch,
-    Globe,
-    Scale,
-    Star
-} from 'lucide-react'
+import { Download, GitBranch, Globe, Scale, Star } from 'lucide-react'
 import { FileType, License, Publication, Review } from 'mineos-market-client'
 import { useExtracted } from 'next-intl'
 import { useEffect, useRef, useState } from 'react'

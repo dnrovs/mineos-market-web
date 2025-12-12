@@ -3,7 +3,7 @@
 import { FileType, Publication } from 'mineos-market-client'
 import { useExtracted } from 'next-intl'
 import { notFound, useParams, useRouter } from 'next/navigation'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Controller, useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 

@@ -1,17 +1,8 @@
-import {
-    Braces,
-    Download,
-    EllipsisVertical,
-    GitBranch,
-    Pencil,
-    Share2,
-    Trash
-} from 'lucide-react'
+import { Braces, Download, Share2 } from 'lucide-react'
 import { Publication } from 'mineos-market-client'
 import { useExtracted } from 'next-intl'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
-import React, { useState } from 'react'
+import React from 'react'
 import { toast } from 'sonner'
 
 import {
@@ -26,21 +17,8 @@ import {
     CodeBlockItem
 } from '@/components/ui/shadcn-io/code-block'
 import {
-    AlertDialog,
-    AlertDialogAction,
-    AlertDialogCancel,
-    AlertDialogContent,
-    AlertDialogDescription,
-    AlertDialogHeader,
-    AlertDialogTitle,
-    AlertDialogTrigger
-} from '@/components/ui/shadcn/alert-dialog'
-import { Button } from '@/components/ui/shadcn/button'
-import {
     Dialog,
     DialogContent,
-    DialogDescription,
-    DialogFooter,
     DialogHeader,
     DialogTitle,
     DialogTrigger
@@ -49,14 +27,11 @@ import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
-    DropdownMenuSeparator,
     DropdownMenuSub,
     DropdownMenuSubContent,
     DropdownMenuSubTrigger,
     DropdownMenuTrigger
 } from '@/components/ui/shadcn/dropdown-menu'
-import { Input } from '@/components/ui/shadcn/input'
-import { Label } from '@/components/ui/shadcn/label'
 import { useMarket } from '@/context/MarketProvider'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
 

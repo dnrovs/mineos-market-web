@@ -14,7 +14,7 @@ import {
     parseAsStringLiteral,
     useQueryState
 } from 'nuqs'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import BottomNavigation from '@/app/[category]/_components/bottom-navigation'
 import Footer from '@/app/[category]/_components/footer'

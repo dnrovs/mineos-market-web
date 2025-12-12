@@ -1,21 +1,15 @@
 import { EllipsisVertical, ExternalLink, Github, Pencil } from 'lucide-react'
-import { Publication, PublicationCategory } from 'mineos-market-client'
+import { Publication } from 'mineos-market-client'
 import { useExtracted } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 
 import EditDropdownTrigger from '@/app/publication/[id]/_components/edit-dropdown-trigger'
 import OptionsDropdownTrigger from '@/app/publication/[id]/_components/options-dropdown-trigger'
 import { Button } from '@/components/ui/shadcn/button'
 import { ButtonGroup } from '@/components/ui/shadcn/button-group'
-import {
-    DropdownMenu,
-    DropdownMenuTrigger
-} from '@/components/ui/shadcn/dropdown-menu'
 import { useMarket } from '@/context/MarketProvider'
 import { useMediaQuery } from '@/hooks/shadcn/use-media-query'
-import { useIsMobile } from '@/hooks/shadcn/use-mobile'
 import getPublicationIcon from '@/utils/get-publication-icon'
 import isPackaged from '@/utils/is-packaged'
 

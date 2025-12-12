@@ -1,18 +1,16 @@
 'use client'
 
-import { ApiError } from 'mineos-market-client'
 import { useExtracted } from 'next-intl'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import React, { useEffect } from 'react'
-import { useForm, Controller } from 'react-hook-form'
+import { useEffect } from 'react'
+import { Controller, useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 
 import Header from '@/components/layout/header'
 import ResponsiveCard from '@/components/ui/responsive-card'
 import { Button } from '@/components/ui/shadcn/button'
 import {
-    Card,
     CardContent,
     CardDescription,
     CardHeader,
@@ -26,7 +24,6 @@ import {
 } from '@/components/ui/shadcn/field'
 import { Input } from '@/components/ui/shadcn/input'
 import { useMarket } from '@/context/MarketProvider'
-import handleFetchError from '@/hooks/use-handle-request-error'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
 
 type RegisterFormValues = {

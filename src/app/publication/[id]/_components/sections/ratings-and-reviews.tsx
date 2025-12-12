@@ -5,27 +5,17 @@ import { Pencil, Star, ThumbsDown, ThumbsUp } from 'lucide-react'
 import { Publication, Review as ReviewT } from 'mineos-market-client'
 import { useExtracted, useFormatter } from 'next-intl'
 import Link from 'next/link'
-import { notFound, useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import { toast } from 'sonner'
 
 import ProvidedAvatar from '@/components/ui/provided-avatar'
-import { Avatar, AvatarFallback } from '@/components/ui/shadcn/avatar'
 import { Button } from '@/components/ui/shadcn/button'
-import { Card } from '@/components/ui/shadcn/card'
-import {
-    Item,
-    ItemActions,
-    ItemContent,
-    ItemTitle
-} from '@/components/ui/shadcn/item'
+import { Item, ItemActions, ItemTitle } from '@/components/ui/shadcn/item'
 import { Progress } from '@/components/ui/shadcn/progress'
 import { Separator } from '@/components/ui/shadcn/separator'
 import { Spinner } from '@/components/ui/shadcn/spinner'
 import { Textarea } from '@/components/ui/shadcn/textarea'
 import { useMarket } from '@/context/MarketProvider'
-import { useIsMobile } from '@/hooks/shadcn/use-mobile'
-import handleFetchError from '@/hooks/use-handle-request-error'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
 import { cn } from '@/utils/shadcn'
 
