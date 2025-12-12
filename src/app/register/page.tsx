@@ -147,7 +147,9 @@ export default function LoginPage() {
                                     )}
                                 />
                                 <Field>
-                                    <Button type="submit">Register</Button>
+                                    <Button type="submit">
+                                        {t('Register')}
+                                    </Button>
                                     <FieldDescription className="text-center">
                                         {t('Already have an account?')}{' '}
                                         <Link href="/login">{t('Login')}</Link>

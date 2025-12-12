@@ -57,7 +57,9 @@ export default function PublicationInfo({ publication }: PublicationInfoProps) {
             >
                 <Image
                     src={iconSource}
-                    alt={'Placeholder'}
+                    alt={t('Icon for {publicationName}', {
+                        publicationName: publication.publicationName
+                    })}
                     className={'size-28 rounded-2xl sm:size-32 lg:size-36'}
                     width={512}
                     height={512}

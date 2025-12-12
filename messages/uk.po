@@ -127,6 +127,7 @@ msgid "AyGauy"
 msgstr "Увійти"
 
 #: src\app\login\page.tsx
+#: src\app\register\page.tsx
 #: src\app\settings\_tabs\account.tsx
 #: src\components\layout\user-dropdown.tsx
 #: src\components\layout\UserDropdown.tsx
@@ -369,6 +370,28 @@ msgstr "Вихідний JSON {publicationName}"
 msgid "tH4Eov"
 msgstr "Публікацію позначено як завантажену."
 
+#: src\app\publication\[id]\_components\publication-info.tsx
+#: src\app\publication\[id]\_components\sections\publication-info.tsx
+#: src\app\publication\[id]\_components\sections\PublicationInfo.tsx
+msgid "+zr0gu"
+msgstr "від <link>{username}</link>"
+
+#: src\app\publication\[id]\_components\publication-info.tsx
+#: src\app\publication\[id]\_components\sections\publication-info.tsx
+#: src\app\publication\[id]\_components\sections\PublicationInfo.tsx
+msgid "80g19N"
+msgstr "Переглянути на GitHub"
+
+#: src\app\publication\[id]\_components\publication-info.tsx
+msgid "DYDkUP"
+msgstr "Іконка для {publicationName}"
+
+#: src\app\publication\[id]\_components\publication-info.tsx
+#: src\app\publication\[id]\_components\sections\publication-info.tsx
+#: src\app\publication\[id]\_components\sections\PublicationInfo.tsx
+msgid "J62X2m"
+msgstr "Переглянути вихідний код"
+
 #: src\app\publication\[id]\_components\sections\about.tsx
 #: src\app\publication\[id]\_components\sections\About.tsx
 msgid "4gL3oc"
@@ -384,21 +407,6 @@ msgstr "Про публікацію"
 #: src\components\forms\publish-form.tsx
 msgid "37Z5zj"
 msgstr "Залежності"
-
-#: src\app\publication\[id]\_components\sections\publication-info.tsx
-#: src\app\publication\[id]\_components\sections\PublicationInfo.tsx
-msgid "+zr0gu"
-msgstr "від <link>{username}</link>"
-
-#: src\app\publication\[id]\_components\sections\publication-info.tsx
-#: src\app\publication\[id]\_components\sections\PublicationInfo.tsx
-msgid "80g19N"
-msgstr "Переглянути на GitHub"
-
-#: src\app\publication\[id]\_components\sections\publication-info.tsx
-#: src\app\publication\[id]\_components\sections\PublicationInfo.tsx
-msgid "J62X2m"
-msgstr "Переглянути вихідний код"
 
 #: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
