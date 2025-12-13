@@ -2,6 +2,7 @@ import { Minus, Plus } from 'lucide-react'
 import { useExtracted } from 'next-intl'
 import { Controller, useForm } from 'react-hook-form'
 
+import { useSaveSettings } from '@/app/settings/page'
 import { Button } from '@/components/ui/shadcn/button'
 import { ButtonGroup } from '@/components/ui/shadcn/button-group'
 import {
@@ -24,7 +25,8 @@ import { Switch } from '@/components/ui/shadcn/switch'
 import { Config, useConfig } from '@/hooks/use-config'
 
 export default function BehaviourTab() {
-    const { config, setConfig, resetConfig } = useConfig()
+    const { config } = useConfig()
+    const saveSettings = useSaveSettings()
 
     const t = useExtracted()
 
@@ -34,10 +36,9 @@ export default function BehaviourTab() {
 
     return (
         <form
-            onSubmit={appearanceConfigurationForm.handleSubmit((values) => {
-                setConfig({ behaviour: values })
-                location.reload()
-            })}
+            onSubmit={appearanceConfigurationForm.handleSubmit((values) =>
+                saveSettings('behaviour', values)
+            )}
         >
             <FieldGroup>
                 <FieldSet>
@@ -210,14 +211,8 @@ export default function BehaviourTab() {
                         />
                     </FieldGroup>
                 </FieldSet>
-                <Field orientation={'horizontal'}>
+                <Field>
                     <Button type={'submit'}>{t('Save')}</Button>
-                    <Button
-                        variant={'secondary'}
-                        onClick={() => resetConfig('behaviour')}
-                    >
-                        {t('Restore default')}
-                    </Button>
                 </Field>
             </FieldGroup>
         </form>

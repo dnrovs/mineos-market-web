@@ -177,6 +177,7 @@ msgstr "Спілкуватися з розробниками"
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 #: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+#: src\app\settings\_components\reset-settings-alert-dialog-trigger.tsx
 #: src\components\forms\publish-form.tsx
 msgid "47FYwb"
 msgstr "Скасувати"
@@ -629,6 +630,22 @@ msgstr "Реєстрація облікового запису..."
 msgid "eAv5kZ"
 msgstr "під час зміни пароля"
 
+#: src\app\settings\_components\reset-settings-alert-dialog-trigger.tsx
+msgid "+UwH/g"
+msgstr "Скинути налаштування?"
+
+#: src\app\settings\_components\reset-settings-alert-dialog-trigger.tsx
+msgid "C068Ia"
+msgstr "Це скине налаштування з вкладок «Поведінка» та «Розробник» до значень за замовчуванням. Використовуйте це, якщо з налаштуваннями щось пішло не так."
+
+#: src\app\settings\_components\reset-settings-alert-dialog-trigger.tsx
+msgid "F5QjKF"
+msgstr "Налаштування успішно скинуто."
+
+#: src\app\settings\_components\reset-settings-alert-dialog-trigger.tsx
+msgid "jm/spn"
+msgstr "Скинути"
+
 #: src\app\settings\_tabs\account.tsx
 msgid "/TRon/"
 msgstr "Ваш пароль успішно змінено."
@@ -728,8 +745,16 @@ msgid "v8LO6P"
 msgstr "Конфігурація сервера"
 
 #: src\app\settings\page.tsx
+msgid "k42o+Q"
+msgstr "Скинути налаштування"
+
+#: src\app\settings\page.tsx
 msgid "V0Ugkx"
 msgstr "Поведінка"
+
+#: src\app\settings\page.tsx
+msgid "vnlr4s"
+msgstr "Налаштування успішно збережено"
 
 #: src\app\settings\page.tsx
 msgid "yZJxVS"
@@ -891,14 +916,6 @@ msgstr "Далі"
 #: src\components\ui\shadcn\pagination.tsx
 msgid "JJNc3c"
 msgstr "Назад"
-
-#: src\hooks\use-config.ts
-msgid "jAe3qU"
-msgstr "Конфігурацію успішно збережено"
-
-#: src\hooks\use-config.ts
-msgid "LniMz6"
-msgstr "Не вдалося оновити конфігурацію: {message}"
 
 #: src\hooks\use-handle-request-error.ts
 msgid "Esx22K"

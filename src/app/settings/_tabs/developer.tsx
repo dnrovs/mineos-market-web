@@ -1,7 +1,7 @@
 import { useExtracted } from 'next-intl'
-import { useRouter } from 'next/navigation'
 import { Controller, useForm } from 'react-hook-form'
 
+import { useSaveSettings } from '@/app/settings/page'
 import { Button } from '@/components/ui/shadcn/button'
 import {
     Field,
@@ -16,8 +16,8 @@ import { Input } from '@/components/ui/shadcn/input'
 import { Config, useConfig } from '@/hooks/use-config'
 
 export default function DeveloperTab() {
-    const { config, setConfig, resetConfig } = useConfig()
-    const router = useRouter()
+    const { config, setConfig } = useConfig()
+    const saveSettings = useSaveSettings()
 
     const t = useExtracted()
 
@@ -32,10 +32,9 @@ export default function DeveloperTab() {
                 {t('Control how the application connects to the server.')}
             </FieldDescription>
             <form
-                onSubmit={serverConfigurationForm.handleSubmit((values) => {
-                    setConfig({ server: values })
-                    router.refresh()
-                })}
+                onSubmit={serverConfigurationForm.handleSubmit((values) =>
+                    saveSettings('server', values)
+                )}
             >
                 <FieldGroup>
                     <Controller
@@ -73,14 +72,8 @@ export default function DeveloperTab() {
                             </Field>
                         )}
                     />
-                    <Field orientation={'horizontal'}>
+                    <Field>
                         <Button type={'submit'}>{t('Save')}</Button>
-                        <Button
-                            variant={'secondary'}
-                            onClick={() => resetConfig('server')}
-                        >
-                            {t('Restore default')}
-                        </Button>
                     </Field>
                 </FieldGroup>
             </form>

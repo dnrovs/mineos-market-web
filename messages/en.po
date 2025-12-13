@@ -177,6 +177,7 @@ msgstr "Communicate with another developers"
 #: src\app\publication\[id]\_components\OptionsDropdownTrigger.tsx
 #: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
 #: src\app\publication\[id]\_components\sections\RatingsAndReviews.tsx
+#: src\app\settings\_components\reset-settings-alert-dialog-trigger.tsx
 #: src\components\forms\publish-form.tsx
 msgid "47FYwb"
 msgstr "Cancel"
@@ -629,6 +630,22 @@ msgstr "Registering your account..."
 msgid "eAv5kZ"
 msgstr "while changing password"
 
+#: src\app\settings\_components\reset-settings-alert-dialog-trigger.tsx
+msgid "+UwH/g"
+msgstr "Reset settings?"
+
+#: src\app\settings\_components\reset-settings-alert-dialog-trigger.tsx
+msgid "C068Ia"
+msgstr "This will reset settings from Behaviour and Developer tabs to their default values. Use this if something went wrong with your settings."
+
+#: src\app\settings\_components\reset-settings-alert-dialog-trigger.tsx
+msgid "F5QjKF"
+msgstr "Settings reset successfully."
+
+#: src\app\settings\_components\reset-settings-alert-dialog-trigger.tsx
+msgid "jm/spn"
+msgstr "Reset"
+
 #: src\app\settings\_tabs\account.tsx
 msgid "/TRon/"
 msgstr "Your password has been changed successfully."
@@ -728,8 +745,16 @@ msgid "v8LO6P"
 msgstr "Server configuration"
 
 #: src\app\settings\page.tsx
+msgid "k42o+Q"
+msgstr "Reset settings"
+
+#: src\app\settings\page.tsx
 msgid "V0Ugkx"
 msgstr "Behaviour"
+
+#: src\app\settings\page.tsx
+msgid "vnlr4s"
+msgstr "Settings saved successfully."
 
 #: src\app\settings\page.tsx
 msgid "yZJxVS"
@@ -891,14 +916,6 @@ msgstr "Next"
 #: src\components\ui\shadcn\pagination.tsx
 msgid "JJNc3c"
 msgstr "Previous"
-
-#: src\hooks\use-config.ts
-msgid "jAe3qU"
-msgstr "Configuration saved successfully"
-
-#: src\hooks\use-config.ts
-msgid "LniMz6"
-msgstr "Failed to update configuration: {message}"
 
 #: src\hooks\use-handle-request-error.ts
 msgid "Esx22K"

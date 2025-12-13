@@ -3,10 +3,12 @@
 import { useExtracted } from 'next-intl'
 import { parseAsStringLiteral, useQueryState } from 'nuqs'
 
+import ResetSettingsAlertDialogTrigger from '@/app/settings/_components/reset-settings-alert-dialog-trigger'
 import AccountTab from '@/app/settings/_tabs/account'
 import BehaviourTab from '@/app/settings/_tabs/behaviour'
 import DeveloperTab from '@/app/settings/_tabs/developer'
 import Header from '@/components/layout/header'
+import { Button } from '@/components/ui/shadcn/button'
 import {
     Card,
     CardContent,
@@ -19,6 +21,22 @@ import {
     TabsList,
     TabsTrigger
 } from '@/components/ui/shadcn/tabs'
+import { Tooltip, TooltipContent } from '@/components/ui/shadcn/tooltip'
+import { Config, useConfig } from '@/hooks/use-config'
+import { TooltipTrigger } from '@radix-ui/react-tooltip'
+import { RotateCcw } from 'lucide-react'
+import { toast } from 'sonner'
+
+export function useSaveSettings() {
+    const { setConfig } = useConfig()
+    const t = useExtracted()
+
+    return <T extends keyof Config>(tab: T, value: Partial<Config[T]>) => {
+        setConfig({ [tab]: value })
+
+        toast.success(t('Settings saved successfully.'))
+    }
+}
 
 export default function Settings() {
     const t = useExtracted()
@@ -61,6 +79,19 @@ export default function Settings() {
                                 {tab.name}
                             </TabsTrigger>
                         ))}
+
+                        <Tooltip>
+                            <TooltipTrigger asChild>
+                                <ResetSettingsAlertDialogTrigger asChild>
+                                    <Button size={'icon'} variant={'ghost'}>
+                                        <RotateCcw />
+                                    </Button>
+                                </ResetSettingsAlertDialogTrigger>
+                            </TooltipTrigger>
+                            <TooltipContent side={'bottom'}>
+                                {t('Reset settings')}
+                            </TooltipContent>
+                        </Tooltip>
                     </TabsList>
                     {tabs.map((tab) => (
                         <TabsContent
