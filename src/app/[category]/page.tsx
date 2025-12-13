@@ -137,7 +137,10 @@ export default function Page() {
             <Header
                 category={category}
                 searchQuery={searchQuery}
-                setSearchQuery={setSearchQuery}
+                setSearchQuery={(value: string) => {
+                    setSearchQuery(value)
+                    setCurrentPage(1)
+                }}
                 sorting={sorting}
                 setSorting={setSorting}
             />
