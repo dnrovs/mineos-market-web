@@ -91,7 +91,7 @@ export default function User() {
                                     onClick={() =>
                                         navigator.share({
                                             title: name,
-                                            url: `https://market.dnrovs.com/user/${name}`
+                                            url: location.href
                                         })
                                     }
                                 >
@@ -102,7 +102,7 @@ export default function User() {
                     </div>
                     <ProvidedAvatar
                         username={name}
-                        className={'size-20 lg:size-22'}
+                        className={'size-18 lg:size-20'}
                     />
                 </div>
                 {loading ? (
