@@ -485,33 +485,39 @@ msgstr "Rate publication"
 
 #: src\app\publication\[id]\_components\sections\shelf.tsx
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
+#: src\app\publication\[id]\_components\shelf.tsx
 #: src\components\forms\publish-form.tsx
 msgid "ccXLVi"
 msgstr "Category"
 
 #: src\app\publication\[id]\_components\sections\shelf.tsx
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
+#: src\app\publication\[id]\_components\shelf.tsx
 msgid "FZkA83"
 msgstr "{length, plural, one {Rating} other {Ratings}}"
 
 #: src\app\publication\[id]\_components\sections\shelf.tsx
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
+#: src\app\publication\[id]\_components\shelf.tsx
 msgid "GsBRWL"
 msgstr "Languages"
 
 #: src\app\publication\[id]\_components\sections\shelf.tsx
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
+#: src\app\publication\[id]\_components\shelf.tsx
 #: src\components\forms\publish-form.tsx
 msgid "HBxXD/"
 msgstr "License"
 
 #: src\app\publication\[id]\_components\sections\shelf.tsx
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
+#: src\app\publication\[id]\_components\shelf.tsx
 msgid "I3b4hn"
 msgstr "Version"
 
 #: src\app\publication\[id]\_components\sections\shelf.tsx
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
+#: src\app\publication\[id]\_components\shelf.tsx
 msgid "OnbqrE"
 msgstr "Downloads"
 

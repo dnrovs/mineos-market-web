@@ -210,7 +210,9 @@ export default function Header({
                             className={'hidden size-9 md:flex xl:size-auto'}
                             asChild
                         >
-                            <Link href={`/publish?category=${category}`}>
+                            <Link
+                                href={`/publish?category=${category.url.slice(1)}`}
+                            >
                                 <Plus />
                                 <span className={'hidden xl:block'}>
                                     {t('Publish {category}...', {

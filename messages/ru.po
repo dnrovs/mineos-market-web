@@ -485,33 +485,39 @@ msgstr "Оценить публикацию"
 
 #: src\app\publication\[id]\_components\sections\shelf.tsx
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
+#: src\app\publication\[id]\_components\shelf.tsx
 #: src\components\forms\publish-form.tsx
 msgid "ccXLVi"
 msgstr "Категория"
 
 #: src\app\publication\[id]\_components\sections\shelf.tsx
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
+#: src\app\publication\[id]\_components\shelf.tsx
 msgid "FZkA83"
 msgstr "{length, plural, one {Рейтинг} few {Рейтинга} other {Рейтингов}}"
 
 #: src\app\publication\[id]\_components\sections\shelf.tsx
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
+#: src\app\publication\[id]\_components\shelf.tsx
 msgid "GsBRWL"
 msgstr "Языки"
 
 #: src\app\publication\[id]\_components\sections\shelf.tsx
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
+#: src\app\publication\[id]\_components\shelf.tsx
 #: src\components\forms\publish-form.tsx
 msgid "HBxXD/"
 msgstr "Лицензия"
 
 #: src\app\publication\[id]\_components\sections\shelf.tsx
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
+#: src\app\publication\[id]\_components\shelf.tsx
 msgid "I3b4hn"
 msgstr "Версия"
 
 #: src\app\publication\[id]\_components\sections\shelf.tsx
 #: src\app\publication\[id]\_components\sections\Shelf.tsx
+#: src\app\publication\[id]\_components\shelf.tsx
 msgid "OnbqrE"
 msgstr "Загрузки"
 

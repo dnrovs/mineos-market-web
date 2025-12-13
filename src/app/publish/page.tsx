@@ -1,7 +1,7 @@
 'use client'
 
 import { useExtracted } from 'next-intl'
-import { useRouter, useSearchParams } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
@@ -25,16 +25,20 @@ import { useMarket } from '@/context/MarketProvider'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
 import { usePublicationCategories } from '@/hooks/use-publication-categories'
 import { licenses } from '@/lib/constants'
+import { parseAsStringLiteral, useQueryState } from 'nuqs'
 
 export default function PublishPage() {
-    const searchParams = useSearchParams()
-
     const publicationCategories = usePublicationCategories()
+    const [category] = useQueryState(
+        'category',
+        parseAsStringLiteral(
+            publicationCategories.map((p) => p.url.slice(1))
+        ).withDefault('applications')
+    )
+
     const defaultCategory =
-        publicationCategories.find(
-            (category) =>
-                category.url.split('/')[1] === searchParams.get('category')
-        )?.enum || publicationCategories[0].enum
+        publicationCategories.find((p) => p.url.slice(1) === category)?.enum ??
+        publicationCategories[0].enum
 
     const { user, client } = useMarket()
 
