@@ -72,7 +72,8 @@ const sortingValues = {
 export type Sorting = keyof typeof sortingValues
 
 export default function Page() {
-    const categoryName = useParams<{ category: string }>().category
+    const params = useParams<{ category: string }>()
+    const categoryName = params.category
 
     const categories = usePublicationCategories()
     const category = categories.find((c) => c.url.endsWith(categoryName))
