@@ -35,7 +35,7 @@ export default function WigglyWobbly({
     const ATTRACTION_STRENGTH = 0.3
 
     useEffect(() => {
-        if (!containerRef.current) return
+        if (!containerRef.current || icons.length > 0) return
 
         const container = containerRef.current
         const rect = container.getBoundingClientRect()
@@ -50,7 +50,7 @@ export default function WigglyWobbly({
         }))
 
         setIcons(initialIcons)
-    }, [iconUrls])
+    }, [iconUrls, icons.length])
 
     useEffect(() => {
         if (!containerRef.current || icons.length === 0) return

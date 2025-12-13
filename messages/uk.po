@@ -252,6 +252,10 @@ msgid "B7zY8l"
 msgstr "під час отримання статистики"
 
 #: src\app\overview\page.tsx
+msgid "cILLFL"
+msgstr "Білд <b>{hash}</b> від {author}: {message}"
+
+#: src\app\overview\page.tsx
 msgid "FotFMb"
 msgstr "Кількість користувачів"
 

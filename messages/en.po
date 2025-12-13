@@ -252,6 +252,10 @@ msgid "B7zY8l"
 msgstr "while fetching statistics"
 
 #: src\app\overview\page.tsx
+msgid "cILLFL"
+msgstr "Build <b>{hash}</b> by {author}: {message}"
+
+#: src\app\overview\page.tsx
 msgid "FotFMb"
 msgstr "Users count"
 

@@ -1,6 +1,6 @@
 'use client'
 
-import { User } from 'lucide-react'
+import { Github, User } from 'lucide-react'
 import { PublicationCategory, Statistic } from 'mineos-market-client'
 import { useExtracted } from 'next-intl'
 import Link from 'next/link'
@@ -14,6 +14,7 @@ import { useMarket } from '@/context/MarketProvider'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
 import getPublicationIcon from '@/utils/get-publication-icon'
 
+import { useHover } from '@uidotdev/usehooks'
 import FlatIcon from '../../../public/market.svg'
 
 export default function Overview() {
@@ -24,6 +25,8 @@ export default function Overview() {
 
     const [statistic, setStatistic] = useState<Statistic>()
     const [loading, setLoading] = useState(true)
+
+    const [githubLabelRef, githubLabelHovering] = useHover()
 
     const stats = [
         { label: t('Users count'), value: statistic?.usersCount },
@@ -53,6 +56,14 @@ export default function Overview() {
             })
             .finally(() => setLoading(false))
     }, [client.statistics])
+
+    const gitCommitSha = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA
+    const gitCommitAuthorLogin =
+        process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_AUTHOR_LOGIN
+    const gitCommitMessage = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_MESSAGE
+
+    const isGitDataPresent =
+        gitCommitSha && gitCommitAuthorLogin && gitCommitMessage
 
     return (
         <main className={'flex h-full w-full flex-col'}>
@@ -109,17 +120,42 @@ export default function Overview() {
                             ))}
                         </div>
                     )}
-                    <span
+                    <Link
+                        href={'https://github.com/dnrovs/mineos-market-web'}
+                        target={'_blank'}
+                        ref={githubLabelRef}
                         className={
-                            'text-muted-foreground flex flex-col items-center text-xs'
+                            'text-muted-foreground hover:text-foreground flex w-full justify-center gap-1 text-xs transition'
                         }
                         onClick={() =>
                             new Audio('/We Are Charlie Kirk.mp3').play()
                         }
                     >
-                        mineos-market-web © dnrovs{' '}
-                        {new Date().getFullYear()}{' '}
-                    </span>
+                        <Github className={'size-4 fill-current'} />
+
+                        {isGitDataPresent && !githubLabelHovering ? (
+                            <span>
+                                {t.rich(
+                                    'Build <b>{hash}</b> by {author}: {message}',
+                                    {
+                                        b: (chunks) => (
+                                            <span className={'font-semibold'}>
+                                                {chunks}
+                                            </span>
+                                        ),
+                                        hash: gitCommitSha.slice(0, 7),
+                                        author: gitCommitAuthorLogin,
+                                        message: gitCommitMessage
+                                    }
+                                )}
+                            </span>
+                        ) : (
+                            <span>
+                                mineos-market-web © dnrovs{' '}
+                                {new Date().getFullYear()}
+                            </span>
+                        )}
+                    </Link>
                 </Card>
             </WigglyWobbly>
         </main>
