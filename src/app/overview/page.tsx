@@ -127,9 +127,6 @@ export default function Overview() {
                         className={
                             'text-muted-foreground hover:text-foreground flex w-full justify-center gap-1 text-xs transition'
                         }
-                        onClick={() =>
-                            new Audio('/We Are Charlie Kirk.mp3').play()
-                        }
                     >
                         <Github className={'size-4 fill-current'} />
 
