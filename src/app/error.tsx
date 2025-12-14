@@ -40,7 +40,7 @@ export default function Error({
                     <Button variant={'secondary'} asChild>
                         <Link
                             href={
-                                'https://github.com/fesuk/mineos-market/issues'
+                                'https://github.com/dnrovs/mineos-market-web/issues'
                             }
                         >
                             <Github />
