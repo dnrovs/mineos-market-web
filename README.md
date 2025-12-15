@@ -1,4 +1,4 @@
-# [MineOS Market Web](https://mineos-market.vercel.com)
+# [MineOS Market Web](https://mineos-market.vercel.app)
 
 ![Preview](public/readme-image.png)
 
