@@ -102,7 +102,7 @@ export default function User() {
                     </div>
                     <ProvidedAvatar
                         username={name}
-                        className={'size-18 lg:size-20'}
+                        className={'size-20 lg:size-22'}
                     />
                 </div>
                 {loading ? (
