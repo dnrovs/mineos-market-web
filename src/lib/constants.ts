@@ -10,7 +10,8 @@ export const locales = [
 export const defaultConfig: Config = {
     server: {
         hostUrl: 'http://mineos.buttex.ru/MineOSAPI/2.04/',
-        proxyUrl: '/api/proxy?url='
+        proxyUrl: '/api/proxy?url=',
+        validateResponses: true
     },
     behaviour: {
         useAvatarImages: true,

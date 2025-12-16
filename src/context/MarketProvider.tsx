@@ -1,19 +1,19 @@
 'use client'
 
-import React, {
-    createContext,
-    useContext,
-    useMemo,
-    useState,
-    useEffect,
-    ReactNode
-} from 'react'
+import { useConfig } from '@/hooks/use-config'
 import {
     LoginParams,
     MarketClient,
     UserCredentials
 } from 'mineos-market-client'
-import { useConfig } from '@/hooks/use-config'
+import React, {
+    createContext,
+    ReactNode,
+    useContext,
+    useEffect,
+    useMemo,
+    useState
+} from 'react'
 
 interface MarketContextValue {
     client: MarketClient
@@ -69,7 +69,8 @@ export const MarketProvider: React.FC<MarketProviderProps> = ({ children }) => {
     const client = useMemo(() => {
         const client = new MarketClient({
             hostUrl: config.server.hostUrl,
-            proxyUrl: config.server.proxyUrl
+            proxyUrl: config.server.proxyUrl,
+            validateResponses: config.server.validateResponses
         })
         if (user?.token) client.useToken(user.token)
         return client

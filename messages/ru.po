@@ -661,6 +661,10 @@ msgid "mzhmvO"
 msgstr "Прокси URL"
 
 #: src\app\settings\_tabs\developer.tsx
+msgid "pUMiAh"
+msgstr "Валидовать ответы сервера"
+
+#: src\app\settings\_tabs\developer.tsx
 msgid "v8LO6P"
 msgstr "Конфигурация сервера"
 

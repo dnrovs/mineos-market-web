@@ -13,6 +13,7 @@ import {
     FieldSet
 } from '@/components/ui/shadcn/field'
 import { Input } from '@/components/ui/shadcn/input'
+import { Switch } from '@/components/ui/shadcn/switch'
 import { Config, useConfig } from '@/hooks/use-config'
 
 export default function DeveloperTab() {
@@ -72,6 +73,24 @@ export default function DeveloperTab() {
                             </Field>
                         )}
                     />
+
+                    <Controller
+                        name={'validateResponses'}
+                        control={serverConfigurationForm.control}
+                        render={({ field }) => (
+                            <Field orientation={'horizontal'}>
+                                <FieldLabel>
+                                    {t('Validate server responses')}
+                                </FieldLabel>
+                                <Switch
+                                    name={field.name}
+                                    checked={field.value}
+                                    onCheckedChange={field.onChange}
+                                />
+                            </Field>
+                        )}
+                    />
+
                     <Field>
                         <Button type={'submit'}>{t('Save')}</Button>
                     </Field>

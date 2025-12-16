@@ -661,6 +661,10 @@ msgid "mzhmvO"
 msgstr "Proxy URL"
 
 #: src\app\settings\_tabs\developer.tsx
+msgid "pUMiAh"
+msgstr "Validate server responses"
+
+#: src\app\settings\_tabs\developer.tsx
 msgid "v8LO6P"
 msgstr "Server configuration"
 

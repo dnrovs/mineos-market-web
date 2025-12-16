@@ -6,6 +6,7 @@ export interface Config {
     server: {
         hostUrl: string
         proxyUrl: string
+        validateResponses: boolean
     }
     behaviour: {
         useAvatarImages: boolean

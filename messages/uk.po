@@ -661,6 +661,10 @@ msgid "mzhmvO"
 msgstr "Проксі URL"
 
 #: src\app\settings\_tabs\developer.tsx
+msgid "pUMiAh"
+msgstr "Валідувати відповіді сервера"
+
+#: src\app\settings\_tabs\developer.tsx
 msgid "v8LO6P"
 msgstr "Конфігурація сервера"
 
