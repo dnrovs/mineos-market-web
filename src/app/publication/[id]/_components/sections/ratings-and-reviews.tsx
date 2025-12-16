@@ -10,6 +10,7 @@ import { toast } from 'sonner'
 
 import ProvidedAvatar from '@/components/ui/provided-avatar'
 import { Button } from '@/components/ui/shadcn/button'
+import { Field } from '@/components/ui/shadcn/field'
 import { Item, ItemActions, ItemTitle } from '@/components/ui/shadcn/item'
 import { Progress } from '@/components/ui/shadcn/progress'
 import { Separator } from '@/components/ui/shadcn/separator'
@@ -440,7 +441,7 @@ export default function RatingsAndReviews({
                     averageRating={publication?.averageRating}
                     reviews={reviews}
                 />
-                {!reviewed && (
+                {!reviewed && publication.userName !== user?.name && (
                     <Item
                         variant={'muted'}
                         className={
@@ -476,7 +477,7 @@ export default function RatingsAndReviews({
                 )}
 
                 {stars > 0 && (
-                    <>
+                    <Field>
                         <Textarea
                             placeholder={t('Write a review...')}
                             onInput={(e) =>
@@ -501,7 +502,7 @@ export default function RatingsAndReviews({
                                 {t('Cancel')}
                             </Button>
                         </div>
-                    </>
+                    </Field>
                 )}
 
                 <div className="flex flex-col gap-5">
