@@ -1,3 +1,4 @@
+import { locales } from '@/lib/constants'
 import type { NextConfig } from 'next'
 import createNextIntlPlugin from 'next-intl/plugin'
 
@@ -35,7 +36,7 @@ const withNextIntl = createNextIntlPlugin({
         messages: {
             path: './messages',
             format: 'po',
-            locales: 'infer'
+            locales: locales.map((l) => l.code)
         }
     }
 })
