@@ -82,7 +82,7 @@ export default function Shelf({ publication, reviews }: StatsBarProps) {
             ? [
                   {
                       title: t(
-                          '{length, plural, one {Rating} other {Ratings}}',
+                          '{length, plural, one {# Rating} other {# Ratings}}',
                           { length: reviews.length }
                       ),
                       icon: Star,

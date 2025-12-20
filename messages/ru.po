@@ -466,10 +466,6 @@ msgid "ccXLVi"
 msgstr "Категория"
 
 #: src\app\publication\[id]\_components\shelf.tsx
-msgid "FZkA83"
-msgstr "{length, plural, one {Рейтинг} few {Рейтинга} other {Рейтингов}}"
-
-#: src\app\publication\[id]\_components\shelf.tsx
 msgid "GsBRWL"
 msgstr "Языки"
 
@@ -481,6 +477,10 @@ msgstr "Лицензия"
 #: src\app\publication\[id]\_components\shelf.tsx
 msgid "I3b4hn"
 msgstr "Версия"
+
+#: src\app\publication\[id]\_components\shelf.tsx
+msgid "lswmMN"
+msgstr "{length, plural, one {# Рейтинг} few {# Рейтинга} other {# Рейтингов}}"
 
 #: src\app\publication\[id]\_components\shelf.tsx
 msgid "OnbqrE"
