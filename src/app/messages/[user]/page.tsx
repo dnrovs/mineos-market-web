@@ -165,7 +165,9 @@ export default function Chat() {
                 <Header userName={dialogUserName} />
 
                 <div className="flex w-full max-w-300 grow flex-col-reverse gap-1 px-3">
-                    <span className={'text-muted-foreground text-right'}>
+                    <span
+                        className={'text-muted-foreground text-right text-sm'}
+                    >
                         {lastMessageIsRead === undefined
                             ? null
                             : lastMessageIsRead
