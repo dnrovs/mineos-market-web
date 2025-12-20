@@ -7,7 +7,10 @@ import Link from 'next/link'
 import EditDropdownTrigger from '@/app/publication/[id]/_components/edit-dropdown-trigger'
 import OptionsDropdownTrigger from '@/app/publication/[id]/_components/options-dropdown-trigger'
 import { Button } from '@/components/ui/shadcn/button'
-import { ButtonGroup } from '@/components/ui/shadcn/button-group'
+import {
+    ButtonGroup,
+    ButtonGroupSeparator
+} from '@/components/ui/shadcn/button-group'
 import { useMarket } from '@/context/MarketProvider'
 import { useMediaQuery } from '@/hooks/shadcn/use-media-query'
 import getPublicationIcon from '@/utils/get-publication-icon'
@@ -101,7 +104,7 @@ export default function PublicationInfo({ publication }: PublicationInfoProps) {
                                 )}
                             </Link>
                         </Button>
-                        <ButtonGroup className={'gap-px'}>
+                        <ButtonGroup>
                             <OptionsDropdownTrigger
                                 publication={publication}
                                 asChild
@@ -113,18 +116,22 @@ export default function PublicationInfo({ publication }: PublicationInfoProps) {
                                     <EllipsisVertical />
                                 </Button>
                             </OptionsDropdownTrigger>
+
                             {user?.name === publication.userName && (
-                                <EditDropdownTrigger
-                                    publication={publication}
-                                    asChild
-                                >
-                                    <Button
-                                        size={isMobile ? 'icon-sm' : 'icon'}
-                                        variant={'secondary'}
+                                <>
+                                    <ButtonGroupSeparator />
+                                    <EditDropdownTrigger
+                                        publication={publication}
+                                        asChild
                                     >
-                                        <Pencil />
-                                    </Button>
-                                </EditDropdownTrigger>
+                                        <Button
+                                            size={isMobile ? 'icon-sm' : 'icon'}
+                                            variant={'secondary'}
+                                        >
+                                            <Pencil />
+                                        </Button>
+                                    </EditDropdownTrigger>
+                                </>
                             )}
                         </ButtonGroup>
                     </div>
