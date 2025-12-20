@@ -24,6 +24,7 @@ import {
 import { Input } from '@/components/ui/shadcn/input'
 import { useMarket } from '@/context/MarketProvider'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
+import emailRegex from 'email-regex'
 
 type LoginFormValues = {
     username: string
@@ -45,7 +46,9 @@ export default function LoginPage() {
     const onSubmit = async (data: LoginFormValues) => {
         try {
             await login({
-                userName: data.username,
+                ...(emailRegex().test(data.username)
+                    ? { email: data.username }
+                    : { userName: data.username }),
                 password: data.password
             })
         } catch (error) {
