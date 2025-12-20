@@ -37,8 +37,14 @@ export default function Chat() {
 
     const messageGroups: MessageGroups = messages.reduce((groups, message) => {
         const date = new Date(message.timestamp * 1000)
+        const now = new Date()
+
         const label = format.dateTime(date, {
-            dateStyle: 'short'
+            day: 'numeric',
+            month: 'short',
+            ...(date.getFullYear() !== now.getFullYear() && {
+                year: 'numeric'
+            })
         })
 
         if (!groups[label]) groups[label] = []
