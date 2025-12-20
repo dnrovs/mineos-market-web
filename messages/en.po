@@ -83,6 +83,18 @@ msgstr "while fetching publications"
 msgid "zWr4H0"
 msgstr "Looks like there are no publications in this category."
 
+#: src\app\error.tsx
+msgid "9ivOm3"
+msgstr "Unexpected Error"
+
+#: src\app\error.tsx
+msgid "FazwRl"
+msgstr "Try again"
+
+#: src\app\error.tsx
+msgid "kEBQoE"
+msgstr "Open an issue"
+
 #: src\app\layout.tsx
 #: src\app\manifest.ts
 msgid "6NyYTi"
@@ -221,6 +233,22 @@ msgstr "while sending a message"
 #: src\app\messages\page.tsx
 msgid "LBU7+J"
 msgstr "Open chat to start talking"
+
+#: src\app\not-found.tsx
+msgid "3Xz7LW"
+msgstr "Browse publications"
+
+#: src\app\not-found.tsx
+msgid "7PeNz/"
+msgstr "This resource does not exist."
+
+#: src\app\not-found.tsx
+msgid "k1s9UW"
+msgstr "Not Found"
+
+#: src\app\not-found.tsx
+msgid "orvpWh"
+msgstr "Go back"
 
 #: src\app\overview\page.tsx
 msgid "7MTfrK"

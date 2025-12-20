@@ -83,6 +83,18 @@ msgstr "при получении публикаций"
 msgid "zWr4H0"
 msgstr "Похоже, в этой категории нет публикаций."
 
+#: src\app\error.tsx
+msgid "9ivOm3"
+msgstr "Неожиданная ошибка"
+
+#: src\app\error.tsx
+msgid "FazwRl"
+msgstr "Попробовать снова"
+
+#: src\app\error.tsx
+msgid "kEBQoE"
+msgstr "Открыть заявку"
+
 #: src\app\layout.tsx
 #: src\app\manifest.ts
 msgid "6NyYTi"
@@ -221,6 +233,22 @@ msgstr "при отправке сообщения"
 #: src\app\messages\page.tsx
 msgid "LBU7+J"
 msgstr "Откройте чат, чтобы начать общение"
+
+#: src\app\not-found.tsx
+msgid "3Xz7LW"
+msgstr "Просмотреть публикации"
+
+#: src\app\not-found.tsx
+msgid "7PeNz/"
+msgstr "Этого ресурса не существует."
+
+#: src\app\not-found.tsx
+msgid "k1s9UW"
+msgstr "Не найдено"
+
+#: src\app\not-found.tsx
+msgid "orvpWh"
+msgstr "Вернуться"
 
 #: src\app\overview\page.tsx
 msgid "7MTfrK"

@@ -83,6 +83,18 @@ msgstr "під час отримання публікацій"
 msgid "zWr4H0"
 msgstr "Схоже, у цій категорії немає публікацій."
 
+#: src\app\error.tsx
+msgid "9ivOm3"
+msgstr "Неочікувана помилка"
+
+#: src\app\error.tsx
+msgid "FazwRl"
+msgstr "Спробувати знову"
+
+#: src\app\error.tsx
+msgid "kEBQoE"
+msgstr "Відкрити заявку"
+
 #: src\app\layout.tsx
 #: src\app\manifest.ts
 msgid "6NyYTi"
@@ -221,6 +233,22 @@ msgstr "під час відправлення повідомлення"
 #: src\app\messages\page.tsx
 msgid "LBU7+J"
 msgstr "Відкрийте чат, щоб почати спілкування"
+
+#: src\app\not-found.tsx
+msgid "3Xz7LW"
+msgstr "Переглянути публікації"
+
+#: src\app\not-found.tsx
+msgid "7PeNz/"
+msgstr "Цього ресурсу не існує."
+
+#: src\app\not-found.tsx
+msgid "k1s9UW"
+msgstr "Не знайдено"
+
+#: src\app\not-found.tsx
+msgid "orvpWh"
+msgstr "Повернутися"
 
 #: src\app\overview\page.tsx
 msgid "7MTfrK"

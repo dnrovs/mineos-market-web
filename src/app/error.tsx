@@ -13,6 +13,7 @@ import {
     EmptyMedia,
     EmptyTitle
 } from '@/components/ui/shadcn/empty'
+import { useExtracted } from 'next-intl'
 
 export default function Error({
     error,
@@ -21,6 +22,8 @@ export default function Error({
     error: Error & { digest?: string }
     reset: () => void
 }) {
+    const t = useExtracted()
+
     useEffect(() => {
         console.error(error)
     }, [error])
@@ -31,12 +34,12 @@ export default function Error({
                 <EmptyMedia variant="icon">
                     <OctagonAlert />
                 </EmptyMedia>
-                <EmptyTitle>Unexpected Error</EmptyTitle>
+                <EmptyTitle>{t('Unexpected Error')}</EmptyTitle>
                 <EmptyDescription>{String(error)}</EmptyDescription>
             </EmptyHeader>
             <EmptyContent>
                 <div className={'flex gap-2'}>
-                    <Button onClick={() => reset()}>Try again</Button>
+                    <Button onClick={() => reset()}>{t('Try again')}</Button>
                     <Button variant={'secondary'} asChild>
                         <Link
                             href={
@@ -44,7 +47,7 @@ export default function Error({
                             }
                         >
                             <Github />
-                            Open an issue
+                            {t('Open an issue')}
                         </Link>
                     </Button>
                 </div>

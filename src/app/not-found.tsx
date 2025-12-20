@@ -12,27 +12,30 @@ import {
     EmptyMedia,
     EmptyTitle
 } from '@/components/ui/shadcn/empty'
+import { useExtracted } from 'next-intl'
 
 export default function NotFound() {
+    const t = useExtracted()
+
     return (
         <Empty>
             <EmptyHeader>
                 <EmptyMedia variant="icon">
                     <BadgeQuestionMark />
                 </EmptyMedia>
-                <EmptyTitle>Not Found</EmptyTitle>
+                <EmptyTitle>{t('Not Found')}</EmptyTitle>
                 <EmptyDescription>
-                    This resource does not exist.
+                    {t('This resource does not exist.')}
                 </EmptyDescription>
             </EmptyHeader>
             <EmptyContent>
                 <div className={'flex gap-2'}>
                     <Button onClick={() => history.back()}>
                         <ChevronLeft />
-                        Go back
+                        {t('Go back')}
                     </Button>
                     <Button variant={'secondary'} asChild>
-                        <Link href={'/'}>Browse publications</Link>
+                        <Link href={'/'}>{t('Browse publications')}</Link>
                     </Button>
                 </div>
             </EmptyContent>
