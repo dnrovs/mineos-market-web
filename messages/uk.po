@@ -194,6 +194,10 @@ msgid "un14bs"
 msgstr "Відкрити чат"
 
 #: src\app\messages\[user]\_components\footer.tsx
+msgid "9WRlF4"
+msgstr "Надіслати"
+
+#: src\app\messages\[user]\_components\footer.tsx
 msgid "HyqYaU"
 msgstr "Скажіть щось {dialogUserName}..."
 

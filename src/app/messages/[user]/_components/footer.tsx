@@ -10,6 +10,7 @@ import {
     InputGroupInput
 } from '@/components/ui/shadcn/input-group'
 import { Spinner } from '@/components/ui/shadcn/spinner'
+import { useMediaQuery } from 'usehooks-ts'
 
 interface FooterProps {
     dialogUserName: string
@@ -31,6 +32,7 @@ export default function Footer({
     const t = useExtracted()
 
     const { scrollToBottom } = useStickToBottomContext()
+    const isMobile = useMediaQuery('(max-width: 768px)')
 
     const handleSendMessage = () => {
         sendMessage()
@@ -63,12 +65,13 @@ export default function Footer({
                 </InputGroupAddon>
             </InputGroup>
             <Button
-                className="rounded-full"
-                size="icon"
+                className={'rounded-full'}
+                size={isMobile ? 'icon' : 'default'}
                 onClick={handleSendMessage}
                 disabled={sending}
             >
                 <ArrowUp />
+                <span className={'hidden md:block'}> {t('Send')}</span>
             </Button>
         </footer>
     )

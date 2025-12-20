@@ -194,6 +194,10 @@ msgid "un14bs"
 msgstr "Open chat"
 
 #: src\app\messages\[user]\_components\footer.tsx
+msgid "9WRlF4"
+msgstr "Send"
+
+#: src\app\messages\[user]\_components\footer.tsx
 msgid "HyqYaU"
 msgstr "Say something to {dialogUserName}..."
 
