@@ -111,7 +111,7 @@ function DialogItem({ dialog }: DialogProps) {
                 <ItemActions className={'size-5'}>
                     {dialog.dialogUserName === dialog.lastMessageUserName ? (
                         !dialog.lastMessageIsRead && (
-                            <Circle className={'m-auto size-3 fill-current'} />
+                            <Circle className={'m-auto size-4 fill-current'} />
                         )
                     ) : dialog.lastMessageIsRead ? (
                         <CheckCheck />
