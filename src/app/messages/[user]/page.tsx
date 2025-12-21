@@ -166,7 +166,9 @@ export default function Chat() {
 
                 <div className="flex w-full max-w-300 grow flex-col-reverse gap-1 px-3">
                     <span
-                        className={'text-muted-foreground text-right text-sm'}
+                        className={
+                            'text-muted-foreground text-right text-sm font-medium'
+                        }
                     >
                         {lastMessageIsRead === undefined
                             ? null
