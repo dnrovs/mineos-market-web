@@ -194,16 +194,16 @@ export default function Chat() {
                         </React.Fragment>
                     ))}
                 </div>
-            </StickToBottom.Content>
 
-            <Footer
-                dialogUserName={dialogUserName}
-                sendMessage={sendMessage}
-                message={message}
-                setMessage={setMessage}
-                sending={sending}
-                intervalLoading={intervalLoading}
-            />
+                <Footer
+                    dialogUserName={dialogUserName}
+                    sendMessage={sendMessage}
+                    message={message}
+                    setMessage={setMessage}
+                    sending={sending}
+                    intervalLoading={intervalLoading}
+                />
+            </StickToBottom.Content>
         </StickToBottom>
     )
 }
