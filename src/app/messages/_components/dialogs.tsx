@@ -94,7 +94,7 @@ function DialogItem({ dialog }: DialogProps) {
             asChild
         >
             <Link href={`/messages/${dialog.dialogUserName}`}>
-                <ItemMedia>
+                <ItemMedia className={'h-full items-center'}>
                     <ProvidedAvatar
                         username={dialog.dialogUserName}
                         className={'size-10'}
