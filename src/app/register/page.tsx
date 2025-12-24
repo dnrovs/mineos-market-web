@@ -3,7 +3,6 @@
 import { useExtracted } from 'next-intl'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { useEffect } from 'react'
 import { Controller, useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 
@@ -40,9 +39,7 @@ export default function LoginPage() {
 
     const router = useRouter()
 
-    useEffect(() => {
-        if (user) router.push('/')
-    }, [user, router])
+    if (user) return router.push('/')
 
     const { control, handleSubmit } = useForm<RegisterFormValues>()
 
