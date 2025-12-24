@@ -1,7 +1,7 @@
 import { clsx } from 'clsx'
 import { Check, CheckCheck, Circle, Plus } from 'lucide-react'
 import { Dialog as DialogT } from 'mineos-market-client'
-import { useExtracted } from 'next-intl'
+import { useExtracted, useFormatter } from 'next-intl'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
@@ -84,6 +84,28 @@ function DialogItem({ dialog }: DialogProps) {
     const pathname = usePathname()
     const active = `/messages/${dialog.dialogUserName}` === pathname
 
+    const format = useFormatter()
+
+    const lastMessageTime = new Date(dialog.timestamp * 1000).getTime()
+    const now = Date.now()
+
+    const lastMessageWasWithin24Hours = now - lastMessageTime < 86400000
+    const lastMessageWasWithinAYear = now - lastMessageTime > 31556952000
+
+    const timeLabel = format.dateTime(lastMessageTime, {
+        ...(lastMessageWasWithin24Hours
+            ? {
+                  timeStyle: 'short'
+              }
+            : {
+                  day: 'numeric',
+                  month: 'short',
+                  ...(lastMessageWasWithinAYear && {
+                      year: '2-digit'
+                  })
+              })
+    })
+
     return (
         <Item
             key={dialog.dialogUserName}
@@ -108,15 +130,18 @@ function DialogItem({ dialog }: DialogProps) {
                         {dialog.text}
                     </ItemDescription>
                 </ItemContent>
-                <ItemActions className={'size-5'}>
+
+                <ItemActions>
+                    <span>{timeLabel}</span>
+
                     {dialog.dialogUserName === dialog.lastMessageUserName ? (
                         !dialog.lastMessageIsRead && (
                             <Circle className={'m-auto size-4 fill-current'} />
                         )
                     ) : dialog.lastMessageIsRead ? (
-                        <CheckCheck />
+                        <CheckCheck className={'size-5'} />
                     ) : (
-                        <Check />
+                        <Check className={'size-5'} />
                     )}
                 </ItemActions>
             </Link>
