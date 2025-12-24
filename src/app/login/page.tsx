@@ -3,7 +3,6 @@
 import { useExtracted } from 'next-intl'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { useEffect } from 'react'
 import { Controller, useForm } from 'react-hook-form'
 
 import Header from '@/components/layout/header'
@@ -33,15 +32,15 @@ type LoginFormValues = {
 
 export default function LoginPage() {
     const { user, login } = useMarket()
-    const t = useExtracted()
+
     const handleRequestError = useHandleRequestError()
     const router = useRouter()
 
-    useEffect(() => {
-        if (user) router.push('/')
-    }, [user, router])
+    const t = useExtracted()
 
     const { control, handleSubmit } = useForm<LoginFormValues>()
+
+    if (user) return router.push('/')
 
     const onSubmit = async (data: LoginFormValues) => {
         try {
@@ -51,6 +50,8 @@ export default function LoginPage() {
                     : { userName: data.username }),
                 password: data.password
             })
+
+            router.back()
         } catch (error) {
             handleRequestError(error, t('while logging in'))
         }
