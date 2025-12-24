@@ -32,6 +32,7 @@ import { Spinner } from '@/components/ui/shadcn/spinner'
 import { Textarea } from '@/components/ui/shadcn/textarea'
 import { useMarket } from '@/context/MarketProvider'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
+import useRequireUser from '@/hooks/use-require-user'
 import isPackaged from '@/utils/is-packaged'
 
 const formatPublicationToFormValues = (
@@ -105,9 +106,9 @@ export default function UpdatePublication() {
 
     const updateForm = useForm<UpdateFormValues>()
 
-    useEffect(() => {
-        if (!user) return router.push('/login')
+    useRequireUser()
 
+    useEffect(() => {
         client.publications
             .getPublication({ fileId: id })
             .then((publication) => {

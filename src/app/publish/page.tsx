@@ -2,7 +2,6 @@
 
 import { useExtracted } from 'next-intl'
 import { useRouter } from 'next/navigation'
-import { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 
@@ -24,6 +23,7 @@ import { Field, FieldSet } from '@/components/ui/shadcn/field'
 import { useMarket } from '@/context/MarketProvider'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
 import { usePublicationCategories } from '@/hooks/use-publication-categories'
+import useRequireUser from '@/hooks/use-require-user'
 import { licenses } from '@/lib/constants'
 import { parseAsStringLiteral, useQueryState } from 'nuqs'
 
@@ -47,9 +47,7 @@ export default function PublishPage() {
 
     const handleRequestError = useHandleRequestError()
 
-    useEffect(() => {
-        if (!user) router.push('/login')
-    }, [router, user])
+    useRequireUser()
 
     const publishForm = useForm<PublishFormValues>({
         defaultValues: {
