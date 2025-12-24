@@ -92,19 +92,17 @@ function DialogItem({ dialog }: DialogProps) {
     const lastMessageWasWithin24Hours = now - lastMessageTime < 86400000
     const lastMessageWasWithinAYear = now - lastMessageTime > 31556952000
 
-    const timeLabel = format.dateTime(lastMessageTime, {
-        ...(lastMessageWasWithin24Hours
-            ? {
-                  timeStyle: 'short'
-              }
+    const timeLabel = format.dateTime(
+        lastMessageTime,
+        lastMessageWasWithin24Hours
+            ? { timeStyle: 'short' }
             : {
-                  day: 'numeric',
                   month: 'short',
-                  ...(lastMessageWasWithinAYear && {
-                      year: '2-digit'
-                  })
-              })
-    })
+                  ...(lastMessageWasWithinAYear
+                      ? { year: 'numeric' }
+                      : { day: 'numeric' })
+              }
+    )
 
     return (
         <Item
