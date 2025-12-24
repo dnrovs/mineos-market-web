@@ -8,14 +8,27 @@ import React, { useEffect, useState } from 'react'
 import { toast } from 'sonner'
 import { StickToBottom } from 'use-stick-to-bottom'
 
+import { ChatHeader } from '@/app/messages/[user]/_components/chat-header'
 import Footer from '@/app/messages/[user]/_components/footer'
-import { Header } from '@/app/messages/[user]/_components/header'
 import Message from '@/app/messages/[user]/_components/message'
+import Header from '@/components/layout/header'
+import ProvidedAvatar from '@/components/ui/provided-avatar'
 import { Badge } from '@/components/ui/shadcn/badge'
+import { Button } from '@/components/ui/shadcn/button'
+import {
+    Empty,
+    EmptyContent,
+    EmptyDescription,
+    EmptyHeader,
+    EmptyMedia,
+    EmptyTitle
+} from '@/components/ui/shadcn/empty'
 import { Spinner } from '@/components/ui/shadcn/spinner'
 import { useMarket } from '@/context/MarketProvider'
 import { useConfig } from '@/hooks/use-config'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
+import { LogIn, UserRoundPlus } from 'lucide-react'
+import Link from 'next/link'
 
 type MessageGroups = Record<string, MessageT[]>
 
@@ -154,6 +167,48 @@ export default function Chat() {
         user
     ])
 
+    if (!user)
+        return (
+            <div className={'w-full'}>
+                <Header className={'md:hidden'} />
+
+                <Empty className={'h-full'}>
+                    <EmptyHeader>
+                        <EmptyMedia>
+                            <ProvidedAvatar
+                                username={dialogUserName}
+                                className={'size-15'}
+                            />
+                        </EmptyMedia>
+                        <EmptyTitle>
+                            {t('Talk to {dialogUserName}', { dialogUserName })}
+                        </EmptyTitle>
+                        <EmptyDescription>
+                            {t(
+                                'Log in or register to start chatting with users'
+                            )}
+                        </EmptyDescription>
+                    </EmptyHeader>
+                    <EmptyContent>
+                        <div className={'flex gap-2'}>
+                            <Button variant={'outline'} asChild>
+                                <Link href={'/login'}>
+                                    <LogIn />
+                                    {t('Login')}
+                                </Link>
+                            </Button>
+                            <Button variant={'outline'} asChild>
+                                <Link href={'/register'}>
+                                    <UserRoundPlus />
+                                    {t('Register')}
+                                </Link>
+                            </Button>
+                        </div>
+                    </EmptyContent>
+                </Empty>
+            </div>
+        )
+
     return loading ? (
         <Spinner className={'mx-auto my-auto size-10'} />
     ) : (
@@ -162,7 +217,7 @@ export default function Chat() {
             className="scrollbar-thin flex h-full grow flex-col items-center overflow-auto"
         >
             <StickToBottom.Content className={'flex min-h-full flex-col'}>
-                <Header userName={dialogUserName} />
+                <ChatHeader userName={dialogUserName} />
 
                 <div className="flex w-full max-w-300 grow flex-col-reverse gap-1 px-3">
                     <span

@@ -118,6 +118,7 @@ msgid "5sg7KC"
 msgstr "Пароль"
 
 #: src\app\login\page.tsx
+#: src\app\messages\[user]\page.tsx
 #: src\app\register\page.tsx
 #: src\app\settings\_tabs\account.tsx
 #: src\components\layout\user-dropdown.tsx
@@ -125,6 +126,7 @@ msgid "AyGauy"
 msgstr "Войти"
 
 #: src\app\login\page.tsx
+#: src\app\messages\[user]\page.tsx
 #: src\app\register\page.tsx
 #: src\app\settings\_tabs\account.tsx
 #: src\components\layout\user-dropdown.tsx
@@ -193,6 +195,11 @@ msgstr "при получении диалогов"
 msgid "un14bs"
 msgstr "Открыть чат"
 
+#: src\app\messages\[user]\_components\chat-header.tsx
+#: src\components\layout\header.tsx
+msgid "cyR7Kh"
+msgstr "Назад"
+
 #: src\app\messages\[user]\_components\footer.tsx
 msgid "9WRlF4"
 msgstr "Отправить"
@@ -200,11 +207,6 @@ msgstr "Отправить"
 #: src\app\messages\[user]\_components\footer.tsx
 msgid "HyqYaU"
 msgstr "Скажите что-нибудь {dialogUserName}..."
-
-#: src\app\messages\[user]\_components\header.tsx
-#: src\components\layout\header.tsx
-msgid "cyR7Kh"
-msgstr "Назад"
 
 #: src\app\messages\[user]\page.tsx
 msgid "+QF2mn"
@@ -227,8 +229,16 @@ msgid "gcuDcH"
 msgstr "Отправлено"
 
 #: src\app\messages\[user]\page.tsx
+msgid "rUwc/l"
+msgstr "Поговорите с {dialogUserName}"
+
+#: src\app\messages\[user]\page.tsx
 msgid "sbE0zo"
 msgstr "при получении статуса прочтения последнего сообщения"
+
+#: src\app\messages\[user]\page.tsx
+msgid "UoFhu5"
+msgstr "Войдите или зарегистрируйтесь чтобы общаться с пользователями"
 
 #: src\app\messages\[user]\page.tsx
 msgid "UvpnGV"

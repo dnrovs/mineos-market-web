@@ -118,6 +118,7 @@ msgid "5sg7KC"
 msgstr "Password"
 
 #: src\app\login\page.tsx
+#: src\app\messages\[user]\page.tsx
 #: src\app\register\page.tsx
 #: src\app\settings\_tabs\account.tsx
 #: src\components\layout\user-dropdown.tsx
@@ -125,6 +126,7 @@ msgid "AyGauy"
 msgstr "Login"
 
 #: src\app\login\page.tsx
+#: src\app\messages\[user]\page.tsx
 #: src\app\register\page.tsx
 #: src\app\settings\_tabs\account.tsx
 #: src\components\layout\user-dropdown.tsx
@@ -193,6 +195,11 @@ msgstr "while fetching dialogs"
 msgid "un14bs"
 msgstr "Open chat"
 
+#: src\app\messages\[user]\_components\chat-header.tsx
+#: src\components\layout\header.tsx
+msgid "cyR7Kh"
+msgstr "Back"
+
 #: src\app\messages\[user]\_components\footer.tsx
 msgid "9WRlF4"
 msgstr "Send"
@@ -200,11 +207,6 @@ msgstr "Send"
 #: src\app\messages\[user]\_components\footer.tsx
 msgid "HyqYaU"
 msgstr "Say something to {dialogUserName}..."
-
-#: src\app\messages\[user]\_components\header.tsx
-#: src\components\layout\header.tsx
-msgid "cyR7Kh"
-msgstr "Back"
 
 #: src\app\messages\[user]\page.tsx
 msgid "+QF2mn"
@@ -227,8 +229,16 @@ msgid "gcuDcH"
 msgstr "Sent"
 
 #: src\app\messages\[user]\page.tsx
+msgid "rUwc/l"
+msgstr "Talk to {dialogUserName}"
+
+#: src\app\messages\[user]\page.tsx
 msgid "sbE0zo"
 msgstr "while fetching last message read status"
+
+#: src\app\messages\[user]\page.tsx
+msgid "UoFhu5"
+msgstr "Log in or register to start chatting with users"
 
 #: src\app\messages\[user]\page.tsx
 msgid "UvpnGV"

@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation'
 import ProvidedAvatar from '@/components/ui/provided-avatar'
 import { Button } from '@/components/ui/shadcn/button'
 
-export function Header({ userName }: { userName: string }) {
+export function ChatHeader({ userName }: { userName: string }) {
     const t = useExtracted()
     const router = useRouter()
 
