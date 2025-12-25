@@ -20,7 +20,14 @@ export function useConfig() {
     const [savedConfig, setSavedConfig, removeSavedConfig] =
         useLocalStorage<Config>('config', defaultConfig)
 
-    const config = { ...defaultConfig, ...savedConfig }
+    let parsedConfig
+    try {
+        parsedConfig = configSchema.parse(savedConfig)
+    } catch {
+        parsedConfig = defaultConfig
+    }
+
+    const config = { ...defaultConfig, ...parsedConfig }
 
     const setConfig = (newConfig: DeepPartial<Config>) => {
         return setSavedConfig({ ...config, ...newConfig } as Config)
