@@ -1,6 +1,6 @@
-import React from 'react'
 import { Card } from '@/components/ui/shadcn/card'
 import { cn } from '@/utils/shadcn'
+import React from 'react'
 
 export default function ResponsiveCard({
     className,
@@ -9,7 +9,7 @@ export default function ResponsiveCard({
     return (
         <Card
             className={cn(
-                'mx-auto mb-6 h-fit w-full max-sm:border-none max-sm:bg-transparent max-sm:p-0 sm:mb-3 sm:w-md',
+                'mx-auto mb-6 h-fit w-full max-sm:border-none max-sm:bg-transparent max-sm:p-0 max-sm:shadow-none sm:mb-3 sm:w-md',
                 className
             )}
             {...props}
