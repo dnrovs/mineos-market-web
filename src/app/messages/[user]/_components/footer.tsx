@@ -40,39 +40,51 @@ export default function Footer({
     }
 
     return (
-        <footer className="bg-background/75 lg:bg-sidebar/75 sticky bottom-0 mb-[env(safe-area-inset-bottom)] flex w-full justify-center gap-2 p-3 backdrop-blur-md">
-            <InputGroup className={'w-full max-w-283 rounded-full'}>
-                <InputGroupInput
-                    placeholder={t('Say something to {dialogUserName}...', {
-                        dialogUserName
-                    })}
-                    enterKeyHint={'send'}
-                    onKeyDown={(event) => {
-                        if (event.key === 'Enter') handleSendMessage()
-                    }}
-                    value={message}
-                    disabled={sending}
-                    onInput={(onchange) =>
-                        setMessage(onchange.currentTarget.value)
-                    }
-                />
-                <InputGroupAddon align={'inline-end'}>
-                    <Spinner
-                        className={clsx('transition-discrete', {
-                            hidden: !intervalLoading
-                        })}
-                    />
-                </InputGroupAddon>
-            </InputGroup>
-            <Button
-                className={'rounded-full'}
-                size={isMobile ? 'icon' : 'default'}
-                onClick={handleSendMessage}
-                disabled={sending}
+        <footer className="sticky bottom-0 mb-[env(safe-area-inset-bottom)] flex w-full justify-center backdrop-blur-md">
+            <div
+                className={
+                    'flex w-full max-w-300 items-center justify-between gap-2 p-3'
+                }
             >
-                <ArrowUp />
-                <span className={'hidden md:block'}> {t('Send')}</span>
-            </Button>
+                <InputGroup
+                    className={
+                        'bg-primary/10 w-full rounded-full border-none shadow-none'
+                    }
+                >
+                    <InputGroupInput
+                        className={'placeholder:text-foreground/50'}
+                        placeholder={t('Say something to {dialogUserName}...', {
+                            dialogUserName
+                        })}
+                        enterKeyHint={'send'}
+                        onKeyDown={(event) => {
+                            if (event.key === 'Enter') handleSendMessage()
+                        }}
+                        onFocus={() => setTimeout(() => scrollToBottom(), 200)}
+                        value={message}
+                        disabled={sending}
+                        onInput={(onchange) =>
+                            setMessage(onchange.currentTarget.value)
+                        }
+                    />
+                    <InputGroupAddon align={'inline-end'}>
+                        <Spinner
+                            className={clsx('transition-discrete', {
+                                hidden: !intervalLoading
+                            })}
+                        />
+                    </InputGroupAddon>
+                </InputGroup>
+                <Button
+                    className={'rounded-full'}
+                    size={isMobile ? 'icon' : 'default'}
+                    onClick={handleSendMessage}
+                    disabled={sending}
+                >
+                    <ArrowUp />
+                    <span className={'hidden md:block'}> {t('Send')}</span>
+                </Button>
+            </div>
         </footer>
     )
 }

@@ -1,5 +1,5 @@
 import { clsx } from 'clsx'
-import { Check, CheckCheck, Circle, Plus } from 'lucide-react'
+import { Brush, Check, CheckCheck, Circle, Plus } from 'lucide-react'
 import { Dialog as DialogT } from 'mineos-market-client'
 import { useExtracted, useFormatter } from 'next-intl'
 import Link from 'next/link'
@@ -211,15 +211,27 @@ export default function Dialogs() {
                             />
                         ))}
 
-                        <NewChatDialogTrigger asChild>
+                        <div
+                            className={
+                                'sticky bottom-3 left-full mx-3 mt-auto flex items-center justify-end gap-2 lg:bottom-0 lg:mx-0'
+                            }
+                        >
                             <Button
-                                className={
-                                    'sticky bottom-3 left-full mx-3 mt-auto size-17 rounded-full lg:bottom-0 lg:mx-0'
-                                }
+                                variant={'secondary'}
+                                className={'size-12 rounded-full'}
+                                asChild
                             >
-                                <Plus className={'size-5'} />
+                                <Link href={'/settings/?tab=appearance'}>
+                                    <Brush />
+                                </Link>
                             </Button>
-                        </NewChatDialogTrigger>
+
+                            <NewChatDialogTrigger asChild>
+                                <Button className={'size-17 rounded-full'}>
+                                    <Plus className={'size-5'} />
+                                </Button>
+                            </NewChatDialogTrigger>
+                        </div>
                     </ItemGroup>
 
                     <Spinner

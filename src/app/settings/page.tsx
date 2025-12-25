@@ -5,6 +5,7 @@ import { parseAsStringLiteral, useQueryState } from 'nuqs'
 
 import ResetSettingsAlertDialogTrigger from '@/app/settings/_components/reset-settings-alert-dialog-trigger'
 import AccountTab from '@/app/settings/_tabs/account'
+import Appearance from '@/app/settings/_tabs/appearance'
 import BehaviourTab from '@/app/settings/_tabs/behaviour'
 import DeveloperTab from '@/app/settings/_tabs/developer'
 import Header from '@/components/layout/header'
@@ -46,6 +47,11 @@ export default function Settings() {
             name: t('Account'),
             value: 'account',
             content: <AccountTab />
+        },
+        {
+            name: t('Appearance'),
+            value: 'appearance',
+            content: <Appearance />
         },
         {
             name: t('Behaviour'),

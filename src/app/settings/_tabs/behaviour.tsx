@@ -8,20 +8,17 @@ import { ButtonGroup } from '@/components/ui/shadcn/button-group'
 import {
     Field,
     FieldDescription,
-    FieldError,
     FieldGroup,
     FieldLabel,
     FieldLegend,
     FieldSet
 } from '@/components/ui/shadcn/field'
-import { Input } from '@/components/ui/shadcn/input'
 import {
     InputGroup,
     InputGroupAddon,
     InputGroupInput,
     InputGroupText
 } from '@/components/ui/shadcn/input-group'
-import { Switch } from '@/components/ui/shadcn/switch'
 import { Config, useConfig } from '@/hooks/use-config'
 
 export default function BehaviourTab() {
@@ -30,72 +27,17 @@ export default function BehaviourTab() {
 
     const t = useExtracted()
 
-    const appearanceConfigurationForm = useForm<Config['behaviour']>({
+    const behaviourConfigurationForm = useForm<Config['behaviour']>({
         defaultValues: config.behaviour
     })
 
     return (
         <form
-            onSubmit={appearanceConfigurationForm.handleSubmit((values) =>
+            onSubmit={behaviourConfigurationForm.handleSubmit((values) =>
                 saveSettings('behaviour', values)
             )}
         >
             <FieldGroup>
-                <FieldSet>
-                    <FieldLegend>{t('Avatars')}</FieldLegend>
-                    <FieldDescription>
-                        {t(
-                            'Control how avatars are displayed in the application.'
-                        )}
-                    </FieldDescription>
-
-                    <FieldGroup>
-                        <Controller
-                            name={'useAvatarImages'}
-                            control={appearanceConfigurationForm.control}
-                            render={({ field }) => (
-                                <Field orientation={'horizontal'}>
-                                    <FieldLabel>
-                                        {t('Use avatar images')}
-                                    </FieldLabel>
-                                    <Switch
-                                        name={field.name}
-                                        checked={field.value}
-                                        onCheckedChange={field.onChange}
-                                    />
-                                    <span>{field.value}</span>
-                                </Field>
-                            )}
-                        />
-                        <Controller
-                            name={'avatarProvider'}
-                            control={appearanceConfigurationForm.control}
-                            render={({ field, fieldState }) => (
-                                <Field>
-                                    <FieldLabel>
-                                        {t('Avatar provider')}
-                                    </FieldLabel>
-                                    <Input
-                                        {...field}
-                                        disabled={
-                                            !appearanceConfigurationForm.watch(
-                                                'useAvatarImages'
-                                            )
-                                        }
-                                        placeholder={
-                                            'https://tapback.co/api/avatar/'
-                                        }
-                                    />
-                                    {fieldState.invalid && (
-                                        <FieldError
-                                            errors={[fieldState.error]}
-                                        />
-                                    )}
-                                </Field>
-                            )}
-                        />
-                    </FieldGroup>
-                </FieldSet>
                 <FieldSet>
                     <FieldLegend>{t('Messages')}</FieldLegend>
                     <FieldDescription>
@@ -105,7 +47,7 @@ export default function BehaviourTab() {
                     <FieldGroup>
                         <Controller
                             name={'dialogsUpdateInterval'}
-                            control={appearanceConfigurationForm.control}
+                            control={behaviourConfigurationForm.control}
                             render={({ field }) => (
                                 <Field>
                                     <FieldLabel>
@@ -131,7 +73,7 @@ export default function BehaviourTab() {
                                             size={'icon'}
                                             type={'button'}
                                             onClick={() =>
-                                                appearanceConfigurationForm.setValue(
+                                                behaviourConfigurationForm.setValue(
                                                     'dialogsUpdateInterval',
                                                     Number(field.value) + 1
                                                 )
@@ -144,7 +86,7 @@ export default function BehaviourTab() {
                                             size={'icon'}
                                             type={'button'}
                                             onClick={() =>
-                                                appearanceConfigurationForm.setValue(
+                                                behaviourConfigurationForm.setValue(
                                                     'dialogsUpdateInterval',
                                                     Number(field.value) - 1
                                                 )
@@ -158,7 +100,7 @@ export default function BehaviourTab() {
                         />
                         <Controller
                             name={'chatUpdateInterval'}
-                            control={appearanceConfigurationForm.control}
+                            control={behaviourConfigurationForm.control}
                             render={({ field }) => (
                                 <Field>
                                     <FieldLabel>
@@ -184,7 +126,7 @@ export default function BehaviourTab() {
                                             size={'icon'}
                                             type={'button'}
                                             onClick={() =>
-                                                appearanceConfigurationForm.setValue(
+                                                behaviourConfigurationForm.setValue(
                                                     'chatUpdateInterval',
                                                     Number(field.value) + 1
                                                 )
@@ -197,7 +139,7 @@ export default function BehaviourTab() {
                                             size={'icon'}
                                             type={'button'}
                                             onClick={() =>
-                                                appearanceConfigurationForm.setValue(
+                                                behaviourConfigurationForm.setValue(
                                                     'chatUpdateInterval',
                                                     Number(field.value) - 1
                                                 )

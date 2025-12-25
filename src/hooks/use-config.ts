@@ -1,20 +1,27 @@
 import { defaultConfig } from '@/lib/constants'
 import { DeepPartial } from 'react-hook-form'
 import { useLocalStorage } from 'usehooks-ts'
+import { z } from 'zod'
 
-export interface Config {
-    server: {
-        hostUrl: string
-        proxyUrl: string
-        validateResponses: boolean
-    }
-    behaviour: {
-        useAvatarImages: boolean
-        avatarProvider: string
-        dialogsUpdateInterval: number
-        chatUpdateInterval: number
-    }
-}
+const configSchema = z.object({
+    server: z.object({
+        hostUrl: z.string(),
+        proxyUrl: z.string(),
+        validateResponses: z.boolean()
+    }),
+    appearance: z.object({
+        chatWallpaperDark: z.string(),
+        chatWallpaperLight: z.string(),
+        useAvatarImages: z.boolean(),
+        avatarProvider: z.string()
+    }),
+    behaviour: z.object({
+        dialogsUpdateInterval: z.number(),
+        chatUpdateInterval: z.number()
+    })
+})
+
+export type Config = z.infer<typeof configSchema>
 
 export function useConfig() {
     const [savedConfig, setSavedConfig, removeSavedConfig] =

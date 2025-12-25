@@ -609,6 +609,10 @@ msgstr "Настройки успешно сброшены."
 msgid "jm/spn"
 msgstr "Сбросить"
 
+#: src\app\settings\_components\wallpaper-radio-group.tsx
+msgid "Kpg8Jj"
+msgstr "Изображение обоев"
+
 #: src\app\settings\_tabs\account.tsx
 msgid "/TRon/"
 msgstr "Ваш пароль был успешно изменён."
@@ -653,30 +657,51 @@ msgstr "Чтобы получить доступ к настройкам акк�
 msgid "X1axT8"
 msgstr "Вы не вошли в систему"
 
-#: src\app\settings\_tabs\behaviour.tsx
+#: src\app\settings\_tabs\appearance.tsx
 msgid "9PgpSj"
 msgstr "Аватары"
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "bn/VDb"
+msgstr "Управляйте обоями, которые вы будете видеть во время общения."
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "ee1Wp5"
+msgstr "Светлая тема"
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "Efqxns"
+msgstr "Темная тема"
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "HNwGRG"
+msgstr "Провайдер аватаров"
+
+#: src\app\settings\_tabs\appearance.tsx
+#: src\app\settings\_tabs\behaviour.tsx
+#: src\app\settings\_tabs\developer.tsx
+msgid "jvo0vs"
+msgstr "Сохранить"
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "VZPvoZ"
+msgstr "Обои чатов"
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "XALdUr"
+msgstr "Управление отображением аватаров в приложении."
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "Ynyq+n"
+msgstr "Использовать изображения аватаров"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "HaqEm4"
 msgstr "Интервал обновления чата"
 
 #: src\app\settings\_tabs\behaviour.tsx
-msgid "HNwGRG"
-msgstr "Провайдер аватаров"
-
-#: src\app\settings\_tabs\behaviour.tsx
-#: src\app\settings\_tabs\developer.tsx
-msgid "jvo0vs"
-msgstr "Сохранить"
-
-#: src\app\settings\_tabs\behaviour.tsx
 msgid "nCxC7R"
 msgstr "сек"
-
-#: src\app\settings\_tabs\behaviour.tsx
-msgid "XALdUr"
-msgstr "Управление отображением аватаров в приложении."
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "xn70cZ"
@@ -685,10 +710,6 @@ msgstr "Интервал обновления диалогов"
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "yIiQTN"
 msgstr "Управление поведением сообщений в приложении."
-
-#: src\app\settings\_tabs\behaviour.tsx
-msgid "Ynyq+n"
-msgstr "Использовать изображения аватаров"
 
 #: src\app\settings\_tabs\developer.tsx
 msgid "2IgL3i"
@@ -709,6 +730,10 @@ msgstr "Валидовать ответы сервера"
 #: src\app\settings\_tabs\developer.tsx
 msgid "v8LO6P"
 msgstr "Конфигурация сервера"
+
+#: src\app\settings\page.tsx
+msgid "2GURQY"
+msgstr "Вид"
 
 #: src\app\settings\page.tsx
 msgid "k42o+Q"

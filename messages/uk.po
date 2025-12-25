@@ -609,6 +609,10 @@ msgstr "Налаштування успішно скинуто."
 msgid "jm/spn"
 msgstr "Скинути"
 
+#: src\app\settings\_components\wallpaper-radio-group.tsx
+msgid "Kpg8Jj"
+msgstr "Зображення шпалер"
+
 #: src\app\settings\_tabs\account.tsx
 msgid "/TRon/"
 msgstr "Ваш пароль успішно змінено."
@@ -653,30 +657,51 @@ msgstr "Щоб отримати доступ до налаштувань обл�
 msgid "X1axT8"
 msgstr "Ви не увійшли в систему"
 
-#: src\app\settings\_tabs\behaviour.tsx
+#: src\app\settings\_tabs\appearance.tsx
 msgid "9PgpSj"
 msgstr "Аватари"
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "bn/VDb"
+msgstr "Керуйте шпалерами, які ви будете бачити під час діалогів."
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "ee1Wp5"
+msgstr "Світла тема"
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "Efqxns"
+msgstr "Темна тема"
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "HNwGRG"
+msgstr "Провайдер аватарів"
+
+#: src\app\settings\_tabs\appearance.tsx
+#: src\app\settings\_tabs\behaviour.tsx
+#: src\app\settings\_tabs\developer.tsx
+msgid "jvo0vs"
+msgstr "Зберегти"
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "VZPvoZ"
+msgstr "Шпалери чатів"
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "XALdUr"
+msgstr "Керування відображенням аватарів у додатку."
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "Ynyq+n"
+msgstr "Використовувати зображення аватарів"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "HaqEm4"
 msgstr "Інтервал оновлення чату"
 
 #: src\app\settings\_tabs\behaviour.tsx
-msgid "HNwGRG"
-msgstr "Провайдер аватарів"
-
-#: src\app\settings\_tabs\behaviour.tsx
-#: src\app\settings\_tabs\developer.tsx
-msgid "jvo0vs"
-msgstr "Зберегти"
-
-#: src\app\settings\_tabs\behaviour.tsx
 msgid "nCxC7R"
 msgstr "сек"
-
-#: src\app\settings\_tabs\behaviour.tsx
-msgid "XALdUr"
-msgstr "Керування відображенням аватарів у додатку."
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "xn70cZ"
@@ -685,10 +710,6 @@ msgstr "Інтервал оновлення діалогів"
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "yIiQTN"
 msgstr "Керування поведінкою повідомлень у додатку."
-
-#: src\app\settings\_tabs\behaviour.tsx
-msgid "Ynyq+n"
-msgstr "Використовувати зображення аватарів"
 
 #: src\app\settings\_tabs\developer.tsx
 msgid "2IgL3i"
@@ -709,6 +730,10 @@ msgstr "Валідувати відповіді сервера"
 #: src\app\settings\_tabs\developer.tsx
 msgid "v8LO6P"
 msgstr "Конфігурація сервера"
+
+#: src\app\settings\page.tsx
+msgid "2GURQY"
+msgstr "Вигляд"
 
 #: src\app\settings\page.tsx
 msgid "k42o+Q"

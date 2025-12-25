@@ -7,15 +7,32 @@ export const locales = [
     { code: 'ru', name: 'Русский' }
 ] as const
 
+export const chatWallpapers = {
+    dark: [
+        '/wallpapers/dark/mike-yukhtenko.jpg',
+        '/wallpapers/dark/evgeni-evgeniev.jpg',
+        '/wallpapers/dark/allec-gomes.jpg'
+    ],
+    light: [
+        '/wallpapers/light/daniele-levis-pelusi.jpg',
+        '/wallpapers/light/elizabeth-lies.jpg',
+        '/wallpapers/light/hans.jpg'
+    ]
+} as const
+
 export const defaultConfig: Config = {
     server: {
         hostUrl: 'http://mineos.buttex.ru/MineOSAPI/2.04/',
         proxyUrl: '/api/proxy?url=',
         validateResponses: true
     },
-    behaviour: {
+    appearance: {
+        chatWallpaperDark: chatWallpapers.dark[0],
+        chatWallpaperLight: chatWallpapers.light[0],
         useAvatarImages: true,
-        avatarProvider: 'https://tapback.co/api/avatar/',
+        avatarProvider: 'https://tapback.co/api/avatar/'
+    },
+    behaviour: {
         dialogsUpdateInterval: 10,
         chatUpdateInterval: 5
     }

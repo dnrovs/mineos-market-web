@@ -609,6 +609,10 @@ msgstr "Settings reset successfully."
 msgid "jm/spn"
 msgstr "Reset"
 
+#: src\app\settings\_components\wallpaper-radio-group.tsx
+msgid "Kpg8Jj"
+msgstr "Wallpaper image"
+
 #: src\app\settings\_tabs\account.tsx
 msgid "/TRon/"
 msgstr "Your password has been changed successfully."
@@ -653,30 +657,51 @@ msgstr "To access account settings, please log in or register."
 msgid "X1axT8"
 msgstr "You're not logged in"
 
-#: src\app\settings\_tabs\behaviour.tsx
+#: src\app\settings\_tabs\appearance.tsx
 msgid "9PgpSj"
 msgstr "Avatars"
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "bn/VDb"
+msgstr "Control which wallpapers you see during conversations."
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "ee1Wp5"
+msgstr "Light theme"
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "Efqxns"
+msgstr "Dark theme"
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "HNwGRG"
+msgstr "Avatar provider"
+
+#: src\app\settings\_tabs\appearance.tsx
+#: src\app\settings\_tabs\behaviour.tsx
+#: src\app\settings\_tabs\developer.tsx
+msgid "jvo0vs"
+msgstr "Save"
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "VZPvoZ"
+msgstr "Chat wallpapers"
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "XALdUr"
+msgstr "Control how avatars are displayed in the application."
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "Ynyq+n"
+msgstr "Use avatar images"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "HaqEm4"
 msgstr "Chat update interval"
 
 #: src\app\settings\_tabs\behaviour.tsx
-msgid "HNwGRG"
-msgstr "Avatar provider"
-
-#: src\app\settings\_tabs\behaviour.tsx
-#: src\app\settings\_tabs\developer.tsx
-msgid "jvo0vs"
-msgstr "Save"
-
-#: src\app\settings\_tabs\behaviour.tsx
 msgid "nCxC7R"
 msgstr "sec"
-
-#: src\app\settings\_tabs\behaviour.tsx
-msgid "XALdUr"
-msgstr "Control how avatars are displayed in the application."
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "xn70cZ"
@@ -685,10 +710,6 @@ msgstr "Dialogs update interval"
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "yIiQTN"
 msgstr "Control how messages behave in the application."
-
-#: src\app\settings\_tabs\behaviour.tsx
-msgid "Ynyq+n"
-msgstr "Use avatar images"
 
 #: src\app\settings\_tabs\developer.tsx
 msgid "2IgL3i"
@@ -709,6 +730,10 @@ msgstr "Validate server responses"
 #: src\app\settings\_tabs\developer.tsx
 msgid "v8LO6P"
 msgstr "Server configuration"
+
+#: src\app\settings\page.tsx
+msgid "2GURQY"
+msgstr "Appearance"
 
 #: src\app\settings\page.tsx
 msgid "k42o+Q"

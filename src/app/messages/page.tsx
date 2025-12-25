@@ -10,7 +10,9 @@ export default function Messages() {
 
     return (
         <span
-            className={'flex h-full w-full items-center justify-center text-xl'}
+            className={
+                'text-foreground flex h-full w-full items-center justify-center text-xl backdrop-blur-md'
+            }
         >
             {t('Open chat to start talking')}
         </span>

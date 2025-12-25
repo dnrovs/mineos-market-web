@@ -214,15 +214,17 @@ export default function Chat() {
     ) : (
         <StickToBottom
             initial={'instant'}
-            className="scrollbar-thin flex h-full grow flex-col items-center overflow-auto"
+            className="flex h-full grow flex-col items-center overflow-auto"
         >
-            <StickToBottom.Content className={'flex min-h-full flex-col'}>
+            <StickToBottom.Content
+                className={'flex min-h-full flex-col items-center'}
+            >
                 <ChatHeader userName={dialogUserName} />
 
-                <div className="flex w-full max-w-300 grow flex-col-reverse gap-1 px-3">
+                <div className="flex w-full max-w-300 grow flex-col-reverse gap-1 px-3 py-1.5">
                     <span
                         className={
-                            'text-muted-foreground text-right text-sm font-medium'
+                            'text-foreground/50 text-right text-sm font-medium'
                         }
                     >
                         {lastMessageIsRead === undefined
@@ -241,7 +243,7 @@ export default function Chat() {
                             <Badge
                                 variant={'secondary'}
                                 className={
-                                    'm-1 self-center rounded-full text-sm'
+                                    'bg-accent/25 m-1 self-center rounded-full text-sm backdrop-blur-md backdrop-brightness-95 dark:backdrop-brightness-200'
                                 }
                             >
                                 {label}
