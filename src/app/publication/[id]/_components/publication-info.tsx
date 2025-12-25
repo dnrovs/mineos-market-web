@@ -57,7 +57,7 @@ export default function PublicationInfo({ publication }: PublicationInfoProps) {
                     alt={t('Icon for {publicationName}', {
                         publicationName: publication.publicationName
                     })}
-                    className={'size-28 rounded-2xl sm:size-32 lg:size-36'}
+                    className={'size-28 rounded-2xl sm:size-32 lg:size-34'}
                     width={512}
                     height={512}
                 />
