@@ -1,5 +1,5 @@
-import { OCIF } from '@dnrovs/ocif'
 import { NextRequest, NextResponse } from 'next/server'
+import { OCIF } from 'ocif-js'
 
 export async function GET(request: NextRequest) {
     const urlParam = request.nextUrl.searchParams.get('url')

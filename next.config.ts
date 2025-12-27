@@ -27,7 +27,6 @@ const nextConfig: NextConfig = {
     experimental: {
         authInterrupts: true
     },
-    serverExternalPackages: ['ocif'],
     devIndicators: false
 }
 
