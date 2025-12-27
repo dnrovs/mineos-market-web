@@ -2,33 +2,44 @@ import { OCIF } from '@dnrovs/ocif'
 import { NextRequest, NextResponse } from 'next/server'
 
 export async function GET(request: NextRequest) {
-    const searchParams = request.nextUrl.searchParams
+    const urlParam = request.nextUrl.searchParams.get('url')
+    if (!urlParam) {
+        return new NextResponse(undefined, { status: 400 })
+    }
 
-    const pictureUrl = searchParams.get('url')
+    let parsed: URL
+    try {
+        parsed = new URL(urlParam)
+    } catch {
+        return new NextResponse(undefined, { status: 400 })
+    }
 
-    const scale = Number(searchParams.get('scale') ?? 1)
-
-    if (!pictureUrl) return new NextResponse(undefined, { status: 404 })
+    const scale = Number(request.nextUrl.searchParams.get('scale') ?? 1)
+    if (!Number.isInteger(scale) || scale < 1 || scale > 8)
+        return new NextResponse(undefined, {
+            status: 400
+        })
 
     try {
-        const pictureArrayBuffer = await (await fetch(pictureUrl)).arrayBuffer()
+        const response = await fetch(parsed.href)
+        if (!response.ok)
+            return new NextResponse(undefined, {
+                status: 502
+            })
 
-        const pictureBuffer = Buffer.from(pictureArrayBuffer)
+        const buffer = Buffer.from(await response.arrayBuffer())
+        const picture = OCIF.fromBuffer(buffer)
 
-        const picture = OCIF.fromBuffer(pictureBuffer)
+        if (picture.height > 16 || picture.width > 64)
+            return new NextResponse(undefined, {
+                status: 400
+            })
 
         const pngBuffer = picture.toPNG(scale)
-
         const pngArrayBuffer = new Uint8Array(pngBuffer).buffer
 
         return new NextResponse(pngArrayBuffer)
-    } catch (error) {
-        if (error instanceof TypeError)
-            return new NextResponse(error.message, { status: 400 })
-
-        if (error instanceof Error)
-            return new NextResponse(error.message, { status: 500 })
-
-        return new NextResponse(String(error), { status: 500 })
+    } catch {
+        return new NextResponse(undefined, { status: 500 })
     }
 }
