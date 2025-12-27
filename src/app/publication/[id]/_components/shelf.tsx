@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from 'react'
 import ScrollContainer from 'react-indiana-drag-scroll'
 import 'react-indiana-drag-scroll/dist/style.css'
 
+import HorizontalScrollShadow from '@/components/ui/horizontal-scroll-shadow'
 import { Separator } from '@/components/ui/shadcn/separator'
 import { usePublicationCategories } from '@/hooks/use-publication-categories'
 import isPackaged from '@/utils/is-packaged'
@@ -108,8 +109,7 @@ export default function Shelf({ publication, reviews }: StatsBarProps) {
     ]
 
     return (
-        <div className="relative">
-            <span className="via-background pointer-events-none absolute h-full w-full bg-gradient-to-r from-transparent from-75% via-100%" />
+        <HorizontalScrollShadow>
             <ScrollContainer
                 component={'div'}
                 className={'-z-10 overflow-auto'}
@@ -144,6 +144,6 @@ export default function Shelf({ publication, reviews }: StatsBarProps) {
                     ))}
                 </div>
             </ScrollContainer>
-        </div>
+        </HorizontalScrollShadow>
     )
 }
