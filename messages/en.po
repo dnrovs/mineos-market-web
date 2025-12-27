@@ -393,6 +393,10 @@ msgstr "View on GitHub"
 msgid "J62X2m"
 msgstr "View source code"
 
+#: src\app\publication\[id]\_components\screenshots.tsx
+msgid "z6muGJ"
+msgstr "Preview {index} for {publicationName}"
+
 #: src\app\publication\[id]\_components\sections\about.tsx
 msgid "4gL3oc"
 msgstr "{version, plural, =1 {Released on} other {Last released on}} {date}"

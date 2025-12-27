@@ -6,6 +6,7 @@ import { notFound, useParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
 import PublicationInfo from '@/app/publication/[id]/_components/publication-info'
+import Screenshots from '@/app/publication/[id]/_components/screenshots'
 import About from '@/app/publication/[id]/_components/sections/about'
 import Dependencies from '@/app/publication/[id]/_components/sections/dependencies'
 import RatingsAndReviews from '@/app/publication/[id]/_components/sections/ratings-and-reviews'
@@ -69,8 +70,10 @@ export default function PublicationPage() {
                 <div className="mx-auto flex w-full flex-col items-center">
                     <PublicationInfo publication={publication} />
 
-                    <div className={'flex w-full max-w-192 flex-col gap-3 p-3'}>
+                    <div className={'flex w-full max-w-3xl flex-col gap-3 p-3'}>
                         <Shelf publication={publication} reviews={reviews} />
+
+                        <Screenshots publication={publication} />
 
                         <Separator />
                         <About publication={publication} />
