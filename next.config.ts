@@ -4,7 +4,10 @@ import createNextIntlPlugin from 'next-intl/plugin'
 
 const nextConfig: NextConfig = {
     images: {
-        remotePatterns: [new URL('https://*.*/**')]
+        localPatterns: [
+            { pathname: '/api/ocif/**' },
+            { pathname: '/placeholders/**' }
+        ]
     },
     webpack(config) {
         config.module.rules.push({
@@ -24,6 +27,7 @@ const nextConfig: NextConfig = {
     experimental: {
         authInterrupts: true
     },
+    serverExternalPackages: ['ocif'],
     devIndicators: false
 }
 

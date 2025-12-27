@@ -1,10 +1,11 @@
 'use client'
 
-import Image from 'next/image'
 import type React from 'react'
 import { useEffect, useRef, useState } from 'react'
 
+import PublicationIcon from '@/components/ui/publication-icon'
 import { Spinner } from '@/components/ui/shadcn/spinner'
+import { PreviewPublication } from 'mineos-market-client'
 
 interface Icon {
     id: number
@@ -12,16 +13,16 @@ interface Icon {
     y: number
     vx: number
     vy: number
-    url: string
+    publication: PreviewPublication
 }
 
 interface WigglyWobblyProps {
-    iconUrls: string[]
+    publications: PreviewPublication[]
     children?: React.ReactNode
 }
 
 export default function WigglyWobbly({
-    iconUrls,
+    publications,
     children
 }: WigglyWobblyProps) {
     const containerRef = useRef<HTMLDivElement>(null)
@@ -40,17 +41,17 @@ export default function WigglyWobbly({
         const container = containerRef.current
         const rect = container.getBoundingClientRect()
 
-        const initialIcons: Icon[] = iconUrls.map((url, index) => ({
+        const initialIcons: Icon[] = publications.map((pub, index) => ({
             id: index,
             x: Math.random() * (rect.width - ICON_SIZE),
             y: Math.random() * (rect.height - ICON_SIZE),
             vx: (Math.random() - 0.5) * SPEED,
             vy: (Math.random() - 0.5) * SPEED,
-            url
+            publication: pub
         }))
 
         setIcons(initialIcons)
-    }, [iconUrls, icons.length])
+    }, [publications, icons.length])
 
     useEffect(() => {
         if (!containerRef.current || icons.length === 0) return
@@ -137,10 +138,9 @@ export default function WigglyWobbly({
                         height: `${ICON_SIZE}px`
                     }}
                 >
-                    <Image
-                        src={icon.url || '/placeholder.svg'}
-                        alt={`Icon ${icon.id}`}
-                        className="h-full w-full rounded-xl shadow-lg select-none"
+                    <PublicationIcon
+                        publication={icon.publication}
+                        className="bg-background h-full w-full rounded-xl shadow-lg select-none dark:shadow-none"
                         draggable={false}
                         width={ICON_SIZE}
                         height={ICON_SIZE}

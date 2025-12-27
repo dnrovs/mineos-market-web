@@ -1,11 +1,11 @@
 import { EllipsisVertical, ExternalLink, Github, Pencil } from 'lucide-react'
 import { Publication } from 'mineos-market-client'
 import { useExtracted } from 'next-intl'
-import Image from 'next/image'
 import Link from 'next/link'
 
 import EditDropdownTrigger from '@/app/publication/[id]/_components/edit-dropdown-trigger'
 import OptionsDropdownTrigger from '@/app/publication/[id]/_components/options-dropdown-trigger'
+import PublicationIcon from '@/components/ui/publication-icon'
 import { Button } from '@/components/ui/shadcn/button'
 import {
     ButtonGroup,
@@ -13,7 +13,6 @@ import {
 } from '@/components/ui/shadcn/button-group'
 import { useMarket } from '@/context/MarketProvider'
 import { useMediaQuery } from '@/hooks/shadcn/use-media-query'
-import getPublicationIcon from '@/utils/get-publication-icon'
 import isPackaged from '@/utils/is-packaged'
 
 interface PublicationInfoProps {
@@ -40,26 +39,16 @@ export default function PublicationInfo({ publication }: PublicationInfoProps) {
               )
         : sourceUrl.toString()
 
-    const iconSource = getPublicationIcon(
-        publication.iconUrl,
-        publication.categoryId
-    )
-
     return (
         <div className={'flex w-full flex-col items-center overflow-hidden'}>
             <div
                 className={
-                    'sticky bottom-full flex w-full max-w-192 gap-3 p-3 pt-0'
+                    'sticky bottom-full flex w-full max-w-3xl gap-3 p-3 pt-0'
                 }
             >
-                <Image
-                    src={iconSource}
-                    alt={t('Icon for {publicationName}', {
-                        publicationName: publication.publicationName
-                    })}
+                <PublicationIcon
+                    publication={publication}
                     className={'size-28 rounded-2xl sm:size-32 lg:size-34'}
-                    width={512}
-                    height={512}
                 />
                 <div className={'flex flex-col justify-between truncate'}>
                     <div className={'flex flex-col'}>

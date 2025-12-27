@@ -1,7 +1,11 @@
 'use client'
 
 import { Github, User } from 'lucide-react'
-import { PublicationCategory, Statistic } from 'mineos-market-client'
+import {
+    PreviewPublication,
+    PublicationCategory,
+    Statistic
+} from 'mineos-market-client'
 import { useExtracted } from 'next-intl'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
@@ -12,7 +16,6 @@ import { Card } from '@/components/ui/shadcn/card'
 import { Spinner } from '@/components/ui/shadcn/spinner'
 import { useMarket } from '@/context/MarketProvider'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
-import getPublicationIcon from '@/utils/get-publication-icon'
 
 import { useHover } from '@uidotdev/usehooks'
 import FlatIcon from '../../../public/market.svg'
@@ -24,6 +27,10 @@ export default function Overview() {
     const t = useExtracted()
 
     const [statistic, setStatistic] = useState<Statistic>()
+    const [popularApplications, setPopularApplications] = useState<
+        PreviewPublication[]
+    >([])
+
     const [loading, setLoading] = useState(true)
 
     const [githubLabelRef, githubLabelHovering] = useHover()
@@ -54,6 +61,18 @@ export default function Overview() {
             .catch((error) => {
                 handleRequestError(error, t('while fetching statistics'))
             })
+
+        client.publications
+            .getPublications({
+                category: PublicationCategory.Applications
+            })
+            .then(setPopularApplications)
+            .catch((error) =>
+                handleRequestError(
+                    error,
+                    t('while fetching popular applications')
+                )
+            )
             .finally(() => setLoading(false))
     }, [client.statistics])
 
@@ -69,12 +88,14 @@ export default function Overview() {
         <main className={'flex h-full w-full flex-col'}>
             <Header />
             <WigglyWobbly
-                iconUrls={Array(10).fill(
-                    getPublicationIcon(
-                        undefined,
-                        PublicationCategory.Applications
+                publications={popularApplications
+                    .filter(
+                        (
+                            pub
+                        ): pub is PreviewPublication & { iconUrl: string } =>
+                            typeof pub.iconUrl === 'string'
                     )
-                )}
+                    .slice(0, 10)}
             >
                 <Card
                     className={

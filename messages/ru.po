@@ -281,6 +281,10 @@ msgid "FotFMb"
 msgstr "Количество пользователей"
 
 #: src\app\overview\page.tsx
+msgid "raRmPD"
+msgstr "при получении популярных приложений"
+
+#: src\app\overview\page.tsx
 msgid "RB4BMg"
 msgstr "Количество сообщений"
 
@@ -384,10 +388,6 @@ msgstr "от <link>{username}</link>"
 #: src\app\publication\[id]\_components\publication-info.tsx
 msgid "80g19N"
 msgstr "Посмотреть на GitHub"
-
-#: src\app\publication\[id]\_components\publication-info.tsx
-msgid "DYDkUP"
-msgstr "Иконка для {publicationName}"
 
 #: src\app\publication\[id]\_components\publication-info.tsx
 msgid "J62X2m"
@@ -891,6 +891,10 @@ msgstr "Темная"
 #: src\components\layout\user-dropdown.tsx
 msgid "y1Z3or"
 msgstr "Язык"
+
+#: src\components\ui\publication-icon.tsx
+msgid "DYDkUP"
+msgstr "Иконка для {publicationName}"
 
 #: src\components\ui\shadcn\pagination.tsx
 msgid "9+Ddtu"

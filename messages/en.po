@@ -281,6 +281,10 @@ msgid "FotFMb"
 msgstr "Users count"
 
 #: src\app\overview\page.tsx
+msgid "raRmPD"
+msgstr "while fetching popular applications"
+
+#: src\app\overview\page.tsx
 msgid "RB4BMg"
 msgstr "Messages count"
 
@@ -384,10 +388,6 @@ msgstr "by <link>{username}</link>"
 #: src\app\publication\[id]\_components\publication-info.tsx
 msgid "80g19N"
 msgstr "View on GitHub"
-
-#: src\app\publication\[id]\_components\publication-info.tsx
-msgid "DYDkUP"
-msgstr "Icon for {publicationName}"
 
 #: src\app\publication\[id]\_components\publication-info.tsx
 msgid "J62X2m"
@@ -891,6 +891,10 @@ msgstr "Dark"
 #: src\components\layout\user-dropdown.tsx
 msgid "y1Z3or"
 msgstr "Language"
+
+#: src\components\ui\publication-icon.tsx
+msgid "DYDkUP"
+msgstr "Icon for {publicationName}"
 
 #: src\components\ui\shadcn\pagination.tsx
 msgid "9+Ddtu"

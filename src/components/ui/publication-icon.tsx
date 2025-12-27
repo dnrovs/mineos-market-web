@@ -1,0 +1,46 @@
+import {
+    PreviewPublication,
+    Publication,
+    PublicationCategory
+} from 'mineos-market-client'
+import { useExtracted } from 'next-intl'
+import Image, { ImageProps } from 'next/image'
+import { useState } from 'react'
+
+const placeholders = {
+    [PublicationCategory.Applications]: '/placeholders/applications.png',
+    [PublicationCategory.Libraries]: '/placeholders/libraries.png',
+    [PublicationCategory.Scripts]: '/placeholders/scripts.png',
+    [PublicationCategory.Wallpapers]: '/placeholders/wallpapers.png'
+}
+
+export default function PublicationIcon({
+    publication,
+    ...props
+}: {
+    publication: Publication | PreviewPublication
+} & Omit<ImageProps, 'src' | 'alt' | 'onError'>) {
+    const t = useExtracted()
+
+    const placeholder = placeholders[publication.categoryId]
+    const ocif = `/api/ocif?url=${publication.iconUrl}&scale=8`
+
+    const [source, setSource] = useState<string>(
+        publication.iconUrl ? ocif : placeholder
+    )
+
+    return (
+        <Image
+            src={source}
+            alt={t('Icon for {publicationName}', {
+                publicationName: publication.publicationName
+            })}
+            onError={() => {
+                if (source !== placeholder) setSource(placeholder)
+            }}
+            width={512}
+            height={512}
+            {...props}
+        />
+    )
+}
