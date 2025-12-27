@@ -5,7 +5,7 @@ import createNextIntlPlugin from 'next-intl/plugin'
 const nextConfig: NextConfig = {
     images: {
         localPatterns: [
-            { pathname: '/api/ocif/**' },
+            { pathname: '/api/image' },
             { pathname: '/placeholders/**' }
         ]
     },

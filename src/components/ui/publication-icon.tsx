@@ -23,7 +23,7 @@ export default function PublicationIcon({
     const t = useExtracted()
 
     const placeholder = placeholders[publication.categoryId]
-    const ocif = `/api/ocif?url=${publication.iconUrl}&scale=8`
+    const ocif = `/api/image?url=${publication.iconUrl}&scale=8`
 
     const [source, setSource] = useState<string>(
         publication.iconUrl ? ocif : placeholder

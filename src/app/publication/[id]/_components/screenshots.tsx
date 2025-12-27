@@ -27,7 +27,7 @@ export default function Previews({
                 {previews.map((preview, index) => (
                     <Image
                         key={index}
-                        src={`/api/ocif?url=${preview.sourceUrl}&scale=3`}
+                        src={`/api/image?url=${preview.sourceUrl}&scale=3`}
                         alt={t('Preview {index} for {publicationName}', {
                             index: String(index + 1),
                             publicationName: publication.publicationName
