@@ -381,6 +381,10 @@ msgstr "Вихідний JSON {publicationName}"
 msgid "tH4Eov"
 msgstr "Публікацію позначено як завантажену."
 
+#: src\app\publication\[id]\_components\previews.tsx
+msgid "z6muGJ"
+msgstr "Попередній перегляд {index} для {publicationName}"
+
 #: src\app\publication\[id]\_components\publication-info.tsx
 msgid "+zr0gu"
 msgstr "від <link>{username}</link>"
@@ -392,10 +396,6 @@ msgstr "Переглянути на GitHub"
 #: src\app\publication\[id]\_components\publication-info.tsx
 msgid "J62X2m"
 msgstr "Переглянути вихідний код"
-
-#: src\app\publication\[id]\_components\screenshots.tsx
-msgid "z6muGJ"
-msgstr "Попередній перегляд {index} для {publicationName}"
 
 #: src\app\publication\[id]\_components\sections\about.tsx
 msgid "4gL3oc"
