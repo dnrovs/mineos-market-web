@@ -1,6 +1,6 @@
 'use client'
 
-import { Publication, Review as ReviewT } from 'mineos-market-client'
+import { FileType, Publication, Review as ReviewT } from 'mineos-market-client'
 import { useExtracted } from 'next-intl'
 import { notFound, useParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
@@ -73,7 +73,15 @@ export default function PublicationPage() {
                     <div className={'flex w-full max-w-3xl flex-col gap-3 p-3'}>
                         <Shelf publication={publication} reviews={reviews} />
 
-                        <Screenshots publication={publication} />
+                        {publication.dependenciesData &&
+                            !!Object.values(
+                                publication.dependenciesData
+                            ).filter(
+                                (dependency) =>
+                                    dependency.typeId === FileType.Preview
+                            ).length && (
+                                <Screenshots publication={publication} />
+                            )}
 
                         <Separator />
                         <About publication={publication} />
