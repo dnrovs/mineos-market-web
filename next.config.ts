@@ -6,7 +6,8 @@ const nextConfig: NextConfig = {
     images: {
         localPatterns: [
             { pathname: '/api/image' },
-            { pathname: '/placeholders/**' }
+            { pathname: '/placeholders/**' },
+            { pathname: '/wallpapers/**' }
         ]
     },
     webpack(config) {
