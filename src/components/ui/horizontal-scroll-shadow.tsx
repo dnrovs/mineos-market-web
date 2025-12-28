@@ -25,7 +25,8 @@ export default function HorizontalScrollShadow({
 
         const onScroll = () => {
             setShow(
-                element.scrollLeft < element.scrollWidth - element.clientWidth
+                element.scrollLeft + 1 <
+                    element.scrollWidth - element.clientWidth
             )
         }
 
