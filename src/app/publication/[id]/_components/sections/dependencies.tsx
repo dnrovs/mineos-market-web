@@ -15,8 +15,6 @@ export default function Dependencies({ publication }: DependenciesProps) {
         publication?.dependenciesData ?? {}
     ).filter(([_, d]) => d.publicationName?.trim())
 
-    if (depsWithName.length === 0) return null
-
     return (
         <section className="flex flex-col gap-3 sm:col-start-2">
             <h2 className="text-xl font-bold">{t('Dependencies')}</h2>

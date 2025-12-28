@@ -21,7 +21,7 @@ export default function Previews({
         <HorizontalScrollShadow>
             <ScrollContainer
                 component={'div'}
-                className={'-z-10 flex w-full gap-3 overflow-auto!'}
+                className={'-z-10 flex w-full gap-3'}
                 onMouseDown={(e) => e.preventDefault()}
             >
                 {previews.map((preview, index) => (
@@ -32,9 +32,9 @@ export default function Previews({
                             index: String(index + 1),
                             publicationName: publication.publicationName
                         })}
-                        className={'h-50 w-auto rounded-xl'}
-                        width={1024}
-                        height={1024}
+                        className={'h-62.5 max-w-none rounded-xl'}
+                        width={2048}
+                        height={2048}
                         onError={(event) =>
                             (event.currentTarget.className = 'hidden')
                         }

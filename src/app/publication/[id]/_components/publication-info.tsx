@@ -40,16 +40,24 @@ export default function PublicationInfo({ publication }: PublicationInfoProps) {
         : sourceUrl.toString()
 
     return (
-        <div className={'flex w-full flex-col items-center overflow-hidden'}>
-            <div
-                className={
-                    'sticky bottom-full flex w-full max-w-3xl gap-3 p-3 pt-0'
-                }
-            >
+        <div
+            className={
+                'relative flex w-full flex-col items-center overflow-hidden'
+            }
+        >
+            <div className={'flex w-full max-w-4xl gap-3 p-4 xl:px-0 xl:py-6'}>
                 <PublicationIcon
                     publication={publication}
-                    className={'size-28 rounded-2xl sm:size-32 lg:size-34'}
+                    className={
+                        'absolute -top-[calc(100svh/3)] left-0 -z-10 w-full scale-125 bg-white opacity-50 blur-3xl motion-safe:animate-[spin_100s_linear_infinite]'
+                    }
                 />
+
+                <PublicationIcon
+                    publication={publication}
+                    className={'size-28 rounded-3xl sm:size-32 lg:size-34'}
+                />
+
                 <div className={'flex flex-col justify-between truncate'}>
                     <div className={'flex flex-col'}>
                         <h1
@@ -61,7 +69,7 @@ export default function PublicationInfo({ publication }: PublicationInfoProps) {
                         </h1>
                         <span
                             className={
-                                'text-muted-foreground w-full truncate lg:text-lg'
+                                'text-foreground/50 w-full truncate lg:text-lg'
                             }
                         >
                             {t.rich('by <link>{username}</link>', {
@@ -84,16 +92,22 @@ export default function PublicationInfo({ publication }: PublicationInfoProps) {
                             <Link href={finalUrl} target={'_blank'}>
                                 {isGithub ? (
                                     <>
-                                        {t('View on GitHub')} <Github />
+                                        {t('Package on GitHub')}
+                                        <Github />
                                     </>
                                 ) : (
                                     <>
-                                        {t('View source code')} <ExternalLink />
+                                        <ExternalLink />
+                                        {t('View source code')}
                                     </>
                                 )}
                             </Link>
                         </Button>
-                        <ButtonGroup>
+                        <ButtonGroup
+                            className={
+                                '[&>button]:bg-secondary/75 [&>div]:border/75'
+                            }
+                        >
                             <OptionsDropdownTrigger
                                 publication={publication}
                                 asChild

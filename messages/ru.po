@@ -390,12 +390,12 @@ msgid "+zr0gu"
 msgstr "от <link>{username}</link>"
 
 #: src\app\publication\[id]\_components\publication-info.tsx
-msgid "80g19N"
-msgstr "Посмотреть на GitHub"
-
-#: src\app\publication\[id]\_components\publication-info.tsx
 msgid "J62X2m"
 msgstr "Посмотреть исходный код"
+
+#: src\app\publication\[id]\_components\publication-info.tsx
+msgid "pVCtbO"
+msgstr "Пакет на GitHub"
 
 #: src\app\publication\[id]\_components\sections\about.tsx
 msgid "4gL3oc"

@@ -5,7 +5,7 @@ import { useExtracted } from 'next-intl'
 import { notFound, useParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
-import Screenshots from '@/app/publication/[id]/_components/previews'
+import Previews from '@/app/publication/[id]/_components/previews'
 import PublicationInfo from '@/app/publication/[id]/_components/publication-info'
 import About from '@/app/publication/[id]/_components/sections/about'
 import Dependencies from '@/app/publication/[id]/_components/sections/dependencies'
@@ -60,6 +60,18 @@ export default function PublicationPage() {
         updateData()
     }, [client.publications, client.reviews, id])
 
+    const hasPreviews =
+        publication?.dependenciesData &&
+        Object.values(publication.dependenciesData).some(
+            (dependency) => dependency.typeId === FileType.Preview
+        )
+
+    const hasDependencies =
+        publication?.dependenciesData &&
+        Object.values(publication.dependenciesData ?? {}).some(
+            (dep) => dep.publicationName
+        )
+
     return (
         <main className="relative flex h-screen w-full flex-col overflow-auto pb-[env(safe-area-inset-bottom)]">
             <Header />
@@ -70,38 +82,27 @@ export default function PublicationPage() {
                 <div className="mx-auto flex w-full flex-col items-center">
                     <PublicationInfo publication={publication} />
 
-                    <div className={'flex w-full max-w-3xl flex-col gap-3 p-3'}>
+                    <div className={'flex w-full max-w-4xl flex-col gap-3 p-3'}>
                         <Shelf publication={publication} reviews={reviews} />
 
-                        {publication.dependenciesData &&
-                            !!Object.values(
-                                publication.dependenciesData
-                            ).filter(
-                                (dependency) =>
-                                    dependency.typeId === FileType.Preview
-                            ).length && (
-                                <Screenshots publication={publication} />
-                            )}
+                        {hasPreviews && <Previews publication={publication} />}
 
                         <Separator />
                         <About publication={publication} />
 
-                        {publication?.whatsNew && (
+                        {publication.whatsNew && (
                             <>
                                 <Separator />
                                 <WhatsNew publication={publication} />
                             </>
                         )}
 
-                        {publication?.dependenciesData &&
-                            Object.values(
-                                publication.dependenciesData ?? {}
-                            ).some((dep) => dep.publicationName) && (
-                                <>
-                                    <Separator />
-                                    <Dependencies publication={publication} />
-                                </>
-                            )}
+                        {hasDependencies && (
+                            <>
+                                <Separator />
+                                <Dependencies publication={publication} />
+                            </>
+                        )}
 
                         <Separator />
                         <RatingsAndReviews
