@@ -23,13 +23,25 @@ export async function GET(request: NextRequest) {
 
     const sharp = request.nextUrl.searchParams.get('sharp') === 'true'
 
+    let response: Response
+
     try {
-        const response = await fetch(parsed.href)
+        response = await fetch(parsed.href)
+
         if (!response.ok)
             return new NextResponse(undefined, {
-                status: 502
+                status: 400
             })
+    } catch (error) {
+        console.error('Fetching image failed:', {
+            error,
+            request
+        })
 
+        return new NextResponse(undefined, { status: 502 })
+    }
+
+    try {
         const buffer = Buffer.from(await response.arrayBuffer())
         let picture = OCIF.fromBuffer(buffer)
 

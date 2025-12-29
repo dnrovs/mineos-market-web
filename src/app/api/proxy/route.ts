@@ -27,6 +27,11 @@ export async function POST(request: NextRequest) {
             redirect: 'manual'
         } as RequestInit)
     } catch (error) {
+        console.error('Fetching upstream failed:', {
+            error,
+            request
+        })
+
         return new NextResponse(undefined, { status: 502 })
     }
 
