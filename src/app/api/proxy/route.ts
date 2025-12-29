@@ -16,12 +16,15 @@ export async function POST(request: NextRequest) {
     if (!parsed.pathname.startsWith('/MineOSAPI/2.04/'))
         return new NextResponse(undefined, { status: 403 })
 
+    const requestHeaders = new Headers(request.headers)
+    requestHeaders.delete('transfer-encoding')
+
     let upstream: Response
 
     try {
         upstream = await fetch(parsed.href, {
             method: request.method,
-            headers: request.headers,
+            headers: requestHeaders,
             body: request.body,
             duplex: 'half',
             redirect: 'manual'
