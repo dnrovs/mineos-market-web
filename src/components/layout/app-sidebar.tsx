@@ -1,7 +1,8 @@
 'use client'
 
-import { ChevronsUpDown, House, MessageCircle, UserRound } from 'lucide-react'
-import { usePathname } from 'next/navigation'
+import UserDropdown from '@/components/layout/user-dropdown'
+import ProvidedAvatar from '@/components/ui/provided-avatar'
+import { Badge } from '@/components/ui/shadcn/badge'
 import {
     Sidebar,
     SidebarContent,
@@ -13,16 +14,13 @@ import {
     SidebarMenuItem,
     SidebarRail
 } from '@/components/ui/shadcn/sidebar'
-import Link from 'next/link'
 import { useMarket } from '@/context/MarketProvider'
-import { Avatar, AvatarFallback } from '@/components/ui/shadcn/avatar'
-import UserDropdown from '@/components/layout/user-dropdown'
-import React from 'react'
-import { Badge } from '@/components/ui/shadcn/badge'
-import { useUnreadMessages } from '@/utils/use-unread-messages'
 import { usePublicationCategories } from '@/hooks/use-publication-categories'
+import { useUnreadMessages } from '@/hooks/use-unread-messages'
+import { ChevronsUpDown, House, MessageCircle, UserRound } from 'lucide-react'
 import { useExtracted } from 'next-intl'
-import ProvidedAvatar from '@/components/ui/provided-avatar'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 export default function AppSidebar() {
     const { user } = useMarket()

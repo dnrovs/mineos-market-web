@@ -40,7 +40,7 @@ import {
 import { Separator } from '@/components/ui/shadcn/separator'
 import { useMarket } from '@/context/MarketProvider'
 import { Category } from '@/hooks/use-publication-categories'
-import { useUnreadMessages } from '@/utils/use-unread-messages'
+import { useUnreadMessages } from '@/hooks/use-unread-messages'
 
 interface HeaderProps {
     category: Category
