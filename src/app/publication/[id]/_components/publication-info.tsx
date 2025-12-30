@@ -13,7 +13,9 @@ import {
 } from '@/components/ui/shadcn/button-group'
 import { useMarket } from '@/context/MarketProvider'
 import { useMediaQuery } from '@/hooks/shadcn/use-media-query'
+import { useConfig } from '@/hooks/use-config'
 import isPackaged from '@/utils/is-packaged'
+import { cn } from '@/utils/shadcn'
 
 interface PublicationInfoProps {
     publication: Publication
@@ -24,6 +26,10 @@ export default function PublicationInfo({ publication }: PublicationInfoProps) {
     const isMobile = useMediaQuery('(max-width: 64rem)')
 
     const { user } = useMarket()
+    const { config } = useConfig()
+
+    const showBackgroundAnimation =
+        config.appearance.showAnimatedPublicationBackgrounds
 
     const sourceUrl = new URL(publication.sourceUrl)
     const isGithub = sourceUrl.hostname === 'raw.githubusercontent.com'
@@ -45,13 +51,20 @@ export default function PublicationInfo({ publication }: PublicationInfoProps) {
                 'relative flex w-full flex-col items-center overflow-hidden'
             }
         >
-            <div className={'flex w-full max-w-4xl gap-3 p-4 xl:px-0 xl:py-6'}>
-                <PublicationIcon
-                    publication={publication}
-                    className={
-                        'absolute -top-[calc(100svh/3)] left-0 -z-10 w-full scale-125 bg-white opacity-50 blur-3xl motion-safe:animate-[spin_100s_linear_infinite]'
-                    }
-                />
+            <div
+                className={cn(
+                    'flex w-full max-w-4xl gap-3 p-3',
+                    showBackgroundAnimation ? 'p-4 xl:px-0 xl:py-6' : 'pt-0'
+                )}
+            >
+                {showBackgroundAnimation && (
+                    <PublicationIcon
+                        publication={publication}
+                        className={
+                            'absolute -top-[calc(100svh/3)] left-0 -z-10 w-full scale-125 bg-white opacity-50 blur-3xl motion-safe:animate-[spin_100s_linear_infinite]'
+                        }
+                    />
+                )}
 
                 <PublicationIcon
                     publication={publication}

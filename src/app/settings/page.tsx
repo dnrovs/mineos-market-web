@@ -71,7 +71,7 @@ export default function Settings() {
     return (
         <main className={'flex h-svh w-full flex-col overflow-auto'}>
             <Header />
-            <div className={'flex h-full items-center justify-center'}>
+            <div className={'flex items-center justify-center p-3 pt-0'}>
                 <Tabs
                     defaultValue={tab}
                     onValueChange={(value) => setTab(value)}

@@ -133,6 +133,68 @@ export default function Appearance() {
                     </FieldGroup>
                 </FieldSet>
 
+                <FieldSet>
+                    <FieldLegend>{t('Picture rendering')}</FieldLegend>
+                    <FieldDescription>
+                        {t(
+                            'Control how converted .pic images are displayed in the application.'
+                        )}
+                    </FieldDescription>
+
+                    <FieldGroup>
+                        <Controller
+                            name={'showAnimatedPublicationBackgrounds'}
+                            control={appearanceConfigurationForm.control}
+                            render={({ field }) => (
+                                <Field orientation={'horizontal'}>
+                                    <FieldLabel>
+                                        {t(
+                                            'Show animated publication backgrounds'
+                                        )}
+                                    </FieldLabel>
+                                    <Switch
+                                        name={field.name}
+                                        checked={field.value}
+                                        onCheckedChange={field.onChange}
+                                    />
+                                </Field>
+                            )}
+                        />
+                        <Controller
+                            name={'showPublicationIcons'}
+                            control={appearanceConfigurationForm.control}
+                            render={({ field }) => (
+                                <Field orientation={'horizontal'}>
+                                    <FieldLabel>
+                                        {t('Show publication icons')}
+                                    </FieldLabel>
+                                    <Switch
+                                        name={field.name}
+                                        checked={field.value}
+                                        onCheckedChange={field.onChange}
+                                    />
+                                </Field>
+                            )}
+                        />
+                        <Controller
+                            name={'showPublicationPreviews'}
+                            control={appearanceConfigurationForm.control}
+                            render={({ field }) => (
+                                <Field orientation={'horizontal'}>
+                                    <FieldLabel>
+                                        {t('Show publication previews')}
+                                    </FieldLabel>
+                                    <Switch
+                                        name={field.name}
+                                        checked={field.value}
+                                        onCheckedChange={field.onChange}
+                                    />
+                                </Field>
+                            )}
+                        />
+                    </FieldGroup>
+                </FieldSet>
+
                 <Field>
                     <Button type={'submit'}>{t('Save')}</Button>
                 </Field>

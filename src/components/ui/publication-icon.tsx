@@ -1,3 +1,4 @@
+import { useConfig } from '@/hooks/use-config'
 import {
     PreviewPublication,
     Publication,
@@ -20,13 +21,17 @@ export default function PublicationIcon({
 }: {
     publication: Publication | PreviewPublication
 } & Omit<ImageProps, 'src' | 'alt' | 'onError'>) {
+    const { config } = useConfig()
+
     const t = useExtracted()
+
+    const showIcons = config.appearance.showPublicationIcons
 
     const placeholder = placeholders[publication.categoryId]
     const ocif = `/api/image?url=${publication.iconUrl}&scale=8&sharp=true`
 
     const [source, setSource] = useState<string>(
-        publication.iconUrl ? ocif : placeholder
+        publication.iconUrl && showIcons ? ocif : placeholder
     )
 
     return (

@@ -16,11 +16,15 @@ import Header from '@/components/layout/header'
 import { Separator } from '@/components/ui/shadcn/separator'
 import { Spinner } from '@/components/ui/shadcn/spinner'
 import { useMarket } from '@/context/MarketProvider'
+import { useConfig } from '@/hooks/use-config'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
 
 export default function PublicationPage() {
     const id = Number(useParams<{ id: string }>().id)
+
     const { client } = useMarket()
+    const { config } = useConfig()
+
     const handleRequestError = useHandleRequestError()
 
     const t = useExtracted()
@@ -60,6 +64,8 @@ export default function PublicationPage() {
         updateData()
     }, [client.publications, client.reviews, id])
 
+    const showPreviews = config.appearance.showPublicationPreviews
+
     const hasPreviews =
         publication?.dependenciesData &&
         Object.values(publication.dependenciesData).some(
@@ -85,7 +91,9 @@ export default function PublicationPage() {
                     <div className={'flex w-full max-w-4xl flex-col gap-3 p-3'}>
                         <Shelf publication={publication} reviews={reviews} />
 
-                        {hasPreviews && <Previews publication={publication} />}
+                        {hasPreviews && showPreviews && (
+                            <Previews publication={publication} />
+                        )}
 
                         <Separator />
                         <About publication={publication} />

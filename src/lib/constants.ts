@@ -1,4 +1,3 @@
-import { Config } from '@/hooks/use-config'
 import { License } from 'mineos-market-client'
 
 export const locales = [
@@ -18,24 +17,6 @@ export const chatWallpapers = {
         '/wallpapers/light/elizabeth-lies.jpg',
         '/wallpapers/light/hans.jpg'
     ]
-} as const
-
-export const defaultConfig: Config = {
-    server: {
-        hostUrl: 'http://mineos.buttex.ru/MineOSAPI/2.04/',
-        proxyUrl: '/api/proxy?url=',
-        validateResponses: true
-    },
-    appearance: {
-        chatWallpaperDark: chatWallpapers.dark[0],
-        chatWallpaperLight: chatWallpapers.light[0],
-        useAvatarImages: true,
-        avatarProvider: 'https://tapback.co/api/avatar/'
-    },
-    behaviour: {
-        dialogsUpdateInterval: 10,
-        chatUpdateInterval: 5
-    }
 } as const
 
 export const licenses = [

@@ -670,12 +670,24 @@ msgid "bn/VDb"
 msgstr "Control which wallpapers you see during conversations."
 
 #: src\app\settings\_tabs\appearance.tsx
+msgid "e1X9l0"
+msgstr "Show animated publication backgrounds"
+
+#: src\app\settings\_tabs\appearance.tsx
 msgid "ee1Wp5"
 msgstr "Light theme"
 
 #: src\app\settings\_tabs\appearance.tsx
 msgid "Efqxns"
 msgstr "Dark theme"
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "eh0MP4"
+msgstr "Picture rendering"
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "F7wF8U"
+msgstr "Show publication previews"
 
 #: src\app\settings\_tabs\appearance.tsx
 msgid "HNwGRG"
@@ -692,12 +704,20 @@ msgid "VZPvoZ"
 msgstr "Chat wallpapers"
 
 #: src\app\settings\_tabs\appearance.tsx
+msgid "Wk8oh4"
+msgstr "Control how converted .pic images are displayed in the application."
+
+#: src\app\settings\_tabs\appearance.tsx
 msgid "XALdUr"
 msgstr "Control how avatars are displayed in the application."
 
 #: src\app\settings\_tabs\appearance.tsx
 msgid "Ynyq+n"
 msgstr "Use avatar images"
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "zdrJoc"
+msgstr "Show publication icons"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "HaqEm4"
@@ -948,6 +968,6 @@ msgstr "Libraries"
 msgid "tmaBkU"
 msgstr "Wallpapers"
 
-#: src\utils\use-unread-messages.ts
+#: src\hooks\use-unread-messages.ts
 msgid "QmMwgJ"
 msgstr "while fetching unread messages"

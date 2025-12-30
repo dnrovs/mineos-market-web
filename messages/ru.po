@@ -670,12 +670,24 @@ msgid "bn/VDb"
 msgstr "Управляйте обоями, которые вы будете видеть во время общения."
 
 #: src\app\settings\_tabs\appearance.tsx
+msgid "e1X9l0"
+msgstr "Показать анимированные фоны публикаций"
+
+#: src\app\settings\_tabs\appearance.tsx
 msgid "ee1Wp5"
 msgstr "Светлая тема"
 
 #: src\app\settings\_tabs\appearance.tsx
 msgid "Efqxns"
 msgstr "Темная тема"
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "eh0MP4"
+msgstr "Отображение изображений"
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "F7wF8U"
+msgstr "Показать предпросмотры публикаций"
 
 #: src\app\settings\_tabs\appearance.tsx
 msgid "HNwGRG"
@@ -692,12 +704,20 @@ msgid "VZPvoZ"
 msgstr "Обои чатов"
 
 #: src\app\settings\_tabs\appearance.tsx
+msgid "Wk8oh4"
+msgstr "Управление отображением конвертированных .pic картинок в приложении."
+
+#: src\app\settings\_tabs\appearance.tsx
 msgid "XALdUr"
 msgstr "Управление отображением аватаров в приложении."
 
 #: src\app\settings\_tabs\appearance.tsx
 msgid "Ynyq+n"
 msgstr "Использовать изображения аватаров"
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "zdrJoc"
+msgstr "Показать иконки публикаций"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "HaqEm4"
@@ -948,6 +968,6 @@ msgstr "Библиотеки"
 msgid "tmaBkU"
 msgstr "Обои"
 
-#: src\utils\use-unread-messages.ts
+#: src\hooks\use-unread-messages.ts
 msgid "QmMwgJ"
 msgstr "при получении непрочитанных сообщений"

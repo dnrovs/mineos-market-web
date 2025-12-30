@@ -670,12 +670,24 @@ msgid "bn/VDb"
 msgstr "Керуйте шпалерами, які ви будете бачити під час діалогів."
 
 #: src\app\settings\_tabs\appearance.tsx
+msgid "e1X9l0"
+msgstr "Показати анімовані фони публікацій"
+
+#: src\app\settings\_tabs\appearance.tsx
 msgid "ee1Wp5"
 msgstr "Світла тема"
 
 #: src\app\settings\_tabs\appearance.tsx
 msgid "Efqxns"
 msgstr "Темна тема"
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "eh0MP4"
+msgstr "Відображення зображень"
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "F7wF8U"
+msgstr "Показати попередні перегляди публікацій"
 
 #: src\app\settings\_tabs\appearance.tsx
 msgid "HNwGRG"
@@ -692,12 +704,20 @@ msgid "VZPvoZ"
 msgstr "Шпалери чатів"
 
 #: src\app\settings\_tabs\appearance.tsx
+msgid "Wk8oh4"
+msgstr "Керування відображенням конвертованих .pic зображень у додатку."
+
+#: src\app\settings\_tabs\appearance.tsx
 msgid "XALdUr"
 msgstr "Керування відображенням аватарів у додатку."
 
 #: src\app\settings\_tabs\appearance.tsx
 msgid "Ynyq+n"
 msgstr "Використовувати зображення аватарів"
+
+#: src\app\settings\_tabs\appearance.tsx
+msgid "zdrJoc"
+msgstr "Показати іконки публікацій"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "HaqEm4"
@@ -948,6 +968,6 @@ msgstr "Бібліотеки"
 msgid "tmaBkU"
 msgstr "Шпалери"
 
-#: src\utils\use-unread-messages.ts
+#: src\hooks\use-unread-messages.ts
 msgid "QmMwgJ"
 msgstr "під час отримання непрочитаних повідомлень"
