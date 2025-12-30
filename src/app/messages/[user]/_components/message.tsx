@@ -2,10 +2,13 @@ import { clsx } from 'clsx'
 import type { Message as MessageT } from 'mineos-market-client'
 
 import { useMarket } from '@/context/MarketProvider'
-import { formatTime } from '@/utils/format-date-label'
+import { useFormatter } from 'next-intl'
 
 export default function Message({ message }: { message: MessageT }) {
     const { user } = useMarket()
+
+    const format = useFormatter()
+
     const outgoing = user?.name === message.userName
 
     return (
@@ -27,7 +30,9 @@ export default function Message({ message }: { message: MessageT }) {
                             : 'text-accent-foreground/50'
                     )}
                 >
-                    {formatTime(message.timestamp)}
+                    {format.dateTime(new Date(message.timestamp), {
+                        timeStyle: 'short'
+                    })}
                 </span>
             </div>
         </div>
