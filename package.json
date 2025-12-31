@@ -45,7 +45,7 @@
         "next-intl": "^4.6.0",
         "next-themes": "^0.4.6",
         "nuqs": "^2.8.5",
-        "ocif-js": "^1.0.0",
+        "ocif-js": "^1.0.2",
         "react": "19.2.3",
         "react-dom": "19.2.3",
         "react-hook-form": "^7.68.0",
