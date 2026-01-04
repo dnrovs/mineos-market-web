@@ -17,6 +17,7 @@ import { Spinner } from '@/components/ui/shadcn/spinner'
 import { useMarket } from '@/context/MarketProvider'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
 
+import ButtonLink from '@/components/ui/button-link'
 import { useHover } from '@uidotdev/usehooks'
 import FlatIcon from '../../../public/market.svg'
 
@@ -119,15 +120,15 @@ export default function Overview() {
                                 >
                                     <span>{stat.label}:</span>
                                     {stat.username ? (
-                                        <Link
+                                        <ButtonLink
                                             href={`/user/${stat.value}`}
                                             className={
-                                                'text-muted-foreground flex cursor-pointer items-center gap-1 font-semibold underline-offset-2 hover:underline'
+                                                'text-muted-foreground flex items-center gap-1 font-semibold'
                                             }
                                         >
                                             <User size={16} />
                                             {stat.value}
-                                        </Link>
+                                        </ButtonLink>
                                     ) : (
                                         <span
                                             className={

@@ -5,6 +5,7 @@ import Link from 'next/link'
 
 import EditDropdownTrigger from '@/app/publication/[id]/_components/edit-dropdown-trigger'
 import OptionsDropdownTrigger from '@/app/publication/[id]/_components/options-dropdown-trigger'
+import ButtonLink from '@/components/ui/button-link'
 import PublicationIcon from '@/components/ui/publication-icon'
 import { Button } from '@/components/ui/shadcn/button'
 import {
@@ -88,14 +89,11 @@ export default function PublicationInfo({ publication }: PublicationInfoProps) {
                             {t.rich('by <link>{username}</link>', {
                                 username: publication.userName,
                                 link: (chunks) => (
-                                    <Link
-                                        className={
-                                            'text-foreground underline-offset-2 hover:underline'
-                                        }
+                                    <ButtonLink
                                         href={`/user/${publication?.userName}`}
                                     >
                                         {chunks}
-                                    </Link>
+                                    </ButtonLink>
                                 )
                             })}
                         </span>

@@ -4,10 +4,10 @@ import { clsx } from 'clsx'
 import { Pencil, Star, ThumbsDown, ThumbsUp } from 'lucide-react'
 import { Publication, Review as ReviewT } from 'mineos-market-client'
 import { useExtracted, useFormatter } from 'next-intl'
-import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { toast } from 'sonner'
 
+import ButtonLink from '@/components/ui/button-link'
 import ProvidedAvatar from '@/components/ui/provided-avatar'
 import { Button } from '@/components/ui/shadcn/button'
 import { Field } from '@/components/ui/shadcn/field'
@@ -241,7 +241,7 @@ function Review({ review, publication }: ReviewProps) {
             <div className="flex flex-col gap-2 border-l-3 pl-3">
                 <div className="flex flex-col gap-2">
                     <div className="flex items-center justify-between">
-                        <Link
+                        <ButtonLink
                             className="group flex items-center gap-2"
                             href={`/user/${reviewState.userName}`}
                         >
@@ -256,7 +256,7 @@ function Review({ review, publication }: ReviewProps) {
                             >
                                 {reviewState.userName}
                             </span>
-                        </Link>
+                        </ButtonLink>
                         <span className="text-muted-foreground text-sm">
                             {format.dateTime(
                                 new Date(reviewState.timestamp * 1000),
