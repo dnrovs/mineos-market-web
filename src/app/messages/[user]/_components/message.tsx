@@ -30,7 +30,7 @@ export default function Message({ message }: { message: MessageT }) {
                             : 'text-accent-foreground/50'
                     )}
                 >
-                    {format.dateTime(new Date(message.timestamp), {
+                    {format.dateTime(new Date(message.timestamp * 1000), {
                         timeStyle: 'short'
                     })}
                 </span>
