@@ -20,9 +20,10 @@ export default function Dependencies({ publication }: DependenciesProps) {
             <h2 className="text-xl font-bold">{t('Dependencies')}</h2>
             <div className="flex flex-wrap gap-1">
                 {depsWithName.map(([id, d]) => (
-                    <Badge asChild key={id}>
+                    <Badge key={id} className={'flex gap-0'} asChild>
                         <Link href={`/publication/${id}`}>
-                            {d.publicationName}@{d.version}
+                            {d.publicationName}
+                            <span className={'opacity-50'}>@{d.version}</span>
                         </Link>
                     </Badge>
                 ))}
