@@ -45,7 +45,7 @@ export async function GET(request: NextRequest) {
         const buffer = Buffer.from(await response.arrayBuffer())
         let picture = OCIF.fromBuffer(buffer)
 
-        if (picture.height > 16 || picture.width > 64)
+        if (picture.height > 16 || picture.width > 96)
             return new NextResponse(undefined, {
                 status: 400
             })
