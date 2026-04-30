@@ -19,7 +19,7 @@ import useHandleRequestError from '@/hooks/use-handle-request-error'
 
 import ButtonLink from '@/components/ui/button-link'
 import { useHover } from '@uidotdev/usehooks'
-import FlatIcon from '../../../public/market.svg'
+import FlatIcon from '../../../public/icons/symbol.svg'
 
 export default function Overview() {
     const { client } = useMarket()

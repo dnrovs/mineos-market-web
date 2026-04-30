@@ -25,6 +25,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
     return {
         title: 'MineOS Market',
+        icons: 'icons/favicon.svg',
         description: t(
             'Explore, upload and share MineOS software. View the source code. Communicate with developers.'
         ),
@@ -62,7 +63,7 @@ export default async function RootLayout({
             suppressHydrationWarning
         >
             <body
-                className={`bg-background [&_*]:scrollbar [&_*]:scrollbar-thumb-primary/20 [&_*]:scrollbar-track-transparent flex overflow-hidden antialiased`}
+                className={`bg-background **:scrollbar **:scrollbar-thumb-primary/20 **:scrollbar-track-transparent flex overflow-hidden antialiased`}
             >
                 <ThemeProvider
                     attribute="class"

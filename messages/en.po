@@ -141,34 +141,6 @@ msgstr "Enter your credentials below to sign in to your account"
 msgid "rBTItO"
 msgstr "while logging in"
 
-#: src\app\manifest.ts
-#: src\components\layout\app-sidebar.tsx
-msgid "9uOFF3"
-msgstr "Overview"
-
-#: src\app\manifest.ts
-msgid "cMgpXU"
-msgstr "View the market statistics"
-
-#: src\app\manifest.ts
-#: src\app\settings\_tabs\behaviour.tsx
-#: src\components\layout\app-sidebar.tsx
-msgid "hMzcSq"
-msgstr "Messages"
-
-#: src\app\manifest.ts
-msgid "iOI1ga"
-msgstr "Upload your own software"
-
-#: src\app\manifest.ts
-#: src\app\publish\page.tsx
-msgid "syEQFE"
-msgstr "Publish"
-
-#: src\app\manifest.ts
-msgid "va0Mzr"
-msgstr "Communicate with another developers"
-
 #: src\app\messages\_components\dialogs.tsx
 #: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
 #: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
@@ -564,6 +536,10 @@ msgstr "Create something amazing and share it!"
 msgid "QZ2HQg"
 msgstr "while uploading publication"
 
+#: src\app\publish\page.tsx
+msgid "syEQFE"
+msgstr "Publish"
+
 #: src\app\register\page.tsx
 msgid "1zEIJP"
 msgstr "while registering"
@@ -722,6 +698,11 @@ msgstr "Show publication icons"
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "HaqEm4"
 msgstr "Chat update interval"
+
+#: src\app\settings\_tabs\behaviour.tsx
+#: src\components\layout\app-sidebar.tsx
+msgid "hMzcSq"
+msgstr "Messages"
 
 #: src\app\settings\_tabs\behaviour.tsx
 msgid "nCxC7R"
@@ -887,6 +868,10 @@ msgstr "Installation path"
 #: src\components\forms\publish-form.tsx
 msgid "zhSlKP"
 msgstr "This software does..."
+
+#: src\components\layout\app-sidebar.tsx
+msgid "9uOFF3"
+msgstr "Overview"
 
 #: src\components\layout\publications.tsx
 msgid "olk5qg"
