@@ -1,7 +1,6 @@
-import { useLocale as useLocaleValue } from 'use-intl'
-import { useRouter } from 'next/navigation'
-import { useExtracted } from 'next-intl'
 import { getCookie, setCookie } from 'cookies-next'
+import { useExtracted, useLocale as useLocaleValue } from 'next-intl'
+import { useRouter } from 'next/navigation'
 
 import { toast } from 'sonner'
 

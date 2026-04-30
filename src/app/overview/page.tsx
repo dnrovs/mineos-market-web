@@ -123,7 +123,7 @@ export default function Overview() {
                                         <ButtonLink
                                             href={`/user/${stat.value}`}
                                             className={
-                                                'text-muted-foreground flex items-center gap-1 font-semibold'
+                                                'flex items-center gap-1 font-semibold text-muted-foreground'
                                             }
                                         >
                                             <User size={16} />
@@ -132,7 +132,7 @@ export default function Overview() {
                                     ) : (
                                         <span
                                             className={
-                                                'text-muted-foreground font-semibold'
+                                                'font-semibold text-muted-foreground'
                                             }
                                         >
                                             {stat.value}
@@ -147,7 +147,7 @@ export default function Overview() {
                         target={'_blank'}
                         ref={githubLabelRef}
                         className={
-                            'text-muted-foreground hover:text-foreground flex w-full justify-center gap-1 truncate text-xs transition'
+                            'flex w-full justify-center gap-1 truncate text-xs text-muted-foreground transition hover:text-foreground'
                         }
                     >
                         <Github className={'size-4 fill-current'} />

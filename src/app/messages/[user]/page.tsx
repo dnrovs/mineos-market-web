@@ -1,6 +1,6 @@
 'use client'
 
-import emojiRegex from 'emoji-regex'
+import emojiRegex from 'emoji-regex-xs'
 import { Message as MessageT } from 'mineos-market-client'
 import { useExtracted, useFormatter } from 'next-intl'
 import { useParams, useRouter } from 'next/navigation'
@@ -224,7 +224,7 @@ export default function Chat() {
                 <div className="flex w-full max-w-300 grow flex-col-reverse gap-1 px-3 py-1.5">
                     <span
                         className={
-                            'text-foreground/50 text-right text-sm font-medium'
+                            'text-right text-sm font-medium text-foreground/50'
                         }
                     >
                         {lastMessageIsRead === undefined
@@ -243,7 +243,7 @@ export default function Chat() {
                             <Badge
                                 variant={'secondary'}
                                 className={
-                                    'bg-accent/25 m-1 self-center rounded-full text-sm backdrop-blur-md backdrop-brightness-95 dark:backdrop-brightness-200'
+                                    'm-1 self-center rounded-full bg-accent/25 text-sm backdrop-blur-md backdrop-brightness-95 dark:backdrop-brightness-200'
                                 }
                             >
                                 {label}

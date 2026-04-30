@@ -17,8 +17,8 @@ export default function Message({ message }: { message: MessageT }) {
                 className={clsx(
                     'flex w-max max-w-xs flex-col overflow-hidden rounded-xl p-2 text-wrap break-words xl:max-w-sm',
                     outgoing
-                        ? 'bg-primary text-primary-foreground self-end rounded-br-lg text-right'
-                        : 'bg-accent/25 text-accent-foreground self-start rounded-bl-lg text-left backdrop-blur-md backdrop-brightness-95 dark:backdrop-brightness-200'
+                        ? 'self-end rounded-br-lg bg-primary text-right text-primary-foreground'
+                        : 'self-start rounded-bl-lg bg-accent/25 text-left text-accent-foreground backdrop-blur-md backdrop-brightness-95 dark:backdrop-brightness-200'
                 )}
             >
                 <span>{message.text}</span>

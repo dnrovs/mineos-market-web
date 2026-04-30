@@ -17,7 +17,7 @@ export default function ButtonLink({
         <Button
             variant={'link'}
             className={clsx(
-                'text-foreground h-auto p-0! text-base font-normal underline-offset-2 focus-visible:underline focus-visible:ring-0',
+                'h-auto p-0! text-base font-normal text-foreground underline-offset-2 focus-visible:underline focus-visible:ring-0',
                 className
             )}
             asChild

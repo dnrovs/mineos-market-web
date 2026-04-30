@@ -1,12 +1,12 @@
-import React from 'react'
-import { PublicationCategory } from 'mineos-market-client'
 import {
     AppWindowMac,
     FileTerminal,
     SquareLibrary,
     Wallpaper
 } from 'lucide-react'
+import { PublicationCategory } from 'mineos-market-client'
 import { useExtracted } from 'next-intl'
+import React from 'react'
 
 export interface Category {
     name: string

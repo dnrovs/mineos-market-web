@@ -40,7 +40,7 @@ export default function Footer({
     return (
         <div
             className={
-                'bg-background bottom-0 flex w-full items-center justify-between px-3 py-3'
+                'bottom-0 flex w-full items-center justify-between bg-background px-3 py-3'
             }
         >
             <div className={'flex items-center gap-2.5'}>

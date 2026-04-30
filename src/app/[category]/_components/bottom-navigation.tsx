@@ -28,7 +28,7 @@ function BottomNavigationButton({
     return (
         <Toggle
             className={
-                'text-sidebar-foreground data-[state=on]:text-primary-foreground data-[state=on]:bg-primary data-[state=on]:hover:bg-foreground/90 hover:bg-background/25 h-17 flex-1 flex-col rounded-none p-2 transition hover:text-inherit sm:flex-row'
+                'h-17 flex-1 flex-col rounded-none p-2 text-sidebar-foreground transition hover:bg-background/25 hover:text-inherit data-[state=on]:bg-primary data-[state=on]:text-primary-foreground data-[state=on]:hover:bg-foreground/90 sm:flex-row'
             }
             pressed={currentCategory === href}
             asChild
@@ -50,7 +50,7 @@ export default function BottomNavigation() {
         >
             <nav
                 className={
-                    'bg-background/75 flex w-full overflow-hidden rounded-2xl backdrop-blur-md'
+                    'flex w-full overflow-hidden rounded-2xl bg-background/75 backdrop-blur-md'
                 }
             >
                 {categories.map((category) => (

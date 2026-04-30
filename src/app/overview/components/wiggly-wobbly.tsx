@@ -140,7 +140,7 @@ export default function WigglyWobbly({
                 >
                     <PublicationIcon
                         publication={icon.publication}
-                        className="bg-background h-full w-full rounded-xl shadow-lg select-none dark:shadow-none"
+                        className="h-full w-full rounded-xl bg-background shadow-lg select-none dark:shadow-none"
                         draggable={false}
                         width={ICON_SIZE}
                         height={ICON_SIZE}

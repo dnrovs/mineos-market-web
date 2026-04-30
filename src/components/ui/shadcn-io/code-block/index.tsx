@@ -1,5 +1,14 @@
 'use client'
 
+import { Button } from '@/components/ui/shadcn/button'
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue
+} from '@/components/ui/shadcn/select'
+import { cn } from '@/utils/shadcn'
 import {
     type IconType,
     SiAstro,
@@ -86,15 +95,6 @@ import {
     useEffect,
     useState
 } from 'react'
-import { Button } from '@/components/ui/shadcn/button'
-import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue
-} from '@/components/ui/shadcn/select'
-import { cn } from '@/utils/shadcn'
 
 export type BundledLanguage = string
 
@@ -309,7 +309,7 @@ export const CodeBlockHeader = ({
 }: CodeBlockHeaderProps) => (
     <div
         className={cn(
-            'bg-secondary flex flex-row items-center border-b p-1',
+            'flex flex-row items-center border-b bg-secondary p-1',
             className
         )}
         {...props}
@@ -367,7 +367,7 @@ export const CodeBlockFilename = ({
 
     return (
         <div
-            className="bg-secondary text-muted-foreground flex items-center gap-2 px-4 py-1.5 text-xs"
+            className="flex items-center gap-2 bg-secondary px-4 py-1.5 text-xs text-muted-foreground"
             {...props}
         >
             {Icon && <Icon className="h-4 w-4 shrink-0" />}
@@ -392,7 +392,7 @@ export const CodeBlockSelectTrigger = ({
 }: CodeBlockSelectTriggerProps) => (
     <SelectTrigger
         className={cn(
-            'text-muted-foreground w-fit border-none text-xs shadow-none',
+            'w-fit border-none text-xs text-muted-foreground shadow-none',
             className
         )}
         {...props}

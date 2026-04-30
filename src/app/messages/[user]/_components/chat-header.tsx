@@ -23,7 +23,7 @@ export function ChatHeader({ userName }: { userName: string }) {
             <Link
                 href={`/user/${userName}`}
                 className={
-                    'text-foreground flex w-min flex-row-reverse items-center gap-3 px-1 lg:flex-row lg:text-lg'
+                    'flex w-min flex-row-reverse items-center gap-3 px-1 text-foreground lg:flex-row lg:text-lg'
                 }
             >
                 <ProvidedAvatar username={userName} className={'size-9'} />

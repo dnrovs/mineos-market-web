@@ -1,10 +1,9 @@
 'use client'
 
-import { useEffect, useState } from 'react'
 import { useMarket } from '@/context/MarketProvider'
-import handleFetchError from '@/hooks/use-handle-request-error'
-import { useExtracted } from 'next-intl'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
+import { useExtracted } from 'next-intl'
+import { useEffect, useState } from 'react'
 
 export function useUnreadMessages() {
     const { user, client } = useMarket()

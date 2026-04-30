@@ -63,7 +63,7 @@ export default async function RootLayout({
             suppressHydrationWarning
         >
             <body
-                className={`bg-background **:scrollbar **:scrollbar-thumb-primary/20 **:scrollbar-track-transparent flex overflow-hidden antialiased`}
+                className={`flex overflow-hidden bg-background antialiased **:scrollbar **:scrollbar-thumb-primary/20 **:scrollbar-track-transparent`}
             >
                 <ThemeProvider
                     attribute="class"

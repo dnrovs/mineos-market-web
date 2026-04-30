@@ -83,7 +83,7 @@ export default function PublicationInfo({ publication }: PublicationInfoProps) {
                         </h1>
                         <span
                             className={
-                                'text-foreground/50 w-full truncate lg:text-lg'
+                                'w-full truncate text-foreground/50 lg:text-lg'
                             }
                         >
                             {t.rich('by <link>{username}</link>', {
@@ -116,7 +116,7 @@ export default function PublicationInfo({ publication }: PublicationInfoProps) {
                         </Button>
                         <ButtonGroup
                             className={
-                                '[&>button]:bg-secondary/75 [&>div]:border/75'
+                                '[&>div]:border/75 [&>button]:bg-secondary/75'
                             }
                         >
                             <OptionsDropdownTrigger

@@ -48,7 +48,7 @@ export default function Footer({
             >
                 <InputGroup
                     className={
-                        'bg-primary/10 w-full rounded-full border-none shadow-none'
+                        'w-full rounded-full border-none bg-primary/10 shadow-none'
                     }
                 >
                     <InputGroupInput

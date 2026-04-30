@@ -44,7 +44,7 @@ export default function MessagesLayout({ children }: MessagesLayoutProps) {
 
                 <div
                     className={clsx(
-                        'light lg:bg-sidebar flex min-h-0 w-full grow rounded-md bg-transparent bg-cover lg:overflow-auto',
+                        'light flex min-h-0 w-full grow rounded-md bg-transparent bg-cover lg:overflow-auto lg:bg-sidebar',
                         !isDialog && 'hidden lg:block',
                         !user && 'bg-transparent!'
                     )}

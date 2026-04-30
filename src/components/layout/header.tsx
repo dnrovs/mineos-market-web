@@ -1,9 +1,9 @@
-import React from 'react'
 import { Button } from '@/components/ui/shadcn/button'
+import { cn } from '@/utils/shadcn'
 import { ChevronLeft } from 'lucide-react'
 import { useExtracted } from 'next-intl'
-import { cn } from '@/utils/shadcn'
 import { useRouter } from 'next/navigation'
+import React from 'react'
 
 export default function Header({
     className,
@@ -15,7 +15,7 @@ export default function Header({
     return (
         <header
             className={cn(
-                'top bg-background/75 sticky top-0 z-10 flex items-center justify-between p-3 backdrop-blur-md',
+                'top sticky top-0 z-10 flex items-center justify-between bg-background/75 p-3 backdrop-blur-md',
                 className
             )}
             {...props}

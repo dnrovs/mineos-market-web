@@ -201,7 +201,7 @@ export default function Dialogs() {
                 <>
                     <ItemGroup
                         className={
-                            'scrollbar-thin scrollbar-track-transparent scrollbar-thumb-ring h-full w-full gap-1 overflow-auto'
+                            'scrollbar-thin h-full w-full gap-1 overflow-auto scrollbar-thumb-ring scrollbar-track-transparent'
                         }
                     >
                         {dialogs.map((dialog) => (

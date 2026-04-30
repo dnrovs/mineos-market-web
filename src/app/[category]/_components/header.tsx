@@ -107,7 +107,7 @@ export default function Header({
     ]
 
     return (
-        <header className="bg-background/75 sticky top-0 flex w-full items-center justify-between px-3 py-3 backdrop-blur-md max-lg:flex-col max-lg:items-start max-lg:gap-2.5">
+        <header className="sticky top-0 flex w-full items-center justify-between bg-background/75 px-3 py-3 backdrop-blur-md max-lg:flex-col max-lg:items-start max-lg:gap-2.5">
             <div className={'flex w-full justify-between'}>
                 <h1 className="text-3xl font-semibold max-lg:text-left">
                     {category.name}
@@ -204,7 +204,7 @@ export default function Header({
                     <>
                         <Separator
                             orientation={'vertical'}
-                            className={'bg-input mx-1 hidden h-9! md:flex'}
+                            className={'mx-1 hidden h-9! bg-input md:flex'}
                         />
                         <Button
                             className={'hidden size-9 md:flex xl:size-auto'}

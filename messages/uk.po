@@ -6,953 +6,962 @@ msgstr ""
 "X-Generator: next-intl\n"
 "X-Crowdin-SourceKey: msgstr\n"
 
-#: src\app\[category]\_components\footer.tsx
+#: src/app/[category]/_components/footer.tsx:47
 msgid "K7AkdL"
 msgstr "Показати"
 
-#: src\app\[category]\_components\header.tsx
-msgid "0BUTMv"
-msgstr "Пошук..."
-
-#: src\app\[category]\_components\header.tsx
-msgid "0TZMjQ"
-msgstr "Найстаріші"
-
-#: src\app\[category]\_components\header.tsx
-msgid "3xDJrg"
-msgstr "Опублікувати {category}..."
-
-#: src\app\[category]\_components\header.tsx
-msgid "4Nl5H9"
-msgstr "Я → А"
-
-#: src\app\[category]\_components\header.tsx
+#: src/app/[category]/_components/header.tsx:68
 msgid "dC3u7Z"
 msgstr "Найпопулярніші"
 
-#: src\app\[category]\_components\header.tsx
-msgid "f3bAYs"
-msgstr "Сортувати за..."
-
-#: src\app\[category]\_components\header.tsx
-msgid "fFZTRm"
-msgstr "З найнижчим рейтингом"
-
-#: src\app\[category]\_components\header.tsx
-msgid "fwIt1X"
-msgstr "Найновіші"
-
-#: src\app\[category]\_components\header.tsx
+#: src/app/[category]/_components/header.tsx:73
 msgid "KTnoGx"
 msgstr "Найменш популярні"
 
-#: src\app\[category]\_components\header.tsx
-#: src\app\settings\page.tsx
-#: src\components\layout\app-sidebar.tsx
-msgid "TwyMau"
-msgstr "Акаунт"
-
-#: src\app\[category]\_components\header.tsx
+#: src/app/[category]/_components/header.tsx:78
 msgid "xrURkx"
 msgstr "З найвищим рейтингом"
 
-#: src\app\[category]\_components\header.tsx
+#: src/app/[category]/_components/header.tsx:83
+msgid "fFZTRm"
+msgstr "З найнижчим рейтингом"
+
+#: src/app/[category]/_components/header.tsx:88
+msgid "fwIt1X"
+msgstr "Найновіші"
+
+#: src/app/[category]/_components/header.tsx:93
+msgid "0TZMjQ"
+msgstr "Найстаріші"
+
+#: src/app/[category]/_components/header.tsx:98
 msgid "xSsE6C"
 msgstr "А → Я"
 
-#: src\app\[category]\page.tsx
-msgid "2RRog1"
-msgstr "Жодна публікація не відповідає критеріям пошуку."
+#: src/app/[category]/_components/header.tsx:103
+msgid "4Nl5H9"
+msgstr "Я → А"
 
-#: src\app\[category]\page.tsx
-msgid "4YJHut"
-msgstr "Очистити пошук"
+#: src/app/[category]/_components/header.tsx:161
+#: src/app/settings/page.tsx:47
+#: src/components/layout/app-sidebar.tsx:125
+msgid "TwyMau"
+msgstr "Акаунт"
 
-#: src\app\[category]\page.tsx
-#: src\app\user\[name]\page.tsx
-msgid "FUU5eA"
-msgstr "Публікацій не знайдено"
+#: src/app/[category]/_components/header.tsx:171
+msgid "0BUTMv"
+msgstr "Пошук..."
 
-#: src\app\[category]\page.tsx
-#: src\app\publication\[id]\page.tsx
-#: src\app\user\[name]\page.tsx
+#: src/app/[category]/_components/header.tsx:182
+msgid "f3bAYs"
+msgstr "Сортувати за..."
+
+#: src/app/[category]/_components/header.tsx:218
+msgid "3xDJrg"
+msgstr "Опублікувати {category}..."
+
+#: src/app/[category]/page.tsx:130
+#: src/app/publication/[id]/page.tsx:48
+#: src/app/user/[name]/page.tsx:51
 msgid "rQFxkO"
 msgstr "під час отримання публікацій"
 
-#: src\app\[category]\page.tsx
+#: src/app/[category]/page.tsx:174
+#: src/app/user/[name]/page.tsx:119
+msgid "FUU5eA"
+msgstr "Публікацій не знайдено"
+
+#: src/app/[category]/page.tsx:177
+msgid "2RRog1"
+msgstr "Жодна публікація не відповідає критеріям пошуку."
+
+#: src/app/[category]/page.tsx:180
 msgid "zWr4H0"
 msgstr "Схоже, у цій категорії немає публікацій."
 
-#: src\app\error.tsx
+#: src/app/[category]/page.tsx:191
+msgid "4YJHut"
+msgstr "Очистити пошук"
+
+#: src/app/error.tsx:37
 msgid "9ivOm3"
 msgstr "Неочікувана помилка"
 
-#: src\app\error.tsx
+#: src/app/error.tsx:42
 msgid "FazwRl"
 msgstr "Спробувати знову"
 
-#: src\app\error.tsx
+#: src/app/error.tsx:50
 msgid "kEBQoE"
 msgstr "Відкрити заявку"
 
-#: src\app\layout.tsx
-#: src\app\manifest.ts
+#: src/app/layout.tsx:29
+#: src/app/layout.tsx:34
+#: src/app/manifest.ts:9
 msgid "6NyYTi"
 msgstr "Досліджуйте, завантажуйте та діліться програмним забезпеченням для MineOS. Переглядайте вихідний код. Спілкуйтеся з розробниками."
 
-#: src\app\login\page.tsx
-msgid "00GQ0X"
-msgstr "Email або ім'я користувача"
-
-#: src\app\login\page.tsx
-msgid "25WwxF"
-msgstr "Не маєте облікового запису?"
-
-#: src\app\login\page.tsx
-msgid "3t2ZWR"
-msgstr "Увійдіть в ваш обліковий запис"
-
-#: src\app\login\page.tsx
-#: src\app\register\page.tsx
-msgid "5sg7KC"
-msgstr "Пароль"
-
-#: src\app\login\page.tsx
-#: src\app\messages\[user]\page.tsx
-#: src\app\register\page.tsx
-#: src\app\settings\_tabs\account.tsx
-#: src\components\layout\user-dropdown.tsx
-msgid "AyGauy"
-msgstr "Увійти"
-
-#: src\app\login\page.tsx
-#: src\app\messages\[user]\page.tsx
-#: src\app\register\page.tsx
-#: src\app\settings\_tabs\account.tsx
-#: src\components\layout\user-dropdown.tsx
-msgid "deEeEI"
-msgstr "Реєстрація"
-
-#: src\app\login\page.tsx
-msgid "fPriMP"
-msgstr "Введіть свої дані щоб увійти в обліковий запис"
-
-#: src\app\login\page.tsx
+#: src/app/login/page.tsx:56
 msgid "rBTItO"
 msgstr "під час входу в систему"
 
-#: src\app\messages\_components\dialogs.tsx
-#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
-#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
-#: src\app\settings\_components\reset-settings-alert-dialog-trigger.tsx
-#: src\components\forms\publish-form.tsx
-msgid "47FYwb"
-msgstr "Скасувати"
+#: src/app/login/page.tsx:66
+msgid "3t2ZWR"
+msgstr "Увійдіть в ваш обліковий запис"
 
-#: src\app\messages\_components\dialogs.tsx
+#: src/app/login/page.tsx:68
+msgid "fPriMP"
+msgstr "Введіть свої дані щоб увійти в обліковий запис"
+
+#: src/app/login/page.tsx:82
+msgid "00GQ0X"
+msgstr "Email або ім'я користувача"
+
+#: src/app/login/page.tsx:99
+#: src/app/register/page.tsx:132
+msgid "5sg7KC"
+msgstr "Пароль"
+
+#: src/app/login/page.tsx:111
+#: src/app/messages/[user]/page.tsx:197
+#: src/app/register/page.tsx:149
+#: src/app/settings/_tabs/account.tsx:226
+#: src/components/layout/user-dropdown.tsx:98
+msgid "AyGauy"
+msgstr "Увійти"
+
+#: src/app/login/page.tsx:113
+msgid "25WwxF"
+msgstr "Не маєте облікового запису?"
+
+#: src/app/login/page.tsx:115
+#: src/app/messages/[user]/page.tsx:203
+#: src/app/register/page.tsx:145
+#: src/app/settings/_tabs/account.tsx:232
+#: src/components/layout/user-dropdown.tsx:104
+msgid "deEeEI"
+msgstr "Реєстрація"
+
+#: src/app/messages/_components/dialogs.tsx:47
 msgid "ATDyLP"
 msgstr "Новий чат"
 
-#: src\app\messages\_components\dialogs.tsx
-#: src\app\register\page.tsx
+#: src/app/messages/_components/dialogs.tsx:50
+#: src/app/register/page.tsx:96
 msgid "JCIgkj"
 msgstr "Ім'я користувача"
 
-#: src\app\messages\_components\dialogs.tsx
-msgid "LZl1xZ"
-msgstr "під час отримання діалогів"
+#: src/app/messages/_components/dialogs.tsx:61
+#: src/app/publication/[id]/_components/edit-dropdown-trigger.tsx:84
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:325
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:502
+#: src/app/settings/_components/reset-settings-alert-dialog-trigger.tsx:45
+#: src/components/forms/publish-form.tsx:328
+msgid "47FYwb"
+msgstr "Скасувати"
 
-#: src\app\messages\_components\dialogs.tsx
-#: src\app\user\[name]\page.tsx
+#: src/app/messages/_components/dialogs.tsx:70
+#: src/app/user/[name]/page.tsx:83
 msgid "un14bs"
 msgstr "Відкрити чат"
 
-#: src\app\messages\[user]\_components\chat-header.tsx
-#: src\components\layout\header.tsx
+#: src/app/messages/_components/dialogs.tsx:177
+msgid "LZl1xZ"
+msgstr "під час отримання діалогів"
+
+#: src/app/messages/[user]/_components/chat-header.tsx:21
+#: src/components/layout/header.tsx:25
 msgid "cyR7Kh"
 msgstr "Назад"
 
-#: src\app\messages\[user]\_components\footer.tsx
-msgid "9WRlF4"
-msgstr "Надіслати"
-
-#: src\app\messages\[user]\_components\footer.tsx
+#: src/app/messages/[user]/_components/footer.tsx:56
 msgid "HyqYaU"
 msgstr "Скажіть щось {dialogUserName}..."
 
-#: src\app\messages\[user]\page.tsx
-msgid "+QF2mn"
-msgstr "Емодзі заборонені."
+#: src/app/messages/[user]/_components/footer.tsx:85
+msgid "9WRlF4"
+msgstr "Надіслати"
 
-#: src\app\messages\[user]\page.tsx
-msgid "72TiCf"
-msgstr "під час отримання діалогу"
-
-#: src\app\messages\[user]\page.tsx
-msgid "8bV0li"
-msgstr "Користувач {dialogUserName} не існує."
-
-#: src\app\messages\[user]\page.tsx
-msgid "filwqD"
-msgstr "Прочитано"
-
-#: src\app\messages\[user]\page.tsx
-msgid "gcuDcH"
-msgstr "Надіслано"
-
-#: src\app\messages\[user]\page.tsx
-msgid "rUwc/l"
-msgstr "Поговоріть з {dialogUserName}"
-
-#: src\app\messages\[user]\page.tsx
+#: src/app/messages/[user]/page.tsx:97
 msgid "sbE0zo"
 msgstr "під час отримання статусу прочитання останнього повідомлення"
 
-#: src\app\messages\[user]\page.tsx
-msgid "UoFhu5"
-msgstr "Ввійдіть або зареєструйтеся щоб спілкуватися з користувачами"
+#: src/app/messages/[user]/page.tsx:112
+msgid "8bV0li"
+msgstr "Користувач {dialogUserName} не існує."
 
-#: src\app\messages\[user]\page.tsx
+#: src/app/messages/[user]/page.tsx:118
+msgid "72TiCf"
+msgstr "під час отримання діалогу"
+
+#: src/app/messages/[user]/page.tsx:130
+msgid "+QF2mn"
+msgstr "Емодзі заборонені."
+
+#: src/app/messages/[user]/page.tsx:145
 msgid "UvpnGV"
 msgstr "під час відправлення повідомлення"
 
-#: src\app\messages\page.tsx
+#: src/app/messages/[user]/page.tsx:184
+msgid "rUwc/l"
+msgstr "Поговоріть з {dialogUserName}"
+
+#: src/app/messages/[user]/page.tsx:187
+msgid "UoFhu5"
+msgstr "Ввійдіть або зареєструйтеся щоб спілкуватися з користувачами"
+
+#: src/app/messages/[user]/page.tsx:233
+msgid "filwqD"
+msgstr "Прочитано"
+
+#: src/app/messages/[user]/page.tsx:234
+msgid "gcuDcH"
+msgstr "Надіслано"
+
+#: src/app/messages/page.tsx:17
 msgid "LBU7+J"
 msgstr "Відкрийте чат, щоб почати спілкування"
 
-#: src\app\not-found.tsx
-msgid "3Xz7LW"
-msgstr "Переглянути публікації"
-
-#: src\app\not-found.tsx
-msgid "7PeNz/"
-msgstr "Цього ресурсу не існує."
-
-#: src\app\not-found.tsx
+#: src/app/not-found.tsx:26
 msgid "k1s9UW"
 msgstr "Не знайдено"
 
-#: src\app\not-found.tsx
+#: src/app/not-found.tsx:28
+msgid "7PeNz/"
+msgstr "Цього ресурсу не існує."
+
+#: src/app/not-found.tsx:35
 msgid "orvpWh"
 msgstr "Повернутися"
 
-#: src\app\overview\page.tsx
-msgid "7MTfrK"
-msgstr "Найактивніші"
+#: src/app/not-found.tsx:38
+msgid "3Xz7LW"
+msgstr "Переглянути публікації"
 
-#: src\app\overview\page.tsx
-msgid "B7zY8l"
-msgstr "під час отримання статистики"
-
-#: src\app\overview\page.tsx
-msgid "cILLFL"
-msgstr "Білд <b>{hash}</b> від {author}: {message}"
-
-#: src\app\overview\page.tsx
+#: src/app/overview/page.tsx:40
 msgid "FotFMb"
 msgstr "Кількість користувачів"
 
-#: src\app\overview\page.tsx
-msgid "raRmPD"
-msgstr "під час отримання популярних застосунків"
-
-#: src\app\overview\page.tsx
-msgid "RB4BMg"
-msgstr "Кількість повідомлень"
-
-#: src\app\overview\page.tsx
+#: src/app/overview/page.tsx:42
 msgid "RyQQuV"
 msgstr "Новий користувач"
 
-#: src\app\overview\page.tsx
+#: src/app/overview/page.tsx:47
+msgid "7MTfrK"
+msgstr "Найактивніші"
+
+#: src/app/overview/page.tsx:51
 msgid "tR6EXz"
 msgstr "Кількість публікацій"
 
-#: src\app\overview\page.tsx
+#: src/app/overview/page.tsx:52
 msgid "u2miNe"
 msgstr "Кількість відгуків"
 
-#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
-msgid "+sEPbf"
-msgstr "Видалити {publicationName}?"
+#: src/app/overview/page.tsx:53
+msgid "RB4BMg"
+msgstr "Кількість повідомлень"
 
-#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
-msgid "bYoVJ6"
-msgstr "Публікацію успішно видалено."
+#: src/app/overview/page.tsx:63
+msgid "B7zY8l"
+msgstr "під час отримання статистики"
 
-#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
+#: src/app/overview/page.tsx:74
+msgid "raRmPD"
+msgstr "під час отримання популярних застосунків"
+
+#: src/app/overview/page.tsx:157
+msgid "cILLFL"
+msgstr "Білд <b>{hash}</b> від {author}: {message}"
+
+#: src/app/publication/[id]/_components/edit-dropdown-trigger.tsx:53
 msgid "D3ATEG"
 msgstr "під час видалення публікації"
 
-#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
-msgid "G/yZLu"
-msgstr "Видалити"
-
-#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
+#: src/app/publication/[id]/_components/edit-dropdown-trigger.tsx:60
 msgid "JqtAkq"
 msgstr "Видалення публікації..."
 
-#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
+#: src/app/publication/[id]/_components/edit-dropdown-trigger.tsx:61
+msgid "bYoVJ6"
+msgstr "Публікацію успішно видалено."
+
+#: src/app/publication/[id]/_components/edit-dropdown-trigger.tsx:72
+msgid "+sEPbf"
+msgstr "Видалити {publicationName}?"
+
+#: src/app/publication/[id]/_components/edit-dropdown-trigger.tsx:77
 msgid "RiHzeS"
 msgstr "Це назавжди видалить публікацію, її статистику та відгуки з реєстру. Вихідні файли залишаться на сервері."
 
-#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
-#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
-msgid "wEQDC6"
-msgstr "Редагувати"
-
-#: src\app\publication\[id]\_components\edit-dropdown-trigger.tsx
+#: src/app/publication/[id]/_components/edit-dropdown-trigger.tsx:86
 msgid "xPn5o3"
 msgstr "Видалити {publicationName}"
 
-#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
-msgid "0c5Ily"
-msgstr "Позначення публікації як завантаженої..."
+#: src/app/publication/[id]/_components/edit-dropdown-trigger.tsx:112
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:309
+msgid "wEQDC6"
+msgstr "Редагувати"
 
-#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
-msgid "4TgoWL"
-msgstr "Зображення піктограми"
+#: src/app/publication/[id]/_components/edit-dropdown-trigger.tsx:121
+msgid "G/yZLu"
+msgstr "Видалити"
 
-#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
-msgid "5/yFl5"
-msgstr "Позначити завантаженим"
-
-#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
-msgid "BnqNdr"
-msgstr "JSON скопійовано в буфер обміну"
-
-#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
-msgid "fhwTpA"
-msgstr "Джерела"
-
-#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
-msgid "GAUX9p"
-msgstr "Вихідний код"
-
-#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
-msgid "GVcBDG"
-msgstr "Не вдалося скопіювати JSON в буфер обміну"
-
-#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
-msgid "NCqfZg"
-msgstr "Вихідний JSON"
-
-#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
-msgid "oA+idZ"
-msgstr "під час позначення публікації як завантаженої"
-
-#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
-msgid "OKhRC6"
-msgstr "Поділитися"
-
-#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
+#: src/app/publication/[id]/_components/options-dropdown-trigger.tsx:60
 msgid "t1SGnV"
 msgstr "Вихідний JSON {publicationName}"
 
-#: src\app\publication\[id]\_components\options-dropdown-trigger.tsx
+#: src/app/publication/[id]/_components/options-dropdown-trigger.tsx:80
+msgid "BnqNdr"
+msgstr "JSON скопійовано в буфер обміну"
+
+#: src/app/publication/[id]/_components/options-dropdown-trigger.tsx:84
+msgid "GVcBDG"
+msgstr "Не вдалося скопіювати JSON в буфер обміну"
+
+#: src/app/publication/[id]/_components/options-dropdown-trigger.tsx:126
+msgid "oA+idZ"
+msgstr "під час позначення публікації як завантаженої"
+
+#: src/app/publication/[id]/_components/options-dropdown-trigger.tsx:133
+msgid "0c5Ily"
+msgstr "Позначення публікації як завантаженої..."
+
+#: src/app/publication/[id]/_components/options-dropdown-trigger.tsx:134
 msgid "tH4Eov"
 msgstr "Публікацію позначено як завантажену."
 
-#: src\app\publication\[id]\_components\previews.tsx
+#: src/app/publication/[id]/_components/options-dropdown-trigger.tsx:154
+msgid "OKhRC6"
+msgstr "Поділитися"
+
+#: src/app/publication/[id]/_components/options-dropdown-trigger.tsx:161
+msgid "5/yFl5"
+msgstr "Позначити завантаженим"
+
+#: src/app/publication/[id]/_components/options-dropdown-trigger.tsx:168
+msgid "fhwTpA"
+msgstr "Джерела"
+
+#: src/app/publication/[id]/_components/options-dropdown-trigger.tsx:173
+msgid "GAUX9p"
+msgstr "Вихідний код"
+
+#: src/app/publication/[id]/_components/options-dropdown-trigger.tsx:179
+msgid "4TgoWL"
+msgstr "Зображення піктограми"
+
+#: src/app/publication/[id]/_components/options-dropdown-trigger.tsx:187
+msgid "NCqfZg"
+msgstr "Вихідний JSON"
+
+#: src/app/publication/[id]/_components/previews.tsx:31
 msgid "z6muGJ"
 msgstr "Попередній перегляд {index} для {publicationName}"
 
-#: src\app\publication\[id]\_components\publication-info.tsx
+#: src/app/publication/[id]/_components/publication-info.tsx:89
 msgid "+zr0gu"
 msgstr "від <link>{username}</link>"
 
-#: src\app\publication\[id]\_components\publication-info.tsx
-msgid "J62X2m"
-msgstr "Переглянути вихідний код"
-
-#: src\app\publication\[id]\_components\publication-info.tsx
+#: src/app/publication/[id]/_components/publication-info.tsx:106
 msgid "pVCtbO"
 msgstr "Пакунок на GitHub"
 
-#: src\app\publication\[id]\_components\sections\about.tsx
-msgid "4gL3oc"
-msgstr "{version, plural, =1 {Випущено} other {Останній реліз}} {date}"
+#: src/app/publication/[id]/_components/publication-info.tsx:112
+msgid "J62X2m"
+msgstr "Переглянути вихідний код"
 
-#: src\app\publication\[id]\_components\sections\about.tsx
+#: src/app/publication/[id]/_components/sections/about.tsx:14
 msgid "g5pX+a"
 msgstr "Про публікацію"
 
-#: src\app\publication\[id]\_components\sections\dependencies.tsx
-#: src\components\forms\publish-form.tsx
+#: src/app/publication/[id]/_components/sections/about.tsx:21
+msgid "4gL3oc"
+msgstr "{version, plural, =1 {Випущено} other {Останній реліз}} {date}"
+
+#: src/app/publication/[id]/_components/sections/dependencies.tsx:20
+#: src/components/forms/publish-form.tsx:727
 msgid "37Z5zj"
 msgstr "Залежності"
 
-#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:44
 msgid "4xQtw2"
 msgstr "із 5"
 
-#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
-msgid "Ak4tB0"
-msgstr "під час оновлення відгуку"
-
-#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
-msgid "APJ1b/"
-msgstr "Публікація відгуку..."
-
-#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
-msgid "GJFQ68"
-msgstr "під час голосування за відгук"
-
-#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
-msgid "k/n7Yx"
-msgstr "Відгук успішно опубліковано!"
-
-#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
-msgid "LfHk/3"
-msgstr "Написати відгук..."
-
-#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
-msgid "LZZfmv"
-msgstr "Увійдіть або зареєструйтеся, щоб оцінювати публікації та відгуки"
-
-#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:165
 msgid "og54DB"
 msgstr "Спроба оновити неіснуючий відгук."
 
-#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:172
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:225
+msgid "Ak4tB0"
+msgstr "під час оновлення відгуку"
+
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:196
 msgid "Ov8WL5"
 msgstr "Вже проголосували!"
 
-#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
-msgid "REm9Re"
-msgstr "Рейтинги та огляди"
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:202
+msgid "GJFQ68"
+msgstr "під час голосування за відгук"
 
-#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
-msgid "rMIZOU"
-msgstr "Натисніть, щоб оцінити:"
-
-#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
-msgid "UnvbUU"
-msgstr "Відгук успішно оновлено!"
-
-#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
-msgid "v+mTR7"
-msgstr "під час публікації відгуку"
-
-#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:233
 msgid "W6gI4b"
 msgstr "Оновлення відгуку..."
 
-#: src\app\publication\[id]\_components\sections\ratings-and-reviews.tsx
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:234
+msgid "UnvbUU"
+msgstr "Відгук успішно оновлено!"
+
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:418
+msgid "v+mTR7"
+msgstr "під час публікації відгуку"
+
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:423
+msgid "APJ1b/"
+msgstr "Публікація відгуку..."
+
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:424
+msgid "k/n7Yx"
+msgstr "Відгук успішно опубліковано!"
+
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:437
+msgid "REm9Re"
+msgstr "Рейтинги та огляди"
+
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:454
+msgid "rMIZOU"
+msgstr "Натисніть, щоб оцінити:"
+
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:470
+msgid "LZZfmv"
+msgstr "Увійдіть або зареєструйтеся, щоб оцінювати публікації та відгуки"
+
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:482
+msgid "LfHk/3"
+msgstr "Написати відгук..."
+
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:493
 msgid "wXHf3p"
 msgstr "Оцінити публікацію"
 
-#: src\app\publication\[id]\_components\sections\whats-new.tsx
+#: src/app/publication/[id]/_components/sections/whats-new.tsx:16
 msgid "G5/5eb"
 msgstr "Що нового"
 
-#: src\app\publication\[id]\_components\sections\whats-new.tsx
+#: src/app/publication/[id]/_components/sections/whats-new.tsx:19
 msgid "SoGsYr"
 msgstr "у {whatsNewVersion}"
 
-#: src\app\publication\[id]\_components\shelf.tsx
-#: src\components\forms\publish-form.tsx
-msgid "ccXLVi"
-msgstr "Категорія"
-
-#: src\app\publication\[id]\_components\shelf.tsx
-msgid "GsBRWL"
-msgstr "Мови"
-
-#: src\app\publication\[id]\_components\shelf.tsx
-#: src\components\forms\publish-form.tsx
-msgid "HBxXD/"
-msgstr "Ліцензія"
-
-#: src\app\publication\[id]\_components\shelf.tsx
-msgid "I3b4hn"
-msgstr "Версія"
-
-#: src\app\publication\[id]\_components\shelf.tsx
+#: src/app/publication/[id]/_components/shelf.tsx:85
 msgid "lswmMN"
 msgstr "{length, plural, one {# Рейтинг} few {# Рейтинги} other {# Рейтингів}}"
 
-#: src\app\publication\[id]\_components\shelf.tsx
+#: src/app/publication/[id]/_components/shelf.tsx:94
 msgid "OnbqrE"
 msgstr "Завантаження"
 
-#: src\app\publication\[id]\page.tsx
+#: src/app/publication/[id]/_components/shelf.tsx:96
+#: src/components/forms/publish-form.tsx:559
+msgid "ccXLVi"
+msgstr "Категорія"
+
+#: src/app/publication/[id]/_components/shelf.tsx:100
+msgid "I3b4hn"
+msgstr "Версія"
+
+#: src/app/publication/[id]/_components/shelf.tsx:102
+msgid "GsBRWL"
+msgstr "Мови"
+
+#: src/app/publication/[id]/_components/shelf.tsx:105
+#: src/components/forms/publish-form.tsx:633
+msgid "HBxXD/"
+msgstr "Ліцензія"
+
+#: src/app/publication/[id]/page.tsx:57
 msgid "hWwv1H"
 msgstr "під час отримання відгуків"
 
-#: src\app\publication\[id]\update\page.tsx
-msgid "0wZB3y"
-msgstr "Публікацію успішно оновлено."
-
-#: src\app\publication\[id]\update\page.tsx
-msgid "A3bwdq"
-msgstr "Що нового?"
-
-#: src\app\publication\[id]\update\page.tsx
-msgid "AyzK+a"
-msgstr "У цьому оновленні я додав(ла) та виправив(ла)..."
-
-#: src\app\publication\[id]\update\page.tsx
-msgid "Gwy3SQ"
-msgstr "Тут ви можете оновити свою публікацію."
-
-#: src\app\publication\[id]\update\page.tsx
-msgid "H7ibc9"
-msgstr "Оновити публікацію"
-
-#: src\app\publication\[id]\update\page.tsx
-msgid "Jx8h9Q"
-msgstr "Оновлення публікації..."
-
-#: src\app\publication\[id]\update\page.tsx
-msgid "nf5qyJ"
-msgstr "Оновити до {newVersion}"
-
-#: src\app\publication\[id]\update\page.tsx
-msgid "Pt+j13"
-msgstr "під час оновлення публікації"
-
-#: src\app\publication\[id]\update\page.tsx
+#: src/app/publication/[id]/update/page.tsx:120
 msgid "Unpl/e"
 msgstr "під час отримання публікації"
 
-#: src\app\publish\page.tsx
-msgid "3cM1BU"
-msgstr "Опублікувати ПЗ"
+#: src/app/publication/[id]/update/page.tsx:137
+msgid "Pt+j13"
+msgstr "під час оновлення публікації"
 
-#: src\app\publish\page.tsx
-msgid "h1Fura"
-msgstr "Публікацію успішно завантажено."
+#: src/app/publication/[id]/update/page.tsx:144
+msgid "Jx8h9Q"
+msgstr "Оновлення публікації..."
 
-#: src\app\publish\page.tsx
-msgid "hSpDpR"
-msgstr "Завантаження публікації..."
+#: src/app/publication/[id]/update/page.tsx:145
+msgid "0wZB3y"
+msgstr "Публікацію успішно оновлено."
 
-#: src\app\publish\page.tsx
-msgid "Q3kzlv"
-msgstr "Створіть щось дивовижне і поділіться цим!"
+#: src/app/publication/[id]/update/page.tsx:158
+msgid "H7ibc9"
+msgstr "Оновити публікацію"
 
-#: src\app\publish\page.tsx
+#: src/app/publication/[id]/update/page.tsx:160
+msgid "Gwy3SQ"
+msgstr "Тут ви можете оновити свою публікацію."
+
+#: src/app/publication/[id]/update/page.tsx:174
+msgid "A3bwdq"
+msgstr "Що нового?"
+
+#: src/app/publication/[id]/update/page.tsx:178
+msgid "AyzK+a"
+msgstr "У цьому оновленні я додав(ла) та виправив(ла)..."
+
+#: src/app/publication/[id]/update/page.tsx:196
+msgid "nf5qyJ"
+msgstr "Оновити до {newVersion}"
+
+#: src/app/publish/page.tsx:67
 msgid "QZ2HQg"
 msgstr "під час завантаження публікації"
 
-#: src\app\publish\page.tsx
+#: src/app/publish/page.tsx:74
+msgid "hSpDpR"
+msgstr "Завантаження публікації..."
+
+#: src/app/publish/page.tsx:75
+msgid "h1Fura"
+msgstr "Публікацію успішно завантажено."
+
+#: src/app/publish/page.tsx:85
+msgid "3cM1BU"
+msgstr "Опублікувати ПЗ"
+
+#: src/app/publish/page.tsx:87
+msgid "Q3kzlv"
+msgstr "Створіть щось дивовижне і поділіться цим!"
+
+#: src/app/publish/page.tsx:97
 msgid "syEQFE"
 msgstr "Опублікувати"
 
-#: src\app\register\page.tsx
-msgid "1zEIJP"
-msgstr "під час реєстрації"
-
-#: src\app\register\page.tsx
-msgid "3VCFQV"
-msgstr "Зареєструвати новий обліковий запис"
-
-#: src\app\register\page.tsx
+#: src/app/register/page.tsx:56
 msgid "3VyG1T"
 msgstr "Перевірте електронну пошту та папку зі спамом, щоб підтвердити обліковий запис MineOS"
 
-#: src\app\register\page.tsx
-msgid "AjpNgX"
-msgstr "Ваш обліковий запис успішно зареєстровано."
+#: src/app/register/page.tsx:63
+msgid "1zEIJP"
+msgstr "під час реєстрації"
 
-#: src\app\register\page.tsx
-msgid "fD2A0X"
-msgstr "Введіть дані нижче, щоб створити обліковий запис."
-
-#: src\app\register\page.tsx
-#: src\app\settings\_tabs\account.tsx
-msgid "sy+pv5"
-msgstr "Email"
-
-#: src\app\register\page.tsx
-msgid "uCk8r+"
-msgstr "Вже маєте обліковий запис?"
-
-#: src\app\register\page.tsx
+#: src/app/register/page.tsx:68
 msgid "UEg22u"
 msgstr "Реєстрація облікового запису..."
 
-#: src\app\settings\_components\reset-settings-alert-dialog-trigger.tsx
-msgid "+UwH/g"
-msgstr "Скинути налаштування?"
+#: src/app/register/page.tsx:69
+msgid "AjpNgX"
+msgstr "Ваш обліковий запис успішно зареєстровано."
 
-#: src\app\settings\_components\reset-settings-alert-dialog-trigger.tsx
-msgid "C068Ia"
-msgstr "Це скине налаштування з вкладок «Поведінка» та «Розробник» до значень за замовчуванням. Використовуйте це, якщо з налаштуваннями щось пішло не так."
+#: src/app/register/page.tsx:80
+msgid "3VCFQV"
+msgstr "Зареєструвати новий обліковий запис"
 
-#: src\app\settings\_components\reset-settings-alert-dialog-trigger.tsx
+#: src/app/register/page.tsx:82
+msgid "fD2A0X"
+msgstr "Введіть дані нижче, щоб створити обліковий запис."
+
+#: src/app/register/page.tsx:114
+#: src/app/settings/_tabs/account.tsx:64
+msgid "sy+pv5"
+msgstr "Email"
+
+#: src/app/register/page.tsx:148
+msgid "uCk8r+"
+msgstr "Вже маєте обліковий запис?"
+
+#: src/app/settings/_components/reset-settings-alert-dialog-trigger.tsx:29
 msgid "F5QjKF"
 msgstr "Налаштування успішно скинуто."
 
-#: src\app\settings\_components\reset-settings-alert-dialog-trigger.tsx
+#: src/app/settings/_components/reset-settings-alert-dialog-trigger.tsx:37
+msgid "+UwH/g"
+msgstr "Скинути налаштування?"
+
+#: src/app/settings/_components/reset-settings-alert-dialog-trigger.tsx:39
+msgid "C068Ia"
+msgstr "Це скине налаштування з вкладок «Поведінка» та «Розробник» до значень за замовчуванням. Використовуйте це, якщо з налаштуваннями щось пішло не так."
+
+#: src/app/settings/_components/reset-settings-alert-dialog-trigger.tsx:47
 msgid "jm/spn"
 msgstr "Скинути"
 
-#: src\app\settings\_components\wallpaper-radio-group.tsx
+#: src/app/settings/_components/wallpaper-radio-group.tsx:55
 msgid "Kpg8Jj"
 msgstr "Зображення шпалер"
 
-#: src\app\settings\_tabs\account.tsx
-msgid "/TRon/"
-msgstr "Ваш пароль успішно змінено."
-
-#: src\app\settings\_tabs\account.tsx
-msgid "/wWuSX"
-msgstr "Зміна пароля..."
-
-#: src\app\settings\_tabs\account.tsx
-msgid "2PxMTO"
-msgstr "Скидання пароля облікового запису."
-
-#: src\app\settings\_tabs\account.tsx
-msgid "55vTH+"
-msgstr "ID користувача"
-
-#: src\app\settings\_tabs\account.tsx
+#: src/app/settings/_tabs/account.tsx:72
 msgid "9qe6kS"
 msgstr "Дата реєстрації"
 
-#: src\app\settings\_tabs\account.tsx
+#: src/app/settings/_tabs/account.tsx:77
+msgid "55vTH+"
+msgstr "ID користувача"
+
+#: src/app/settings/_tabs/account.tsx:150
 msgid "eAv5kZ"
 msgstr "під час зміни пароля"
 
-#: src\app\settings\_tabs\account.tsx
-msgid "fTHhSB"
-msgstr "Новий пароль"
+#: src/app/settings/_tabs/account.tsx:157
+msgid "/wWuSX"
+msgstr "Зміна пароля..."
 
-#: src\app\settings\_tabs\account.tsx
+#: src/app/settings/_tabs/account.tsx:158
+msgid "/TRon/"
+msgstr "Ваш пароль успішно змінено."
+
+#: src/app/settings/_tabs/account.tsx:170
+#: src/app/settings/_tabs/account.tsx:200
 msgid "L4nXIc"
 msgstr "Змінити пароль"
 
-#: src\app\settings\_tabs\account.tsx
+#: src/app/settings/_tabs/account.tsx:172
+msgid "2PxMTO"
+msgstr "Скидання пароля облікового запису."
+
+#: src/app/settings/_tabs/account.tsx:179
 msgid "NIynnB"
 msgstr "Поточний пароль"
 
-#: src\app\settings\_tabs\account.tsx
-msgid "R0I1QA"
-msgstr "Щоб отримати доступ до налаштувань облікового запису, увійдіть або зареєструйтеся."
+#: src/app/settings/_tabs/account.tsx:189
+msgid "fTHhSB"
+msgstr "Новий пароль"
 
-#: src\app\settings\_tabs\account.tsx
+#: src/app/settings/_tabs/account.tsx:213
 msgid "X1axT8"
 msgstr "Ви не увійшли в систему"
 
-#: src\app\settings\_tabs\appearance.tsx
-msgid "9PgpSj"
-msgstr "Аватари"
+#: src/app/settings/_tabs/account.tsx:215
+msgid "R0I1QA"
+msgstr "Щоб отримати доступ до налаштувань облікового запису, увійдіть або зареєструйтеся."
 
-#: src\app\settings\_tabs\appearance.tsx
-msgid "bn/VDb"
-msgstr "Керуйте шпалерами, які ви будете бачити під час діалогів."
-
-#: src\app\settings\_tabs\appearance.tsx
-msgid "e1X9l0"
-msgstr "Показати анімовані фони публікацій"
-
-#: src\app\settings\_tabs\appearance.tsx
-msgid "ee1Wp5"
-msgstr "Світла тема"
-
-#: src\app\settings\_tabs\appearance.tsx
-msgid "Efqxns"
-msgstr "Темна тема"
-
-#: src\app\settings\_tabs\appearance.tsx
-msgid "eh0MP4"
-msgstr "Відображення зображень"
-
-#: src\app\settings\_tabs\appearance.tsx
-msgid "F7wF8U"
-msgstr "Показати попередні перегляди публікацій"
-
-#: src\app\settings\_tabs\appearance.tsx
-msgid "HNwGRG"
-msgstr "Провайдер аватарів"
-
-#: src\app\settings\_tabs\appearance.tsx
-#: src\app\settings\_tabs\behaviour.tsx
-#: src\app\settings\_tabs\developer.tsx
-msgid "jvo0vs"
-msgstr "Зберегти"
-
-#: src\app\settings\_tabs\appearance.tsx
+#: src/app/settings/_tabs/appearance.tsx:38
 msgid "VZPvoZ"
 msgstr "Шпалери чатів"
 
-#: src\app\settings\_tabs\appearance.tsx
-msgid "Wk8oh4"
-msgstr "Керування відображенням конвертованих .pic зображень у додатку."
+#: src/app/settings/_tabs/appearance.tsx:40
+msgid "bn/VDb"
+msgstr "Керуйте шпалерами, які ви будете бачити під час діалогів."
 
-#: src\app\settings\_tabs\appearance.tsx
+#: src/app/settings/_tabs/appearance.tsx:51
+msgid "Efqxns"
+msgstr "Темна тема"
+
+#: src/app/settings/_tabs/appearance.tsx:67
+msgid "ee1Wp5"
+msgstr "Світла тема"
+
+#: src/app/settings/_tabs/appearance.tsx:81
+msgid "9PgpSj"
+msgstr "Аватари"
+
+#: src/app/settings/_tabs/appearance.tsx:83
 msgid "XALdUr"
 msgstr "Керування відображенням аватарів у додатку."
 
-#: src\app\settings\_tabs\appearance.tsx
+#: src/app/settings/_tabs/appearance.tsx:95
 msgid "Ynyq+n"
 msgstr "Використовувати зображення аватарів"
 
-#: src\app\settings\_tabs\appearance.tsx
+#: src/app/settings/_tabs/appearance.tsx:112
+msgid "HNwGRG"
+msgstr "Провайдер аватарів"
+
+#: src/app/settings/_tabs/appearance.tsx:137
+msgid "eh0MP4"
+msgstr "Відображення зображень"
+
+#: src/app/settings/_tabs/appearance.tsx:139
+msgid "Wk8oh4"
+msgstr "Керування відображенням конвертованих .pic зображень у додатку."
+
+#: src/app/settings/_tabs/appearance.tsx:151
+msgid "e1X9l0"
+msgstr "Показати анімовані фони публікацій"
+
+#: src/app/settings/_tabs/appearance.tsx:169
 msgid "zdrJoc"
 msgstr "Показати іконки публікацій"
 
-#: src\app\settings\_tabs\behaviour.tsx
-msgid "HaqEm4"
-msgstr "Інтервал оновлення чату"
+#: src/app/settings/_tabs/appearance.tsx:185
+msgid "F7wF8U"
+msgstr "Показати попередні перегляди публікацій"
 
-#: src\app\settings\_tabs\behaviour.tsx
-#: src\components\layout\app-sidebar.tsx
+#: src/app/settings/_tabs/appearance.tsx:199
+#: src/app/settings/_tabs/behaviour.tsx:157
+#: src/app/settings/_tabs/developer.tsx:95
+msgid "jvo0vs"
+msgstr "Зберегти"
+
+#: src/app/settings/_tabs/behaviour.tsx:42
+#: src/components/layout/app-sidebar.tsx:94
 msgid "hMzcSq"
 msgstr "Повідомлення"
 
-#: src\app\settings\_tabs\behaviour.tsx
-msgid "nCxC7R"
-msgstr "сек"
-
-#: src\app\settings\_tabs\behaviour.tsx
-msgid "xn70cZ"
-msgstr "Інтервал оновлення діалогів"
-
-#: src\app\settings\_tabs\behaviour.tsx
+#: src/app/settings/_tabs/behaviour.tsx:44
 msgid "yIiQTN"
 msgstr "Керування поведінкою повідомлень у додатку."
 
-#: src\app\settings\_tabs\developer.tsx
-msgid "2IgL3i"
-msgstr "URL хоста"
+#: src/app/settings/_tabs/behaviour.tsx:54
+msgid "xn70cZ"
+msgstr "Інтервал оновлення діалогів"
 
-#: src\app\settings\_tabs\developer.tsx
-msgid "by7qeM"
-msgstr "Керування підключенням додатка до сервера."
+#: src/app/settings/_tabs/behaviour.tsx:67
+#: src/app/settings/_tabs/behaviour.tsx:120
+msgid "nCxC7R"
+msgstr "сек"
 
-#: src\app\settings\_tabs\developer.tsx
-msgid "mzhmvO"
-msgstr "Проксі URL"
+#: src/app/settings/_tabs/behaviour.tsx:107
+msgid "HaqEm4"
+msgstr "Інтервал оновлення чату"
 
-#: src\app\settings\_tabs\developer.tsx
-msgid "pUMiAh"
-msgstr "Валідувати відповіді сервера"
-
-#: src\app\settings\_tabs\developer.tsx
+#: src/app/settings/_tabs/developer.tsx:31
 msgid "v8LO6P"
 msgstr "Конфігурація сервера"
 
-#: src\app\settings\page.tsx
-msgid "2GURQY"
-msgstr "Вигляд"
+#: src/app/settings/_tabs/developer.tsx:33
+msgid "by7qeM"
+msgstr "Керування підключенням додатка до сервера."
 
-#: src\app\settings\page.tsx
-msgid "k42o+Q"
-msgstr "Скинути налаштування"
+#: src/app/settings/_tabs/developer.tsx:46
+msgid "2IgL3i"
+msgstr "URL хоста"
 
-#: src\app\settings\page.tsx
-msgid "V0Ugkx"
-msgstr "Поведінка"
+#: src/app/settings/_tabs/developer.tsx:65
+msgid "mzhmvO"
+msgstr "Проксі URL"
 
-#: src\app\settings\page.tsx
+#: src/app/settings/_tabs/developer.tsx:83
+msgid "pUMiAh"
+msgstr "Валідувати відповіді сервера"
+
+#: src/app/settings/page.tsx:38
 msgid "vnlr4s"
 msgstr "Налаштування успішно збережено"
 
-#: src\app\settings\page.tsx
+#: src/app/settings/page.tsx:52
+msgid "2GURQY"
+msgstr "Вигляд"
+
+#: src/app/settings/page.tsx:57
+msgid "V0Ugkx"
+msgstr "Поведінка"
+
+#: src/app/settings/page.tsx:61
 msgid "yZJxVS"
 msgstr "Розробник"
 
-#: src\app\user\[name]\page.tsx
-msgid "3kAElH"
-msgstr "У вас поки немає публікацій."
+#: src/app/settings/page.tsx:98
+msgid "k42o+Q"
+msgstr "Скинути налаштування"
 
-#: src\app\user\[name]\page.tsx
-msgid "7/kzJw"
-msgstr "У цього користувача поки немає публікацій або він не існує."
-
-#: src\app\user\[name]\page.tsx
-#: src\components\layout\user-dropdown.tsx
+#: src/app/user/[name]/page.tsx:78
+#: src/components/layout/user-dropdown.tsx:116
 msgid "D3idYv"
 msgstr "Налаштування"
 
-#: src\components\forms\publish-form.tsx
-msgid "/MPekr"
-msgstr "Тип залежності"
+#: src/app/user/[name]/page.tsx:123
+msgid "3kAElH"
+msgstr "У вас поки немає публікацій."
 
-#: src\components\forms\publish-form.tsx
-msgid "3jvNiy"
-msgstr "Додати локалізацію"
+#: src/app/user/[name]/page.tsx:124
+msgid "7/kzJw"
+msgstr "У цього користувача поки немає публікацій або він не існує."
 
-#: src\components\forms\publish-form.tsx
-msgid "4Y6BjC"
-msgstr "Попередні перегляди"
-
-#: src\components\forms\publish-form.tsx
-msgid "89I2Gm"
-msgstr "Відносний шлях у теці вашої публікації"
-
-#: src\components\forms\publish-form.tsx
-msgid "aBwYSL"
-msgstr "Додати залежність"
-
-#: src\components\forms\publish-form.tsx
-msgid "cH9Dpx"
-msgstr "Додати попередній перегляд"
-
-#: src\components\forms\publish-form.tsx
-msgid "Df3ZE+"
-msgstr "URL основного файла"
-
-#: src\components\forms\publish-form.tsx
-msgid "DG1LJk"
-msgstr "Локалізації"
-
-#: src\components\forms\publish-form.tsx
-msgid "dL4cf8"
-msgstr "Існуюча публікація"
-
-#: src\components\forms\publish-form.tsx
-msgid "DopoLl"
-msgstr "Шлях до основного файла"
-
-#: src\components\forms\publish-form.tsx
-msgid "F6X2cn"
-msgstr "Цю залежність вже додано."
-
-#: src\components\forms\publish-form.tsx
+#: src/components/forms/publish-form.tsx:100
 msgid "isWXGr"
 msgstr "Редагувати залежність"
 
-#: src\components\forms\publish-form.tsx
-msgid "JLUbbY"
-msgstr "Назва публікації"
+#: src/components/forms/publish-form.tsx:101
+#: src/components/forms/publish-form.tsx:333
+#: src/components/forms/publish-form.tsx:782
+msgid "aBwYSL"
+msgstr "Додати залежність"
 
-#: src\components\forms\publish-form.tsx
-msgid "L1Ia9+"
-msgstr "Моя публікація"
+#: src/components/forms/publish-form.tsx:135
+msgid "F6X2cn"
+msgstr "Цю залежність вже додано."
 
-#: src\components\forms\publish-form.tsx
-msgid "P/kAt/"
-msgstr "Використовувати відносний шлях"
-
-#: src\components\forms\publish-form.tsx
-msgid "plkU58"
-msgstr "Публікації, від якої ви хочете залежати, не існує."
-
-#: src\components\forms\publish-form.tsx
-msgid "Q8Qw5B"
-msgstr "Опис"
-
-#: src\components\forms\publish-form.tsx
-msgid "Q8U7HC"
-msgstr "Файл через URL"
-
-#: src\components\forms\publish-form.tsx
-msgid "uGHBTb"
-msgstr "Початковий URL"
-
-#: src\components\forms\publish-form.tsx
-msgid "vcO6WE"
-msgstr "URL піктограми"
-
-#: src\components\forms\publish-form.tsx
+#: src/components/forms/publish-form.tsx:145
 msgid "WIrFQu"
 msgstr "під час перевірки публікації"
 
-#: src\components\forms\publish-form.tsx
-msgid "wPT4qy"
-msgstr "Абсолютний шлях від кореневої теки файлової системи"
+#: src/components/forms/publish-form.tsx:159
+msgid "plkU58"
+msgstr "Публікації, від якої ви хочете залежати, не існує."
 
-#: src\components\forms\publish-form.tsx
-msgid "X0ha1a"
-msgstr "Зберегти зміни"
+#: src/components/forms/publish-form.tsx:205
+msgid "/MPekr"
+msgstr "Тип залежності"
 
-#: src\components\forms\publish-form.tsx
+#: src/components/forms/publish-form.tsx:223
+msgid "Q8U7HC"
+msgstr "Файл через URL"
+
+#: src/components/forms/publish-form.tsx:226
+msgid "dL4cf8"
+msgstr "Існуюча публікація"
+
+#: src/components/forms/publish-form.tsx:243
+msgid "uGHBTb"
+msgstr "Початковий URL"
+
+#: src/components/forms/publish-form.tsx:262
 msgid "xRBaOl"
 msgstr "Шлях встановлення"
 
-#: src\components\forms\publish-form.tsx
+#: src/components/forms/publish-form.tsx:266
+msgid "89I2Gm"
+msgstr "Відносний шлях у теці вашої публікації"
+
+#: src/components/forms/publish-form.tsx:269
+msgid "wPT4qy"
+msgstr "Абсолютний шлях від кореневої теки файлової системи"
+
+#: src/components/forms/publish-form.tsx:295
+msgid "P/kAt/"
+msgstr "Використовувати відносний шлях"
+
+#: src/components/forms/publish-form.tsx:315
+#: src/components/forms/publish-form.tsx:592
+msgid "JLUbbY"
+msgstr "Назва публікації"
+
+#: src/components/forms/publish-form.tsx:332
+msgid "X0ha1a"
+msgstr "Зберегти зміни"
+
+#: src/components/forms/publish-form.tsx:383
+msgid "vcO6WE"
+msgstr "URL піктограми"
+
+#: src/components/forms/publish-form.tsx:403
+msgid "DG1LJk"
+msgstr "Локалізації"
+
+#: src/components/forms/publish-form.tsx:442
+msgid "3jvNiy"
+msgstr "Додати локалізацію"
+
+#: src/components/forms/publish-form.tsx:464
+msgid "DopoLl"
+msgstr "Шлях до основного файла"
+
+#: src/components/forms/publish-form.tsx:597
+msgid "L1Ia9+"
+msgstr "Моя публікація"
+
+#: src/components/forms/publish-form.tsx:614
+msgid "Q8Qw5B"
+msgstr "Опис"
+
+#: src/components/forms/publish-form.tsx:617
 msgid "zhSlKP"
 msgstr "Це програмне забезпечення робить..."
 
-#: src\components\layout\app-sidebar.tsx
+#: src/components/forms/publish-form.tsx:667
+msgid "Df3ZE+"
+msgstr "URL основного файла"
+
+#: src/components/forms/publish-form.tsx:690
+msgid "4Y6BjC"
+msgstr "Попередні перегляди"
+
+#: src/components/forms/publish-form.tsx:722
+msgid "cH9Dpx"
+msgstr "Додати попередній перегляд"
+
+#: src/components/layout/app-sidebar.tsx:69
 msgid "9uOFF3"
 msgstr "Огляд"
 
-#: src\components\layout\publications.tsx
+#: src/components/layout/publications.tsx:43
 msgid "olk5qg"
 msgstr "{username}"
 
-#: src\components\layout\user-dropdown.tsx
+#: src/components/layout/user-dropdown.tsx:48
 msgid "+CwN9C"
 msgstr "Системна"
 
-#: src\components\layout\user-dropdown.tsx
-msgid "3cc4Ct"
-msgstr "Світла"
-
-#: src\components\layout\user-dropdown.tsx
-msgid "Pe0ogR"
-msgstr "Тема"
-
-#: src\components\layout\user-dropdown.tsx
-msgid "PlBReU"
-msgstr "Вийти"
-
-#: src\components\layout\user-dropdown.tsx
+#: src/components/layout/user-dropdown.tsx:53
 msgid "tOdNiY"
 msgstr "Темна"
 
-#: src\components\layout\user-dropdown.tsx
+#: src/components/layout/user-dropdown.tsx:59
+msgid "3cc4Ct"
+msgstr "Світла"
+
+#: src/components/layout/user-dropdown.tsx:122
+msgid "Pe0ogR"
+msgstr "Тема"
+
+#: src/components/layout/user-dropdown.tsx:144
 msgid "y1Z3or"
 msgstr "Мова"
 
-#: src\components\ui\publication-icon.tsx
+#: src/components/layout/user-dropdown.tsx:168
+msgid "PlBReU"
+msgstr "Вийти"
+
+#: src/components/ui/publication-icon.tsx:40
 msgid "DYDkUP"
 msgstr "Іконка для {publicationName}"
 
-#: src\components\ui\shadcn\pagination.tsx
-msgid "9+Ddtu"
-msgstr "Далі"
-
-#: src\components\ui\shadcn\pagination.tsx
+#: src/components/ui/shadcn/pagination.tsx:84
 msgid "JJNc3c"
 msgstr "Назад"
 
-#: src\hooks\use-handle-request-error.ts
+#: src/components/ui/shadcn/pagination.tsx:102
+msgid "9+Ddtu"
+msgstr "Далі"
+
+#: src/hooks/use-handle-request-error.ts:14
 msgid "Esx22K"
 msgstr "Помилка {while}: {message}"
 
-#: src\hooks\use-handle-request-error.ts
+#: src/hooks/use-handle-request-error.ts:19
 msgid "TD0pGC"
 msgstr "Непередбачена помилка {while}: {error}"
 
-#: src\hooks\use-locale.ts
+#: src/hooks/use-locale.ts:15
 msgid "Eupxjs"
 msgstr "Цей додаток використовує файли cookie для збереження мовних налаштувань."
 
-#: src\hooks\use-publication-categories.ts
-msgid "1SIWKV"
-msgstr "Бібліотеки"
-
-#: src\hooks\use-publication-categories.ts
-msgid "D9ZyLu"
-msgstr "Фони"
-
-#: src\hooks\use-publication-categories.ts
+#: src/hooks/use-publication-categories.ts:24
 msgid "DqD1yK"
 msgstr "Застосунки"
 
-#: src\hooks\use-publication-categories.ts
+#: src/hooks/use-publication-categories.ts:25
 msgid "gRiKLf"
 msgstr "Додатки"
 
-#: src\hooks\use-publication-categories.ts
-msgid "HCfIc7"
-msgstr "Скрипти"
-
-#: src\hooks\use-publication-categories.ts
+#: src/hooks/use-publication-categories.ts:31
 msgid "nTBqwa"
 msgstr "Бібліотеки"
 
-#: src\hooks\use-publication-categories.ts
+#: src/hooks/use-publication-categories.ts:32
+msgid "1SIWKV"
+msgstr "Бібліотеки"
+
+#: src/hooks/use-publication-categories.ts:38
+#: src/hooks/use-publication-categories.ts:39
+msgid "HCfIc7"
+msgstr "Скрипти"
+
+#: src/hooks/use-publication-categories.ts:45
 msgid "tmaBkU"
 msgstr "Шпалери"
 
-#: src\hooks\use-unread-messages.ts
+#: src/hooks/use-publication-categories.ts:46
+msgid "D9ZyLu"
+msgstr "Фони"
+
+#: src/hooks/use-unread-messages.ts:29
 msgid "QmMwgJ"
 msgstr "під час отримання непрочитаних повідомлень"

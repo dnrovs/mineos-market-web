@@ -1,6 +1,5 @@
 'use client'
-import { Pencil, Plus, SquareLibrary, X } from 'lucide-react'
-import { Link } from 'lucide-react'
+import { Link, Pencil, Plus, SquareLibrary, X } from 'lucide-react'
 import {
     License,
     PublicationCategory,
@@ -9,19 +8,18 @@ import {
 import { useExtracted } from 'next-intl'
 import React from 'react'
 import {
-    useFieldArray,
     Controller,
-    UseFormReturn,
     FieldValues,
+    useFieldArray,
     UseFieldArrayReturn,
-    useForm
+    useForm,
+    UseFormReturn
 } from 'react-hook-form'
 import { toast } from 'sonner'
 
 import { Button } from '@/components/ui/shadcn/button'
 import {
     Dialog,
-    DialogClose,
     DialogContent,
     DialogFooter,
     DialogHeader,

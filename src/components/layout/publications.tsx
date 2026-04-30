@@ -20,7 +20,7 @@ function Publication({ publication }: PublicationProps) {
     return (
         <Card
             className={
-                'focus-visible:border-ring focus-visible:ring-ring/50 cursor-pointer overflow-hidden rounded-xl p-0 focus-visible:ring-[3px] max-md:max-h-fit max-md:w-full md:min-w-80'
+                'cursor-pointer overflow-hidden rounded-xl p-0 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 max-md:max-h-fit max-md:w-full md:min-w-80'
             }
         >
             <Link
@@ -39,7 +39,7 @@ function Publication({ publication }: PublicationProps) {
                     <span className="block max-w-full truncate text-xl font-medium">
                         {publication.publicationName}
                     </span>
-                    <span className="text-muted-foreground block max-w-full truncate">
+                    <span className="block max-w-full truncate text-muted-foreground">
                         {t('by {username}', { username: publication.userName })}
                     </span>
 

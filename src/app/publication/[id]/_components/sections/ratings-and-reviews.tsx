@@ -37,7 +37,7 @@ function RatingSummary({ reviews, averageRating = 0 }: RatingSummaryProps) {
 
     return (
         <div className={'flex w-full justify-between gap-8'}>
-            <div className={'text-muted-foreground flex flex-col items-center'}>
+            <div className={'flex flex-col items-center text-muted-foreground'}>
                 <span className={'text-5xl font-semibold'}>
                     {averageRating.toFixed(1)}
                 </span>
@@ -50,7 +50,7 @@ function RatingSummary({ reviews, averageRating = 0 }: RatingSummaryProps) {
                             {Array.from({ length: rating }).map((_, i) => (
                                 <Star
                                     key={i}
-                                    className="text-muted-foreground size-3 fill-current"
+                                    className="size-3 fill-current text-muted-foreground"
                                 />
                             ))}
                         </div>
@@ -257,7 +257,7 @@ function Review({ review, publication }: ReviewProps) {
                                 {reviewState.userName}
                             </span>
                         </ButtonLink>
-                        <span className="text-muted-foreground text-sm">
+                        <span className="text-sm text-muted-foreground">
                             {format.dateTime(
                                 new Date(reviewState.timestamp * 1000),
                                 {
@@ -450,7 +450,7 @@ export default function RatingsAndReviews({
                     >
                         {user ? (
                             <>
-                                <ItemTitle className="text-muted-foreground text-base">
+                                <ItemTitle className="text-base text-muted-foreground">
                                     {t('Tap to rate this:')}
                                 </ItemTitle>
                                 <ItemActions>
@@ -464,7 +464,7 @@ export default function RatingsAndReviews({
                             <div className={'flex w-full justify-center'}>
                                 <ItemTitle
                                     className={
-                                        'text-muted-foreground text-base'
+                                        'text-base text-muted-foreground'
                                     }
                                 >
                                     {t(

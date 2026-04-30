@@ -38,7 +38,7 @@ export default function HorizontalScrollShadow({
         <div className={cn('relative', className)} {...props}>
             <span
                 className={cn(
-                    'via-background pointer-events-none absolute h-full w-full from-transparent from-80% via-100%',
+                    'pointer-events-none absolute h-full w-full from-transparent from-80% via-background via-100%',
                     show && 'bg-linear-to-r'
                 )}
             />

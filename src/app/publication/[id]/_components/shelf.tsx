@@ -31,7 +31,7 @@ interface ShelfElementProps {
 function ShelfElement({ title, Icon, value }: ShelfElementProps) {
     return (
         <div className={'flex min-w-0 flex-1 flex-col items-center gap-2'}>
-            <span className={'text-muted-foreground text-sm text-nowrap'}>
+            <span className={'text-sm text-nowrap text-muted-foreground'}>
                 {title}
             </span>
             <div className={'flex items-center gap-2 text-2xl text-nowrap'}>

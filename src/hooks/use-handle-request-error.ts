@@ -1,6 +1,6 @@
 import { ApiError } from 'mineos-market-client'
-import { toast } from 'sonner'
 import { useExtracted } from 'next-intl'
+import { toast } from 'sonner'
 
 export default function useHandleRequestError() {
     const t = useExtracted()

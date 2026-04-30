@@ -1,14 +1,4 @@
-import {
-    Globe,
-    LaptopMinimal,
-    LogIn,
-    LogOut,
-    Moon,
-    Paintbrush,
-    Settings,
-    Sun,
-    UserRoundPlus
-} from 'lucide-react'
+import ProvidedAvatar from '@/components/ui/provided-avatar'
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -22,16 +12,25 @@ import {
     DropdownMenuSubTrigger,
     DropdownMenuTrigger
 } from '@/components/ui/shadcn/dropdown-menu'
-import { Avatar, AvatarFallback } from '@/components/ui/shadcn/avatar'
 import { useSidebar } from '@/components/ui/shadcn/sidebar'
 import { useMarket } from '@/context/MarketProvider'
-import Link from 'next/link'
-import React from 'react'
-import { useTheme } from 'next-themes'
 import { useLocale } from '@/hooks/use-locale'
 import { locales } from '@/lib/constants'
+import {
+    Globe,
+    LaptopMinimal,
+    LogIn,
+    LogOut,
+    Moon,
+    Paintbrush,
+    Settings,
+    Sun,
+    UserRoundPlus
+} from 'lucide-react'
 import { useExtracted } from 'next-intl'
-import ProvidedAvatar from '@/components/ui/provided-avatar'
+import { useTheme } from 'next-themes'
+import Link from 'next/link'
+import React from 'react'
 
 export default function UserDropdown({
     children
@@ -84,7 +83,7 @@ export default function UserDropdown({
                                     <span className="truncate font-medium">
                                         {user.name}
                                     </span>
-                                    <span className="text-muted-foreground truncate text-xs">
+                                    <span className="truncate text-xs text-muted-foreground">
                                         {user.email}
                                     </span>
                                 </div>
