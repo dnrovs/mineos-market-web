@@ -32,7 +32,7 @@ export default function AppSidebar() {
     const categories = usePublicationCategories()
 
     return (
-        <Sidebar className={'z-20'} collapsible={'icon'}>
+        <Sidebar className={'z-20 border-r-0!'} collapsible={'icon'}>
             <SidebarContent>
                 <SidebarGroup>
                     <SidebarGroupContent>

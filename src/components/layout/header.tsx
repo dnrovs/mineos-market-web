@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/shadcn/button'
-import { cn } from '@/utils/shadcn'
+import { cn } from '@/lib/shadcn/utils'
 import { ChevronLeft } from 'lucide-react'
 import { useExtracted } from 'next-intl'
 import { useRouter } from 'next/navigation'

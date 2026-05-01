@@ -46,6 +46,7 @@ import {
 import {
     Select,
     SelectContent,
+    SelectGroup,
     SelectItem,
     SelectTrigger,
     SelectValue
@@ -219,12 +220,14 @@ function AddDependencyForm({
                                 <SelectValue />
                             </SelectTrigger>
                             <SelectContent>
-                                <SelectItem value={'file'}>
-                                    {t('File via URL')}
-                                </SelectItem>
-                                <SelectItem value={'publication'}>
-                                    {t('Existing publication')}
-                                </SelectItem>
+                                <SelectGroup>
+                                    <SelectItem value={'file'}>
+                                        {t('File via URL')}
+                                    </SelectItem>
+                                    <SelectItem value={'publication'}>
+                                        {t('Existing publication')}
+                                    </SelectItem>
+                                </SelectGroup>
                             </SelectContent>
                         </Select>
                     </Field>
@@ -565,15 +568,17 @@ export default function PublishFormFields({ form }: PublicationFieldsProps) {
                             <SelectTrigger aria-invalid={fieldState.invalid}>
                                 <SelectValue placeholder="Select" />
                             </SelectTrigger>
-                            <SelectContent position="item-aligned">
-                                {categories.map((cat) => (
-                                    <SelectItem
-                                        key={cat.enum}
-                                        value={cat.enum.toString()}
-                                    >
-                                        {cat.name}
-                                    </SelectItem>
-                                ))}
+                            <SelectContent>
+                                <SelectGroup>
+                                    {categories.map((cat) => (
+                                        <SelectItem
+                                            key={cat.enum}
+                                            value={cat.enum.toString()}
+                                        >
+                                            {cat.name}
+                                        </SelectItem>
+                                    ))}
+                                </SelectGroup>
                             </SelectContent>
                         </Select>
                         {fieldState.error && (
@@ -640,15 +645,17 @@ export default function PublishFormFields({ form }: PublicationFieldsProps) {
                             <SelectTrigger aria-invalid={fieldState.invalid}>
                                 <SelectValue placeholder="Select" />
                             </SelectTrigger>
-                            <SelectContent position="item-aligned">
-                                {licenses.map((licence) => (
-                                    <SelectItem
-                                        key={licence.enum}
-                                        value={licence.enum.toString()}
-                                    >
-                                        {licence.name}
-                                    </SelectItem>
-                                ))}
+                            <SelectContent>
+                                <SelectGroup>
+                                    {licenses.map((licence) => (
+                                        <SelectItem
+                                            key={licence.enum}
+                                            value={licence.enum.toString()}
+                                        >
+                                            {licence.name}
+                                        </SelectItem>
+                                    ))}
+                                </SelectGroup>
                             </SelectContent>
                         </Select>
                         {fieldState.error && (

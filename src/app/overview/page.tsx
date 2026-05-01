@@ -100,7 +100,7 @@ export default function Overview() {
             >
                 <Card
                     className={
-                        'h-5/8 max-h-150 min-h-100 w-full cursor-default flex-col items-center justify-between truncate border-none bg-white/50 p-6 backdrop-blur-3xl select-none max-sm:rounded-none max-sm:border-x-0 sm:h-9/12 sm:w-md dark:bg-[#24242480]'
+                        'h-5/8 max-h-150 min-h-100 w-full cursor-default flex-col items-center justify-between truncate border-none bg-white/50 p-6 text-base backdrop-blur-3xl select-none max-sm:rounded-none max-sm:border-x-0 sm:h-9/12 sm:w-md dark:bg-[#24242480]'
                     }
                 >
                     <FlatIcon

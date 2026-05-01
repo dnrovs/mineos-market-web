@@ -11,6 +11,7 @@ import {
 import {
     Select,
     SelectContent,
+    SelectGroup,
     SelectItem,
     SelectTrigger,
     SelectValue
@@ -54,16 +55,21 @@ export default function Footer({
                         <SelectValue />
                     </SelectTrigger>
                     <SelectContent>
-                        {perPageVariants.map((variant) => (
-                            <SelectItem key={variant} value={String(variant)}>
-                                {variant}
-                            </SelectItem>
-                        ))}
+                        <SelectGroup>
+                            {perPageVariants.map((variant) => (
+                                <SelectItem
+                                    key={variant}
+                                    value={String(variant)}
+                                >
+                                    {variant}
+                                </SelectItem>
+                            ))}
+                        </SelectGroup>
                     </SelectContent>
                 </Select>
             </div>
 
-            <Pagination>
+            <Pagination className={'justify-end'}>
                 <PaginationContent>
                     {currentPage > 1 && (
                         <>
@@ -72,6 +78,7 @@ export default function Footer({
                                     onClick={() =>
                                         setCurrentPage(currentPage - 1)
                                     }
+                                    text={t('Previous')}
                                 />
                             </PaginationItem>
                             <PaginationItem>
@@ -106,6 +113,7 @@ export default function Footer({
                                     onClick={() =>
                                         setCurrentPage(currentPage + 1)
                                     }
+                                    text={t('Next')}
                                 />
                             </PaginationItem>
                         </>

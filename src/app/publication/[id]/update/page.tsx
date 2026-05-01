@@ -13,9 +13,9 @@ import PublishFormFields, {
     PublishFormValues
 } from '@/components/forms/publish-form'
 import Header from '@/components/layout/header'
+import ResponsiveCard from '@/components/ui/responsive-card'
 import { Button } from '@/components/ui/shadcn/button'
 import {
-    Card,
     CardContent,
     CardDescription,
     CardHeader,
@@ -153,7 +153,7 @@ export default function UpdatePublication() {
             {loading ? (
                 <Spinner className="mx-auto my-auto size-10" />
             ) : publication && isOwner ? (
-                <Card className={'m-3 mx-auto mt-0 w-auto sm:w-md'}>
+                <ResponsiveCard>
                     <CardHeader>
                         <CardTitle>{t('Update publication')}</CardTitle>
                         <CardDescription>
@@ -205,7 +205,7 @@ export default function UpdatePublication() {
                             </FieldSet>
                         </CardContent>
                     </form>
-                </Card>
+                </ResponsiveCard>
             ) : (
                 notFound()
             )}

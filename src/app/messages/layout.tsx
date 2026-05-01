@@ -8,7 +8,7 @@ import Dialogs from '@/app/messages/_components/dialogs'
 import Header from '@/components/layout/header'
 import { useMarket } from '@/context/MarketProvider'
 import { useConfig } from '@/hooks/use-config'
-import { cn } from '@/utils/shadcn'
+import { cn } from '@/lib/shadcn/utils'
 import { useTheme } from 'next-themes'
 import { useMediaQuery } from 'usehooks-ts'
 

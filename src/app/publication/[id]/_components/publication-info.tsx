@@ -15,8 +15,8 @@ import {
 import { useMarket } from '@/context/MarketProvider'
 import { useMediaQuery } from '@/hooks/shadcn/use-media-query'
 import { useConfig } from '@/hooks/use-config'
+import { cn } from '@/lib/shadcn/utils'
 import isPackaged from '@/utils/is-packaged'
-import { cn } from '@/utils/shadcn'
 
 interface PublicationInfoProps {
     publication: Publication
@@ -98,7 +98,7 @@ export default function PublicationInfo({ publication }: PublicationInfoProps) {
                             })}
                         </span>
                     </div>
-                    <div className={'flex gap-2'}>
+                    <div className={'flex gap-1'}>
                         <Button size={isMobile ? 'sm' : 'default'} asChild>
                             <Link href={finalUrl} target={'_blank'}>
                                 {isGithub ? (

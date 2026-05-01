@@ -17,7 +17,7 @@ import { chatWallpapers } from '@/lib/constants'
 import { useExtracted } from 'next-intl'
 import { Controller, useForm } from 'react-hook-form'
 
-export default function Appearance() {
+export default function AppearanceTab() {
     const { config } = useConfig()
     const saveSettings = useSaveSettings()
 

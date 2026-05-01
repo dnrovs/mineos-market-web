@@ -8,7 +8,7 @@ import {
     SelectTrigger,
     SelectValue
 } from '@/components/ui/shadcn/select'
-import { cn } from '@/utils/shadcn'
+import { cn } from '@/lib/shadcn/utils'
 import {
     type IconType,
     SiAstro,

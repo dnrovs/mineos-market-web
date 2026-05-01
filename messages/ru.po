@@ -10,53 +10,61 @@ msgstr ""
 msgid "K7AkdL"
 msgstr "Показать"
 
-#: src/app/[category]/_components/header.tsx:68
+#: src/app/[category]/_components/footer.tsx:75
+msgid "JJNc3c"
+msgstr "Назад"
+
+#: src/app/[category]/_components/footer.tsx:110
+msgid "9+Ddtu"
+msgstr "Далее"
+
+#: src/app/[category]/_components/header.tsx:69
 msgid "dC3u7Z"
 msgstr "Популярные"
 
-#: src/app/[category]/_components/header.tsx:73
+#: src/app/[category]/_components/header.tsx:74
 msgid "KTnoGx"
 msgstr "Менее популярные"
 
-#: src/app/[category]/_components/header.tsx:78
+#: src/app/[category]/_components/header.tsx:79
 msgid "xrURkx"
 msgstr "С высоким рейтингом"
 
-#: src/app/[category]/_components/header.tsx:83
+#: src/app/[category]/_components/header.tsx:84
 msgid "fFZTRm"
 msgstr "С низким рейтингом"
 
-#: src/app/[category]/_components/header.tsx:88
+#: src/app/[category]/_components/header.tsx:89
 msgid "fwIt1X"
 msgstr "Новые"
 
-#: src/app/[category]/_components/header.tsx:93
+#: src/app/[category]/_components/header.tsx:94
 msgid "0TZMjQ"
 msgstr "Старые"
 
-#: src/app/[category]/_components/header.tsx:98
+#: src/app/[category]/_components/header.tsx:99
 msgid "xSsE6C"
 msgstr "А → Я"
 
-#: src/app/[category]/_components/header.tsx:103
+#: src/app/[category]/_components/header.tsx:104
 msgid "4Nl5H9"
 msgstr "Я → А"
 
-#: src/app/[category]/_components/header.tsx:161
-#: src/app/settings/page.tsx:47
+#: src/app/[category]/_components/header.tsx:162
+#: src/app/settings/page.tsx:50
 #: src/components/layout/app-sidebar.tsx:125
 msgid "TwyMau"
 msgstr "Аккаунт"
 
-#: src/app/[category]/_components/header.tsx:171
+#: src/app/[category]/_components/header.tsx:172
 msgid "0BUTMv"
 msgstr "Поиск..."
 
-#: src/app/[category]/_components/header.tsx:182
+#: src/app/[category]/_components/header.tsx:183
 msgid "f3bAYs"
 msgstr "Сортировка..."
 
-#: src/app/[category]/_components/header.tsx:218
+#: src/app/[category]/_components/header.tsx:222
 msgid "3xDJrg"
 msgstr "Опубликовать {category}..."
 
@@ -95,8 +103,8 @@ msgstr "Попробовать снова"
 msgid "kEBQoE"
 msgstr "Открыть заявку"
 
-#: src/app/layout.tsx:29
-#: src/app/layout.tsx:34
+#: src/app/layout.tsx:30
+#: src/app/layout.tsx:35
 #: src/app/manifest.ts:9
 msgid "6NyYTi"
 msgstr "Исследуйте, загружайте и делитесь программным обеспечением для MineOS. Просматривайте исходный код. Общайтесь с разработчиками."
@@ -156,7 +164,7 @@ msgstr "Имя пользователя"
 #: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:325
 #: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:502
 #: src/app/settings/_components/reset-settings-alert-dialog-trigger.tsx:45
-#: src/components/forms/publish-form.tsx:328
+#: src/components/forms/publish-form.tsx:331
 msgid "47FYwb"
 msgstr "Отмена"
 
@@ -380,7 +388,7 @@ msgid "4gL3oc"
 msgstr "{version, plural, =1 {Выпущено} other {Последний релиз}} {date}"
 
 #: src/app/publication/[id]/_components/sections/dependencies.tsx:20
-#: src/components/forms/publish-form.tsx:727
+#: src/components/forms/publish-form.tsx:734
 msgid "37Z5zj"
 msgstr "Зависимости"
 
@@ -462,7 +470,7 @@ msgid "OnbqrE"
 msgstr "Загрузки"
 
 #: src/app/publication/[id]/_components/shelf.tsx:96
-#: src/components/forms/publish-form.tsx:559
+#: src/components/forms/publish-form.tsx:562
 msgid "ccXLVi"
 msgstr "Категория"
 
@@ -475,7 +483,7 @@ msgid "GsBRWL"
 msgstr "Языки"
 
 #: src/app/publication/[id]/_components/shelf.tsx:105
-#: src/components/forms/publish-form.tsx:633
+#: src/components/forms/publish-form.tsx:638
 msgid "HBxXD/"
 msgstr "Лицензия"
 
@@ -741,23 +749,23 @@ msgstr "Прокси URL"
 msgid "pUMiAh"
 msgstr "Валидовать ответы сервера"
 
-#: src/app/settings/page.tsx:38
+#: src/app/settings/page.tsx:41
 msgid "vnlr4s"
 msgstr "Настройки успешно сохранены."
 
-#: src/app/settings/page.tsx:52
+#: src/app/settings/page.tsx:55
 msgid "2GURQY"
 msgstr "Вид"
 
-#: src/app/settings/page.tsx:57
+#: src/app/settings/page.tsx:60
 msgid "V0Ugkx"
 msgstr "Поведение"
 
-#: src/app/settings/page.tsx:61
+#: src/app/settings/page.tsx:64
 msgid "yZJxVS"
 msgstr "Разработчик"
 
-#: src/app/settings/page.tsx:98
+#: src/app/settings/page.tsx:105
 msgid "k42o+Q"
 msgstr "Сбросить настройки"
 
@@ -774,106 +782,106 @@ msgstr "У вас пока нет публикаций."
 msgid "7/kzJw"
 msgstr "У этого пользователя пока нет публикаций или он не существует."
 
-#: src/components/forms/publish-form.tsx:100
+#: src/components/forms/publish-form.tsx:101
 msgid "isWXGr"
 msgstr "Редактировать зависимость"
 
-#: src/components/forms/publish-form.tsx:101
-#: src/components/forms/publish-form.tsx:333
-#: src/components/forms/publish-form.tsx:782
+#: src/components/forms/publish-form.tsx:102
+#: src/components/forms/publish-form.tsx:336
+#: src/components/forms/publish-form.tsx:789
 msgid "aBwYSL"
 msgstr "Добавить зависимость"
 
-#: src/components/forms/publish-form.tsx:135
+#: src/components/forms/publish-form.tsx:136
 msgid "F6X2cn"
 msgstr "Эта зависимость уже добавлена."
 
-#: src/components/forms/publish-form.tsx:145
+#: src/components/forms/publish-form.tsx:146
 msgid "WIrFQu"
 msgstr "при проверке публикации"
 
-#: src/components/forms/publish-form.tsx:159
+#: src/components/forms/publish-form.tsx:160
 msgid "plkU58"
 msgstr "Публикация, от которой вы хотите зависеть, не существует."
 
-#: src/components/forms/publish-form.tsx:205
+#: src/components/forms/publish-form.tsx:206
 msgid "/MPekr"
 msgstr "Тип зависимости"
 
-#: src/components/forms/publish-form.tsx:223
+#: src/components/forms/publish-form.tsx:225
 msgid "Q8U7HC"
 msgstr "Файл по URL"
 
-#: src/components/forms/publish-form.tsx:226
+#: src/components/forms/publish-form.tsx:228
 msgid "dL4cf8"
 msgstr "Существующая публикация"
 
-#: src/components/forms/publish-form.tsx:243
+#: src/components/forms/publish-form.tsx:246
 msgid "uGHBTb"
 msgstr "Исходный URL"
 
-#: src/components/forms/publish-form.tsx:262
+#: src/components/forms/publish-form.tsx:265
 msgid "xRBaOl"
 msgstr "Путь установки"
 
-#: src/components/forms/publish-form.tsx:266
+#: src/components/forms/publish-form.tsx:269
 msgid "89I2Gm"
 msgstr "Относительный путь в папке вашей публикации"
 
-#: src/components/forms/publish-form.tsx:269
+#: src/components/forms/publish-form.tsx:272
 msgid "wPT4qy"
 msgstr "Абсолютный путь от корневой папки файловой системы"
 
-#: src/components/forms/publish-form.tsx:295
+#: src/components/forms/publish-form.tsx:298
 msgid "P/kAt/"
 msgstr "Использовать относительный путь"
 
-#: src/components/forms/publish-form.tsx:315
-#: src/components/forms/publish-form.tsx:592
+#: src/components/forms/publish-form.tsx:318
+#: src/components/forms/publish-form.tsx:597
 msgid "JLUbbY"
 msgstr "Название публикации"
 
-#: src/components/forms/publish-form.tsx:332
+#: src/components/forms/publish-form.tsx:335
 msgid "X0ha1a"
 msgstr "Сохранить изменения"
 
-#: src/components/forms/publish-form.tsx:383
+#: src/components/forms/publish-form.tsx:386
 msgid "vcO6WE"
 msgstr "URL иконки"
 
-#: src/components/forms/publish-form.tsx:403
+#: src/components/forms/publish-form.tsx:406
 msgid "DG1LJk"
 msgstr "Локализации"
 
-#: src/components/forms/publish-form.tsx:442
+#: src/components/forms/publish-form.tsx:445
 msgid "3jvNiy"
 msgstr "Добавить локализацию"
 
-#: src/components/forms/publish-form.tsx:464
+#: src/components/forms/publish-form.tsx:467
 msgid "DopoLl"
 msgstr "Путь к основному файлу"
 
-#: src/components/forms/publish-form.tsx:597
+#: src/components/forms/publish-form.tsx:602
 msgid "L1Ia9+"
 msgstr "Моя публикация"
 
-#: src/components/forms/publish-form.tsx:614
+#: src/components/forms/publish-form.tsx:619
 msgid "Q8Qw5B"
 msgstr "Описание"
 
-#: src/components/forms/publish-form.tsx:617
+#: src/components/forms/publish-form.tsx:622
 msgid "zhSlKP"
 msgstr "Это программное обеспечение делает..."
 
-#: src/components/forms/publish-form.tsx:667
+#: src/components/forms/publish-form.tsx:674
 msgid "Df3ZE+"
 msgstr "URL основного файла"
 
-#: src/components/forms/publish-form.tsx:690
+#: src/components/forms/publish-form.tsx:697
 msgid "4Y6BjC"
 msgstr "Предпросмотры"
 
-#: src/components/forms/publish-form.tsx:722
+#: src/components/forms/publish-form.tsx:729
 msgid "cH9Dpx"
 msgstr "Добавить предпросмотр"
 
@@ -912,14 +920,6 @@ msgstr "Выйти"
 #: src/components/ui/publication-icon.tsx:40
 msgid "DYDkUP"
 msgstr "Иконка для {publicationName}"
-
-#: src/components/ui/shadcn/pagination.tsx:84
-msgid "JJNc3c"
-msgstr "Назад"
-
-#: src/components/ui/shadcn/pagination.tsx:102
-msgid "9+Ddtu"
-msgstr "Далее"
 
 #: src/hooks/use-handle-request-error.ts:14
 msgid "Esx22K"

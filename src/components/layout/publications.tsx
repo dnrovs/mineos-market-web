@@ -35,7 +35,7 @@ function Publication({ publication }: PublicationProps) {
                     }
                 />
 
-                <div className="flex flex-grow flex-col justify-center truncate p-3">
+                <div className="flex grow flex-col justify-center truncate p-3 text-base">
                     <span className="block max-w-full truncate text-xl font-medium">
                         {publication.publicationName}
                     </span>
@@ -92,7 +92,7 @@ export default function Publications({
     return (
         <div
             className={clsx(
-                'grid w-full flex-1 grid-cols-2 content-start gap-3 sm:grid-cols-3 md:grid-cols-[repeat(auto-fill,minmax(20rem,1fr))]',
+                'grid w-full flex-1 grid-cols-2 content-start gap-3 py-px sm:grid-cols-3 md:grid-cols-[repeat(auto-fill,minmax(20rem,1fr))]',
                 className
             )}
         >

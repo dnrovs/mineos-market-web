@@ -96,13 +96,13 @@ function UserItem() {
                         {user.name}
                     </ButtonLink>
                 </ItemTitle>
-                <ItemDescription>
+                <ItemDescription className={'flex flex-wrap gap-0.5'}>
                     {userBadges.map((badge, index) => (
                         <Tooltip key={index} delayDuration={500}>
                             <TooltipTrigger>
                                 <Badge
                                     variant={'secondary'}
-                                    className={'m-0.25 cursor-help'}
+                                    className={'cursor-help'}
                                 >
                                     <badge.icon />
                                     {badge.value}
@@ -164,7 +164,7 @@ export default function AccountTab() {
         <FieldGroup>
             <UserItem />
 
-            <FieldSeparator />
+            <FieldSeparator className={'h-px'} />
 
             <FieldSet>
                 <FieldLegend>{t('Change password')}</FieldLegend>

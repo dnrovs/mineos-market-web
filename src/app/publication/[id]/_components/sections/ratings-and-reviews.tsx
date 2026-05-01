@@ -18,7 +18,7 @@ import { Spinner } from '@/components/ui/shadcn/spinner'
 import { Textarea } from '@/components/ui/shadcn/textarea'
 import { useMarket } from '@/context/MarketProvider'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
-import { cn } from '@/utils/shadcn'
+import { cn } from '@/lib/shadcn/utils'
 
 interface RatingSummaryProps {
     averageRating?: number

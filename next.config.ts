@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
             { pathname: '/wallpapers/**' }
         ]
     },
+    allowedDevOrigins: ['192.168.*.*'],
     webpack(config) {
         config.module.rules.push({
             test: /\.svg$/,

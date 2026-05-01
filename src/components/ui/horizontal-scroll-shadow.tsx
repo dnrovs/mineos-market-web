@@ -1,4 +1,4 @@
-import { cn } from '@/utils/shadcn'
+import { cn } from '@/lib/shadcn/utils'
 import React, { useEffect, useRef, useState } from 'react'
 
 type Props = {

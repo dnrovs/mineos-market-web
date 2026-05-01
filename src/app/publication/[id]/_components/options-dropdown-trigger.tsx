@@ -140,7 +140,7 @@ export default function OptionsDropdownTrigger({
         <DropdownMenu>
             <DropdownMenuTrigger {...props} />
 
-            <DropdownMenuContent>
+            <DropdownMenuContent className={'w-full'}>
                 {navigator.share && (
                     <DropdownMenuItem
                         onClick={() =>

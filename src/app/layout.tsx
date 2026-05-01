@@ -13,6 +13,7 @@ import { SidebarProvider } from '@/components/ui/shadcn/sidebar'
 import { Toaster } from '@/components/ui/shadcn/sonner'
 import { MarketProvider } from '@/context/MarketProvider'
 
+import { TooltipProvider } from '@/components/ui/shadcn/tooltip'
 import './globals.css'
 
 const inter = Inter({
@@ -72,21 +73,23 @@ export default async function RootLayout({
                 >
                     <NextIntlClientProvider>
                         <NuqsAdapter>
-                            <MarketProvider>
-                                <SidebarProvider
-                                    style={
-                                        {
-                                            '--sidebar-width': '18rem'
-                                        } as React.CSSProperties
-                                    }
-                                >
-                                    <Analytics />
-                                    <SpeedInsights />
-                                    <AppSidebar />
-                                    {children}
-                                    <Toaster />
-                                </SidebarProvider>
-                            </MarketProvider>
+                            <TooltipProvider>
+                                <MarketProvider>
+                                    <SidebarProvider
+                                        style={
+                                            {
+                                                '--sidebar-width': '18rem'
+                                            } as React.CSSProperties
+                                        }
+                                    >
+                                        <Analytics />
+                                        <SpeedInsights />
+                                        <AppSidebar />
+                                        {children}
+                                        <Toaster />
+                                    </SidebarProvider>
+                                </MarketProvider>
+                            </TooltipProvider>
                         </NuqsAdapter>
                     </NextIntlClientProvider>
                 </ThemeProvider>

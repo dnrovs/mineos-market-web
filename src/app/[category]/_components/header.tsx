@@ -32,6 +32,7 @@ import {
 import {
     Select,
     SelectContent,
+    SelectGroup,
     SelectItem,
     SelectSeparator,
     SelectTrigger,
@@ -181,22 +182,25 @@ export default function Header({
                     <SelectTrigger className={'w-1/2 min-w-45 sm:w-45'}>
                         <SelectValue placeholder={t('Sort by...')} />
                     </SelectTrigger>
-                    <SelectContent>
-                        {sortingVariants.map((variant, index) => (
-                            <React.Fragment key={variant.value}>
-                                <SelectItem value={variant.value}>
-                                    <variant.icon />
-                                    <span className={'truncate'}>
-                                        {variant.name}
-                                    </span>
-                                </SelectItem>
+                    <SelectContent className={'w-full'}>
+                        <SelectGroup>
+                            {sortingVariants.map((variant, index) => (
+                                <React.Fragment key={variant.value}>
+                                    <SelectItem value={variant.value}>
+                                        <variant.icon />
+                                        <span className={'truncate'}>
+                                            {variant.name}
+                                        </span>
+                                    </SelectItem>
 
-                                {(index + 1) % 2 === 0 &&
-                                    index !== sortingVariants.length - 1 && (
-                                        <SelectSeparator />
-                                    )}
-                            </React.Fragment>
-                        ))}
+                                    {(index + 1) % 2 === 0 &&
+                                        index !==
+                                            sortingVariants.length - 1 && (
+                                            <SelectSeparator />
+                                        )}
+                                </React.Fragment>
+                            ))}
+                        </SelectGroup>
                     </SelectContent>
                 </Select>
 
@@ -207,7 +211,7 @@ export default function Header({
                             className={'mx-1 hidden h-9! bg-input md:flex'}
                         />
                         <Button
-                            className={'hidden size-9 md:flex xl:size-auto'}
+                            className={'hidden size-9 md:flex xl:w-auto'}
                             asChild
                         >
                             <Link

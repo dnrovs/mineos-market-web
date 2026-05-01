@@ -5,7 +5,7 @@ import { parseAsStringLiteral, useQueryState } from 'nuqs'
 
 import ResetSettingsAlertDialogTrigger from '@/app/settings/_components/reset-settings-alert-dialog-trigger'
 import AccountTab from '@/app/settings/_tabs/account'
-import Appearance from '@/app/settings/_tabs/appearance'
+import AppearanceTab from '@/app/settings/_tabs/appearance'
 import BehaviourTab from '@/app/settings/_tabs/behaviour'
 import DeveloperTab from '@/app/settings/_tabs/developer'
 import Header from '@/components/layout/header'
@@ -22,9 +22,12 @@ import {
     TabsList,
     TabsTrigger
 } from '@/components/ui/shadcn/tabs'
-import { Tooltip, TooltipContent } from '@/components/ui/shadcn/tooltip'
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipTrigger
+} from '@/components/ui/shadcn/tooltip'
 import { Config, useConfig } from '@/hooks/use-config'
-import { TooltipTrigger } from '@radix-ui/react-tooltip'
 import { RotateCcw } from 'lucide-react'
 import { toast } from 'sonner'
 
@@ -51,7 +54,7 @@ export default function Settings() {
         {
             name: t('Appearance'),
             value: 'appearance',
-            content: <Appearance />
+            content: <AppearanceTab />
         },
         {
             name: t('Behaviour'),
@@ -76,20 +79,20 @@ export default function Settings() {
                     defaultValue={tab}
                     onValueChange={(value) => setTab(value)}
                     className={
-                        'm-3 flex h-full w-full items-center justify-center sm:m-0 sm:max-w-md'
+                        'm-3 flex h-full w-full flex-col items-center justify-center sm:m-0 sm:max-w-md'
                     }
                 >
-                    <TabsList className={'w-full'}>
-                        {tabs.map((tab) => (
-                            <TabsTrigger key={tab.value} value={tab.value}>
-                                {tab.name}
+                    <TabsList className={'w-full'} variant={'line'}>
+                        {tabs.map((t) => (
+                            <TabsTrigger key={t.value} value={t.value}>
+                                {t.name}
                             </TabsTrigger>
                         ))}
 
                         <Tooltip>
                             <TooltipTrigger asChild>
                                 <ResetSettingsAlertDialogTrigger asChild>
-                                    <Button size={'icon'} variant={'ghost'}>
+                                    <Button size={'icon-sm'} variant={'ghost'}>
                                         <RotateCcw />
                                     </Button>
                                 </ResetSettingsAlertDialogTrigger>

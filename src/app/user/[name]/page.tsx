@@ -66,7 +66,7 @@ export default function User() {
                         <h1 className={'truncate text-2xl font-medium'}>
                             {name}
                         </h1>
-                        <div className={'flex gap-2'}>
+                        <div className={'flex gap-1'}>
                             <Button
                                 size={isMobile ? 'sm' : 'default'}
                                 className={'w-fit'}

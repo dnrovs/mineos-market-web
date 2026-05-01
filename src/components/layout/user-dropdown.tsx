@@ -77,7 +77,7 @@ export default function UserDropdown({
                             <div className="flex items-center gap-2 p-1.5 text-left text-sm">
                                 <ProvidedAvatar
                                     username={user.name}
-                                    className="size-8"
+                                    className={'size-8 after:content-none'}
                                 />
                                 <div className="grid flex-1 text-left text-sm leading-tight">
                                     <span className="truncate font-medium">

@@ -137,7 +137,7 @@ export default function Shelf({ publication, reviews }: StatsBarProps) {
                             {index < elements.length - 1 && (
                                 <Separator
                                     orientation="vertical"
-                                    className="h-12"
+                                    className="my-auto h-12"
                                 />
                             )}
                         </div>

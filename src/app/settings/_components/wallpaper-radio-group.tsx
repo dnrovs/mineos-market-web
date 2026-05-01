@@ -40,7 +40,7 @@ export default function WallpaperRadioGroup({
             <FieldLabel className={'w-5'}>
                 <Field className={'flex h-full justify-center'}>
                     <Ban className={'text-muted-foreground'} />
-                    <RadioGroupItem value={''} className={'sr-only'} />
+                    <RadioGroupItem value={''} className={'hidden'} />
                 </Field>
             </FieldLabel>
             {wallpapers.map((wallpaper) => (
@@ -58,7 +58,7 @@ export default function WallpaperRadioGroup({
 
                                 <RadioGroupItem
                                     value={wallpaper}
-                                    className={'sr-only'}
+                                    className={'hidden'}
                                 />
                             </Field>
                         </FieldLabel>
