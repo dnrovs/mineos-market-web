@@ -39,8 +39,6 @@ export default function User() {
     const isCurrentUser = user?.name === name
 
     useEffect(() => {
-        setLoading(true)
-
         client.publications
             .getPublications({
                 userName: name,

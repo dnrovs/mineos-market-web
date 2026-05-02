@@ -20,7 +20,7 @@ function Publication({ publication }: PublicationProps) {
     return (
         <Card
             className={
-                'cursor-pointer overflow-hidden rounded-xl p-0 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 max-md:max-h-fit max-md:w-full md:min-w-80'
+                'overflow-hidden rounded-xl p-0 transition-all focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:translate-y-px max-md:max-h-fit max-md:w-full md:min-w-80'
             }
         >
             <Link
