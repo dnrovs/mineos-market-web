@@ -1,2 +1,7 @@
+src/components/shadcn
+src/utils/shadcn
 src/components/ui/shadcn
+src/lib/shadcn
+src/hooks/shadcn
+
 src/components/ui/shadcn-io
