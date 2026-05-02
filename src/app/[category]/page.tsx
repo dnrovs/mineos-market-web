@@ -111,8 +111,6 @@ export default function Page() {
     if (!category) notFound()
 
     useEffect(() => {
-        setLoading(true)
-
         client.publications
             .getPublications({
                 category: category.enum,

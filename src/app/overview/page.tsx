@@ -54,8 +54,6 @@ export default function Overview() {
     ]
 
     useEffect(() => {
-        setLoading(true)
-
         client.statistics
             .getStatistic()
             .then(setStatistic)

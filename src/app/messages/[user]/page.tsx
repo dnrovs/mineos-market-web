@@ -150,8 +150,6 @@ export default function Chat() {
     useEffect(() => {
         if (!user) return
 
-        setLoading(true)
-
         fetchMessages()
 
         const interval = setInterval(() => {

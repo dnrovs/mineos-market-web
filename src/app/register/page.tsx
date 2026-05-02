@@ -39,9 +39,9 @@ export default function LoginPage() {
 
     const router = useRouter()
 
-    if (user) return router.push('/')
-
     const { control, handleSubmit } = useForm<RegisterFormValues>()
+
+    if (user) return router.push('/')
 
     const register = async (data: RegisterFormValues) => {
         const registerPromise = client.auth

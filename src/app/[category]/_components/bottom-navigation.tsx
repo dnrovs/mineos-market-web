@@ -1,7 +1,7 @@
 import { Plus } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 import { Button } from '@/components/ui/shadcn/button'
 import { Toggle } from '@/components/ui/shadcn/toggle'
@@ -17,13 +17,7 @@ function BottomNavigationButton({
     href,
     children
 }: BottomNavigationButtonProps) {
-    const pathname = usePathname()
-    const [currentCategory, setCurrentCategory] =
-        useState<string>('/applications')
-
-    useEffect(() => {
-        setCurrentCategory(pathname)
-    }, [pathname])
+    const currentCategory = usePathname()
 
     return (
         <Toggle

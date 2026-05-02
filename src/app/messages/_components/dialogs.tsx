@@ -87,7 +87,7 @@ function DialogItem({ dialog }: DialogProps) {
     const format = useFormatter()
 
     const lastMessageTime = new Date(dialog.timestamp * 1000).getTime()
-    const now = Date.now()
+    const now = new Date().getTime()
 
     const lastMessageWasWithin24Hours = now - lastMessageTime < 86400000
     const lastMessageWasWithinAYear = now - lastMessageTime > 31556952000
@@ -166,8 +166,6 @@ export default function Dialogs() {
 
     useEffect(() => {
         if (!user) return
-
-        setLoading(true)
 
         const fetchDialogs = () => {
             client.messages

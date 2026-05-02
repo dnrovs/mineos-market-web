@@ -55,16 +55,9 @@ const setStoredUser = (user: UserCredentials | null): void => {
 }
 
 export const MarketProvider: React.FC<MarketProviderProps> = ({ children }) => {
-    const [user, setUser] = useState<UserCredentials | null>(null)
-    const [isHydrated, setIsHydrated] = useState(false)
+    const [user, setUser] = useState<UserCredentials | null>(getStoredUser())
 
     const { config } = useConfig()
-
-    useEffect(() => {
-        const stored = getStoredUser()
-        if (stored) setUser(stored)
-        setIsHydrated(true)
-    }, [])
 
     const client = useMemo(() => {
         const client = new MarketClient({
@@ -102,8 +95,6 @@ export const MarketProvider: React.FC<MarketProviderProps> = ({ children }) => {
         window.addEventListener('storage', handleStorage)
         return () => window.removeEventListener('storage', handleStorage)
     }, [])
-
-    if (!isHydrated) return null
 
     const value: MarketContextValue = {
         client,

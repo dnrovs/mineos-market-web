@@ -4,7 +4,7 @@ import { clsx } from 'clsx'
 import { Pencil, Star, ThumbsDown, ThumbsUp } from 'lucide-react'
 import { Publication, Review as ReviewT } from 'mineos-market-client'
 import { useExtracted, useFormatter } from 'next-intl'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { toast } from 'sonner'
 
 import ButtonLink from '@/components/ui/button-link'
@@ -82,12 +82,10 @@ export function RatingStars({
     onChange,
     compact = false
 }: RatingStarsProps) {
-    const [internalValue, setInternalValue] = useState<number>(0)
+    const [internalValue, setInternalValue] = useState<number>(
+        typeof value === 'number' ? value : 0
+    )
     const [hoverValue, setHoverValue] = useState<number | null>(null)
-
-    useEffect(() => {
-        if (typeof value === 'number') setInternalValue(value)
-    }, [value])
 
     const displayed = hoverValue !== null ? hoverValue : internalValue
 

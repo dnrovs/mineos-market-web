@@ -59,8 +59,6 @@ export default function PublicationPage() {
     }
 
     useEffect(() => {
-        setLoading(true)
-
         updateData()
     }, [client.publications, client.reviews, id])
 
