@@ -6,15 +6,15 @@ msgstr ""
 "X-Generator: next-intl\n"
 "X-Crowdin-SourceKey: msgstr\n"
 
-#: src/app/[category]/_components/footer.tsx:47
+#: src/app/[category]/_components/footer.tsx:48
 msgid "K7AkdL"
 msgstr "Показать"
 
-#: src/app/[category]/_components/footer.tsx:75
+#: src/app/[category]/_components/footer.tsx:81
 msgid "JJNc3c"
 msgstr "Назад"
 
-#: src/app/[category]/_components/footer.tsx:110
+#: src/app/[category]/_components/footer.tsx:116
 msgid "9+Ddtu"
 msgstr "Далее"
 
@@ -56,38 +56,38 @@ msgstr "Я → А"
 msgid "TwyMau"
 msgstr "Аккаунт"
 
-#: src/app/[category]/_components/header.tsx:172
+#: src/app/[category]/_components/header.tsx:176
 msgid "0BUTMv"
 msgstr "Поиск..."
 
-#: src/app/[category]/_components/header.tsx:183
+#: src/app/[category]/_components/header.tsx:189
 msgid "f3bAYs"
 msgstr "Сортировка..."
 
-#: src/app/[category]/_components/header.tsx:222
+#: src/app/[category]/_components/header.tsx:228
 msgid "3xDJrg"
 msgstr "Опубликовать {category}..."
 
-#: src/app/[category]/page.tsx:130
+#: src/app/[category]/page.tsx:128
 #: src/app/publication/[id]/page.tsx:48
-#: src/app/user/[name]/page.tsx:51
+#: src/app/user/[name]/page.tsx:49
 msgid "rQFxkO"
 msgstr "при получении публикаций"
 
-#: src/app/[category]/page.tsx:174
-#: src/app/user/[name]/page.tsx:119
+#: src/app/[category]/page.tsx:172
+#: src/app/user/[name]/page.tsx:117
 msgid "FUU5eA"
 msgstr "Публикаций не найдено"
 
-#: src/app/[category]/page.tsx:177
+#: src/app/[category]/page.tsx:175
 msgid "2RRog1"
 msgstr "Нет публикаций, удовлетворяющих критериям поиска."
 
-#: src/app/[category]/page.tsx:180
+#: src/app/[category]/page.tsx:178
 msgid "zWr4H0"
 msgstr "Похоже, в этой категории нет публикаций."
 
-#: src/app/[category]/page.tsx:191
+#: src/app/[category]/page.tsx:189
 msgid "4YJHut"
 msgstr "Очистить поиск"
 
@@ -131,7 +131,7 @@ msgid "5sg7KC"
 msgstr "Пароль"
 
 #: src/app/login/page.tsx:111
-#: src/app/messages/[user]/page.tsx:197
+#: src/app/messages/[user]/page.tsx:195
 #: src/app/register/page.tsx:149
 #: src/app/settings/_tabs/account.tsx:226
 #: src/components/layout/user-dropdown.tsx:98
@@ -143,7 +143,7 @@ msgid "25WwxF"
 msgstr "Нет учётной записи?"
 
 #: src/app/login/page.tsx:115
-#: src/app/messages/[user]/page.tsx:203
+#: src/app/messages/[user]/page.tsx:201
 #: src/app/register/page.tsx:145
 #: src/app/settings/_tabs/account.tsx:232
 #: src/components/layout/user-dropdown.tsx:104
@@ -161,19 +161,19 @@ msgstr "Имя пользователя"
 
 #: src/app/messages/_components/dialogs.tsx:61
 #: src/app/publication/[id]/_components/edit-dropdown-trigger.tsx:84
-#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:325
-#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:502
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:323
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:500
 #: src/app/settings/_components/reset-settings-alert-dialog-trigger.tsx:45
 #: src/components/forms/publish-form.tsx:331
 msgid "47FYwb"
 msgstr "Отмена"
 
 #: src/app/messages/_components/dialogs.tsx:70
-#: src/app/user/[name]/page.tsx:83
+#: src/app/user/[name]/page.tsx:81
 msgid "un14bs"
 msgstr "Открыть чат"
 
-#: src/app/messages/_components/dialogs.tsx:177
+#: src/app/messages/_components/dialogs.tsx:175
 msgid "LZl1xZ"
 msgstr "при получении диалогов"
 
@@ -210,19 +210,19 @@ msgstr "Эмодзи запрещены."
 msgid "UvpnGV"
 msgstr "при отправке сообщения"
 
-#: src/app/messages/[user]/page.tsx:184
+#: src/app/messages/[user]/page.tsx:182
 msgid "rUwc/l"
 msgstr "Поговорите с {dialogUserName}"
 
-#: src/app/messages/[user]/page.tsx:187
+#: src/app/messages/[user]/page.tsx:185
 msgid "UoFhu5"
 msgstr "Войдите или зарегистрируйтесь чтобы общаться с пользователями"
 
-#: src/app/messages/[user]/page.tsx:233
+#: src/app/messages/[user]/page.tsx:232
 msgid "filwqD"
 msgstr "Прочитано"
 
-#: src/app/messages/[user]/page.tsx:234
+#: src/app/messages/[user]/page.tsx:233
 msgid "gcuDcH"
 msgstr "Отправлено"
 
@@ -270,15 +270,15 @@ msgstr "Количество отзывов"
 msgid "RB4BMg"
 msgstr "Количество сообщений"
 
-#: src/app/overview/page.tsx:63
+#: src/app/overview/page.tsx:61
 msgid "B7zY8l"
 msgstr "при получении статистики"
 
-#: src/app/overview/page.tsx:74
+#: src/app/overview/page.tsx:72
 msgid "raRmPD"
 msgstr "при получении популярных приложений"
 
-#: src/app/overview/page.tsx:157
+#: src/app/overview/page.tsx:155
 msgid "cILLFL"
 msgstr "Билд <b>{hash}</b> от {author}: {message}"
 
@@ -307,7 +307,7 @@ msgid "xPn5o3"
 msgstr "Удалить {publicationName}"
 
 #: src/app/publication/[id]/_components/edit-dropdown-trigger.tsx:112
-#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:309
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:307
 msgid "wEQDC6"
 msgstr "Редактировать"
 
@@ -396,60 +396,60 @@ msgstr "Зависимости"
 msgid "4xQtw2"
 msgstr "из 5"
 
-#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:165
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:163
 msgid "og54DB"
 msgstr "Попытка обновить несуществующий отзыв."
 
-#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:172
-#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:225
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:170
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:223
 msgid "Ak4tB0"
 msgstr "при обновлении отзыва"
 
-#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:196
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:194
 msgid "Ov8WL5"
 msgstr "Уже проголосовали!"
 
-#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:202
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:200
 msgid "GJFQ68"
 msgstr "при голосовании за отзыв"
 
-#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:233
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:231
 msgid "W6gI4b"
 msgstr "Обновление отзыва..."
 
-#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:234
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:232
 msgid "UnvbUU"
 msgstr "Отзыв успешно обновлен!"
 
-#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:418
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:416
 msgid "v+mTR7"
 msgstr "при публикации отзыва"
 
-#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:423
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:421
 msgid "APJ1b/"
 msgstr "Публикация отзыва..."
 
-#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:424
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:422
 msgid "k/n7Yx"
 msgstr "Отзыв успешно опубликован!"
 
-#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:437
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:435
 msgid "REm9Re"
 msgstr "Рейтинги и обзоры"
 
-#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:454
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:452
 msgid "rMIZOU"
 msgstr "Нажмите, чтобы оценить:"
 
-#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:470
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:468
 msgid "LZZfmv"
 msgstr "Войдите или зарегистрируйтесь, чтобы оценивать публикации и отзывы"
 
-#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:482
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:480
 msgid "LfHk/3"
 msgstr "Написать отзыв..."
 
-#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:493
+#: src/app/publication/[id]/_components/sections/ratings-and-reviews.tsx:491
 msgid "wXHf3p"
 msgstr "Оценить публикацию"
 
@@ -765,20 +765,20 @@ msgstr "Поведение"
 msgid "yZJxVS"
 msgstr "Разработчик"
 
-#: src/app/settings/page.tsx:105
+#: src/app/settings/page.tsx:101
 msgid "k42o+Q"
 msgstr "Сбросить настройки"
 
-#: src/app/user/[name]/page.tsx:78
+#: src/app/user/[name]/page.tsx:76
 #: src/components/layout/user-dropdown.tsx:116
 msgid "D3idYv"
 msgstr "Настройки"
 
-#: src/app/user/[name]/page.tsx:123
+#: src/app/user/[name]/page.tsx:121
 msgid "3kAElH"
 msgstr "У вас пока нет публикаций."
 
-#: src/app/user/[name]/page.tsx:124
+#: src/app/user/[name]/page.tsx:122
 msgid "7/kzJw"
 msgstr "У этого пользователя пока нет публикаций или он не существует."
 

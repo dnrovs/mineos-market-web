@@ -26,7 +26,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
     return {
         title: 'MineOS Market',
-        icons: 'icons/favicon.svg',
+        icons: '/icons/favicon.svg',
         description: t(
             'Explore, upload and share MineOS software. View the source code. Communicate with developers.'
         ),
@@ -58,11 +58,7 @@ export default async function RootLayout({
     const locale = await getLocale()
 
     return (
-        <html
-            lang={locale}
-            className={inter.className}
-            suppressHydrationWarning
-        >
+        <html lang={locale} className={inter.className}>
             <body
                 className={`flex overflow-hidden bg-background antialiased **:scrollbar **:scrollbar-thumb-primary/20 **:scrollbar-track-transparent`}
             >

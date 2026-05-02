@@ -44,7 +44,7 @@ export default function BottomNavigation() {
         >
             <nav
                 className={
-                    'flex w-full overflow-hidden rounded-2xl bg-background/75 backdrop-blur-md'
+                    'flex w-full overflow-hidden rounded-2xl bg-background/75 backdrop-blur-2xl'
                 }
             >
                 {categories.map((category) => (

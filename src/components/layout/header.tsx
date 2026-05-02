@@ -15,7 +15,7 @@ export default function Header({
     return (
         <header
             className={cn(
-                'top sticky top-0 z-10 flex items-center justify-between bg-background/75 p-3 backdrop-blur-md',
+                'top sticky top-0 z-10 flex items-center justify-between bg-background/75 p-3 backdrop-blur-2xl',
                 className
             )}
             {...props}

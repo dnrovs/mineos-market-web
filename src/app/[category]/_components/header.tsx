@@ -108,7 +108,7 @@ export default function Header({
     ]
 
     return (
-        <header className="sticky top-0 flex w-full items-center justify-between bg-background/75 px-3 py-3 backdrop-blur-md max-lg:flex-col max-lg:items-start max-lg:gap-2.5">
+        <header className="sticky top-0 flex w-full items-center justify-between bg-background/75 px-3 py-3 backdrop-blur-2xl max-lg:flex-col max-lg:items-start max-lg:gap-2.5">
             <div className={'flex w-full justify-between'}>
                 <h1 className="text-3xl font-semibold max-lg:text-left">
                     {category.name}
@@ -167,7 +167,11 @@ export default function Header({
                 </div>
             </div>
             <div className={'flex w-full items-center justify-end gap-1'}>
-                <InputGroup className={'w-75 min-w-40 max-lg:flex-1'}>
+                <InputGroup
+                    className={
+                        'not:dark:border-[#525252]/15 w-75 min-w-40 max-lg:flex-1'
+                    }
+                >
                     <InputGroupInput
                         placeholder={t('Search...')}
                         onInput={(e) => setSearchQuery(e.currentTarget.value)}
@@ -179,7 +183,11 @@ export default function Header({
                 </InputGroup>
 
                 <Select value={sorting} onValueChange={setSorting}>
-                    <SelectTrigger className={'w-1/2 min-w-45 sm:w-45'}>
+                    <SelectTrigger
+                        className={
+                            'not:dark:border-[#525252]/15 w-1/2 min-w-45 sm:w-45'
+                        }
+                    >
                         <SelectValue placeholder={t('Sort by...')} />
                     </SelectTrigger>
                     <SelectContent className={'w-full'}>

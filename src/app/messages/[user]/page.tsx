@@ -212,10 +212,11 @@ export default function Chat() {
     ) : (
         <StickToBottom
             initial={'instant'}
-            className="flex h-full grow flex-col items-center overflow-auto"
+            className={'flex h-full grow flex-col items-center overflow-auto'}
         >
             <StickToBottom.Content
                 className={'flex min-h-full flex-col items-center'}
+                scrollClassName={'[scrollbar-gutter:unset]!'}
             >
                 <ChatHeader userName={dialogUserName} />
 
@@ -241,7 +242,7 @@ export default function Chat() {
                             <Badge
                                 variant={'secondary'}
                                 className={
-                                    'm-1 self-center rounded-full bg-accent/25 text-sm backdrop-blur-md backdrop-brightness-95 dark:backdrop-brightness-200'
+                                    'm-1 self-center rounded-full bg-accent/25 text-sm backdrop-blur-2xl backdrop-brightness-95 dark:backdrop-brightness-200'
                                 }
                             >
                                 {label}

@@ -15,10 +15,10 @@ export default function Message({ message }: { message: MessageT }) {
         <div className={clsx('flex w-full flex-col')}>
             <div
                 className={clsx(
-                    'flex w-max max-w-xs flex-col overflow-hidden rounded-xl p-2 text-wrap break-words xl:max-w-sm',
+                    'flex w-max max-w-xs flex-col overflow-hidden rounded-xl p-2 text-wrap wrap-break-word xl:max-w-sm',
                     outgoing
                         ? 'self-end rounded-br-lg bg-primary text-right text-primary-foreground'
-                        : 'self-start rounded-bl-lg bg-accent/25 text-left text-accent-foreground backdrop-blur-md backdrop-brightness-95 dark:backdrop-brightness-200'
+                        : 'self-start rounded-bl-lg bg-accent/25 text-left text-accent-foreground backdrop-blur-2xl backdrop-brightness-95 dark:backdrop-brightness-200'
                 )}
             >
                 <span>{message.text}</span>

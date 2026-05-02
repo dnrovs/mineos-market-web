@@ -11,7 +11,7 @@ export function ChatHeader({ userName }: { userName: string }) {
     const router = useRouter()
 
     return (
-        <header className="sticky top-0 z-20 flex w-full justify-between p-3 backdrop-blur-md lg:justify-center">
+        <header className="sticky top-0 z-20 flex w-full justify-between p-3 backdrop-blur-2xl lg:justify-center">
             <Button
                 variant={'ghost'}
                 className={'lg:hidden'}

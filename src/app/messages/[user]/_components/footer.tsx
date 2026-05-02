@@ -40,7 +40,7 @@ export default function Footer({
     }
 
     return (
-        <footer className="sticky bottom-0 mb-[env(safe-area-inset-bottom)] flex w-full justify-center backdrop-blur-md">
+        <footer className="sticky bottom-0 mb-[env(safe-area-inset-bottom)] flex w-full justify-center backdrop-blur-2xl">
             <div
                 className={
                     'flex w-full max-w-300 items-center justify-between gap-2 p-3'
