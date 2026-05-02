@@ -55,9 +55,15 @@ const setStoredUser = (user: UserCredentials | null): void => {
 }
 
 export const MarketProvider: React.FC<MarketProviderProps> = ({ children }) => {
-    const [user, setUser] = useState<UserCredentials | null>(getStoredUser())
+    const [user, setUser] = useState<UserCredentials | null>(getStoredUser)
+    const [isHydrated, setIsHydrated] = useState(false)
 
     const { config } = useConfig()
+
+    useEffect(() => {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        setIsHydrated(true)
+    }, [])
 
     const client = useMemo(() => {
         const client = new MarketClient({
@@ -95,6 +101,8 @@ export const MarketProvider: React.FC<MarketProviderProps> = ({ children }) => {
         window.addEventListener('storage', handleStorage)
         return () => window.removeEventListener('storage', handleStorage)
     }, [])
+
+    if (!isHydrated) return null
 
     const value: MarketContextValue = {
         client,
