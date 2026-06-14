@@ -60,16 +60,16 @@ msgstr "Account"
 msgid "0BUTMv"
 msgstr "Search..."
 
-#: src/app/[category]/_components/header.tsx:189
+#: src/app/[category]/_components/header.tsx:191
 msgid "f3bAYs"
 msgstr "Sort by..."
 
-#: src/app/[category]/_components/header.tsx:228
+#: src/app/[category]/_components/header.tsx:230
 msgid "3xDJrg"
 msgstr "Publish {category}..."
 
 #: src/app/[category]/page.tsx:128
-#: src/app/publication/[id]/page.tsx:48
+#: src/app/publication/[id]/page.tsx:61
 #: src/app/user/[name]/page.tsx:49
 msgid "rQFxkO"
 msgstr "while fetching publications"
@@ -487,7 +487,7 @@ msgstr "Languages"
 msgid "HBxXD/"
 msgstr "License"
 
-#: src/app/publication/[id]/page.tsx:57
+#: src/app/publication/[id]/page.tsx:70
 msgid "hWwv1H"
 msgstr "while fetching reviews"
 

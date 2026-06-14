@@ -60,16 +60,16 @@ msgstr "Акаунт"
 msgid "0BUTMv"
 msgstr "Пошук..."
 
-#: src/app/[category]/_components/header.tsx:189
+#: src/app/[category]/_components/header.tsx:191
 msgid "f3bAYs"
 msgstr "Сортувати за..."
 
-#: src/app/[category]/_components/header.tsx:228
+#: src/app/[category]/_components/header.tsx:230
 msgid "3xDJrg"
 msgstr "Опублікувати {category}..."
 
 #: src/app/[category]/page.tsx:128
-#: src/app/publication/[id]/page.tsx:48
+#: src/app/publication/[id]/page.tsx:61
 #: src/app/user/[name]/page.tsx:49
 msgid "rQFxkO"
 msgstr "під час отримання публікацій"
@@ -487,7 +487,7 @@ msgstr "Мови"
 msgid "HBxXD/"
 msgstr "Ліцензія"
 
-#: src/app/publication/[id]/page.tsx:57
+#: src/app/publication/[id]/page.tsx:70
 msgid "hWwv1H"
 msgstr "під час отримання відгуків"
 
