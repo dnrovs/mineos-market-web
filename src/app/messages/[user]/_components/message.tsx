@@ -1,7 +1,7 @@
 import { clsx } from 'clsx'
 import type { Message as MessageT } from 'mineos-market-client'
 
-import { useMarket } from '@/context/MarketProvider'
+import { useMarket } from '@/context/market-provider'
 import { useFormatter } from 'next-intl'
 
 export default function Message({ message }: { message: MessageT }) {

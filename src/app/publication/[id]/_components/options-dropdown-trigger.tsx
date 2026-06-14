@@ -32,7 +32,7 @@ import {
     DropdownMenuSubTrigger,
     DropdownMenuTrigger
 } from '@/components/ui/shadcn/dropdown-menu'
-import { useMarket } from '@/context/MarketProvider'
+import { useMarket } from '@/context/market-provider'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
 
 function RawJSONDialogTrigger({

@@ -19,7 +19,7 @@ import {
     EmptyTitle
 } from '@/components/ui/shadcn/empty'
 import { Spinner } from '@/components/ui/shadcn/spinner'
-import { useMarket } from '@/context/MarketProvider'
+import { useMarket } from '@/context/market-provider'
 import { useMediaQuery } from '@/hooks/shadcn/use-media-query'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
 

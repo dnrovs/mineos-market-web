@@ -13,7 +13,7 @@ import {
     DropdownMenuTrigger
 } from '@/components/ui/shadcn/dropdown-menu'
 import { useSidebar } from '@/components/ui/shadcn/sidebar'
-import { useMarket } from '@/context/MarketProvider'
+import { useMarket } from '@/context/market-provider'
 import { useLocale } from '@/hooks/use-locale'
 import { locales } from '@/lib/constants'
 import {

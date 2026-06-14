@@ -1,6 +1,6 @@
 'use client'
 
-import { useMarket } from '@/context/MarketProvider'
+import { useMarket } from '@/context/market-provider'
 import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
 

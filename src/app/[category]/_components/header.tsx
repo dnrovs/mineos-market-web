@@ -39,7 +39,7 @@ import {
     SelectValue
 } from '@/components/ui/shadcn/select'
 import { Separator } from '@/components/ui/shadcn/separator'
-import { useMarket } from '@/context/MarketProvider'
+import { useMarket } from '@/context/market-provider'
 import { Category } from '@/hooks/use-publication-categories'
 import { useUnreadMessages } from '@/hooks/use-unread-messages'
 

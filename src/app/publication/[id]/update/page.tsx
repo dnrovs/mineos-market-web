@@ -30,7 +30,7 @@ import {
 } from '@/components/ui/shadcn/field'
 import { Spinner } from '@/components/ui/shadcn/spinner'
 import { Textarea } from '@/components/ui/shadcn/textarea'
-import { useMarket } from '@/context/MarketProvider'
+import { useMarket } from '@/context/market-provider'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
 import useRequireUser from '@/hooks/use-require-user'
 import isPackaged from '@/utils/is-packaged'

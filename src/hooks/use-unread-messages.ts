@@ -1,6 +1,6 @@
 'use client'
 
-import { useMarket } from '@/context/MarketProvider'
+import { useMarket } from '@/context/market-provider'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
 import { useExtracted } from 'next-intl'
 import { useEffect, useState } from 'react'

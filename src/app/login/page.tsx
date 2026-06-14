@@ -21,7 +21,7 @@ import {
     FieldLabel
 } from '@/components/ui/shadcn/field'
 import { Input } from '@/components/ui/shadcn/input'
-import { useMarket } from '@/context/MarketProvider'
+import { useMarket } from '@/context/market-provider'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
 import emailRegex from 'email-regex'
 

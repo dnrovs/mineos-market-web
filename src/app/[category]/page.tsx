@@ -30,7 +30,7 @@ import {
     EmptyTitle
 } from '@/components/ui/shadcn/empty'
 import { Spinner } from '@/components/ui/shadcn/spinner'
-import { useMarket } from '@/context/MarketProvider'
+import { useMarket } from '@/context/market-provider'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
 import { usePublicationCategories } from '@/hooks/use-publication-categories'
 

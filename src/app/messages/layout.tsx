@@ -6,7 +6,7 @@ import React from 'react'
 
 import Dialogs from '@/app/messages/_components/dialogs'
 import Header from '@/components/layout/header'
-import { useMarket } from '@/context/MarketProvider'
+import { useMarket } from '@/context/market-provider'
 import { useConfig } from '@/hooks/use-config'
 import { cn } from '@/lib/shadcn/utils'
 import { useTheme } from 'next-themes'

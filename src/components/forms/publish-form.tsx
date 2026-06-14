@@ -53,7 +53,7 @@ import {
 } from '@/components/ui/shadcn/select'
 import { Switch } from '@/components/ui/shadcn/switch'
 import { Textarea } from '@/components/ui/shadcn/textarea'
-import { useMarket } from '@/context/MarketProvider'
+import { useMarket } from '@/context/market-provider'
 import useHandleRequestError from '@/hooks/use-handle-request-error'
 import { usePublicationCategories } from '@/hooks/use-publication-categories'
 import { licenses } from '@/lib/constants'

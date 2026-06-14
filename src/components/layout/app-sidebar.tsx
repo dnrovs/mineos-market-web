@@ -14,7 +14,7 @@ import {
     SidebarMenuItem,
     SidebarRail
 } from '@/components/ui/shadcn/sidebar'
-import { useMarket } from '@/context/MarketProvider'
+import { useMarket } from '@/context/market-provider'
 import { usePublicationCategories } from '@/hooks/use-publication-categories'
 import { useUnreadMessages } from '@/hooks/use-unread-messages'
 import { ChevronsUpDown, House, MessageCircle, UserRound } from 'lucide-react'

@@ -24,7 +24,7 @@ import Header from '@/components/layout/header'
 import { Separator } from '@/components/ui/shadcn/separator'
 import { Spinner } from '@/components/ui/shadcn/spinner'
 
-import { useMarket } from '@/context/MarketProvider'
+import { useMarket } from '@/context/market-provider'
 
 import { JsonLd } from '@/components/json-ld'
 import { useConfig } from '@/hooks/use-config'

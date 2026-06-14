@@ -5,7 +5,7 @@ import React from 'react'
 
 import { Button } from '@/components/ui/shadcn/button'
 import { Toggle } from '@/components/ui/shadcn/toggle'
-import { useMarket } from '@/context/MarketProvider'
+import { useMarket } from '@/context/market-provider'
 import { usePublicationCategories } from '@/hooks/use-publication-categories'
 
 interface BottomNavigationButtonProps {

@@ -11,7 +11,7 @@ import React from 'react'
 import AppSidebar from '@/components/layout/app-sidebar'
 import { SidebarProvider } from '@/components/ui/shadcn/sidebar'
 import { Toaster } from '@/components/ui/shadcn/sonner'
-import { MarketProvider } from '@/context/MarketProvider'
+import { MarketProvider } from '@/context/market-provider'
 
 import { TooltipProvider } from '@/components/ui/shadcn/tooltip'
 import './globals.css'

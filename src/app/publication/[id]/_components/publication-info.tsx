@@ -12,7 +12,7 @@ import {
     ButtonGroup,
     ButtonGroupSeparator
 } from '@/components/ui/shadcn/button-group'
-import { useMarket } from '@/context/MarketProvider'
+import { useMarket } from '@/context/market-provider'
 import { useMediaQuery } from '@/hooks/shadcn/use-media-query'
 import { useConfig } from '@/hooks/use-config'
 import { cn } from '@/lib/shadcn/utils'
