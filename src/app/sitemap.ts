@@ -4,14 +4,14 @@ import { MetadataRoute } from 'next'
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const map: MetadataRoute.Sitemap = [
         {
-            url: 'https://mineos-market.vercel.app',
-            lastModified: new Date(),
+            url: 'https://mineos-market.vercel.app/',
+            lastModified: new Date().toISOString().split('T')[0],
             changeFrequency: 'weekly',
             priority: 1
         },
         {
-            url: 'https://mineos-market.vercel.app/overview',
-            lastModified: new Date(),
+            url: 'https://mineos-market.vercel.app/overview/',
+            lastModified: new Date().toISOString().split('T')[0],
             changeFrequency: 'daily',
             priority: 0.9
         }
@@ -30,8 +30,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
             response.forEach((publication) =>
                 map.push({
-                    url: `https://mineos-market.vercel.app/publication/${publication.fileId}`,
-                    lastModified: new Date(),
+                    url: `https://mineos-market.vercel.app/publication/${publication.fileId}/`,
+                    lastModified: new Date().toISOString().split('T')[0],
                     changeFrequency: 'daily',
                     priority: 0.8
                 })
